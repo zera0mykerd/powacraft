@@ -1,0 +1,53 @@
+# BreadSpigot Configuration File
+config-version: 1
+spawners:
+  ignore-light-levels: true
+  disable-max-nearby-entities: true
+  ignore-liquid-checks: true
+  better-spawner-location-calculations: true
+knockbackVertical: 0.8968
+disableSprintOnHit: false
+disable-mob-death-particles: true
+max-entities-for-collisions: 50
+tileentities:
+  do-tile-entity-timings: false
+  keep-hoppers-loaded: true
+disable-mob-tracking: true
+disable-mob-footsteps: true
+knockbackHorizontal: 0.92515
+tpsGraph: true
+optimize-redstone: true
+stacked-mobs:
+  stack-mobs: true
+  max-stack-size: 100
+  dont-stack:
+  - Wolf
+  - Horse
+  stack-radius: 4
+chunk-mob-liimit: false
+flawless-printer: true
+max-entities-in-chunk: 1500
+world-settings:
+  default:
+    verbose: true
+    spawners:
+      chunkMobLimit: 25
+    cactus-does-damage: false
+    igDropPoppy: false
+    fix-east-west-cannoning: true
+    igFallDamageDistance: 30
+    do-footstep-sounds: false
+    do-leaf-decay: false
+    never-rain: false
+    pearl-through:
+      cobweb: true
+      fencegates: true
+      string: true
+    potions:
+      fastPots: true
+    noSpawnerParticles: false
+    disable-spawner-mob-ai: true
+    hopper:
+      cooldown-when-full: true
+      disable-move-event: true
+    igFallDamage: true

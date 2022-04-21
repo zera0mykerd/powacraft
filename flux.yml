@@ -1,0 +1,13 @@
+# This is the main configuration file for FluxSpigot.
+# This is a modification of TacoSpigot. Based on main repository of AmbrosL/CustomSpigot
+
+config-version: 1
+world-settings:
+  default:
+    verbose: true
+    mobs:
+      disable-mob-ai: false
+    cannons:
+      fire-tnt-dispense-event: true
+      fix-left-shooting-cannoning: true
+      left-shooting-accurancy: 120.0

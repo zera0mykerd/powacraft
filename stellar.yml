@@ -1,0 +1,135 @@
+# This is the main configuration file for StellarSpigot.
+# If you need help with the configuration or have any questions related to StellarSpigot,
+# ask in #support in the StellarSpigot discord or read what the options do in #documentation.
+
+config-version: 1
+kb:
+  knockback-horizontal: 0.92515
+  disable-sprint-on-hit: false
+  knockback-vertical: 0.8968
+  knockback-friction: 2.0
+use-vanilla-liquid-flow-mechanics: false
+durabilities:
+  obsidian-destroyer: false
+  bedrock-durability: 10
+  enchantmenttable-durability: 3
+  endportal-durability: 3
+  durability-message: '&7&o%type% Durabilita&8&o: &e%durability%'
+  obsidian-durability: 3
+  enderchest-durability: 3
+  creepers-damage-obsidian: false
+  settings:
+    large-radius: true
+  anvil-durability: 3
+spawners:
+  optimize:
+    ignore-light-levels: true
+    ignore-liquid-checks: true
+    disable-max-nearby-entities: true
+    better-spawner-location-calculations: true
+  required-player-range: 16
+  max-nearby-entities: 6
+  spawn-count: 4
+  min-spawn-delay: 200
+  max-spawn-delay: 800
+  spawn-range: 4
+patches:
+  disable-fencegate-sand-plates: true
+  disable-roof-cannons: true
+fire-blockphysicsevent: false
+stacked-mobs:
+  only-stack-spawner-mobs: false
+  make-stacked-mobs-1hp: false
+  max-stack-size: 100
+  stack-radius: 4
+  minimize-packets: true
+  stack-mobs: false
+  dont-stack:
+  - Wolf
+  - Horse
+  name: "\xa76\xa7l%mob%\xa7e\xa7l x%amount%"
+max-tnt-and-sand-packets-per-second-limit:
+  enabled: true
+  limit: 300
+sand-fires-blockphysicsevent: false
+disable-mob-footsteps: true
+disable-tnt-fuse-sounds: true
+keep-hoppers-loaded: true
+disable-mob-tracking: true
+tnt-region-optimization: true
+sand-fires-entitychangeblockevent: false
+chunk-loading-threads: 2
+max-entities-for-collisions: 50
+optimize-tile-entities: true
+disable-dispenser-effects: true
+trigger-dispenser-effects: false
+optimize-tnt-and-sand: true
+tnt:
+  combine-tnt: true
+  grace-period: false
+optimize-redstone: true
+sponge:
+  insta-break: false
+  better-sponges: false
+  spawners-act-as-sponges: false
+  sponge-radius: 3
+other:
+  version-command:
+  - '&8&l&m--------------------------------'
+  - '&7This server is running &c&o&nStellarSpigot&a.'
+  - '&8&l&m--------------------------------'
+  flawless-printer: true
+  tps-graph: true
+efficient-sand: true
+tnt-move-cache: false
+world-settings:
+  default:
+    verbose: true
+    water-and-lava:
+      generate-stone: false
+      generate-obsidian: false
+      generate-cobble: false
+    do-leaf-decay: false
+    do-footstep-sounds: false
+    disable-autos:
+      max-piston-push: 12
+    ignore-water-check: true
+    cactus-does-damage: false
+    irongolems:
+      ig-drop-poppy: false
+      ig-fall-damage-distance: 30
+      ig-fall-damage: true
+    disable-dispenser-randomness: true
+    enable-left-shooting: true
+    left-shooting-axis-lock-distance: 80.0
+    show-explosion-effects: false
+    potions:
+      fast-pots: true
+    sand:
+      do-sand-drops: false
+    fix-east-west-cannoning: true
+    pearl-through:
+      cobweb: false
+      fencegates: false
+      string: false
+    explosions-damage-players: false
+    improve-hit-detection: false
+    fps:
+      invis-tnt: false
+      invis-sand: false
+      piston-animations: false
+      redstone-animations: false
+    never-rain: false
+    spawners:
+      chunk-mob-limit: 25
+      no-spawner-particles: true
+      disable-spawner-mob-ai: false
+    efficient-block-breaking: true
+    fire-block-dispense-event-for-tnt: false
+    webs:
+      web-limit-amount: 8
+      enable-web-limit: true
+      web-limit-message: '&cHai un limite di 8 ragnatele sulle coordinate X,Z.'
+    hopper:
+      cooldown-when-full: true
+      disable-move-event: true

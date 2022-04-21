@@ -1,0 +1,72 @@
+# BeerSpigot Configuration File
+config-version: 1
+spawners:
+  spawnCount: 4
+  requiredPlayerRange: 16
+  spawnRange: 4
+  minSpawnDelay: 200
+  maxNearbyEntities: 20
+  maxSpawnDelay: 300
+obsidian-durability: 3
+massive-cannon-optimizations-2: true
+massive-cannon-optimizations-3: true
+massive-cannon-optimizations-4: true
+knockbackVertical: 0.5124
+gracePeriod: false
+massive-cannon-optimizations: true
+flawless-printer: true
+tpsGraph: true
+disable-fencegate-sand-plates: true
+disable-roof-cannons: false
+disableSprintOnHit: false
+knockbackHorizontal: 0.4632
+version-command:
+- '&7&l&m--------------------------------'
+- '&aQuesto server utilizza &c&o&nPowaSpigot&a.'
+- '&f&l•&e Versione 2.0'
+- '&7&l&m--------------------------------'
+obsidian-destroyer: false
+world-settings:
+  default:
+    verbose: true
+    invisTNT: false
+    noSpawnerParticles: false
+    invisSand: false
+    efficientBlockBreaking: true
+    spawners:
+      chunkMobLimit: 25
+    never-rain: false
+    webs:
+      enable-web-limit: false
+      web-limit-message: '&8(&c&l!&8) &ePuoi avere un massimo di 30 ragnatele alle
+        coordinate X,Z.'
+      web-limit-amount: 30
+    disable-spawner-mob-ai: false
+    enableLeftShooting: false
+    igFallDamage: true
+    hopper:
+      cooldown-when-full: true
+      disable-move-event: false
+    fix-east-west-cannoning: true
+    explosions-damage-players: false
+    do-footstep-sounds: true
+    water-and-lava:
+      generate-stone: true
+      generate-cobble: true
+      generate-obsidian: true
+    do-sand-drops: false
+    do-leaf-decay: false
+    disable-autos:
+      max-piston-push: 10
+    cactus-does-damage: false
+    showExplosionEffects: false
+    improve-hit-detection: true
+    igFallDamageDistance: 30
+    potions:
+      asyncPotions: true
+      fastPots: false
+    igDropPoppy: false
+    pearl-through:
+      fencegates: true
+      string: true
+      cobweb: true
