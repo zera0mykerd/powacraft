@@ -1,0 +1,31 @@
+####################################################################################################
+#              By using this plugin/software you agree to the following terms and conditions.      #
+#- You will not redistribute this plugin/software, or it's code.                                   #
+#- You will not claim this as your own.                                                            #
+#- Sharing or leaking this plugin/software, or code, will result in your license and copy being    #
+#  disabled and DMCA's will be filed if needed.                                                    #
+#- There are no refunds once the plugin/software was sent to you.                                  #
+#- We are not responsible for any hardware/software damages.                                       #
+#- Attempting to gain access to the plugin/software without agreeing to the license and TOS will   #
+#  result in your copy being disabled/blocked.                                                     #
+#- If you are attempting or attempted to gain access to this plugin/software we will press         #
+#  take the proper legal measures against you.                                                     #
+#- Decoding this software if not allowed will result in block of access and a fine of $100         #
+####################################################################################################
+
+####################################################################################################
+#           What can happen if you do not stick with the agreed terms and conditions               #
+#      This will vary between the listings bellow and depend on what TOS you did not follow        #
+#- Block of software access.!                                                                      #
+#- Up to $1,000 fine!                                                                              #
+#- Fees that come up during the charges filled against you.                                        #
+#- Block of access to our website.                                                                 #
+####################################################################################################
+
+####################################################################################################
+#-Agreeing to this means you fully understand our terms and conditions                             #
+#-If you break a TOS you will get the resulting measure                                            #
+#-Have fun with a modder/hacker/cheater free life!                                                 #
+#-If you agree change the bellow to 'accept: true'                                                 #
+####################################################################################################
+accept: true

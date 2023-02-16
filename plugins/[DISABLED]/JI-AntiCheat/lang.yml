@@ -1,0 +1,9 @@
+prefix: '&5&l[&dAntiCheat&5&l] &e> &a '
+ban-timer: ''
+alerts: '&c%player% &7failed &7[&c%check%&7] [&bVL%vl%&7] %tags%'
+punish-commands:
+- aackick %player% Hack rilevate (%check%)
+jday-added: '&c%player% &7was added to the jday list. &cReason &7[&c%check%&7]'
+jday-command: ban %player% (JDay) %check%
+autoban-cancel: '&7You canceled &c%player% &7autoban queue.'
+jday-broadcast: '&3%player% &7has been removed permanently from the network.'

@@ -1,0 +1,94 @@
+Prefix:
+  Plugin: ''
+Command:
+  General:
+    In-game: '&cDevi essere un giocatore di utilizzare il comando!'
+    Error: '&cErrore individuato'
+    No permission: '&4Non hai accesso al comando'
+    Usage: '&cUsa: &4/%s'
+    Disabled: "&cQuesto comando \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 disabilitato\
+      \ dal config di &4&lKingKits"
+    World: "&cNon \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 possibile utilizzare questo\
+      \ comando in questo mondo."
+    Not online: '%s Non esiste online'
+  Create kit:
+    Illegal characters: '&6Il kit contiene caratteri illegali.'
+    Denied: '&cNon hai il permesso per creare questo kit.'
+    Empty inventory: '&cNon hai niente nel tuo inventario!'
+    Overwrite: "&4%s &6\xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 stato sovrascritto."
+    Created: "&4%s &6\xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 stato creato."
+    Global:
+      Description: ''
+    User:
+      Description: ''
+      Global kit exists: "&cIl kit con questo name gi\xc3\u0192\xc6\u2019\xc3\u201a\
+        \xc2\_ esiste provarne un altro"
+      Maximum personal kits: '&cHai raggiunto il massimo numero di kit'
+  Delete kit:
+    Error: '&4%s&6''s Delection con successo.'
+    Deleted: '&4%s &6Eliminato con successo.'
+    Player message: '&4%s &ckit in uso cancellato'
+    Global:
+      Non-existent: "&4questo kit non \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 esistente."
+      Description: '&cDescription: &4Distruggi il kit.'
+    User:
+      Non-existent: '&4That user kit does not exist.'
+      Description: '&cDescription: &4Delete a personal PvP Kit.'
+  Kit:
+    List:
+      No permission: '&4&lNessun permesso per il kit.'
+    Other player: .
+  Preview:
+    Open other: '&6You made &4%s &6open a kit preview for &c%s&6.'
+  Refill:
+    Bowl: "&c\xc3\u0192\xc6\u2019\xc3\u2039\xe2\u20ac\_ necessario disporre di una\
+      \ ciotola in mano."
+    Not enough money: '&aNon avete abbastanza soldi per riempire la vostra ciotola(s).'
+    Full inventory: '&cHai inventario pieno'
+  Rename kit:
+    Illegal characters: Errore caratteri illegali.
+    Exists: '&c%s Gia esiste'
+    Renamed: '&6Rinominato con successo %s to %s.'
+    Global:
+      Description: ''
+    User:
+      Description: ''
+Compass:
+  Player: '&eLa bussola punta su %s.'
+  Spawn: Nessun player individuato.
+General:
+  No kit selected: '&cNon hai un kit selezionato'
+  No kits: '&4Nessun kit.'
+  No kits available: '&cKit non disponibile'
+  Item drop: ''
+  Item pickup: ''
+  Kit list: ''
+  Kit list title: ''
+GUI:
+  Preview:
+    Title: '&c%s &7kit preview'
+    Back: '&bBack'
+Kit:
+  No permission: '&cNessun permesso per questo kit &4%s&c.'
+  Delay: ''
+  Already chosen: "&6Hai gi\xc3\u0192\xc6\u2019\xc3\u201a\xc2\_ questo kit!"
+  Non-existent: '&4%s &6kit non esiste'
+  Not enough money: ''
+  Unlocked: ''
+Sign:
+  Create:
+    No permission: '&4Nessun permesso'
+    Second line empty: ''
+  General:
+    Incorrectly set up: '&cCartello incorretto'
+  Use:
+    No permission: '&cNessun permesso'
+Time:
+  Second: second
+  Seconds: seconds
+  Minute: minute
+  Minutes: minutes
+  Hour: hour
+  Hours: hours
+  Day: day
+  Days: days

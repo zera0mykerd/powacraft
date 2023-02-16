@@ -1,0 +1,53 @@
+Name: Barbaro
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Iron Sword
+  Slot 1:
+    Type: Bow
+    Data: -14
+    Durability: 242
+  Slot 2:
+    Type: Arrow
+    Amount: 15
+
+Armour:
+  Helmet:
+    Type: Chainmail Helmet
+  Chestplate:
+    Type: Chainmail Chestplate
+  Leggings:
+    Type: Chainmail Leggings
+  Boots:
+    Type: Chainmail Boots
+
+Potion effects:
+  1:
+    Type: Jump
+    Level: 0
+    Duration: 1999640

@@ -1,0 +1,212 @@
+Name: YOUTUBE2
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Wood Sword
+    Name: '&4&lSPADA DEI &c&lYOU-TUBERS'
+    Enchantments:
+      Damage All: 5
+      Durability: 3
+      Knockback: 2
+      Fire Aspect: 2
+  Slot 1:
+    Type: Bow
+    Name: '&4&lYOUTUBE'
+    Enchantments:
+      Arrow Damage: 5
+      Arrow Knockback: 2
+      Durability: 3
+      Arrow Fire: 1
+      Arrow Infinite: 1
+  Slot 2:
+    Type: Arrow
+    Name: '&4&lYOUTUBE'
+  Slot 3:
+    Type: Fishing Rod
+    Name: '&4&lYOUTUBE'
+  Slot 4:
+    Type: Golden Carrot
+    Amount: 63
+    Name: '&4&lYOUTUBE'
+  Slot 5:
+    Type: Mushroom Soup
+    Amount: 16
+    Name: '&c&lPOWASOUP'
+  Slot 6:
+    Type: Mushroom Soup
+    Amount: 16
+    Name: '&c&lPOWASOUP'
+  Slot 7:
+    Type: Mushroom Soup
+    Amount: 16
+    Name: '&c&lPOWASOUP'
+  Slot 8:
+    Type: Mushroom Soup
+    Amount: 16
+    Name: '&c&lPOWASOUP'
+  Slot 9:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 10:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 11:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 12:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 13:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 14:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 15:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 16:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 17:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 18:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 19:
+    Type: Redstone
+    Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+  Slot 20:
+    Type: Redstone
+    Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+  Slot 21:
+    Type: Redstone
+    Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+  Slot 22:
+    Type: Redstone
+    Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+  Slot 23:
+    Type: Redstone
+    Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+  Slot 24:
+    Type: Redstone
+    Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+  Slot 25:
+    Type: Redstone
+    Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+  Slot 26:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 27:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 28:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 29:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 30:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 31:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 32:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 33:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 34:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+  Slot 35:
+    Type: Vine
+    Name: '&b&lMINETUBE'
+
+Armour:
+  Helmet:
+    Type: Leather Helmet
+    Name: '&4&lYOUTUBE'
+    Dye:
+      Red: 153
+      Green: 51
+      Blue: 51
+    Enchantments:
+      Protection Environmental: 4
+      Protection Fire: 4
+      Durability: 3
+      Protection Explosions: 4
+      Protection Projectile: 4
+      Thorns: 3
+  Chestplate:
+    Type: Leather Chestplate
+    Name: '&4&lYOUTUBE'
+    Dye:
+      Red: 153
+      Green: 51
+      Blue: 51
+    Enchantments:
+      Protection Environmental: 4
+      Protection Fire: 4
+      Durability: 3
+      Protection Explosions: 4
+      Protection Projectile: 4
+      Thorns: 3
+  Leggings:
+    Type: Leather Leggings
+    Name: '&4&lYOUTUBE'
+    Dye:
+      Red: 153
+      Green: 51
+      Blue: 51
+    Enchantments:
+      Protection Environmental: 4
+      Protection Fire: 4
+      Durability: 3
+      Protection Explosions: 4
+      Protection Projectile: 4
+      Thorns: 3
+  Boots:
+    Type: Leather Boots
+    Name: '&4&lYOUTUBE'
+    Dye:
+      Red: 153
+      Green: 51
+      Blue: 51
+    Enchantments:
+      Protection Environmental: 4
+      Protection Fire: 4
+      Durability: 3
+      Protection Explosions: 4
+      Protection Projectile: 4
+      Thorns: 3
+
+Potion effects: {}

@@ -1,0 +1,100 @@
+Name: Soldato
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 1:
+    Type: Bow
+  Slot 2:
+    Type: Arrow
+    Amount: 64
+  Slot 3:
+    Type: Cooked Beef
+    Amount: 64
+  Slot 4:
+    Type: Golden Apple
+    Amount: 3
+    Data: 1
+    Durability: 1
+  Slot 5:
+    Type: Mushroom Soup
+    Amount: 64
+
+Armour:
+  Helmet:
+    Type: Leather Helmet
+    Dye:
+      Red: 127
+      Green: 204
+      Blue: 25
+    Enchantments:
+      Protection Environmental: 4
+      Protection Fire: 4
+      Durability: 3
+      Protection Explosions: 4
+  Chestplate:
+    Type: Leather Chestplate
+    Dye:
+      Red: 102
+      Green: 127
+      Blue: 51
+    Enchantments:
+      Protection Environmental: 4
+      Protection Fire: 4
+      Durability: 3
+      Protection Explosions: 4
+  Leggings:
+    Type: Leather Leggings
+    Dye:
+      Red: 127
+      Green: 204
+      Blue: 25
+    Enchantments:
+      Protection Environmental: 4
+      Protection Fire: 4
+      Durability: 3
+      Protection Explosions: 4
+  Boots:
+    Type: Leather Boots
+    Dye:
+      Red: 102
+      Green: 127
+      Blue: 51
+    Enchantments:
+      Protection Environmental: 4
+      Protection Fire: 4
+      Durability: 3
+      Protection Explosions: 4
+
+Potion effects:
+  1:
+    Type: Speed
+    Level: 5
+    Duration: 199700
+  2:
+    Type: Jump
+    Level: 1
+    Duration: 199300

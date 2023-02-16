@@ -1,0 +1,369 @@
+Name: PowaCraft
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Diamond Sword
+    Enchantments:
+      Damage All: 5
+      Fire Aspect: 2
+      Durability: 3
+  Slot 1:
+    Type: Golden Apple
+    Amount: 32
+    Data: 1
+    Durability: 1
+  Slot 2:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 3:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 4:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 5:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 6:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 7:
+    Type: Potion
+    Data: 34
+    Durability: 16418
+    Potion:
+      Type: Speed
+      Level: 2
+      Splash: true
+      Extended: false
+  Slot 8:
+    Type: Potion
+    Data: 41
+    Durability: 16425
+    Potion:
+      Type: Increase Damage
+      Level: 2
+      Splash: true
+      Extended: false
+  Slot 9:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 10:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 11:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 12:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 13:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 14:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 15:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 16:
+    Type: Potion
+    Data: 34
+    Durability: 16418
+    Potion:
+      Type: Speed
+      Level: 2
+      Splash: true
+      Extended: false
+  Slot 17:
+    Type: Potion
+    Data: 41
+    Durability: 16425
+    Potion:
+      Type: Increase Damage
+      Level: 2
+      Splash: true
+      Extended: false
+  Slot 18:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 19:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 20:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 21:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 22:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 23:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 24:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 25:
+    Type: Potion
+    Data: 34
+    Durability: 16418
+    Potion:
+      Type: Speed
+      Level: 2
+      Splash: true
+      Extended: false
+  Slot 26:
+    Type: Potion
+    Data: 41
+    Durability: 16425
+    Potion:
+      Type: Increase Damage
+      Level: 2
+      Splash: true
+      Extended: false
+  Slot 27:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 28:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 29:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 30:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 31:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 32:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 33:
+    Type: Potion
+    Data: 69
+    Durability: 16453
+    Potion:
+      Type: Heal
+      Level: 1
+      Splash: true
+      Extended: false
+  Slot 34:
+    Type: Potion
+    Data: 34
+    Durability: 16418
+    Potion:
+      Type: Speed
+      Level: 2
+      Splash: true
+      Extended: false
+  Slot 35:
+    Type: Potion
+    Data: 41
+    Durability: 16425
+    Potion:
+      Type: Increase Damage
+      Level: 2
+      Splash: true
+      Extended: false
+
+Armour:
+  Helmet:
+    Type: Diamond Helmet
+    Enchantments:
+      Protection Environmental: 4
+      Durability: 3
+  Chestplate:
+    Type: Diamond Chestplate
+    Enchantments:
+      Protection Environmental: 4
+      Durability: 3
+  Leggings:
+    Type: Diamond Leggings
+    Enchantments:
+      Protection Environmental: 4
+      Durability: 3
+  Boots:
+    Type: Diamond Boots
+    Enchantments:
+      Protection Environmental: 4
+      Durability: 3
+
+Potion effects: {}

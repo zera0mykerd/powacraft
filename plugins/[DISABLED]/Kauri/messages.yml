@@ -1,0 +1,74 @@
+command:
+  error:
+    data: '&cThere was an error trying to find your data object.'
+    playerOffline: '&cThat player seems to be offline. Check your spelling!'
+    invalidArguments:
+      normal: '&cThe inputted arguments are invalid. Please check the help page for
+        more information.'
+      integer: '&cThe inputted argument must be in the form of a number.'
+    playerDoesntExist: '&cThat player could not be found in Mojang''s databases. Check
+      your spelling!'
+    checkDoesntExist: '&cThe check "%check%" does not exist.'
+  alerts:
+    toggledAlerts: '&7Toggled your alerts &f%enabled%&7.'
+    setTier: '&7Your alerts tier is set to &f%tier%&7.'
+    toggledDevAlerts: '&7Toggled your developer alerts &f%enabled%&7.'
+  reload:
+    started: '&7Reloading Kauri...'
+    completed: '&aCompleted!'
+  debug:
+    boxDebug: '&7Set box debug to: &f%debugging%'
+    stoppedDebug: '&cStopped any debug messages from being sent to you.'
+    debugPacketsSender: '&7You are now debugging your packets.'
+    debugPacketsTarget: '&7You are not debugging &f%target%&7''s packets.'
+    debugCheckSender: '&7You are now debugging &f%check% &7for yourself.'
+    debugCheckTarget: '&7You are now debugging &f%check% for &f%target%&7.'
+  lag:
+    serverInfo:
+      title: '&6&lServer Info'
+      tps: "&8\xbb &eTPS&7: &f%tps%"
+      tickTime: "&8\xbb &eMS&7: &f%ms%"
+      memory: "&8\xbb &eMemory&7: &f%free%GB/%total%GB"
+    lineColor: "\xa78"
+    kauri:
+      title: '&6&lKauri Resources'
+      pctUsage: "&8\xbb &ePercent Usage&7: &f%pct%%"
+      callsPerSecond: "&8\xbb &eCalls Per Second&7: &f%calls%"
+    profile: '&7Results: &f%link%'
+    player:
+      title: '&f&l%player%&7&l''s Lag'
+      latency: '&6&lLatency'
+      bukkitPing: "&8\xbb &eBukkit&7: &f%ping%ms"
+      kauriPing: "&8\xbb &eKauri&7: &f%ping%ms"
+      stability: '&6&lStability'
+      lastPacketDrop: "&8\xbb &eLast Packet Drop&7: &f%lastDrop% ago."
+  delay:
+    setDelay: '&7Set the delay for alerts to &f%ms%ms&7.'
+  save:
+    started: '&7Saving all data...'
+    completed: '&aCompleted!'
+  log:
+    viewWeb: '&aView the log here&7: &f%url%'
+    noLogs: '&cThis player does not have any logs.'
+  updateConfig:
+    started: '&7Config Updater started! Updating: &f%type%&7.'
+    deletingFile: '&7Deleting file...'
+    gen:
+      newConfig: '&7Generating new config...'
+    completed: '&aCompleted!'
+    reloading: '&7Reloading Kauri...'
+    deletingSection: '&7Deleting %section% section...'
+  boxwand:
+    received: '&aGave you the magic box wand. Use it wisely.'
+  bypassing:
+    isBypassing: '&7The player &f%player% &7is now bypassing Kauri''s checks.'
+    notBypassing: '&7The player &f%player% &7is no longer bypassing Kauri''s checks.'
+  banwave:
+    forced: '&aForced the ban wave.'
+field:
+  alertTiers:
+    certain: Certain
+    high: High
+    likely: Likely
+    possible: Possible
+    low: Low

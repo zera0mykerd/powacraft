@@ -1,0 +1,821 @@
+executableCommand:
+- kick %player% Cheating non ammesso
+alerts:
+  prefix: '&5&l[&dAntiCheat&5&l] &0»&e'
+  devPrefix: '&5&l[&dAntiCheat&5&l] &0»&e'
+  alertMessage: '%prefix% &f%player% &7failed &f%check% &8(&7vl=&f%vl%&7, &7chance=&f%chance%&8)'
+  alertsDelay: 1000
+  testMode: false
+  printToConsole: false
+  enableOnJoin: true
+  showExperimentalAlerts: false
+  tpsThreshold: 14.0
+executable:
+  broadcast:
+    enabled: false
+    message: |-
+      &8--------------------------------
+      &6&lAnticheat &7ha rimosso &e%player% per cheating.
+      &8--------------------------------
+bypass:
+  enabled: true
+  permission: kauri.bypass
+antivpn:
+  license:
+    code: ''
+    override: false
+  privacyMode:
+    enabled: false
+    overrideForPermission: false
+    overridePermission: kauri.antivpn.privacyOverride
+data:
+  stats:
+    type: FLATFILE
+  logging:
+    type: FLATFILE
+  gui:
+    enabled: false
+    executable: false
+    cancellable: false
+banwave:
+  enabled: true
+  broadcast: false
+  messageAdmins: true
+  banInstantly: true
+  punishCommand: kick %player% Cheating non ammesso
+  interval:
+    intervalTime: 30
+    timeUnit: minutes
+  banRate:
+    banSeconds: 2
+  message:
+    start: '&8[&6&lKauri&8] &7Now running a banwave, where everyone will be judged
+      as either a cheater, or legitimate.'
+    foundCheater: '&8[&6&lKauri&8] &7Judged &e%player% &7as a cheater and has now
+      been removed.'
+    complete: '&8[&6&lKauri&8] &eJudgement Day &7 has been completed.'
+checks:
+  FastLadder:
+    settings:
+      verboseMaxSpeed: 0.118
+      maxSpeed: 0.45
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  NoSlowdown (Type A):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  NoSlowdown (Type B):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  NoSlowdown (Type C):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Reach (Type B):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Motion (Type A):
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Fastbow:
+    maxVL: 20
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  InventoryClick:
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: false
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type A):
+    settings:
+      combatOnly: true
+    maxVL: 80
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Reach (Type A):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Criticals:
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Autoclicker (Type K):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Velocity (Type B):
+    maxVL: 80
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Velocity (Type A):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Killaura (Type D):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Autoclicker (Type D):
+    maxVL: 20
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Killaura (Type C):
+    maxVL: 60
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Autoclicker (Type C):
+    maxVL: 20
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Killaura (Type F):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: false
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Killaura (Type E):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Autoclicker (Type E):
+    maxVL: 20
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Autoclicker (Type H):
+    maxVL: 50
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Killaura (Type G):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Autoclicker (Type G):
+    maxVL: 50
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Autoclicker (Type I):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Speed (Type A):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Speed (Type B):
+    maxVL: 60
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Speed (Type E):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Speed (Type D):
+    maxVL: 125
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Killaura (Type B):
+    maxVL: 15
+    enabled: true
+    executable: false
+    cancellable: false
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Speed (Type G):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  AutoClicker (Type B):
+    maxVL: 20
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Killaura (Type A):
+    maxVL: 150
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Speed (Type F):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Autoclicker (Type A):
+    settings:
+      maxCPS: 20
+      banCPS: 30
+      verboseThreshold: 6
+      deduct: 0.25
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Jesus (Type A):
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type D):
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type E):
+    maxVL: 20
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type F):
+    settings:
+      threshold: 960
+      maxVL: 4
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type G):
+    settings:
+      usingPaper: false
+      deltaBalance: 0.02
+      maxVL: 30
+    maxVL: 200
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type A):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type B):
+    settings:
+      vlThreshold: 10
+    maxVL: 80
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type C):
+    maxVL: 2
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  HitBox:
+    settings:
+      pingLeniency: 200
+      maxVL: 14
+    maxVL: 20
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type O):
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Fly (Type D):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type N):
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Fly (Type E):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type L):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type M):
+    settings:
+      countMax: 10
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: false
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Fly (Type B):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  GroundSpoofA (Type A):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type H):
+    settings:
+      maxVL: 14
+      resetTime: 600
+      deduct: 1
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type L):
+    maxVL: 20
+    enabled: true
+    executable: true
+    cancellable: false
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Fly (Type C):
+    maxVL: 200
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type I):
+    settings:
+      maxVL: 12
+      resetTime: 600
+      deduct: 1
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type K):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Fly (Type A):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  BadPackets (Type K):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type I):
+    settings:
+      combatOnly: true
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type H):
+    settings:
+      combatOnly: true
+      vlMax: 2
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type G):
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type F):
+    settings:
+      combatOnly: true
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type E):
+    settings:
+      vlMax: 40
+      vlSub: 2
+      yawAccelMax: 1.0E-5
+      pitchAccelMax: 1.0E-7
+      minYawDelta: 0.6
+      combatOnly: true
+    maxVL: 200
+    enabled: true
+    executable: false
+    cancellable: false
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type D):
+    settings:
+      minYawDelta: 1.8
+      vlMax: 30
+      subtract: 4
+      combatOnly: true
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type C):
+    settings:
+      vlMax: 9
+      subtract: 2
+      combatOnly: true
+    maxVL: 80
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+  Aim (Type B):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    executableCommands:
+    - '%global%'
+    banWave:
+      enabled: false
+      threshold: 400
+antipup:
+  AntiVPN:
+    settings:
+      blockCountries: []
+      usingProxy: '&cLe VPN o i proxi non sono concessi.'
+      blockedCountry: '&cThe country %countryName% is blocked from this server'
+    enabled: true
+  ConsoleClient:
+    settings:
+      message: |-
+        &cClient non permesso.
+        &7&oClient non permesso, non vorrei freezarti in gioco!
+    enabled: true
+  ArmSwing:
+    enabled: true
+  Boxer:
+    enabled: true
+  YLevel:
+    enabled: true
+  MorePackets:
+    settings:
+      kick: true
+      kickMessage: Stai inviando troppi pacchetti.
+      maxVL: 40
+    enabled: true
+  CommandSpam:
+    settings:
+      minimumDelay: 450
+    enabled: true
+  ChatSpam:
+    settings:
+      spamMax: 3
+      chatDelay: 500
+      message: '&8[&4!&8] &7Ora aspetta &c%timeLeft% secondi &7 per chattare di nuovo.'
+    enabled: true
+  BookEnchant:
+    enabled: true
+  WorldLoader:
+    enabled: true

@@ -1,0 +1,118 @@
+Name: combattente
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Stick
+    Name: '&6&lARMA DA GUERRA'
+    Enchantments:
+      Damage All: 5
+      Arrow Damage: 5
+      Arrow Fire: 1
+      Knockback: 2
+  Slot 1:
+    Type: Mushroom Soup
+  Slot 2:
+    Type: Mushroom Soup
+  Slot 3:
+    Type: Mushroom Soup
+  Slot 4:
+    Type: Mushroom Soup
+  Slot 5:
+    Type: Mushroom Soup
+  Slot 6:
+    Type: Mushroom Soup
+  Slot 7:
+    Type: Mushroom Soup
+  Slot 8:
+    Type: Mushroom Soup
+  Slot 9:
+    Type: Mushroom Soup
+  Slot 10:
+    Type: Mushroom Soup
+  Slot 11:
+    Type: Mushroom Soup
+  Slot 12:
+    Type: Mushroom Soup
+  Slot 13:
+    Type: Mushroom Soup
+  Slot 14:
+    Type: Mushroom Soup
+  Slot 15:
+    Type: Mushroom Soup
+  Slot 16:
+    Type: Mushroom Soup
+  Slot 17:
+    Type: Mushroom Soup
+  Slot 18:
+    Type: Mushroom Soup
+  Slot 19:
+    Type: Mushroom Soup
+  Slot 20:
+    Type: Mushroom Soup
+  Slot 21:
+    Type: Mushroom Soup
+  Slot 22:
+    Type: Mushroom Soup
+  Slot 23:
+    Type: Mushroom Soup
+  Slot 24:
+    Type: Mushroom Soup
+  Slot 25:
+    Type: Mushroom Soup
+  Slot 26:
+    Type: Mushroom Soup
+  Slot 27:
+    Type: Mushroom Soup
+  Slot 28:
+    Type: Mushroom Soup
+  Slot 29:
+    Type: Mushroom Soup
+  Slot 30:
+    Type: Mushroom Soup
+  Slot 31:
+    Type: Mushroom Soup
+  Slot 32:
+    Type: Mushroom Soup
+  Slot 33:
+    Type: Mushroom Soup
+  Slot 34:
+    Type: Mushroom Soup
+  Slot 35:
+    Type: Mushroom Soup
+
+Armour:
+  Helmet:
+    Type: Iron Helmet
+  Chestplate:
+    Type: Iron Chestplate
+  Leggings:
+    Type: Iron Leggings
+  Boots:
+    Type: Iron Boots
+
+Potion effects: {}

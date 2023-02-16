@@ -1,0 +1,123 @@
+Name: Youtube
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Diamond Sword
+    Name: '&4&lYoutuber&0&lSword'
+    Enchantments:
+      Damage All: 3
+      Fire Aspect: 1
+      Durability: 2
+  Slot 1:
+    Type: Golden Apple
+    Data: 1
+    Durability: 1
+    Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+  Slot 2:
+    Type: Golden Apple
+    Data: 1
+    Durability: 1
+    Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+  Slot 3:
+    Type: Golden Apple
+    Data: 1
+    Durability: 1
+    Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+  Slot 4:
+    Type: Golden Apple
+    Data: 1
+    Durability: 1
+    Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+  Slot 5:
+    Type: Golden Apple
+    Data: 1
+    Durability: 1
+    Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+  Slot 6:
+    Type: Golden Apple
+    Data: 1
+    Durability: 1
+    Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+  Slot 7:
+    Type: Golden Apple
+    Data: 1
+    Durability: 1
+    Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+  Slot 8:
+    Type: Golden Apple
+    Data: 1
+    Durability: 1
+    Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+
+Armour:
+  Helmet:
+    Type: Diamond Helmet
+    Name: '&4&lYoutuber&0&lHelmet'
+    Enchantments:
+      Protection Environmental: 3
+      Durability: 2
+  Chestplate:
+    Type: Diamond Chestplate
+    Name: '&4&lYoutuber&0&lChestplate'
+    Enchantments:
+      Protection Environmental: 3
+      Durability: 2
+  Leggings:
+    Type: Diamond Leggings
+    Name: '&4&lYoutuber&0&lLeggins'
+    Enchantments:
+      Protection Environmental: 3
+      Durability: 2
+  Boots:
+    Type: Diamond Boots
+    Name: '&4&lYoutuber&0&lBoots'
+    Enchantments:
+      Protection Environmental: 3
+      Durability: 2
+
+Potion effects:
+  1:
+    Type: Damage Resistance
+    Level: 2
+    Duration: 198320
+  2:
+    Type: Increase Damage
+    Level: 0
+    Duration: 197180
+  3:
+    Type: Speed
+    Level: 2
+    Duration: 197280
+  4:
+    Type: Jump
+    Level: 2
+    Duration: 196560
+  5:
+    Type: Fast Digging
+    Level: 2
+    Duration: 197900

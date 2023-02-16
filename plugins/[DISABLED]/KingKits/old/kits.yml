@@ -1,0 +1,4024 @@
+# KingKits Kits Configuration.
+First run: false
+Default:
+  Command alias: false
+  Description:
+  - The default KingKits
+  - amazingly powerful kit!
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Cooldown: 0
+  Potion Effects:
+    Speed:
+      Level: 2
+      Duration: 10
+  Cost: 0.0
+  GUI Position: -1
+  Name: Default
+  Armour:
+    Helmet:
+      Type: IRON_HELMET
+      Data: 0
+    Leggings:
+      Type: IRON_LEGGINGS
+      Data: 0
+    Boots:
+      Type: IRON_BOOTS
+      Data: 0
+    Chestplate:
+      Dye: 10040115
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Max health: 20
+  Commands:
+  - feed <player>
+  - tell <player> &6You have been fed for using the default kit.
+  Items:
+    Slot 0:
+      Type: IRON_SWORD
+      Name: Default Kit Sword
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+      Lore:
+      - '&6Slay your enemies!'
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 2
+      Data: 0
+    Slot 2:
+      Type: POTION
+      Amount: 1
+      Data: 8201
+combattente:
+  Command alias: false
+  Description: []
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: IRON_HELMET
+      Data: 0
+    Leggings:
+      Type: IRON_LEGGINGS
+      Data: 0
+    Boots:
+      Type: IRON_BOOTS
+      Data: 0
+    Chestplate:
+      Type: IRON_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Cooldown: 0
+  Max health: 20
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 20:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 26:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 24:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 25:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 11:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 12:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 10:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 15:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 16:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: STICK
+      Name: '&6&lARMA DA GUERRA'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        KNOCKBACK: 2
+        DAMAGE_ALL: 5
+        ARROW_FIRE: 1
+        ARROW_DAMAGE: 5
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 14:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 19:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 17:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 18:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 9:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  GUI Position: -1
+  Name: combattente
+infernale:
+  Command alias: false
+  Description: []
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 10040115
+      Type: LEATHER_HELMET
+      Data: 0
+    Leggings:
+      Dye: 10040115
+      Type: LEATHER_LEGGINGS
+      Data: 0
+    Boots:
+      Dye: 10040115
+      Type: LEATHER_BOOTS
+      Data: 0
+    Chestplate:
+      Dye: 10040115
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Cooldown: 0
+  Max health: 20
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 20:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 26:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 24:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 25:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 11:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 12:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 10:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 15:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 16:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: BOW
+      Amount: 1
+      Data: 0
+    Slot 14:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 19:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 17:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 18:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: ARROW
+      Amount: 64
+      Data: 0
+    Slot 3:
+      Type: COMPASS
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 9:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  GUI Position: -1
+  Name: infernale
+paradiso:
+  Command alias: false
+  Description: []
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 6724056
+      Type: LEATHER_HELMET
+      Data: 0
+    Leggings:
+      Dye: 6724056
+      Type: LEATHER_LEGGINGS
+      Data: 0
+    Boots:
+      Dye: 3361970
+      Type: LEATHER_BOOTS
+      Data: 0
+    Chestplate:
+      Dye: 3361970
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Cooldown: 0
+  Max health: 20
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 20:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 26:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 24:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 25:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 11:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 12:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 10:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 15:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 16:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: BOW
+      Name: '&d&lCUPIDO &5&lBOW'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        ARROW_DAMAGE: 2
+        ARROW_INFINITE: 1
+    Slot 14:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 19:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 17:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 18:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: ARROW
+      Amount: 64
+      Data: 0
+    Slot 3:
+      Type: ARROW
+      Amount: 64
+      Data: 0
+    Slot 4:
+      Type: ARROW
+      Amount: 64
+      Data: 0
+    Slot 5:
+      Type: WATCH
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: COMPASS
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 9:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  GUI Position: -1
+  Name: paradiso
+ghost:
+  Command alias: false
+  Description: []
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 1644825
+      Type: LEATHER_HELMET
+      Data: 0
+    Leggings:
+      Dye: 10066329
+      Type: LEATHER_LEGGINGS
+      Data: 0
+    Boots:
+      Dye: 16777215
+      Type: LEATHER_BOOTS
+      Data: 0
+    Chestplate:
+      Dye: 5000268
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Cooldown: 0
+  Max health: 20
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 20:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 26:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 24:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 25:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 11:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 12:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 10:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 15:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 16:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: STONE_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        KNOCKBACK: 1
+        DAMAGE_ALL: 2
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: POTION
+      Amount: 64
+      Data: 8270
+    Slot 14:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 19:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 17:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 18:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: POTION
+      Amount: 64
+      Data: 8262
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 9:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  GUI Position: -1
+  Name: ghost
+faction:
+  Command alias: false
+  Description: []
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: LEATHER_HELMET
+      Data: 0
+    Leggings:
+      Type: LEATHER_LEGGINGS
+      Data: 0
+    Boots:
+      Type: LEATHER_BOOTS
+      Data: 0
+    Chestplate:
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Cooldown: 0
+  Max health: 20
+  Commands: []
+  Items:
+    Slot 11:
+      Type: ARROW
+      Amount: 64
+      Data: 0
+    Slot 10:
+      Type: ARROW
+      Amount: 64
+      Data: 0
+    Slot 0:
+      Type: STONE_SWORD
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: STONE_SPADE
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: STONE_PICKAXE
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: STONE_AXE
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: BOW
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: APPLE
+      Amount: 32
+      Data: 0
+    Slot 9:
+      Type: ARROW
+      Amount: 64
+      Data: 0
+  Cost: 0.0
+  GUI Position: -1
+  Name: faction
+Riccone:
+  Command alias: false
+  Description: []
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: GOLD_HELMET
+      Data: 0
+    Leggings:
+      Type: GOLD_LEGGINGS
+      Data: 0
+    Boots:
+      Type: DIAMOND_BOOTS
+      Data: 0
+    Chestplate:
+      Type: DIAMOND_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Cooldown: 0
+  Max health: 20
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 20:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 26:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 24:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 25:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 11:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 12:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 10:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 15:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 16:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 2
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 14:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 19:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 17:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 18:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 9:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  GUI Position: -1
+  Name: Riccone
+misterioso:
+  Command alias: false
+  Description: []
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Cooldown: 0
+  Potion Effects:
+    Invisibility:
+      Level: 1
+      Duration: 454
+  Cost: 0.0
+  GUI Position: -1
+  Name: misterioso
+  Armour:
+    Item:
+      Type: SKULL_ITEM
+      Data: 1
+    Chestplate:
+      Dye: 1644825
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Max health: 20
+  Commands: []
+  Items:
+    Slot 11:
+      Type: IRON_AXE
+      Amount: 1
+      Data: 0
+    Slot 10:
+      Type: SIGN
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: IRON_AXE
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: CARROT_ITEM
+      Amount: 64
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: POTION
+      Amount: 1
+      Data: 8270
+    Slot 9:
+      Type: IRON_AXE
+      Amount: 1
+      Data: 0
+esploratore:
+  Command alias: false
+  Description: []
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 6717235
+      Type: LEATHER_HELMET
+      Data: 0
+    Leggings:
+      Dye: 6717235
+      Type: LEATHER_LEGGINGS
+      Data: 0
+    Boots:
+      Dye: 8375321
+      Type: LEATHER_BOOTS
+      Data: 0
+    Chestplate:
+      Dye: 8375321
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Cooldown: 0
+  Max health: 20
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 20:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 26:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 24:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 25:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 11:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 12:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 10:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 15:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 16:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: IRON_AXE
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 2
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 14:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 19:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 17:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 18:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 9:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  GUI Position: -1
+  Name: esploratore
+STAFF:
+  Armour:
+    Leggings:
+      Data: 0
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Data: 0
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Data: 0
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 30:
+      Type: SKULL_ITEM
+      Name: '&fSkull of Miro04'
+      Amount: 1
+      Data: 3
+      Skin: miro04
+    Slot 28:
+      Type: SKULL_ITEM
+      Name: '&fSkull of Dr_James'
+      Amount: 1
+      Data: 3
+      Skin: Dr_James
+    Slot 29:
+      Type: SKULL_ITEM
+      Name: '&fSkull of andymer'
+      Amount: 1
+      Data: 3
+      Skin: andymer
+    Slot 20:
+      Type: VINE
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: VINE
+      Amount: 1
+      Data: 0
+    Slot 22:
+      Type: VINE
+      Amount: 1
+      Data: 0
+    Slot 23:
+      Type: VINE
+      Amount: 1
+      Data: 0
+    Slot 24:
+      Type: VINE
+      Amount: 1
+      Data: 0
+    Slot 25:
+      Type: VINE
+      Amount: 1
+      Data: 0
+    Slot 26:
+      Type: VINE
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: SKULL_ITEM
+      Name: '&fSkull of Frame27'
+      Amount: 1
+      Data: 3
+      Skin: Frame27
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 64
+      Data: 0
+    Slot 1:
+      Type: DIAMOND_SPADE
+      Amount: 64
+      Data: 0
+    Slot 9:
+      Type: SKULL_ITEM
+      Name: '&fSkull of Zera'
+      Amount: 1
+      Data: 3
+      Skin: Zera
+    Slot 16:
+      Type: SKULL_ITEM
+      Name: '&fSkull of BRAYMIX_'
+      Amount: 1
+      Data: 3
+      Skin: BRAYMIX_
+    Slot 8:
+      Type: SHEARS
+      Amount: 64
+      Data: 0
+    Slot 15:
+      Type: SKULL_ITEM
+      Name: '&fSkull of TheLordOwnerz'
+      Amount: 1
+      Data: 3
+      Skin: TheLordOwnerz
+    Slot 7:
+      Type: FLINT_AND_STEEL
+      Amount: 64
+      Data: 0
+    Slot 14:
+      Type: SKULL_ITEM
+      Name: '&fSkull of _marsy01_'
+      Amount: 1
+      Data: 3
+      Skin: _marsy01_
+    Slot 6:
+      Type: WATCH
+      Amount: 1
+      Data: 0
+    Slot 13:
+      Type: SKULL_ITEM
+      Name: '&fSkull of panda4k'
+      Amount: 1
+      Data: 3
+      Skin: panda4k
+    Slot 12:
+      Type: SKULL_ITEM
+      Name: '&fSkull of TommyCollen'
+      Amount: 1
+      Data: 3
+      Skin: TommyCollen
+    Slot 5:
+      Type: FISHING_ROD
+      Amount: 64
+      Data: 0
+    Slot 11:
+      Type: SKULL_ITEM
+      Name: '&fSkull of DarkPowa69'
+      Amount: 1
+      Data: 3
+      Skin: DarkPowa69
+    Slot 4:
+      Type: COMPASS
+      Amount: 1
+      Data: 0
+    Slot 10:
+      Type: SKULL_ITEM
+      Name: '&fSkull of giampa3999'
+      Amount: 1
+      Data: 3
+      Skin: giampa3999
+    Slot 3:
+      Type: DIAMOND_PICKAXE
+      Amount: 64
+      Data: 0
+    Slot 2:
+      Type: DIAMOND_AXE
+      Amount: 64
+      Data: 0
+    Slot 33:
+      Type: SKULL_ITEM
+      Name: '&fSkull of andrea00'
+      Amount: 1
+      Data: 3
+      Skin: andrea00
+    Slot 34:
+      Type: SKULL_ITEM
+      Name: '&fSkull of Foxy'
+      Amount: 1
+      Data: 3
+      Skin: Foxy
+    Slot 31:
+      Type: SKULL_ITEM
+      Name: '&fSkull of EletroPOWER'
+      Amount: 1
+      Data: 3
+      Skin: EletroPOWER
+    Slot 32:
+      Type: SKULL_ITEM
+      Name: '&fSkull of ProcaimanHD'
+      Amount: 1
+      Data: 3
+      Skin: ProcaimanHD
+    Slot 19:
+      Type: VINE
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: SKULL_ITEM
+      Name: '&fSkull of ThunderOthy43'
+      Amount: 1
+      Data: 3
+      Skin: thunderothy43
+    Slot 18:
+      Type: VINE
+      Amount: 1
+      Data: 0
+    Slot 17:
+      Type: SKULL_ITEM
+      Name: '&fSkull of Cyberkeele62'
+      Amount: 1
+      Data: 3
+      Skin: Cyberkeele62
+  GUI Position: -1
+  Cost: 0.0
+  Name: STAFF
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+VipSkypvp:
+  GUI Position: -1
+  Items:
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 2
+        DURABILITY: 2
+        KNOCKBACK: 2
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 5
+      Data: 1
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Armour:
+    Leggings:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: VipSkypvp
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Speed:
+      Duration: 54
+      Level: 2
+  Cooldown: 0
+sharpness:
+  GUI Position: -1
+  Items:
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 3
+        DURABILITY: 2
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 5
+      Data: 1
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Armour:
+    Leggings:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: sharpness
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: GRASS
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Speed:
+      Duration: 51
+      Level: 2
+  Cooldown: 0
+VipWars:
+  Armour:
+    Leggings:
+      Name: '&6&lWarLeggins'
+      Data: 0
+      Enchantments:
+        DURABILITY: 2
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Name: '&6&lWarChestplate'
+      Data: 0
+      Enchantments:
+        DURABILITY: 2
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Name: '&6&lWarBoots'
+      Data: 0
+      Enchantments:
+        DURABILITY: 2
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Name: '&6&lWarHelmet'
+      Data: 0
+      Enchantments:
+        DURABILITY: 2
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: COOKED_BEEF
+      Name: '&6&lWarSteak'
+      Amount: 64
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&6&lWarSword'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 4
+        DURABILITY: 2
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Name: '&6&lWarGapple'
+      Amount: 5
+      Data: 1
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  GUI Position: -1
+  Cost: 0.0
+  Name: VipWars
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+VipLord:
+  Armour:
+    Leggings:
+      Name: '&1&lLordLeggins'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Name: '&1&lLordChestplate'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Name: '&1&lLordBoots'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Name: '&1&lLordHelmet'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: COOKED_BEEF
+      Name: '&1&lLordSteak'
+      Amount: 64
+      Data: 0
+    Slot 2:
+      Type: ENDER_PEARL
+      Name: '&1&lLordPearl'
+      Amount: 16
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&1&lLordSword'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 3
+        DURABILITY: 2
+        KNOCKBACK: 2
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Name: '&1&lLordGapple'
+      Amount: 20
+      Data: 1
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  GUI Position: -1
+  Cost: 0.0
+  Name: VipLord
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+VipKnock:
+  Armour:
+    Leggings:
+      Name: '&a&l KnockLeggins'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 2
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Name: '&a&l KnockChestplate'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 2
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Name: '&a&l KnockBoots'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 2
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Name: '&a&l KnockHelmet'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 2
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&a&l KnockSword'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 1
+        DURABILITY: 2
+        KNOCKBACK: 2
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: COOKED_BEEF
+      Name: '&a&lKnockSteak'
+      Amount: 64
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  GUI Position: -1
+  Cost: 0.0
+  Name: VipKnock
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+VipSky:
+  Armour:
+    Leggings:
+      Name: '&5&lSkyLeggins'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Name: '&5&lSkyChestplate'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Name: '&5&lSkyBoots'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Name: '&5&lSkyHelmet'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&5&lSkySword'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 2
+        DURABILITY: 2
+    Slot 1:
+      Type: ENDER_PEARL
+      Name: '&5&lSkyPearl'
+      Amount: 16
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: COOKED_BEEF
+      Name: '&5&lSkySteak'
+      Amount: 64
+      Data: 0
+    Slot 2:
+      Type: ENDER_PEARL
+      Name: '&5&lSkyPearl'
+      Amount: 16
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  GUI Position: -1
+  Cost: 0.0
+  Name: VipSky
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+VipLegend:
+  Armour:
+    Leggings:
+      Name: '&1&lLegendLeggins'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Name: '&1&lLegendChestplate'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Name: '&1&lLegendBoots'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Name: '&1&lLegendHelmet'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 8:
+      Type: ARROW
+      Name: '&1&lLegendArrow'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DIG_SPEED: 5
+    Slot 3:
+      Type: COOKED_BEEF
+      Amount: 64
+      Data: 0
+    Slot 2:
+      Type: BOW
+      Name: '&1&lLegendBow'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        ARROW_DAMAGE: 4
+        ARROW_INFINITE: 1
+        ARROW_FIRE: 1
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&1&lLegendSword'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 4
+        FIRE_ASPECT: 2
+        KNOCKBACK: 2
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Name: '&1&lLegendGapple'
+      Amount: 32
+      Data: 1
+  GUI Position: -1
+  Cost: 0.0
+  Name: VipLegend
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+VipPowa:
+  Armour:
+    Leggings:
+      Name: '&5&lPowaLeggins'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 1
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Name: '&5&lPowaChestplate'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 1
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Name: '&5&lPowaBoots'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 1
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Name: '&5&lPowaHelmet'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 1
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 8:
+      Type: ARROW
+      Name: '&5&lPowaArrow'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DIG_SPEED: 5
+    Slot 3:
+      Type: COOKED_BEEF
+      Amount: 64
+      Data: 0
+    Slot 2:
+      Type: BOW
+      Amount: 1
+      Data: 0
+      Enchantments:
+        ARROW_DAMAGE: 2
+        ARROW_INFINITE: 1
+        ARROW_FIRE: 1
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&5&lPowaSword'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 2
+        FIRE_ASPECT: 1
+        KNOCKBACK: 1
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Name: '&5&lPowaGapple'
+      Amount: 8
+      Data: 1
+  GUI Position: -1
+  Cost: 0.0
+  Name: VipPowa
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+VipUltrapowa:
+  Armour:
+    Leggings:
+      Name: '&a&lUltraPowaLeggins'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Name: '&a&lUltraPowaChestplate'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Name: '&a&lUltraPowaBoots'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Name: '&a&lUltraPowaHelmet'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 8:
+      Type: ARROW
+      Name: '&a&lUltraPowaArrow'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DIG_SPEED: 5
+    Slot 3:
+      Type: COOKED_BEEF
+      Amount: 64
+      Data: 0
+    Slot 2:
+      Type: BOW
+      Amount: 1
+      Data: 0
+      Enchantments:
+        ARROW_DAMAGE: 3
+        ARROW_INFINITE: 1
+        ARROW_FIRE: 1
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&a&lUltraPowaSword'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 3
+        FIRE_ASPECT: 2
+        KNOCKBACK: 1
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Name: '&a&lUltraPowaGapple'
+      Amount: 16
+      Data: 1
+  GUI Position: -1
+  Cost: 0.0
+  Name: VipUltrapowa
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+VIP:
+  GUI Position: -1
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 64
+      Data: 0
+    Slot 2:
+      Type: COOKED_BEEF
+      Amount: 64
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 2
+      Data: 1
+  Armour:
+    Leggings:
+      Data: 0
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Data: 0
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Data: 0
+      Type: DIAMOND_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: VIP
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Jump:
+      Duration: 99991
+      Level: 1
+  Cooldown: 0
+vip2:
+  GUI Position: -1
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: COOKED_BEEF
+      Amount: 64
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 2
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 10
+      Data: 1
+  Armour:
+    Leggings:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Type: DIAMOND_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: vip2
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Jump:
+      Duration: 99998
+      Level: 1
+  Cooldown: 0
+vip3:
+  GUI Position: -1
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: COOKED_BEEF
+      Amount: 64
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 3
+        DURABILITY: 2
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 20
+      Data: 1
+  Armour:
+    Leggings:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 2
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 2
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 2
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 2
+      Type: DIAMOND_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: vip3
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Jump:
+      Duration: 99997
+      Level: 1
+  Cooldown: 0
+YOUTUBE2:
+  Armour:
+    Leggings:
+      Name: '&4&lYOUTUBE'
+      Data: 0
+      Enchantments:
+        THORNS: 3
+        PROTECTION_PROJECTILE: 4
+        PROTECTION_EXPLOSIONS: 4
+        PROTECTION_FIRE: 4
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: LEATHER_LEGGINGS
+      Dye: 10040115
+    Chestplate:
+      Name: '&4&lYOUTUBE'
+      Data: 0
+      Enchantments:
+        THORNS: 3
+        PROTECTION_PROJECTILE: 4
+        PROTECTION_EXPLOSIONS: 4
+        PROTECTION_FIRE: 4
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: LEATHER_CHESTPLATE
+      Dye: 10040115
+    Boots:
+      Name: '&4&lYOUTUBE'
+      Data: 0
+      Enchantments:
+        THORNS: 3
+        PROTECTION_PROJECTILE: 4
+        PROTECTION_EXPLOSIONS: 4
+        PROTECTION_FIRE: 4
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: LEATHER_BOOTS
+      Dye: 10040115
+    Helmet:
+      Name: '&4&lYOUTUBE'
+      Data: 0
+      Enchantments:
+        THORNS: 3
+        PROTECTION_PROJECTILE: 4
+        PROTECTION_EXPLOSIONS: 4
+        PROTECTION_FIRE: 4
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: LEATHER_HELMET
+      Dye: 10040115
+  Items:
+    Slot 30:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 28:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 20:
+      Type: REDSTONE
+      Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: REDSTONE
+      Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+      Amount: 1
+      Data: 0
+    Slot 22:
+      Type: REDSTONE
+      Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+      Amount: 1
+      Data: 0
+    Slot 23:
+      Type: REDSTONE
+      Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+      Amount: 1
+      Data: 0
+    Slot 24:
+      Type: REDSTONE
+      Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+      Amount: 1
+      Data: 0
+    Slot 25:
+      Type: REDSTONE
+      Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+      Amount: 1
+      Data: 0
+    Slot 26:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: WOOD_SWORD
+      Name: '&4&lSPADA DEI &c&lYOU-TUBERS'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 5
+        FIRE_ASPECT: 2
+        DURABILITY: 3
+        KNOCKBACK: 2
+    Slot 1:
+      Type: BOW
+      Name: '&4&lYOUTUBE'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        ARROW_KNOCKBACK: 2
+        ARROW_DAMAGE: 5
+        ARROW_INFINITE: 1
+        DURABILITY: 3
+        ARROW_FIRE: 1
+    Slot 9:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 16:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Name: '&c&lPOWASOUP'
+      Amount: 16
+      Data: 0
+    Slot 15:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Name: '&c&lPOWASOUP'
+      Amount: 16
+      Data: 0
+    Slot 14:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Name: '&c&lPOWASOUP'
+      Amount: 16
+      Data: 0
+    Slot 13:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 12:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Name: '&c&lPOWASOUP'
+      Amount: 16
+      Data: 0
+    Slot 11:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: GOLDEN_CARROT
+      Name: '&4&lYOUTUBE'
+      Amount: 63
+      Data: 0
+    Slot 10:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: FISHING_ROD
+      Name: '&4&lYOUTUBE'
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: ARROW
+      Name: '&4&lYOUTUBE'
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 19:
+      Type: REDSTONE
+      Name: '&4&l&o&nYOUTUBERS &c&l&o&nTOP'
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 18:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+    Slot 17:
+      Type: VINE
+      Name: '&b&lMINETUBE'
+      Amount: 1
+      Data: 0
+  GUI Position: -1
+  Cost: 0.0
+  Name: YOUTUBE2
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+Speciale:
+  Armour:
+    Leggings:
+      Data: 0
+      Type: IRON_LEGGINGS
+    Chestplate:
+      Data: 0
+      Type: IRON_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: IRON_BOOTS
+    Helmet:
+      Data: 0
+      Type: IRON_HELMET
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: IRON_SWORD
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: GRILLED_PORK
+      Amount: 64
+      Data: 0
+  GUI Position: -1
+  Cost: 0.0
+  Name: Speciale
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+Youtube:
+  GUI Position: -1
+  Items:
+    Slot 8:
+      Type: GOLDEN_APPLE
+      Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+      Amount: 1
+      Data: 1
+    Slot 7:
+      Type: GOLDEN_APPLE
+      Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+      Amount: 1
+      Data: 1
+    Slot 6:
+      Type: GOLDEN_APPLE
+      Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+      Amount: 1
+      Data: 1
+    Slot 5:
+      Type: GOLDEN_APPLE
+      Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+      Amount: 1
+      Data: 1
+    Slot 4:
+      Type: GOLDEN_APPLE
+      Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+      Amount: 1
+      Data: 1
+    Slot 3:
+      Type: GOLDEN_APPLE
+      Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+      Amount: 1
+      Data: 1
+    Slot 2:
+      Type: GOLDEN_APPLE
+      Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+      Amount: 1
+      Data: 1
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&4&lYoutuber&0&lSword'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 3
+        FIRE_ASPECT: 1
+        DURABILITY: 2
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Name: '&4&lYOUTUBER&5&l-&c&lAPPLE'
+      Amount: 1
+      Data: 1
+  Armour:
+    Leggings:
+      Name: '&4&lYoutuber&0&lLeggins'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Name: '&4&lYoutuber&0&lChestplate'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Name: '&4&lYoutuber&0&lBoots'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Name: '&4&lYoutuber&0&lHelmet'
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 2
+      Type: DIAMOND_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: Youtube
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Damage Resistance:
+      Duration: 9916
+      Level: 3
+    Increase Damage:
+      Duration: 9859
+      Level: 1
+    Speed:
+      Duration: 9864
+      Level: 3
+    Jump:
+      Duration: 9828
+      Level: 3
+    Fast Digging:
+      Duration: 9895
+      Level: 3
+  Cooldown: 0
+PowaCraft:
+  Armour:
+    Leggings:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 30:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 28:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 29:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 20:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 21:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 22:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 23:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 24:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 25:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+    Slot 26:
+      Type: POTION
+      Amount: 1
+      Data: 16425
+    Slot 27:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 5
+        FIRE_ASPECT: 2
+        DURABILITY: 3
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 32
+      Data: 1
+    Slot 9:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 16:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+    Slot 8:
+      Type: POTION
+      Amount: 1
+      Data: 16425
+    Slot 15:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 7:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+    Slot 14:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 6:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 13:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 12:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 5:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 11:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 4:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 10:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 3:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 2:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 33:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 34:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+    Slot 31:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 32:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 19:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 35:
+      Type: POTION
+      Amount: 1
+      Data: 16425
+    Slot 18:
+      Type: POTION
+      Amount: 1
+      Data: 16453
+    Slot 17:
+      Type: POTION
+      Amount: 1
+      Data: 16425
+  GUI Position: -1
+  Cost: 0.0
+  Name: PowaCraft
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+skypvp:
+  GUI Position: -1
+  Items:
+    Slot 9:
+      Type: ARROW
+      Amount: 64
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: BOW
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: IRON_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 1
+    Slot 1:
+      Type: FISHING_ROD
+      Amount: 1
+      Data: 0
+  Armour:
+    Leggings:
+      Data: 0
+      Type: LEATHER_LEGGINGS
+    Chestplate:
+      Data: 0
+      Type: LEATHER_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: LEATHER_BOOTS
+    Helmet:
+      Data: 0
+      Type: LEATHER_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: skypvp
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Speed:
+      Duration: 9958
+      Level: 2
+    Jump:
+      Duration: 9982
+      Level: 2
+  Cooldown: 0
+arciere:
+  GUI Position: -1
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: WOOD_SWORD
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: BOW
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: ARROW
+      Amount: 32
+      Data: 0
+  Armour:
+    Chestplate:
+      Data: 0
+      Type: IRON_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: IRON_BOOTS
+    Helmet:
+      Data: 0
+      Type: IRON_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: arciere
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Speed:
+      Duration: 9965
+      Level: 3
+    Jump:
+      Duration: 99953
+      Level: 1
+  Cooldown: 0
+Barbaro:
+  GUI Position: -1
+  Items:
+    Slot 2:
+      Type: ARROW
+      Amount: 15
+      Data: 0
+    Slot 0:
+      Type: IRON_SWORD
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: BOW
+      Amount: 1
+      Data: 242
+  Armour:
+    Leggings:
+      Data: 0
+      Type: CHAINMAIL_LEGGINGS
+    Chestplate:
+      Data: 0
+      Type: CHAINMAIL_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: CHAINMAIL_BOOTS
+    Helmet:
+      Data: 0
+      Type: CHAINMAIL_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: Barbaro
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Jump:
+      Duration: 99982
+      Level: 1
+  Cooldown: 0
+Difesa:
+  GUI Position: -1
+  Items:
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Name: '&4&lSENZA ZUPPE :P'
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Name: '&4&lSENZA ZUPPE :P'
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Name: '&4&lSENZA ZUPPE :P'
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: GOLD_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 1
+    Slot 1:
+      Type: POTION
+      Amount: 1
+      Data: 8194
+  Armour:
+    Leggings:
+      Data: 0
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Data: 0
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Data: 0
+      Type: DIAMOND_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: Difesa
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Jump:
+      Duration: 99944
+      Level: 1
+  Cooldown: 0
+TuttoFare:
+  GUI Position: -1
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: FISHING_ROD
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: ARROW
+      Amount: 32
+      Data: 0
+    Slot 0:
+      Type: STONE_SWORD
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: BOW
+      Amount: 1
+      Data: 0
+  Armour:
+    Leggings:
+      Data: 0
+      Type: GOLD_LEGGINGS
+    Chestplate:
+      Data: 0
+      Type: CHAINMAIL_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: IRON_BOOTS
+    Helmet:
+      Data: 0
+      Type: LEATHER_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: TuttoFare
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Jump:
+      Duration: 99951
+      Level: 1
+  Cooldown: 0
+invincibile:
+  Armour:
+    Helmet:
+      Data: 0
+      Type: LEATHER_HELMET
+  Items:
+    Slot 8:
+      Type: ARROW
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: BOW
+      Amount: 1
+      Data: 0
+      Enchantments:
+        ARROW_INFINITE: 1
+    Slot 6:
+      Type: GOLDEN_APPLE
+      Amount: 32
+      Data: 1
+    Slot 5:
+      Type: GOLDEN_APPLE
+      Amount: 32
+      Data: 1
+    Slot 4:
+      Type: GOLDEN_APPLE
+      Amount: 32
+      Data: 1
+    Slot 3:
+      Type: GOLDEN_APPLE
+      Amount: 32
+      Data: 1
+    Slot 2:
+      Type: GOLDEN_APPLE
+      Amount: 32
+      Data: 1
+    Slot 0:
+      Type: GOLD_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 32
+      Data: 1
+  GUI Position: -1
+  Cost: 0.0
+  Name: invincibile
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+Astronauta:
+  GUI Position: -1
+  Items:
+    Slot 9:
+      Type: IRON_SWORD
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: IRON_SWORD
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: IRON_SWORD
+      Amount: 1
+      Data: 0
+  Armour:
+    Leggings:
+      Data: 0
+      Type: IRON_LEGGINGS
+    Glass:
+      Data: 0
+      Type: GLASS
+    Chestplate:
+      Data: 0
+      Type: IRON_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: IRON_BOOTS
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: Astronauta
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Jump:
+      Duration: 99903
+      Level: 2
+    Slow:
+      Duration: 99921
+      Level: 1
+  Cooldown: 0
+Aggressivo:
+  GUI Position: -1
+  Items:
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Armour:
+    Leggings:
+      Data: 0
+      Type: LEATHER_LEGGINGS
+    Chestplate:
+      Data: 0
+      Type: GOLD_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: LEATHER_BOOTS
+    Helmet:
+      Data: 0
+      Type: LEATHER_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: Aggressivo
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Jump:
+      Duration: 99929
+      Level: 1
+  Cooldown: 0
+Nether:
+  GUI Position: -1
+  Items:
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: GOLD_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        FIRE_ASPECT: 1
+    Slot 1:
+      Type: WATCH
+      Amount: 1
+      Data: 0
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+  Armour:
+    Leggings:
+      Data: 0
+      Enchantments:
+        PROTECTION_FIRE: 4
+      Type: GOLD_LEGGINGS
+    Chestplate:
+      Data: 0
+      Enchantments:
+        PROTECTION_FIRE: 4
+      Type: GOLD_CHESTPLATE
+    Boots:
+      Data: 0
+      Enchantments:
+        PROTECTION_FIRE: 4
+      Type: GOLD_BOOTS
+    Helmet:
+      Data: 0
+      Enchantments:
+        PROTECTION_FIRE: 4
+      Type: GOLD_HELMET
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: Nether
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Regeneration:
+      Duration: 9971
+      Level: 1
+    Jump:
+      Duration: 9911
+      Level: 2
+    Fire Resistance:
+      Duration: 9955
+      Level: 1
+  Cooldown: 0
+MCSG:
+  Armour:
+    Leggings:
+      Data: 0
+      Type: CHAINMAIL_LEGGINGS
+    Chestplate:
+      Data: 0
+      Type: IRON_CHESTPLATE
+    Boots:
+      Data: 0
+      Type: IRON_BOOTS
+    Helmet:
+      Data: 0
+      Type: GOLD_HELMET
+  Items:
+    Slot 8:
+      Type: FISHING_ROD
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: GOLDEN_CARROT
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: GOLDEN_APPLE
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: PUMPKIN_PIE
+      Amount: 2
+      Data: 0
+    Slot 4:
+      Type: ARROW
+      Amount: 8
+      Data: 0
+    Slot 3:
+      Type: BREAD
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: BOW
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: STONE_SWORD
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: FLINT_AND_STEEL
+      Amount: 1
+      Data: 64
+  GUI Position: -1
+  Cost: 0.0
+  Name: MCSG
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+Torneo:
+  Armour:
+    Leggings:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_LEGGINGS
+    Chestplate:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_CHESTPLATE
+    Boots:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_BOOTS
+    Helmet:
+      Data: 0
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: DIAMOND_HELMET
+  Items:
+    Slot 6:
+      Type: POTION
+      Amount: 1
+      Data: 8258
+    Slot 5:
+      Type: POTION
+      Amount: 1
+      Data: 8258
+    Slot 4:
+      Type: POTION
+      Amount: 1
+      Data: 8258
+    Slot 3:
+      Type: POTION
+      Amount: 1
+      Data: 8258
+    Slot 2:
+      Type: POTION
+      Amount: 1
+      Data: 8258
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 5
+        FIRE_ASPECT: 2
+        DURABILITY: 3
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 64
+      Data: 1
+  GUI Position: -1
+  Cost: 0.0
+  Name: Torneo
+  Description: []
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Max health: 20
+  Command alias: false
+  Item breaking: true
+  Commands: []
+  Cooldown: 0
+Soldato:
+  GUI Position: -1
+  Items:
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 64
+      Data: 0
+    Slot 4:
+      Type: GOLDEN_APPLE
+      Amount: 3
+      Data: 1
+    Slot 3:
+      Type: COOKED_BEEF
+      Amount: 64
+      Data: 0
+    Slot 2:
+      Type: ARROW
+      Amount: 64
+      Data: 0
+    Slot 1:
+      Type: BOW
+      Amount: 1
+      Data: 0
+  Armour:
+    Leggings:
+      Data: 0
+      Enchantments:
+        PROTECTION_EXPLOSIONS: 4
+        PROTECTION_FIRE: 4
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: LEATHER_LEGGINGS
+      Dye: 8375321
+    Chestplate:
+      Data: 0
+      Enchantments:
+        PROTECTION_EXPLOSIONS: 4
+        PROTECTION_FIRE: 4
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: LEATHER_CHESTPLATE
+      Dye: 6717235
+    Boots:
+      Data: 0
+      Enchantments:
+        PROTECTION_EXPLOSIONS: 4
+        PROTECTION_FIRE: 4
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: LEATHER_BOOTS
+      Dye: 6717235
+    Helmet:
+      Data: 0
+      Enchantments:
+        PROTECTION_EXPLOSIONS: 4
+        PROTECTION_FIRE: 4
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      Type: LEATHER_HELMET
+      Dye: 8375321
+  Description: []
+  Item breaking: true
+  Commands: []
+  Name: Soldato
+  Cost: 0.0
+  GUI Item:
+    Data: 0
+    Amount: 1
+    Type: DIAMOND_SWORD
+  Command alias: false
+  Max health: 20
+  Potion Effects:
+    Speed:
+      Duration: 9985
+      Level: 6
+    Jump:
+      Duration: 9965
+      Level: 2
+  Cooldown: 0

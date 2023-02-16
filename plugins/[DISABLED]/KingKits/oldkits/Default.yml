@@ -1,0 +1,71 @@
+Name: Default
+
+Command alias: false
+
+Description:
+- The default KingKits
+- amazingly powerful kit!
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands:
+- feed <player>
+- tell <player> &6You have been fed for using the default kit.
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Iron Sword
+    Name: Default Kit Sword
+    Lore:
+    - '&6Slay your enemies!'
+    Enchantments:
+      Durability: 3
+  Slot 1:
+    Type: Golden Apple
+    Amount: 2
+  Slot 2:
+    Type: Potion
+    Data: 9
+    Durability: 8201
+    Potion:
+      Type: Increase Damage
+      Level: 1
+      Splash: false
+      Extended: false
+
+Armour:
+  Helmet:
+    Type: Iron Helmet
+  Chestplate:
+    Type: Leather Chestplate
+    Dye:
+      Red: 153
+      Green: 51
+      Blue: 51
+  Leggings:
+    Type: Iron Leggings
+  Boots:
+    Type: Iron Boots
+
+Potion effects:
+  1:
+    Type: Speed
+    Level: 1
+    Duration: 200

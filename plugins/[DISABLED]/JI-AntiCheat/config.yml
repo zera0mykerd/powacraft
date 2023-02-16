@@ -1,0 +1,146 @@
+autoban-time: 5
+silentban: true
+bans: 0
+removeFromPluginList: false
+xrayduration: 30
+setback: true
+Spider:
+  max-vl: 5
+  autoban: false
+  enabled: true
+Jesus:
+  max-vl: 100
+  autoban: false
+  enabled: true
+Speed (Type A):
+  max-vl: 5
+  autoban: false
+  enabled: false
+Speed (Type B):
+  max-vl: 15
+  autoban: false
+  enabled: false
+Glide:
+  max-vl: 5
+  autoban: false
+  enabled: true
+FlightNew:
+  max-vl: 5
+  autoban: false
+  enabled: true
+Fly:
+  max-vl: 5
+  autoban: false
+  enabled: true
+Regen:
+  max-vl: 12
+  autoban: false
+  enabled: true
+BedLeave:
+  max-vl: 5
+  autoban: false
+  enabled: true
+NoFall:
+  max-vl: 10
+  autoban: false
+  enabled: true
+Step:
+  max-vl: 5
+  autoban: false
+  enabled: true
+VClip:
+  max-vl: 5
+  autoban: false
+  enabled: true
+Phase:
+  max-vl: 5
+  autoban: false
+  enabled: false
+BlockHit:
+  max-vl: 5
+  autoban: false
+  enabled: true
+DoubleClick:
+  max-vl: 50
+  autoban: false
+  enabled: true
+Kill Aura (Type A):
+  max-vl: 5
+  autoban: false
+  enabled: false
+Kill Aura (AimBot):
+  max-vl: 5
+  autoban: false
+  enabled: false
+Kill Aura (Type C):
+  max-vl: 5
+  autoban: false
+  enabled: false
+Kill Aura (Click Pattern):
+  max-vl: 5
+  autoban: false
+  enabled: false
+Kill Aura (Type E):
+  max-vl: 5
+  autoban: false
+  enabled: false
+AttackSpeed:
+  max-vl: 5
+  autoban: false
+  enabled: false
+NoSwing:
+  max-vl: 5
+  autoban: false
+  enabled: true
+FastBow:
+  max-vl: 15
+  autoban: false
+  enabled: true
+Derp:
+  max-vl: 0
+  autoban: true
+  enabled: true
+Velocity (Vertical):
+  max-vl: 5
+  autoban: true
+  enabled: true
+Crits:
+  max-vl: 5
+  autoban: true
+  enabled: true
+Reach:
+  max-vl: 5
+  autoban: false
+  enabled: true
+ReachNew:
+  max-vl: 5
+  autoban: false
+  enabled: true
+HitAccuracy:
+  max-vl: 1
+  autoban: false
+  enabled: true
+MorePackets:
+  max-vl: 5
+  autoban: false
+  enabled: false
+Timer:
+  max-vl: 5
+  autoban: false
+  enabled: true
+Sneak:
+  max-vl: 5
+  autoban: false
+  enabled: true
+TabComplete:
+  max-vl: 5
+  autoban: false
+  enabled: false
+Crash:
+  max-vl: 0
+  autoban: true
+  enabled: true
+Blink:
+  max-vl: 5
+  autoban: true
+  enabled: true

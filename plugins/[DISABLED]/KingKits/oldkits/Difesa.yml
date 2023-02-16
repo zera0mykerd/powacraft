@@ -1,0 +1,66 @@
+Name: Difesa
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Gold Sword
+    Enchantments:
+      Durability: 1
+  Slot 1:
+    Type: Potion
+    Data: 2
+    Durability: 8194
+    Potion:
+      Type: Speed
+      Level: 1
+      Splash: false
+      Extended: false
+  Slot 2:
+    Type: Mushroom Soup
+    Name: '&4&lSENZA ZUPPE :P'
+  Slot 3:
+    Type: Mushroom Soup
+    Name: '&4&lSENZA ZUPPE :P'
+  Slot 4:
+    Type: Mushroom Soup
+    Name: '&4&lSENZA ZUPPE :P'
+
+Armour:
+  Helmet:
+    Type: Diamond Helmet
+  Chestplate:
+    Type: Diamond Chestplate
+  Leggings:
+    Type: Diamond Leggings
+  Boots:
+    Type: Diamond Boots
+
+Potion effects:
+  1:
+    Type: Jump
+    Level: 0
+    Duration: 1998880

@@ -1,0 +1,74 @@
+Name: misterioso
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Iron Axe
+  Slot 1:
+    Type: Carrot Item
+    Amount: 64
+  Slot 2:
+    Type: Mushroom Soup
+  Slot 3:
+    Type: Mushroom Soup
+  Slot 4:
+    Type: Mushroom Soup
+  Slot 5:
+    Type: Mushroom Soup
+  Slot 6:
+    Type: Mushroom Soup
+  Slot 7:
+    Type: Mushroom Soup
+  Slot 8:
+    Type: Potion
+    Data: 78
+    Durability: 8270
+    Potion:
+      Type: Invisibility
+      Level: 1
+      Splash: false
+      Extended: true
+  Slot 9:
+    Type: Iron Axe
+  Slot 10:
+    Type: Sign
+  Slot 11:
+    Type: Iron Axe
+
+Armour:
+  Chestplate:
+    Type: Leather Chestplate
+    Dye:
+      Red: 25
+      Green: 25
+      Blue: 25
+
+Potion effects:
+  1:
+    Type: Invisibility
+    Level: 0
+    Duration: 9080

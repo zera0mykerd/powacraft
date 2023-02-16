@@ -1,0 +1,83 @@
+Name: VipPowa
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Diamond Sword
+    Name: '&5&lPowaSword'
+    Enchantments:
+      Damage All: 2
+      Fire Aspect: 1
+      Knockback: 1
+  Slot 1:
+    Type: Golden Apple
+    Amount: 8
+    Data: 1
+    Durability: 1
+    Name: '&5&lPowaGapple'
+  Slot 2:
+    Type: Bow
+    Enchantments:
+      Arrow Damage: 2
+      Arrow Fire: 1
+      Arrow Infinite: 1
+  Slot 3:
+    Type: Cooked Beef
+    Amount: 64
+  Slot 8:
+    Type: Arrow
+    Name: '&5&lPowaArrow'
+    Enchantments:
+      Dig Speed: 5
+
+Armour:
+  Helmet:
+    Type: Diamond Helmet
+    Name: '&5&lPowaHelmet'
+    Enchantments:
+      Protection Environmental: 2
+      Durability: 1
+  Chestplate:
+    Type: Diamond Chestplate
+    Name: '&5&lPowaChestplate'
+    Enchantments:
+      Protection Environmental: 2
+      Durability: 1
+  Leggings:
+    Type: Diamond Leggings
+    Name: '&5&lPowaLeggins'
+    Enchantments:
+      Protection Environmental: 2
+      Durability: 1
+  Boots:
+    Type: Diamond Boots
+    Name: '&5&lPowaBoots'
+    Enchantments:
+      Protection Environmental: 2
+      Durability: 1
+
+Potion effects: {}

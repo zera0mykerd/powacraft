@@ -1,0 +1,191 @@
+Name: STAFF
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Diamond Sword
+    Amount: 64
+  Slot 1:
+    Type: Diamond Spade
+    Amount: 64
+  Slot 2:
+    Type: Diamond Axe
+    Amount: 64
+  Slot 3:
+    Type: Diamond Pickaxe
+    Amount: 64
+  Slot 4:
+    Type: Compass
+  Slot 5:
+    Type: Fishing Rod
+    Amount: 64
+  Slot 6:
+    Type: Watch
+  Slot 7:
+    Type: Flint And Steel
+    Amount: 64
+  Slot 8:
+    Type: Shears
+    Amount: 64
+  Slot 9:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of Zera
+    Skull: Zera
+  Slot 10:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of giampa3999
+    Skull: giampa3999
+  Slot 11:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of DarkPowa69
+    Skull: DarkPowa69
+  Slot 12:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of TommyCollen
+    Skull: TommyCollen
+  Slot 13:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of panda4k
+    Skull: panda4k
+  Slot 14:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of _marsy01_
+    Skull: _marsy01_
+  Slot 15:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of TheLordOwnerz
+    Skull: TheLordOwnerz
+  Slot 16:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of BRAYMIX_
+    Skull: BRAYMIX_
+  Slot 17:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of Cyberkeele62
+    Skull: Cyberkeele62
+  Slot 18:
+    Type: Vine
+  Slot 19:
+    Type: Vine
+  Slot 20:
+    Type: Vine
+  Slot 21:
+    Type: Vine
+  Slot 22:
+    Type: Vine
+  Slot 23:
+    Type: Vine
+  Slot 24:
+    Type: Vine
+  Slot 25:
+    Type: Vine
+  Slot 26:
+    Type: Vine
+  Slot 27:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of Frame27
+    Skull: Frame27
+  Slot 28:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of Dr_James
+    Skull: Dr_James
+  Slot 29:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of andymer
+    Skull: andymer
+  Slot 30:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of Miro04
+    Skull: miro04
+  Slot 31:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of EletroPOWER
+    Skull: EletroPOWER
+  Slot 32:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of ProcaimanHD
+    Skull: ProcaimanHD
+  Slot 33:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of andrea00
+    Skull: andrea00
+  Slot 34:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of Foxy
+    Skull: Foxy
+  Slot 35:
+    Type: Skull Item
+    Data: 3
+    Durability: 3
+    Name: Skull of ThunderOthy43
+    Skull: thunderothy43
+
+Armour:
+  Helmet:
+    Type: Diamond Helmet
+  Chestplate:
+    Type: Diamond Chestplate
+  Leggings:
+    Type: Diamond Leggings
+  Boots:
+    Type: Diamond Boots
+
+Potion effects: {}

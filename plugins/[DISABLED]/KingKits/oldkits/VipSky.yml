@@ -1,0 +1,90 @@
+Name: VipSky
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Diamond Sword
+    Name: '&5&lSkySword'
+    Enchantments:
+      Damage All: 2
+      Durability: 2
+  Slot 1:
+    Type: Ender Pearl
+    Amount: 16
+    Name: '&5&lSkyPearl'
+  Slot 2:
+    Type: Ender Pearl
+    Amount: 16
+    Name: '&5&lSkyPearl'
+  Slot 3:
+    Type: Cooked Beef
+    Amount: 64
+    Name: '&5&lSkySteak'
+  Slot 4:
+    Type: Mushroom Soup
+  Slot 5:
+    Type: Mushroom Soup
+  Slot 6:
+    Type: Mushroom Soup
+  Slot 7:
+    Type: Mushroom Soup
+  Slot 8:
+    Type: Mushroom Soup
+  Slot 31:
+    Type: Mushroom Soup
+  Slot 32:
+    Type: Mushroom Soup
+  Slot 33:
+    Type: Mushroom Soup
+  Slot 34:
+    Type: Mushroom Soup
+  Slot 35:
+    Type: Mushroom Soup
+
+Armour:
+  Helmet:
+    Type: Diamond Helmet
+    Name: '&5&lSkyHelmet'
+    Enchantments:
+      Protection Environmental: 1
+  Chestplate:
+    Type: Diamond Chestplate
+    Name: '&5&lSkyChestplate'
+    Enchantments:
+      Protection Environmental: 1
+  Leggings:
+    Type: Diamond Leggings
+    Name: '&5&lSkyLeggins'
+    Enchantments:
+      Protection Environmental: 1
+  Boots:
+    Type: Diamond Boots
+    Name: '&5&lSkyBoots'
+    Enchantments:
+      Protection Environmental: 1
+
+Potion effects: {}

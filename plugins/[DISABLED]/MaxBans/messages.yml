@@ -1,0 +1,60 @@
+disconnection:
+    you-were-kicked: "&4Sei stato espulso da &e&l{banner}&4 - Motivo: \n&c&l'{reason}'&f"
+    you-are-banned: "&4Sei stato bannato!\n Motivo: &c&l'{reason}'&4\nDa &e&l{banner}&f.\n{appeal-message}"
+    you-are-ipbanned: "&4Sei stato bannato per IP!\n Motivo: &c&l'{reason}'&4\nDa &e&l{banner}&f.\n{appeal-message}"
+    you-are-temp-banned: "&4Sei temporanemanete bannato!\n Motivo: &c&l'{reason}'&4\nDa &e&l{banner}&4.\nScadenza in:&c {time}.\n{appeal-message}"
+    you-are-temp-ipbanned: "&4Sei temporanemanete bannato per ip!\n Motivo: &c&l'{reason}'&4\nDa &e&l{banner}&4.\nScadenza in:&c {time}.\n{appeal-message}"
+    
+    you-are-rangebanned: "&fIl tuo indirizzo ip (&c{range}&f) risulta RangeBannato. Motivo: &c{reason}&f\nBy: &e&l{banner}&f.\n{appeal-message}"
+    you-are-temp-rangebanned: "&fIl tuo indirizzo ip (&c{range}&f) risulta TempRangeBannato.\nIl ban finisce in &a{time}&f.\nMotivo: &c{reason}&f\nDa: &e&l{banner}&f.\n{appeal-message}"
+    
+    you-are-proxied: "Espulso:\n Il tuo ip ({ip}) risulta nella lista proxy."
+    
+    lockdown-active: "&fServer risulta in lockdown mode. Prova di nuovo. Motivo: \n{reason}"
+    invalid-letters: "&fEspulso.\nIl tuo nome contiene caratteri non validi:\n&c'{letters}'&f"
+    invalid-name: "&fEspulso.\nIl tuo nome risulta invalido!"
+    
+    
+announcement:
+    player-was-kicked: "&4&l{name}&c espulso da &e&l{banner}&c per &6'{reason}'&c."
+    player-was-banned: "&e&l{banner}&c ha bannato &4&l{name}&c per &6'{reason}'&c."
+    player-was-ip-banned: "&e&l{banner}&c ha IP bannato &4&l{name}&c ('&a{ip}&c') per &6'{reason}'&c."
+    player-was-muted: "&e&l{banner}&c ha mutato &4&l{name}&c per &6{reason}"
+    player-was-tempbanned: "&e&l{banner}&c ha tempbannato &4&l{name}&c per {time} per &6'{reason}'&c"
+    player-was-tempipbanned: "&e&l{banner}&c ha temp IP bannato &4&l{name}&c ('&a{ip}&c') per {time} per &6'{reason}'&f"
+    player-was-temp-muted: "&e&l{banner}&c ha temp mutato &4&l{name}&c per &6{reason} per &a{time}."
+    player-was-unbanned: "&e&l{banner}&c ha sbannato &4&l{name}&c "
+    player-was-unmuted: "&e&l{banner}&c ha smutato &4&l{name}&c "
+    player-was-warned: "&e&l{banner}&c Ha avvertito &4&l{name}&c per &6'{reason}'&c"
+    ip-was-unbanned: "&4&l{ip}&c Risulta ora sbannato da &e&l{banner}&c."
+    player-warnings-cleared: "&e&l{banner}&c ha pulito &4&l{name}&c da avvertimenti."
+    unwarn-success: "&e&l{banner}&c ha perdonato &4&l{name}&c da avvertimenti."
+    
+error:
+    no-player-given: "&cNessun nome dato."
+    no-permission: "&4Non hai accesso a quel comando."
+    no-ip-known: "&cQuel giocatore non ha una cronologia IP!"
+    no-ipban-found: "&cNon ho trovato un IPban per &a{ip}&f."
+    no-ban-found: "&cNon ho trovato un ban per &a{name}&f."
+    no-mute-found: "&a{name}&c non risulta mutato."
+    no-dupeip-duplicates: "&fNo duplicato!"
+    no-history: "&fNessuna cronologia."
+    no-warnings: "&a{name}&cNon ha nessun avvertimento."
+    
+    unknown-player: "&cGiocatore non trovato: &a{name}&f"
+    player-already-banned: "&cIl giocatore risulta già bannato."
+    ip-already-banned: "&cL'indirizzo risulta già bannato."
+    
+    
+    tempban-shorter-than-last: "&cQuel giocatore ha un tempban che durerà più a lungo di quello che hai fornito!"
+    tempipban-shorter-than-last: "&cQuell'IP ha un tempban che durerà più a lungo di quello che hai fornito!"
+    tempmute-shorter-than-last: "&cQuel giocatore ha già un mute che dura più a lungo di quello che hai provato a dare."
+
+times:
+    hours: hour
+    minutes: minute
+    seconds: second
+    weeks: week
+    days: day
+    years: year
+    months: month

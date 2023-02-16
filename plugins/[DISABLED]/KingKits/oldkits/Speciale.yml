@@ -1,0 +1,59 @@
+Name: Speciale
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Iron Sword
+  Slot 1:
+    Type: Grilled Pork
+    Amount: 64
+  Slot 2:
+    Type: Mushroom Soup
+  Slot 3:
+    Type: Mushroom Soup
+  Slot 4:
+    Type: Mushroom Soup
+  Slot 5:
+    Type: Mushroom Soup
+  Slot 6:
+    Type: Mushroom Soup
+  Slot 7:
+    Type: Mushroom Soup
+  Slot 8:
+    Type: Mushroom Soup
+
+Armour:
+  Helmet:
+    Type: Iron Helmet
+  Chestplate:
+    Type: Iron Chestplate
+  Leggings:
+    Type: Iron Leggings
+  Boots:
+    Type: Iron Boots
+
+Potion effects: {}

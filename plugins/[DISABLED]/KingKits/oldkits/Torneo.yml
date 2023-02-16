@@ -1,0 +1,108 @@
+Name: Torneo
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Diamond Sword
+    Enchantments:
+      Damage All: 5
+      Fire Aspect: 2
+      Durability: 3
+  Slot 1:
+    Type: Golden Apple
+    Amount: 64
+    Data: 1
+    Durability: 1
+  Slot 2:
+    Type: Potion
+    Data: 66
+    Durability: 8258
+    Potion:
+      Type: Speed
+      Level: 1
+      Splash: false
+      Extended: true
+  Slot 3:
+    Type: Potion
+    Data: 66
+    Durability: 8258
+    Potion:
+      Type: Speed
+      Level: 1
+      Splash: false
+      Extended: true
+  Slot 4:
+    Type: Potion
+    Data: 66
+    Durability: 8258
+    Potion:
+      Type: Speed
+      Level: 1
+      Splash: false
+      Extended: true
+  Slot 5:
+    Type: Potion
+    Data: 66
+    Durability: 8258
+    Potion:
+      Type: Speed
+      Level: 1
+      Splash: false
+      Extended: true
+  Slot 6:
+    Type: Potion
+    Data: 66
+    Durability: 8258
+    Potion:
+      Type: Speed
+      Level: 1
+      Splash: false
+      Extended: true
+
+Armour:
+  Helmet:
+    Type: Diamond Helmet
+    Enchantments:
+      Protection Environmental: 4
+      Durability: 3
+  Chestplate:
+    Type: Diamond Chestplate
+    Enchantments:
+      Protection Environmental: 4
+      Durability: 3
+  Leggings:
+    Type: Diamond Leggings
+    Enchantments:
+      Protection Environmental: 4
+      Durability: 3
+  Boots:
+    Type: Diamond Boots
+    Enchantments:
+      Protection Environmental: 4
+      Durability: 3
+
+Potion effects: {}

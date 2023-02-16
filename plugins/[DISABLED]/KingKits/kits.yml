@@ -1,0 +1,53 @@
+# KingKits Kits Configuration.
+First run: false
+Default:
+  Command alias: false
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: IRON_HELMET
+      Data: 0
+    Leggings:
+      Type: IRON_LEGGINGS
+      Data: 0
+    Boots:
+      Type: IRON_BOOTS
+      Data: 0
+    Chestplate:
+      Dye: 10040115
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+  Item breaking: true
+  Cooldown: 0
+  Max health: 20
+  Commands:
+  - feed <player>
+  - tell <player> &6You have been fed for using the default kit.
+  Items:
+    Slot 0:
+      Type: IRON_SWORD
+      Name: Default Kit Sword
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+      Lore:
+      - '&6Iron Slayer'
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 2
+      Data: 0
+    Slot 2:
+      Type: POTION
+      Amount: 1
+      Data: 8201
+  Potion Effects:
+    Speed:
+      Level: 2
+      Duration: 10
+  Cost: 0.0
+  GUI Position: -1
+  Name: Default

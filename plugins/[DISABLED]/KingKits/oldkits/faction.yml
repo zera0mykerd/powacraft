@@ -1,0 +1,78 @@
+Name: faction
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Stone Sword
+  Slot 1:
+    Type: Stone Spade
+  Slot 2:
+    Type: Stone Pickaxe
+  Slot 3:
+    Type: Stone Axe
+  Slot 4:
+    Type: Bow
+  Slot 8:
+    Type: Apple
+    Amount: 32
+  Slot 9:
+    Type: Arrow
+    Amount: 64
+  Slot 10:
+    Type: Arrow
+    Amount: 64
+  Slot 11:
+    Type: Arrow
+    Amount: 64
+
+Armour:
+  Helmet:
+    Type: Leather Helmet
+    Dye:
+      Red: 160
+      Green: 101
+      Blue: 64
+  Chestplate:
+    Type: Leather Chestplate
+    Dye:
+      Red: 160
+      Green: 101
+      Blue: 64
+  Leggings:
+    Type: Leather Leggings
+    Dye:
+      Red: 160
+      Green: 101
+      Blue: 64
+  Boots:
+    Type: Leather Boots
+    Dye:
+      Red: 160
+      Green: 101
+      Blue: 64
+
+Potion effects: {}

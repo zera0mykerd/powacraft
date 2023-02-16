@@ -1,0 +1,161 @@
+General:
+  Command error: '&cErrore individuato'
+  Command permission: '&4Non hai accesso al comando'
+  Command usage: '&cUsa: &4/%s %s'
+  Player not found: '%s Non esiste online'
+  Player command: '&cDevi essere un giocatore di utilizzare il comando!'
+  Command disabled: '&cThat command has been disabled.'
+  Kit list: '&6PvP Kits: &a%s'
+  Kit list title: '&aKits (%s):'
+  No kit selected: '&cYou have not chosen a kit.'
+  No kits: '&4There are no kits.'
+  No kits available: '&cNo kits available'
+  Item drop: '&cYou cannot drop this item whilst using a kit.'
+  Item pickup: '&cYou cannot drop this item whilst using a kit.'
+Command:
+  Create kit:
+    Created: "&4%s &6\xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 stato creato."
+    Overwrote: "&4%s &6\xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 stato sovrascritto."
+    Illegal characters: '&6The kit name must only consist of letters, numbers and
+      underscores.'
+    Denied: '&cA plugin has not allowed you to create this kit.'
+    Empty inventory: '&cYou have nothing in your inventory!'
+    Overwrite: '&4%s &6has been overwritten.'
+    Global:
+      Description: '&cDescription: &4Create your own PvP kit with every item in your
+        inventory.'
+    User:
+      Description: '&cDescription: &4Create your own personal PvP kit with every item
+        in your inventory.'
+      Global kit exists: '&cA PvP kit already exists with that name!'
+      Maximum personal kits: '&cYou have reached the maximum number of personal kits
+        you can create.'
+  Create user kit:
+    Created: "&4%s &6\xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 stato creato."
+    Maximum kits: '&cHai raggiunto il massimo numero di kit'
+    Overwrote: "&4%s &6\xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 stato sovrascritto."
+  Delete kit:
+    Deleted: '&4%s &6Eliminato con successo.'
+    Deleted all: '&6Successfully deleted &c%d &6kit(s).'
+    Error: '&4%s&6''s deletion was unsuccessful.'
+    Player message: '&4%s &cdeleted the kit you were using!'
+    Global:
+      Non-existent: '&4That kit does not exist.'
+      Description: '&cDescription: &4Delete a PvP Kit.'
+    User:
+      Non-existent: '&4That user kit does not exist.'
+      Description: '&cDescription: &4Delete a personal PvP Kit.'
+  Delete user kit:
+    Deleted: '&4%s &6Eliminato con successo.'
+    Deleted all: '&6Successfully deleted &c%d &6user kit(s).'
+  Kit:
+    List:
+      Title: ''
+      No kits: '&cKit non disponibile'
+      Message: <colour>%s
+      No permission: '&4You do not have permission to list the kits.'
+    Other player: '&6You set %s''s kit. This may not have been successful if you typed
+      an invalid kit name, if they already have a kit, if they do not have permission
+      to use that kit or they do not have enough money.'
+  Rename kit:
+    Renamed: '&6Rinominato con successo %s to %s.'
+    Illegal characters: '&6The new kit name must only consist of letters, numbers
+      and underscores.'
+    Exists: '&c%s already exists.'
+    Global:
+      Description: '&cDescription: &4Rename a PvP kit.'
+    User:
+      Description: '&cDescription: &4Rename a user PvP kit.'
+  Rename user kit:
+    Renamed: '&6Rinominato con successo %s to %s.'
+  Refill:
+    Bowl: "&c\xc3\u0192\xc6\u2019\xc3\u2039\xe2\u20ac\_ necessario disporre di una\
+      \ ciotola in mano."
+    Not enough money: '&aNon avete abbastanza soldi per riempire la vostra ciotola(s).'
+    Full inventory: '&cHai inventario pieno'
+  Reload:
+    Successful: '&6Successfully reloaded KingKits v%s.'
+    Failed: '&cFailed to reload KingKits'' configurations.'
+  Config:
+    Added: '&6You have received a book and a quill with the config in it. Type ''/kk
+      config'' with a signed book to save it.'
+    Saved: '&6Successfully saved the book''s contents to the config.'
+  Killstreak:
+    Self: '&6You are on a(n) &b%d &6killstreak.'
+    Other: '&6%s is on a(n) &b%d &6killstreak.'
+  Score:
+    Self: '&6Score: &b%d'
+    Other: '&6%s''s score: &b%d'
+  View kit:
+    Self:
+      Has kit: '&6You are using the kit &c%s&6.'
+      No kit: '&6You are not using a kit.'
+    Other:
+      Has kit: '&6%s is using the kit &c%s&6.'
+      No kit: '&6%s is using not using a kit.'
+  General:
+    In-game: '&cYou must be a player to use that command!'
+    Error: '&cAn error occurred.'
+    No permission: '&4You do not have access to that command.'
+    Usage: '&cUsage: &4/%s'
+    Disabled: '&cThis command is disabled in the configuration.'
+    World: '&cYou cannot use this command in the world you are in.'
+    Not online: '%s does not exist or is not online.'
+Compass:
+  Player: '&eLa bussola punta su %s.'
+  Spawn: Nessun player individuato.
+Kit:
+  Delay: ''
+  Illegal characters: '&6Il kit contiene caratteri illegali.'
+  No permission: '&cNessun permesso per questo kit &4%s&c.'
+  Not enough money: ''
+  Not found: '&4%s &6kit non esiste'
+  One per life: "&6Hai gi\xc3\u0192\xc6\u2019\xc3\u201a\xc2\_ questo kit!"
+  Unlocked: ''
+  Set: '&6&lBUONA LOTTA!!!'
+  Multiple found: '&cMultiple kits exist with that name. The kit name is case sensitive.'
+  Already chosen: '&6You have already chosen a kit!'
+  Non-existent: '&4%s &6does not exist.'
+Sign:
+  Create:
+    No permission: '&4Nessun permesso'
+    Incorrectly setup: '&cCartello incorretto'
+    Second line empty: '&cPlease enter a kit name on the second line.'
+  Use:
+    No permission: '&cNessun permesso'
+  General:
+    Incorrectly set up: '&cThat sign has incorrectly been set up.'
+Time:
+  Second: second
+  Seconds: seconds
+  Minute: minute
+  Minutes: minutes
+  Hour: hour
+  Hours: hours
+  Day: day
+  Days: days
+Economy:
+  Kit cost: '&a%.2f was taken from your balance.'
+  Money per death: '&aYou lost %.2f for being killed by %s.'
+  Money per kill: '&aYou received %.2f for killing %s.'
+Event:
+  Block:
+    Break: '&cYou cannot break blocks here!'
+    Place: '&cYou cannot place blocks here!'
+Gui:
+  Kits menu:
+    Title: '&aKits'
+    Global: '&cGlobal kits'
+    User: '&eUser kits'
+  Kits:
+    Title: '&aPvP Kits'
+  User kits:
+    Title: '&aUser Kits'
+  Preview kit:
+    Title: '&aPreview - &b<kit>'
+Prefix:
+  Plugin: '&6[&4KingKits&6] &a'
+GUI:
+  Preview:
+    Title: '&c%s &7kit preview'
+    Back: '&bBack'

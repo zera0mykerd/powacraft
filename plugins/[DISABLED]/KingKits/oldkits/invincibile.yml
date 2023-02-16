@@ -1,0 +1,78 @@
+Name: invincibile
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Gold Sword
+    Enchantments:
+      Durability: 3
+  Slot 1:
+    Type: Golden Apple
+    Amount: 32
+    Data: 1
+    Durability: 1
+  Slot 2:
+    Type: Golden Apple
+    Amount: 32
+    Data: 1
+    Durability: 1
+  Slot 3:
+    Type: Golden Apple
+    Amount: 32
+    Data: 1
+    Durability: 1
+  Slot 4:
+    Type: Golden Apple
+    Amount: 32
+    Data: 1
+    Durability: 1
+  Slot 5:
+    Type: Golden Apple
+    Amount: 32
+    Data: 1
+    Durability: 1
+  Slot 6:
+    Type: Golden Apple
+    Amount: 32
+    Data: 1
+    Durability: 1
+  Slot 7:
+    Type: Bow
+    Enchantments:
+      Arrow Infinite: 1
+  Slot 8:
+    Type: Arrow
+
+Armour:
+  Helmet:
+    Type: Leather Helmet
+    Dye:
+      Red: 160
+      Green: 101
+      Blue: 64
+
+Potion effects: {}

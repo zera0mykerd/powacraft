@@ -1,0 +1,81 @@
+Name: vip3
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Diamond Sword
+    Enchantments:
+      Damage All: 3
+      Durability: 2
+  Slot 1:
+    Type: Golden Apple
+    Amount: 20
+    Data: 1
+    Durability: 1
+  Slot 2:
+    Type: Cooked Beef
+    Amount: 64
+  Slot 3:
+    Type: Mushroom Soup
+  Slot 4:
+    Type: Mushroom Soup
+  Slot 5:
+    Type: Mushroom Soup
+  Slot 6:
+    Type: Mushroom Soup
+  Slot 7:
+    Type: Mushroom Soup
+  Slot 8:
+    Type: Mushroom Soup
+
+Armour:
+  Helmet:
+    Type: Diamond Helmet
+    Enchantments:
+      Protection Environmental: 2
+      Durability: 2
+  Chestplate:
+    Type: Diamond Chestplate
+    Enchantments:
+      Protection Environmental: 2
+      Durability: 2
+  Leggings:
+    Type: Diamond Leggings
+    Enchantments:
+      Protection Environmental: 2
+      Durability: 2
+  Boots:
+    Type: Diamond Boots
+    Enchantments:
+      Protection Environmental: 2
+      Durability: 2
+
+Potion effects:
+  1:
+    Type: Jump
+    Level: 0
+    Duration: 1999940

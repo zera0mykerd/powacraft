@@ -1,0 +1,63 @@
+#### Matrix Config - language.yml ##################################################
+#
+#     Hi, welcome to use Matrix anti-cheat, this is language.yml, which is used
+#  to define the display language of anti-cheat. Here you can define what message
+#  the anti-cheat displays.
+#
+#  - If you encounter any problems, please go to our official Discord
+#  group for help: https://discord.gg/pEvY55J
+#
+#  Anyway, thanks for using Matrix anticheat! â?
+#
+#####################################################################################
+
+# You can define the message prefix here
+prefix: '&5&l[&dAntiCheat&5&l] &e> &a&o'
+
+# Define the announcement message after the player is kicked out by anti-cheating
+kick-format: 'giocatore &2&n%player%&a&o kickato per cheating!'
+
+# Should Matrix broadcast a message when a player is kicked?
+kick-broadcast: true
+
+# What message should send to the player when Matrix detects
+# that the player is sending chat messages too fast?
+spam-warning: 'Non puoi chattare cosi velocemente o inviare di nuovo lo stesso contenuto!'
+
+# Define the format of the verbose message
+#
+#  What is "verbose message"?
+#    When the player is detected by Matrix for any cheating, Matrix will output a
+#    debugging message to display the detection information, which will be useful
+#    for developers to debug anti-cheat. You can toggle it with the "/matrix verbose"
+#    command, but usually you donâ€™t need to read this message, it usually only needs
+#    to be used when reporting a bug.
+#
+verbose-format: '&7%player% ha fallito &2%check% &7check &8| &7%message% &b(+%add_vl%) &8| &7vl:%vl% ping:%ping% tps:%tps% componente: %component% ver: %version%'
+
+# Defines the message that matrix blocks it when the player tries to quickly
+# reconnect to the server after being kicked out by the anti-cheat
+relog-message: '&5&l[&dAntiCheat&5&l] &e> &a&oAttendi %time_left% secondo prima di riloggare!'
+
+# Global Placeholders, you can define constants here, you can use them in checks.yml
+#
+#  For example, define:
+#     kick_help: "If you think it's a false positive, you can contact the Mod to solve the false kick"
+#  then you can use %gp_kick_help% in checks.yml, It will be automatically replaced with this sentence
+#
+global_placeholder: { }
+
+# Define Commands description
+commands:
+  status: 'Vede lo stato del giocatore'
+  verbose: 'Mostra / Nascondi i messaggi dettagliati di Matrix'
+  notify: 'Invia un messaggio a tutto lo staff online'
+  toggle-notify: 'Attiva o disattiva le notifiche di output'
+  npc: 'Genera un NPC di rilevamento KillAura dietro il giocatore'
+  kick: 'Espelle un giocatore'
+  msg: 'Invia messaggi di avviso a un giocatore'
+  gui: 'Apre il pannello di controllo'
+  violations: 'Apre la GUI delle violazioni'
+  ping: 'Ottieni il valore di latenza del giocatore'
+  cps: 'Monitorare i dati CPS del giocatore'
+  reload: 'Ricarica i file di configurazione'

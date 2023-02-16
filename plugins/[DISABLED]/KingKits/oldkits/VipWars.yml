@@ -1,0 +1,86 @@
+Name: VipWars
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Diamond Sword
+    Name: '&6&lWarSword'
+    Enchantments:
+      Damage All: 4
+      Durability: 2
+  Slot 1:
+    Type: Golden Apple
+    Amount: 5
+    Data: 1
+    Durability: 1
+    Name: '&6&lWarGapple'
+  Slot 2:
+    Type: Cooked Beef
+    Amount: 64
+    Name: '&6&lWarSteak'
+  Slot 3:
+    Type: Mushroom Soup
+  Slot 4:
+    Type: Mushroom Soup
+  Slot 5:
+    Type: Mushroom Soup
+  Slot 6:
+    Type: Mushroom Soup
+  Slot 7:
+    Type: Mushroom Soup
+  Slot 8:
+    Type: Mushroom Soup
+  Slot 33:
+    Type: Mushroom Soup
+  Slot 34:
+    Type: Mushroom Soup
+  Slot 35:
+    Type: Mushroom Soup
+
+Armour:
+  Helmet:
+    Type: Diamond Helmet
+    Name: '&6&lWarHelmet'
+    Enchantments:
+      Durability: 2
+  Chestplate:
+    Type: Diamond Chestplate
+    Name: '&6&lWarChestplate'
+    Enchantments:
+      Durability: 2
+  Leggings:
+    Type: Diamond Leggings
+    Name: '&6&lWarLeggins'
+    Enchantments:
+      Durability: 2
+  Boots:
+    Type: Diamond Boots
+    Name: '&6&lWarBoots'
+    Enchantments:
+      Durability: 2
+
+Potion effects: {}

@@ -1,0 +1,98 @@
+Name: Nether
+
+Command alias: false
+
+Description: []
+
+Cost: 0.0
+
+Cooldown: 0.0
+
+Max health: 20.0
+
+Walk speed: 0.2
+
+Auto-unlock score: -1
+
+Breakable items: false
+
+Commands: []
+
+Killstreak commands: {}
+
+GUI:
+  Position: -1
+  Item:
+    Type: Diamond Sword
+
+Items:
+  Slot 0:
+    Type: Gold Sword
+    Enchantments:
+      Fire Aspect: 1
+  Slot 1:
+    Type: Watch
+  Slot 2:
+    Type: Mushroom Soup
+  Slot 3:
+    Type: Mushroom Soup
+  Slot 4:
+    Type: Mushroom Soup
+  Slot 5:
+    Type: Mushroom Soup
+  Slot 6:
+    Type: Mushroom Soup
+  Slot 7:
+    Type: Mushroom Soup
+  Slot 8:
+    Type: Mushroom Soup
+  Slot 27:
+    Type: Mushroom Soup
+  Slot 28:
+    Type: Mushroom Soup
+  Slot 29:
+    Type: Mushroom Soup
+  Slot 30:
+    Type: Mushroom Soup
+  Slot 31:
+    Type: Mushroom Soup
+  Slot 32:
+    Type: Mushroom Soup
+  Slot 33:
+    Type: Mushroom Soup
+  Slot 34:
+    Type: Mushroom Soup
+  Slot 35:
+    Type: Mushroom Soup
+
+Armour:
+  Helmet:
+    Type: Gold Helmet
+    Enchantments:
+      Protection Fire: 4
+  Chestplate:
+    Type: Gold Chestplate
+    Enchantments:
+      Protection Fire: 4
+  Leggings:
+    Type: Gold Leggings
+    Enchantments:
+      Protection Fire: 4
+  Boots:
+    Type: Gold Boots
+    Enchantments:
+      Protection Fire: 4
+
+Potion effects:
+  1:
+    Type: Regeneration
+    Level: 0
+    Duration: 199420
+  2:
+    Type: Jump
+    Level: 1
+    Duration: 198220
+  3:
+    Type: Fire Resistance
+    Level: 0
+    Duration: 199100
