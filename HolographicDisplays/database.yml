@@ -1,0 +1,1057 @@
+# 
+#  location: powaspawn, -2384.400, 32.008, -1295.451
+#  lines:
+#  - '&b&l&n&o100% &e&l&k&n&oIII&3&l&n&oAnti&9&l&n&oGrief&6&l&n&k&oIII'
+#  - '&5&l&n&oSERVER'
+#  - '&7&l:D'
+shop:
+  location: fazioni, -356.561, 133.200, 15.480
+  lines:
+  - '&c&kIII &bshop &c&kIII'
+portali:
+  location: fazioni, -375.582, 133.200, 15.423
+  lines:
+  - '&6P&7O&4R&9T&3A&aL&dS'
+top:
+  location: fazioni, -716.249, 134.200, 215.554
+  lines:
+  - '&b&lBenvenuto &4&lAl &1Warp'
+  - '&aTop'
+pianura:
+  location: fazioni, -373.592, 133.200, 19.954
+  lines:
+  - '&0&l----------'
+  - '&2&lpianura'
+  - '&0&l----------'
+mare:
+  location: fazioni, -373.536, 133.200, 24.986
+  lines:
+  - '&0&l----------'
+  - '&1&lmare'
+  - '&0&l----------'
+nether:
+  location: fazioni, -375.872, 133.200, 26.441
+  lines:
+  - '&0&l----------'
+  - '&4&lnether'
+  - '&0&l----------'
+neve:
+  location: fazioni, -380.893, 133.200, 26.616
+  lines:
+  - '&0&l----------'
+  - '&f&lNEVE'
+  - '&0&l----------'
+jungla:
+  location: fazioni, -383.698, 133.200, 24.971
+  lines:
+  - '&0&l----------'
+  - '&a&ljungla'
+  - '&0&l----------'
+end:
+  location: fazioni, -383.700, 133.200, 20.054
+  lines:
+  - '&0&l----------'
+  - '&5&lEND'
+  - '&0&l----------'
+deserto:
+  location: fazioni, -382.062, 133.200, 17.300
+  lines:
+  - '&0&l----------'
+  - '&e&lDeserto'
+  - '&0&l----------'
+sky-pvp-2:
+  location: sky-pvp, -1036.255, 117.654, 430.199
+  lines:
+  - '&0&lXXXXXXXXX'
+  - '&b&lSKY-PVP'
+  - '&0&l&kXXXXXXXXXX'
+ciao:
+  location: sky-pvp, -1049.895, 116.482, 431.878
+  lines:
+  - '&u&lVAI BUTTATI'
+  - '&u&l|||'
+  - '&u&lVVV'
+sole:
+  location: sky-pvp, -1140.886, 69.155, 332.372
+  lines:
+  - '&4&lSOLE (NON RAGGIUNGIBILE)'
+kitpvp:
+  location: kitpvp, 1570.475, 6.200, 256.519
+  lines:
+  - '&b&lKit-pvp'
+  - '&1&lClassico'
+kitpvp2:
+  location: kitpvp, 1562.574, 6.200, 248.393
+  lines:
+  - '&6&lKit-pvp'
+  - '&e&lEnchant'
+hub2:
+  location: kitpvp, 1570.472, 6.200, 238.517
+  lines:
+  - '&2&lHub'
+1vs1:
+  location: kitpvp, 1578.621, 6.200, 248.430
+  lines:
+  - '&1&l1&6&lvs&1&l1'
+arene:
+  location: 1vs1, 0.528, 69.365, 0.795
+  lines:
+  - '&6&lBenvenuto al warp'
+  - '&3&lARENE'
+seleziona:
+  location: 1vs1, 0.795, 68.865, 11.921
+  lines:
+  - '&3&lSeleziona un warp :)'
+mcsg:
+  location: 1vs1, -10.599, 68.155, 8.863
+  lines:
+  - '&6&lMCSG'
+mcsginfo:
+  location: 1vs1, -73.373, 91.200, 363.791
+  lines:
+  - '&b&lINFO'
+info2:
+  location: 1vs1, -76.518, 92.200, 373.295
+  lines:
+  - '&b&lInfo2'
+pulsar:
+  location: kitpvp, 1255.922, 100.209, 124.248
+  lines:
+  - '&4&lSEI SULLA &c&l&nPULSAR'
+rovine:
+  location: kitpvp, 936.136, 64.519, 248.903
+  lines:
+  - '&a&lROVINE'
+luna:
+  location: kitpvp, 1247.437, 71.200, 356.740
+  lines:
+  - '&1&lBenvenuto sulla &f&lLuna'
+banca:
+  location: fazioni, -381.015, 133.304, 3.445
+  lines:
+  - '&a&l$$$$$$$$'
+  - '&e&lBANCA'
+  - '&a&l$$$$$$$$'
+'1':
+  location: fazioni, -117.449, 115.200, -142.300
+  lines:
+  - '&k&b&l&kI&3&l1&k&b&l&kI'
+'2':
+  location: fazioni, -120.376, 115.200, -142.300
+  lines:
+  - '&e&l&kI&6&l2&e&l&kI'
+'3':
+  location: fazioni, -123.519, 115.200, -142.300
+  lines:
+  - '&7&l&kI&8&l3&7&l&kI'
+staffers:
+  location: fazioni, -336.541, 133.197, 25.353
+  lines:
+  - '&4&lSTAFFERS'
+start:
+  location: fazioni, -1918.937, 51.238, -162.799
+  lines:
+  - '&a&l&kIII&2&lSTART&a&l&kIII'
+finish:
+  location: fazioni, -2415.641, 41.083, -366.705
+  lines:
+  - '&c&l&k&nIII&4&l&nFINISH&c&l&k&nIII'
+cliccami:
+  location: fazioni, -2423.803, 40.753, -369.367
+  lines:
+  - '&6&lCLICCAMI'
+armi:
+  location: ShotGun, 0.480, 38.780, -1.634
+  lines:
+  - '&4&lSCEGLIERE LE ARMI'
+c1:
+  location: spawn, 52.394, 76.423, -28.672
+  lines:
+  - '&4&lCall Of Duty'
+minigames:
+  location: spawn, 50.540, 198.855, -46.319
+  lines:
+  - '&u&l&nNEW LOBBY'
+  - '&u&l|'
+  - '&u&l|'
+  - '&u&l|'
+  - '&u&lV'
+normal-game:
+  location: spawn, 54.530, 198.855, -46.334
+  lines:
+  - '&u&l&nNORMAL GAME'
+  - '&u&l|'
+  - '&u&l|'
+  - '&u&l|'
+  - '&u&lV'
+skypvp:
+  location: kitpvp, 1576.568, 6.200, 241.450
+  lines:
+  - '&1&lSky-pvp'
+morte:
+  location: ShotGun, -30.655, 25.742, -31.076
+  lines:
+  - '&6&lATTENZIONE PERICOLO &a&l&nMOB'
+skypvp2:
+  location: spawn, 131.811, 132.806, -60.526
+  lines:
+  - '&9&lSKY-PVP'
+skyblock:
+  location: spawn, 131.769, 132.827, -50.579
+  lines:
+  - '&6&lSKYBLOCK'
+scegli:
+  location: spawn, 137.293, 133.304, -55.657
+  lines:
+  - '&b&lScegli :3'
+enchant:
+  location: fazioni, -377.700, 133.680, -9.462
+  lines:
+  - '&0&l---------'
+  - '&b&lEnchant'
+  - '&0&l---------'
+potions:
+  location: fazioni, -380.587, 133.114, -43.625
+  lines:
+  - '&6&l/////////'
+  - '&e&lPozioni & Alchimia'
+  - '&6&l\\\\\\\\\'
+perdiqua:
+  location: ShotGun, 0.383, 47.099, 0.634
+  lines:
+  - '&8&lPer di qua'
+  - '&7&l|'
+  - '&7&lV'
+creative:
+  location: spawn, 52.661, 76.739, -79.136
+  lines:
+  - '&6&lCreative'
+vanilla:
+  location: spawn, 52.678, 77.893, -96.576
+  lines:
+  - '&e&l&kIII &3&lVanilla &e&l&kIII'
+faction:
+  location: spawn, 52.121, 78.269, -12.055
+  lines:
+  - '&e&l&kIII &c&lFaction &e&l&kIII'
+kit_pvp:
+  location: spawn, 10.259, 77.843, -54.627
+  lines:
+  - '&e&l&kIII &a&lKitPvP &e&l&kIII'
+skygames:
+  location: spawn, 94.888, 77.921, -54.570
+  lines:
+  - '&e&l&kIII &b&lSkyGames &e&l&kIII'
+authme:
+  location: spawn, 52.474, 200.966, -45.925
+  lines:
+  - '&0&l----------------------------------------'
+  - '&9&lPer registrarti fare &3&l/register (password) (password)'
+  - '&2&lPer loggarti fare &a&l/login (password)'
+  - '&0&l----------------------------------------'
+welcome:
+  location: spawn, 52.545, 80.639, -54.411
+  lines:
+  - '&e&lBenvenuto &u&l{player} &e&lsu &6&l&kIII&2&l&nPow&f&l&naCr&4&l&naft&6&l&kIII'
+  - '&e&lAttualmente online: &a&l{online}&e&l/&a&l{max_players}'
+  - '&e&lOrario attuale: &b&l{time}'
+notre-dame:
+  location: kitpvp, 956.967, 29.529, 428.194
+  lines:
+  - '&5Benvenuto a &4Notre-Dame'
+kitpvp_shop:
+  location: kitpvp, 1059.837, 14.932, 512.668
+  lines:
+  - '&6Benvenuto allo &e&lShop'
+noshop:
+  location: sky-pvp, -1031.300, 116.111, 421.379
+  lines:
+  - '&4Shop non abilitato'
+  - '&4allo &9Sky-PvP'
+control:
+  location: spawn, 29999911.588, 99.593, 29999918.998
+  lines:
+  - '&5&l{&4&lControllo &c&l&nHack&5&l}'
+  - '&eSegui le istruzioni in chat'
+  - '&eControlliamo sistemi operativi: &a&lWindows &e/ &a&lMac &e/ &a&lLinux'
+  - '&eControlliamo anche chi non ha accesso di &bAmministratore'
+  - '&eRichiediamo almeno un gestore di archivi e un file manager'
+  - '&eFornisci i dati di &bControllo remoto &ee non sloggare'
+mvspawn:
+  location: sky-pvp, -1045.830, 115.787, 431.738
+  lines:
+  - '&6Per tornare allo spawn fare: &e&l&o/mvspawn'
+mvspawn1:
+  location: kitpvp, 1099.131, 11.196, 235.289
+  lines:
+  - '&6Per tornare allo spawn fare: &e&l&o/mvspawn'
+mvspawn2:
+  location: arena-pvp, -98.469, 104.423, -53.500
+  lines:
+  - '&6Per tornare allo spawn fare: &e&l&o/mvspawn'
+mvspawn3:
+  location: ShotGun, 0.274, 39.893, 6.022
+  lines:
+  - '&6Per tornare allo spawn fare: &e&l&o/mvspawn'
+mvspawn4:
+  location: 1vs1, 0.527, 68.217, 7.055
+  lines:
+  - '&6Per tornare allo spawn fare: &e&l&o/mvspawn'
+minieracarbone:
+  location: prison, -62.066, 82.999, -22.362
+  lines:
+  - '&0&lMiniera Carbone'
+minieralegno:
+  location: prison, -62.358, 83.528, 22.031
+  lines:
+  - '&6&lMiniera legno'
+zonaenchant:
+  location: prison, -85.180, 83.164, -0.599
+  lines:
+  - '&u&lZona Enchant'
+minierapietra:
+  location: prison, 63.126, 83.154, 20.310
+  lines:
+  - '&7&lMiniera Pietra'
+zonafornaci:
+  location: prison, 63.577, 83.154, -21.655
+  lines:
+  - '&8&lZona fornaci'
+zonapesca:
+  location: prison, 84.247, 83.154, -0.517
+  lines:
+  - '&b&lZona di Pesca'
+miniera:
+  location: prison, 0.647, 83.153, -22.949
+  lines:
+  - '&u&l&kIII &4&lMiniera &c&lPrincipale &u&l&kIII'
+zonabasilare:
+  location: prison, 23.715, 83.512, -0.546
+  lines:
+  - '&6&l&kiii &e&lZona basilare &6&l&kiii'
+zonaavanzata:
+  location: prison, -21.500, 83.505, -0.661
+  lines:
+  - '&a&l&kiii &2&lZona avanzata &a&l&kiii'
+prison:
+  location: spawn, 28.404, 76.385, -54.419
+  lines:
+  - '&2&lPrison'
+mvspawn5:
+  location: fazioni, -346.780, 133.155, -10.222
+  lines:
+  - '&6Per tornare allo spawn fare: &e&l&o/mvspawn'
+mvspawn6:
+  location: world, -20.920, 93.739, 240.589
+  lines:
+  - '&6Per tornare allo spawn fare: &e&l&o/mvspawn'
+mvspawn7:
+  location: FlagWars, -57.812, 7.296, 52.481
+  lines:
+  - '&6Per tornare allo spawn fare: &e&l&o/mvspawn'
+flagpvp:
+  location: spawn, 77.009, 76.742, -54.429
+  lines:
+  - '&1&lFlagPvP'
+exploit:
+  location: plotworld, -47.300, 88.200, -57.535
+  lines:
+  - '&4&lAttenzione avviso importante:'
+  - '&cSe si prova ad usare qualche exploit sfruttando la creativa'
+  - '&cè possibile che il client si bugga per sempre e non sarà'
+  - '&cin alcun modo possibile riportare il vostro account allo stato originario,'
+  - '&clo staff raccomanda gli utenti di fare molta attenzione riguardo'
+  - '&callo sfruttamento di eventuali bugs del videogioco per ottenere exploits'
+  - '&cnocivi per il client stesso.'
+  - '&4&nNon usare hacks!'
+hub:
+  location: world, -2.364, 93.790, 240.453
+  lines:
+  - '&6Ti trovi nel vanilla'
+  - '&6per andare alla lobby fare: &e&l/HUB'
+oggetti:
+  location: sky-pvp, -299816.507, 48.163, 322666.501
+  lines:
+  - '&6Sistema rimuovi oggetti'
+  - '&6sulle pedane.'
+  - '&6e rimuovi effetti.'
+perikit:
+  location: sky-pvp, -299821.691, 46.504, 322661.394
+  lines:
+  - '&5&lPer i kit andare li...'
+zonapvp1:
+  location: sky-pvp, -299816.555, 46.529, 322632.252
+  lines:
+  - '&0&l(&4&l!&0&l) &4&lZona PvP &0&l(&4&l!&0&l)'
+zonapvp2:
+  location: sky-pvp, -299816.500, 46.155, 322700.845
+  lines:
+  - '&0&l(&4&l!&0&l) &4&lZona PvP &0&l(&4&l!&0&l)'
+zonapvp3:
+  location: sky-pvp, -299850.683, 46.489, 322666.380
+  lines:
+  - '&0&l(&4&l!&0&l) &4&lZona PvP &0&l(&4&l!&0&l)'
+zonapvp4:
+  location: sky-pvp, -299782.396, 46.155, 322666.537
+  lines:
+  - '&0&l(&4&l!&0&l) &4&lZona PvP &0&l(&4&l!&0&l)'
+cratebasic:
+  location: fazioni, -383.575, 133.356, -23.617
+  lines:
+  - '&7&lBasic Crate'
+crategalactic:
+  location: fazioni, -383.684, 133.356, -26.489
+  lines:
+  - '&a&lGalactic Crate'
+cratecrazy:
+  location: fazioni, -383.487, 133.356, -29.579
+  lines:
+  - '&b&lCrazy Crate'
+crateclassic:
+  location: fazioni, -380.532, 133.600, -26.541
+  lines:
+  - '&e&lClassic Crate'
+faction2:
+  location: spawn, 30133.530, 142.738, 59878.525
+  lines:
+  - '&c&kiii &4&lFazioni &c&kiii'
+flagct2:
+  location: spawn, 30126.501, 142.780, 59871.415
+  lines:
+  - '&9&kiii &1&lFlagWars &3&kiii'
+prison2:
+  location: spawn, 30133.500, 142.780, 59864.650
+  lines:
+  - '&a&kiii &2&lPrison &a&kiii'
+kitpvp-2:
+  location: spawn, 30140.391, 143.155, 59871.490
+  lines:
+  - '&e&kiii &e&lKitPvP &e&kiii'
+skygm2:
+  location: spawn, 30139.431, 141.739, 59877.471
+  lines:
+  - '&e&kiii &6&lSkyGames &e&kiii'
+lotti2:
+  location: spawn, 30127.593, 141.780, 59877.464
+  lines:
+  - '&d&kiii &5&lCreative &d&kiii'
+vanilla2:
+  location: spawn, 30139.365, 142.491, 59865.578
+  lines:
+  - '&7&kiii &f&lVanilla &7&kiii'
+cod2:
+  location: spawn, 30127.593, 142.112, 59865.570
+  lines:
+  - '&0&kiii &8&lCallOfDuty &0&kiii'
+spawn2:
+  location: spawn, 30133.504, 145.114, 59871.320
+  lines:
+  - '&e&lBenvenuto &u&l{player} &e&lsu &6&l&kIII&2&l&nPow&f&l&naCr&4&l&naft&6&l&kIII'
+  - '&e&lAttualmente online: &a&l{online}&e&l/&a&l{max_players}'
+  - '&e&lOrario attuale: &b&l{time}'
+arena-2:
+  location: kitpvp, 1110.700, 11.000, 235.483
+  lines:
+  - '&u&l&kIIIIIIIIIIIIIIIII'
+  - '&u&lPortale &o&nARENA-2'
+  - '&u&l&kIIIIIIIIIIIIIIIII'
+curativa:
+  location: ShotGun, 64.300, 26.800, 83.895
+  lines:
+  - '&u&lAcqua Miracolosa'
+  - '&u&l|'
+  - '&u&lV'
+miracolosa:
+  location: ShotGun, 61.700, 26.800, 83.971
+  lines:
+  - '&u&lAcqua Curativa'
+  - '&u&l|'
+  - '&u&lV'
+ic1:
+  location: fazioni, -333.335, 132.200, 5.514
+  lines:
+  - 'ICON: bow'
+ic2:
+  location: fazioni, -333.300, 132.200, 7.598
+  lines:
+  - 'ICON: arrow'
+ic3:
+  location: fazioni, -336.465, 132.200, 8.525
+  lines:
+  - 'ICON: leather helmet'
+ic4:
+  location: fazioni, -338.539, 132.200, 8.525
+  lines:
+  - 'ICON: leather chestplate'
+ic5:
+  location: fazioni, -340.477, 132.200, 8.525
+  lines:
+  - 'ICON: leather leggings'
+ic6:
+  location: fazioni, -342.511, 132.200, 8.525
+  lines:
+  - 'ICON: leather boots'
+ic7:
+  location: fazioni, -344.537, 132.200, 8.569
+  lines:
+  - 'ICON: stone pickaxe'
+ic8:
+  location: fazioni, -346.482, 132.200, 8.700
+  lines:
+  - 'ICON: stone axe'
+ic9:
+  location: fazioni, -348.453, 132.200, 8.700
+  lines:
+  - 'ICON: stone hoe'
+ic10:
+  location: fazioni, -350.514, 132.200, 8.645
+  lines:
+  - 'ICON: stone spade'
+ic11:
+  location: fazioni, -350.700, 132.200, 7.472
+  lines:
+  - 'ICON: stone sword'
+ic12:
+  location: fazioni, -333.300, 132.200, 6.525
+  lines:
+  - 'ICON: log'
+ic13:
+  location: fazioni, -334.567, 132.200, 8.700
+  lines:
+  - 'ICON: cobblestone'
+ic14:
+  location: fazioni, -353.300, 132.200, 18.527
+  lines:
+  - 'ICON: fishing rod'
+ic15:
+  location: fazioni, -353.300, 132.200, 19.474
+  lines:
+  - 'ICON: compass'
+ic16:
+  location: fazioni, -353.300, 132.200, 20.503
+  lines:
+  - 'ICON: diamond sword'
+ic17:
+  location: fazioni, -353.354, 132.200, 21.542
+  lines:
+  - 'ICON: diamond axe'
+ic18:
+  location: fazioni, -353.300, 132.200, 22.556
+  lines:
+  - 'ICON: diamond spade'
+ic19:
+  location: fazioni, -353.300, 132.200, 23.470
+  lines:
+  - 'ICON: diamond hoe'
+ic20:
+  location: fazioni, -353.300, 132.200, 24.563
+  lines:
+  - 'ICON: diamond pickaxe'
+ic21:
+  location: fazioni, -353.300, 132.200, 25.584
+  lines:
+  - 'ICON: watch'
+ic22:
+  location: fazioni, -359.700, 132.200, 17.579
+  lines:
+  - 'ICON: exp bottle'
+ic23:
+  location: fazioni, -359.689, 132.200, 18.541
+  lines:
+  - 'ICON: redstone'
+ic24:
+  location: fazioni, -359.700, 132.200, 19.474
+  lines:
+  - 'ICON: tnt'
+ic25:
+  location: fazioni, -359.700, 132.200, 20.498
+  lines:
+  - 'ICON: emerald'
+ic26:
+  location: fazioni, -359.700, 132.200, 21.483
+  lines:
+  - 'ICON: diamond'
+ic27:
+  location: fazioni, -359.700, 132.200, 22.540
+  lines:
+  - 'ICON: diamond boots'
+ic28:
+  location: fazioni, -359.700, 132.200, 23.516
+  lines:
+  - 'ICON: diamond leggings'
+ic29:
+  location: fazioni, -359.700, 132.200, 24.492
+  lines:
+  - 'ICON: diamond chestplate'
+ic30:
+  location: fazioni, -359.700, 132.200, 25.477
+  lines:
+  - 'ICON: diamond helmet'
+ic31:
+  location: fazioni, -353.458, 132.200, 27.514
+  lines:
+  - 'ICON: cooked beef'
+ic32:
+  location: fazioni, -354.561, 132.200, 27.653
+  lines:
+  - 'ICON: ender pearl'
+ic33:
+  location: fazioni, -355.569, 132.200, 27.700
+  lines:
+  - 'ICON: enchantment table'
+ic34:
+  location: fazioni, -356.514, 132.200, 27.700
+  lines:
+  - 'ICON: ender chest'
+ic35:
+  location: fazioni, -357.470, 132.200, 27.700
+  lines:
+  - 'ICON: golden apple'
+ic36:
+  location: fazioni, -358.461, 132.200, 27.700
+  lines:
+  - 'ICON: golden apple:1'
+ic37:
+  location: fazioni, -359.532, 132.200, 27.700
+  lines:
+  - 'ICON: mushroom soup'
+ic38:
+  location: fazioni, -347.502, 122.200, 27.578
+  lines:
+  - 'ICON: bedrock'
+ic39:
+  location: fazioni, -349.525, 122.200, 27.700
+  lines:
+  - 'ICON: diamond block'
+ic40:
+  location: fazioni, -351.443, 122.200, 27.700
+  lines:
+  - 'ICON: gold block'
+ic41:
+  location: fazioni, -353.510, 122.200, 27.700
+  lines:
+  - 'ICON: iron block'
+ic42:
+  location: fazioni, -355.521, 122.200, 27.700
+  lines:
+  - 'ICON: obsidian'
+ic43:
+  location: fazioni, -357.526, 122.200, 27.700
+  lines:
+  - 'ICON: golden apple:1'
+ic44:
+  location: fazioni, -366.700, 122.200, 26.503
+  lines:
+  - 'ICON: quartz'
+ic45:
+  location: fazioni, -366.700, 122.200, 25.435
+  lines:
+  - 'ICON: ink sack:9'
+ic46:
+  location: fazioni, -366.700, 122.200, 24.445
+  lines:
+  - 'ICON: sugar'
+ic47:
+  location: fazioni, -366.700, 122.200, 23.456
+  lines:
+  - 'ICON: ink sack:14'
+ic48:
+  location: fazioni, -366.700, 122.200, 22.443
+  lines:
+  - 'ICON: glowstone dust'
+ic49:
+  location: fazioni, -366.700, 122.200, 21.525
+  lines:
+  - 'ICON: ink sack:5'
+ic50:
+  location: fazioni, -366.700, 122.200, 20.514
+  lines:
+  - 'ICON: ink sack:2'
+ic51:
+  location: fazioni, -366.700, 122.200, 19.496
+  lines:
+  - 'ICON: melon seeds'
+ic52:
+  location: fazioni, -366.700, 122.200, 17.428
+  lines:
+  - 'ICON: milk bucket'
+ic53:
+  location: sky-pvp, -299816.450, 45.738, 322602.473
+  lines:
+  - 'ICON: potion:1'
+ic54:
+  location: sky-pvp, -299816.498, 45.780, 322730.578
+  lines:
+  - 'ICON: ink sack:4'
+ic55:
+  location: sky-pvp, -299880.499, 45.780, 322666.521
+  lines:
+  - 'ICON: gold ingot'
+ic56:
+  location: sky-pvp, -299759.485, 62.780, 322657.527
+  lines:
+  - 'ICON: ender pearl'
+ic57:
+  location: sky-pvp, -299748.467, 44.780, 322727.528
+  lines:
+  - 'ICON: iron leggings'
+ic58:
+  location: sky-pvp, -299877.518, 44.780, 322734.641
+  lines:
+  - 'ICON: iron boots'
+ic59:
+  location: sky-pvp, -299877.485, 44.780, 322606.505
+  lines:
+  - 'ICON: iron helmet'
+ic60:
+  location: sky-pvp, -299748.505, 45.155, 322599.557
+  lines:
+  - 'ICON: iron chestplate'
+ic61:
+  location: sky-pvp, -299703.469, 46.200, 322666.505
+  lines:
+  - 'ICON: potion:16452'
+ic62:
+  location: sky-pvp, -299929.503, 46.200, 322666.508
+  lines:
+  - 'ICON: potion:16420'
+ic63:
+  location: sky-pvp, -299816.493, 46.200, 322553.468
+  lines:
+  - 'ICON: potion:16393'
+ic64:
+  location: sky-pvp, -299816.490, 46.200, 322779.505
+  lines:
+  - 'ICON: potion:16462'
+ic65:
+  location: sky-pvp, -299929.506, 45.200, 322779.519
+  lines:
+  - 'ICON: potion:16459'
+ic66:
+  location: sky-pvp, -299929.500, 45.200, 322553.515
+  lines:
+  - 'ICON: potion:16458'
+ic68:
+  location: sky-pvp, -299702.496, 45.780, 322779.521
+  lines:
+  - 'ICON: iron sword'
+ic67:
+  location: sky-pvp, -299703.472, 46.114, 322553.470
+  lines:
+  - 'ICON: diamond helmet'
+ic69:
+  location: sky-pvp, -299703.462, 45.780, 322602.518
+  lines:
+  - 'ICON: bow'
+ic70:
+  location: sky-pvp, -299703.482, 46.200, 322730.511
+  lines:
+  - 'ICON: potion:16389'
+ic71:
+  location: sky-pvp, -299751.482, 45.739, 322773.612
+  lines:
+  - 'ICON: diamond sword'
+ic72:
+  location: sky-pvp, -299880.502, 45.739, 322779.494
+  lines:
+  - 'ICON: iron boots'
+ic73:
+  location: sky-pvp, -299929.528, 45.416, 322726.414
+  lines:
+  - 'ICON: iron sword'
+ic74:
+  location: sky-pvp, -299930.518, 46.739, 322603.525
+  lines:
+  - 'ICON: apple'
+ic75:
+  location: sky-pvp, -299880.458, 43.416, 322553.521
+  lines:
+  - 'ICON: exp bottle'
+ic76:
+  location: sky-pvp, -299752.495, 45.200, 322553.506
+  lines:
+  - 'ICON: potion:16386'
+ic77:
+  location: sky-pvp, -299816.471, 123.766, 322749.587
+  lines:
+  - 'ICON: diamond'
+ic78:
+  location: sky-pvp, -299898.495, 123.200, 322667.506
+  lines:
+  - 'ICON: potion:16419'
+ic79:
+  location: sky-pvp, -299816.507, 123.780, 322585.530
+  lines:
+  - 'ICON: arrow'
+ic80:
+  location: sky-pvp, -299734.494, 123.780, 322667.525
+  lines:
+  - 'ICON: mushroom soup'
+ic81:
+  location: kitpvp, 1058.546, 14.200, 506.547
+  lines:
+  - 'ICON: golden apple'
+ic82:
+  location: kitpvp, 1056.513, 14.200, 506.410
+  lines:
+  - 'ICON: fishing rod'
+ic83:
+  location: kitpvp, 1054.494, 14.200, 506.461
+  lines:
+  - 'ICON: arrow'
+ic84:
+  location: kitpvp, 1053.475, 14.200, 507.480
+  lines:
+  - 'ICON: bow'
+ic85:
+  location: kitpvp, 1053.548, 14.200, 509.477
+  lines:
+  - 'ICON: diamond sword'
+ic86:
+  location: kitpvp, 1053.594, 14.200, 511.470
+  lines:
+  - 'ICON: diamond boots'
+ic87:
+  location: kitpvp, 1053.511, 14.200, 513.470
+  lines:
+  - 'ICON: diamond leggings'
+ic88:
+  location: kitpvp, 1053.455, 14.200, 515.468
+  lines:
+  - 'ICON: diamond chestplate'
+ic89:
+  location: kitpvp, 1053.440, 14.200, 517.469
+  lines:
+  - 'ICON: diamond helmet'
+ic90:
+  location: kitpvp, 1054.480, 14.200, 518.558
+  lines:
+  - 'ICON: golden apple:1'
+ic91:
+  location: kitpvp, 1056.485, 14.200, 518.580
+  lines:
+  - 'ICON: iron sword'
+ic92:
+  location: kitpvp, 1058.492, 14.200, 518.508
+  lines:
+  - 'ICON: iron boots'
+ic93:
+  location: kitpvp, 1060.459, 14.200, 518.512
+  lines:
+  - 'ICON: iron leggings'
+ic94:
+  location: kitpvp, 1062.477, 14.200, 518.531
+  lines:
+  - 'ICON: iron chestplate'
+ic95:
+  location: kitpvp, 1064.486, 14.200, 518.542
+  lines:
+  - 'ICON: iron helmet'
+ic96:
+  location: kitpvp, 1080.532, 14.200, 520.496
+  lines:
+  - 'ICON: exp bottle'
+ic97:
+  location: kitpvp, 1079.534, 14.200, 519.467
+  lines:
+  - 'ICON: exp bottle'
+ic98:
+  location: kitpvp, 1073.437, 14.864, 521.499
+  lines:
+  - 'ICON: ink sack:4'
+ic99:
+  location: ShotGun, 9.700, 38.200, -2.531
+  lines:
+  - 'ICON: diamond block'
+ic100:
+  location: ShotGun, 9.700, 38.200, -1.450
+  lines:
+  - 'ICON: gold block'
+ic101:
+  location: ShotGun, 9.700, 38.200, -0.471
+  lines:
+  - 'ICON: iron block'
+ic102:
+  location: ShotGun, 9.700, 38.200, 0.588
+  lines:
+  - 'ICON: minecart'
+ic103:
+  location: ShotGun, 9.700, 38.200, 1.543
+  lines:
+  - 'ICON: coal'
+ic104:
+  location: ShotGun, 9.700, 38.200, 2.542
+  lines:
+  - 'ICON: iron ingot'
+ic105:
+  location: ShotGun, 9.700, 38.200, 3.501
+  lines:
+  - 'ICON: diamond'
+ic106:
+  location: ShotGun, -8.700, 38.200, 3.546
+  lines:
+  - 'ICON: coal'
+ic107:
+  location: ShotGun, -8.700, 38.200, 2.441
+  lines:
+  - 'ICON: iron ingot'
+ic108:
+  location: ShotGun, -8.700, 38.200, 1.495
+  lines:
+  - 'ICON: diamond'
+ic109:
+  location: ShotGun, -8.700, 38.200, 0.427
+  lines:
+  - 'ICON: minecart'
+ic110:
+  location: ShotGun, -8.700, 38.200, -0.534
+  lines:
+  - 'ICON: iron block'
+ic111:
+  location: ShotGun, -8.700, 38.200, -1.505
+  lines:
+  - 'ICON: gold block'
+ic112:
+  location: ShotGun, -8.700, 38.200, -2.493
+  lines:
+  - 'ICON: diamond block'
+ic113:
+  location: ShotGun, -6.531, 38.200, -4.700
+  lines:
+  - 'ICON: diamond barding'
+ic114:
+  location: ShotGun, -5.511, 38.200, -4.700
+  lines:
+  - 'ICON: redstone comparator'
+ic115:
+  location: ShotGun, -4.426, 38.200, -4.700
+  lines:
+  - 'ICON: iron barding'
+ic116:
+  location: ShotGun, -3.454, 38.200, -4.700
+  lines:
+  - 'ICON: armor stand'
+ic117:
+  location: ShotGun, -2.464, 38.200, -4.700
+  lines:
+  - 'ICON: gold barding'
+ic118:
+  location: ShotGun, -1.493, 38.200, -4.699
+  lines:
+  - 'ICON: firework charge'
+ic119:
+  location: ShotGun, -0.485, 38.200, -4.700
+  lines:
+  - 'ICON: anvil'
+ic120:
+  location: ShotGun, 0.522, 38.200, -4.700
+  lines:
+  - 'ICON: iron barding'
+ic121:
+  location: ShotGun, 1.519, 38.200, -4.700
+  lines:
+  - 'ICON: ink sack:3'
+ic123:
+  location: ShotGun, 3.530, 38.200, -4.700
+  lines:
+  - 'ICON: redstone torch on'
+ic124:
+  location: ShotGun, 4.516, 38.200, -4.700
+  lines:
+  - 'ICON: armor stand'
+ic125:
+  location: ShotGun, 5.529, 38.200, -4.700
+  lines:
+  - 'ICON: ink sack:8'
+ic126:
+  location: ShotGun, 6.558, 38.200, -4.700
+  lines:
+  - 'ICON: gold barding'
+ic127:
+  location: ShotGun, 7.554, 38.200, -4.700
+  lines:
+  - 'ICON: iron barding'
+ic122:
+  location: ShotGun, 2.510, 38.200, -4.700
+  lines:
+  - 'ICON: thin glass'
+ic128:
+  location: prison, -1.395, 82.200, -50.836
+  lines:
+  - 'ICON: iron ingot'
+ic129:
+  location: prison, -0.410, 82.200, -50.774
+  lines:
+  - 'ICON: gold ingot'
+ic130:
+  location: prison, 0.444, 82.200, -50.774
+  lines:
+  - 'ICON: ink sack:4'
+ic131:
+  location: prison, 1.583, 82.200, -50.774
+  lines:
+  - 'ICON: flint'
+ic132:
+  location: prison, 2.575, 82.200, -50.774
+  lines:
+  - 'ICON: redstone'
+ic133:
+  location: prison, -0.468, 82.200, -52.645
+  lines:
+  - 'ICON: diamond'
+ic134:
+  location: prison, 1.514, 82.200, -52.664
+  lines:
+  - 'ICON: emerald'
+ic135:
+  location: prison, 0.596, 82.200, -55.599
+  lines:
+  - 'ICON: cooked beef'
+ic136:
+  location: prison, 62.539, 82.200, -32.562
+  lines:
+  - 'ICON: iron ingot'
+ic137:
+  location: prison, 64.560, 82.200, -32.695
+  lines:
+  - 'ICON: coal'
+ic138:
+  location: prison, 65.539, 82.200, 31.823
+  lines:
+  - 'ICON: cobblestone'
+ic139:
+  location: prison, 61.517, 82.200, 31.775
+  lines:
+  - 'ICON: stone'
+ic140:
+  location: prison, 97.682, 82.200, -0.464
+  lines:
+  - 'ICON: fishing rod'
+ic141:
+  location: prison, -60.547, 82.200, 31.749
+  lines:
+  - 'ICON: log'
+ic142:
+  location: prison, -61.523, 82.200, 31.760
+  lines:
+  - 'ICON: log:1'
+ic143:
+  location: prison, -62.516, 82.200, 31.746
+  lines:
+  - 'ICON: log:2'
+ic144:
+  location: prison, -63.515, 82.200, 31.760
+  lines:
+  - 'ICON: log:3'
+ic145:
+  location: prison, -64.500, 82.200, 31.774
+  lines:
+  - 'ICON: log 2'
+ic146:
+  location: prison, -97.681, 82.200, -0.497
+  lines:
+  - 'ICON: exp bottle'
+ic147:
+  location: prison, -62.477, 82.200, -32.601
+  lines:
+  - 'ICON: coal:1'

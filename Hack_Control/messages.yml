@@ -1,0 +1,64 @@
+# Controllo Hack 
+# version 1.0
+# Plugin Made By Sanpeter05
+# Plugin Messages
+#
+# Note: '%p' means player name, put the variable only where is in the example below!!!
+#
+
+# Internal messages of the Plugin
+playerIsInControl: '&cIl Giocatore %p risulta gia sotto controllo!'
+specifyPlayerToEnd: '&cSpecificare un giocatore per terminare il controllo!'
+playerNotFound: '&cImpossibile trovare il giocatore %p'
+playerNotInControl: 'Il Giocatore %p non risulta sotto controllo in questo momento!'
+hackNotFound: 'Sei risultato negativo al controllo Hack ci scusiamo del disguido!'
+spawnNotSet: '&cImpostare gli spawn del player da controllare, del moderatore e dello spawn dopo il controllo!'
+noOneInControl: 'Nessun giocatore in Controllo!'
+playerEqualsTarget: '&cImpossibile eseguire il controllo su se stessi!'
+playerEqualFreeze: '&cImpossibile freezzare se Stessi!'
+commandOnlyPlayer: '&cIl Comando puo essere utilizzato solo dagli staffer!'
+doNotHavePerm: '&cNon hai il permesso di usare il comando!'
+youAreNotController: 'Non sei tu lo staffer che sta eseguendo il controllo su %p!'
+contrlChatPrefix: '&9&l[&3&lPowaControl&9&l] &8&l>>&b&o '
+cantExeCommand: '&cNon puoi eseguire comandi durante un controllo!'
+Banreason: '&cSlog da un controllo Hack!'
+modMessageOnBan: '&4Attenzione:&c&o %p &eha sloggato in controllo!'
+specifyAPlayer: '&cSpecificare un Player!'
+noOneFreeze: '&cNessun player freezzato!'
+playerFreezedSender: 'Player %p risulta ora &1congelato&f!'
+playerUnFreezedSender: 'Player %p risulta ora &cscongelato&f!'
+playerFreezed: 'Sei stato &1congelato&f!'
+playerUnfreezed: 'Sei stato &cscongelato&f!'
+playerMove: '&cSei congelato!'
+
+
+
+#
+# English translate delete the '#' to use english lenguage, make sure to delete the italian translation!!
+# If you don't this the plugin will not work properly!!
+#
+
+#playerIsInControl: '&cThe Player %p is already in control!'
+#specifyPlayerToEnd: '&cPlease specify a player to end the control!'
+#playerNotFound: '&cCould not find the Player %p'
+#playerNotInControl: 'The Player %p is not under control at this time!'
+#hackNotFound: 'You turned negative to Hack control we apologize for the discomfort!'
+#spawnNotSet: '&cPlease set the spawn moderatore, controlled and the spawn after control!'
+#noOneInControl: 'Nobody in control!'
+#playerEqualsTarget: '&cYou can not control yourself!'
+#playerEqualFreeze: '&cYou can not freeze yourself!'
+#commandOnlyPlayer: '&cThe command can be used only by Player!'
+#doNotHavePerm: '&cYou do not have permissions to perform this command!'
+#youAreNotController: 'You are not the player who is controlling %p!'
+#contrlChatPrefix: '&o&7sent: '
+#cantExeCommand: '&c You can not use commands during a control!'
+#Banreason: '&cSlog from a Hack control!'
+#modMessageOnBan: '&l&fPlayer %p banned for slog from Hack control!'
+#specifyAPlayer: '&cPlease specify a Player!'
+#noOneFreeze: '&cNo Player is Freezed!'
+#playerFreezed: '&cYou are freezed!'
+#playerFreezedSender: 'Player %p is now &1freezed&f!'
+#playerUnFreezedSender: 'Player %p is now &cunfreezed&f!'
+#playerFreezed: 'You are &1Freezed&f!'
+#playerUnfreezed: 'You are &cUnfrezed&f!'
+#playerMove: '&cYou are freezed!'

@@ -1,0 +1,1994 @@
+# KingKits Kits Configuration.
+First run: false
+Default:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: IRON_HELMET
+      Data: 0
+    Leggings:
+      Type: IRON_LEGGINGS
+      Data: 0
+    Boots:
+      Type: IRON_BOOTS
+      Data: 0
+    Chestplate:
+      Dye: 10040115
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+  Cooldown: 0
+  Commands:
+  - feed <player>
+  - tell <player> &6You have been fed for using the default kit.
+  Items:
+    Slot 0:
+      Type: IRON_SWORD
+      Name: Default Kit Sword
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+      Lore:
+      - '&6Iron Slayer'
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 2
+      Data: 0
+    Slot 2:
+      Type: POTION
+      Amount: 1
+      Data: 8201
+  Potion Effects:
+    Speed:
+      Level: 2
+      Duration: 10
+  Cost: 0.0
+  Name: Default
+Barbaro:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: CHAINMAIL_HELMET
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Leggings:
+      Type: CHAINMAIL_LEGGINGS
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Boots:
+      Type: CHAINMAIL_BOOTS
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Chestplate:
+      Type: CHAINMAIL_CHESTPLATE
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 0:
+      Type: IRON_AXE
+      Name: '&5&lKit &7Barbaro'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 2
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 25:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 19:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 7:
+      Type: BOW
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+    Slot 8:
+      Type: ARROW
+      Amount: 15
+      Data: 0
+      Name: '&5&lKit &7Barbaro'
+  Cost: 0.0
+  Name: Barbaro
+Arciere:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: IRON_HELMET
+      Data: 0
+      Name: '&5&lKit &aArciere'
+    Leggings:
+      Dye: 6717235
+      Type: LEATHER_LEGGINGS
+      Data: 0
+      Name: '&5&lKit &aArciere'
+    Boots:
+      Type: IRON_BOOTS
+      Data: 0
+      Name: '&5&lKit &aArciere'
+    Chestplate:
+      Dye: 6717235
+      Type: LEATHER_CHESTPLATE
+      Data: 0
+      Name: '&5&lKit &aArciere'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: STONE_AXE
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: BOW
+      Name: '&5&lKit &aArciere'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 1
+        ARROW_FIRE: 1
+        ARROW_KNOCKBACK: 2
+        ARROW_DAMAGE: 1
+    Slot 8:
+      Type: ARROW
+      Name: '&5&lKit &aArciere'
+      Amount: 64
+      Data: 0
+  Cost: 0.0
+  Name: Arciere
+TuttoFare:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: GOLD_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Data: 0
+      Name: '&5&lKit &6Tutto&eFare'
+    Leggings:
+      Type: GOLD_LEGGINGS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Data: 0
+      Name: '&5&lKit &6Tutto&eFare'
+    Boots:
+      Type: GOLD_BOOTS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Data: 0
+      Name: '&5&lKit &6Tutto&eFare'
+    Chestplate:
+      Type: GOLD_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Data: 0
+      Name: '&5&lKit &6Tutto&eFare'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 11:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: STONE_SWORD
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 24:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: FISHING_ROD
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 19:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: BOW
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        ARROW_INFINITE: 1
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: ARROW
+      Name: '&5&lKit &6Tutto&eFare'
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  Name: TuttoFare
+Astronauta:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+    Name: '&5&lKit &8Astronauta'
+  Armour:
+    Leggings:
+      Type: IRON_LEGGINGS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Boots:
+      Type: IRON_BOOTS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Chestplate:
+      Type: CHAINMAIL_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Slot 0:
+      Type: WOOD_SWORD
+      Name: '&5&lKit &8Astronauta'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        DAMAGE_ALL: 2
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &8Astronauta'
+      Amount: 1
+      Data: 0
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &8Astronauta'
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &8Astronauta'
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &8Astronauta'
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &8Astronauta'
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &8Astronauta'
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &8Astronauta'
+      Amount: 1
+      Data: 0
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &8Astronauta'
+    Slot 8:
+      Type: GLASS
+      Name: '&e&lUsa &b/hat'
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  Name: Astronauta
+Aggressivo:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 10040115
+      Type: LEATHER_HELMET
+      Data: 0
+      Name: '&5&lKit &4Aggressivo'
+    Leggings:
+      Dye: 10040115
+      Type: LEATHER_LEGGINGS
+      Data: 0
+      Name: '&5&lKit &4Aggressivo'
+    Boots:
+      Dye: 10040115
+      Type: LEATHER_BOOTS
+      Data: 0
+      Name: '&5&lKit &4Aggressivo'
+    Chestplate:
+      Type: GOLD_CHESTPLATE
+      Enchantments:
+        DURABILITY: 1
+      Data: 0
+      Name: '&5&lKit &4Aggressivo'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 17:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+    Slot 9:
+      Type: MUSHROOM_SOUP
+      Name: '&5&lKit &4Aggressivo'
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  Name: Aggressivo
+Difesa:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+    Name: '&5&lKit &bDifesa'
+  Armour:
+    Helmet:
+      Type: IRON_HELMET
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Leggings:
+      Type: IRON_LEGGINGS
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Boots:
+      Type: IRON_BOOTS
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Chestplate:
+      Type: IRON_CHESTPLATE
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 20:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 0:
+      Type: GOLD_SWORD
+      Name: '&5&lKit &bDifesa'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 24:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &bDifesa'
+    Slot 7:
+      Type: POTION
+      Name: '&5&lKit &bDifesa'
+      Amount: 1
+      Data: 16418
+    Slot 8:
+      Type: POTION
+      Name: '&5&lKit &bDifesa'
+      Amount: 1
+      Data: 16418
+  Cost: 0.0
+  Name: Difesa
+PowaCraft:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: DIAMOND_HELMET
+      Enchantments:
+        OXYGEN: 3
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Leggings:
+      Type: DIAMOND_LEGGINGS
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Boots:
+      Type: DIAMOND_BOOTS
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+        DEPTH_STRIDER: 3
+      Data: 0
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Chestplate:
+      Type: DIAMOND_CHESTPLATE
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 22:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 23:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 20:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 21:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 26:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 27:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 24:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 25:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 28:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 29:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 30:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 11:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 33:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 12:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 34:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 31:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 10:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 32:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 15:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 16:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+      Enchantments:
+        DAMAGE_ALL: 5
+        FIRE_ASPECT: 2
+    Slot 13:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 35:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 1:
+      Type: GOLDEN_APPLE
+      Amount: 32
+      Data: 1
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 14:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 19:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 17:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 18:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 2:
+      Type: POTION
+      Amount: 1
+      Data: 34
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 3:
+      Type: POTION
+      Amount: 1
+      Data: 34
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 4:
+      Type: POTION
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+      Amount: 1
+      Data: 41
+    Slot 5:
+      Type: POTION
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+      Amount: 1
+      Data: 41
+    Slot 6:
+      Type: BOW
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        ARROW_FIRE: 1
+        ARROW_KNOCKBACK: 2
+        ARROW_DAMAGE: 5
+        ARROW_INFINITE: 1
+    Slot 7:
+      Type: ARROW
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+    Slot 8:
+      Type: FISHING_ROD
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        LUCK: 3
+        LURE: 3
+    Slot 9:
+      Type: POTION
+      Amount: 1
+      Data: 16421
+      Name: '&5&lKit &6&l&kiii &2&lPow&f&laCr&4&laft &6&l&kiii'
+  Cost: 0.0
+  Name: PowaCraft
+MCSG:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: CHAINMAIL_HELMET
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &8MCSG'
+    Leggings:
+      Type: CHAINMAIL_LEGGINGS
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &8MCSG'
+    Boots:
+      Type: GOLD_BOOTS
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &8MCSG'
+    Chestplate:
+      Type: GOLD_CHESTPLATE
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &8MCSG'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: STONE_SWORD
+      Name: '&5&lKit &8MCSG'
+      Amount: 1
+      Data: 0
+    Slot 1:
+      Type: FISHING_ROD
+      Name: '&5&lKit &8MCSG'
+      Amount: 1
+      Data: 0
+    Slot 2:
+      Type: BOW
+      Name: '&5&lKit &8MCSG'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        ARROW_INFINITE: 1
+    Slot 7:
+      Type: GOLDEN_APPLE
+      Name: '&5&lKit &8MCSG'
+      Amount: 64
+      Data: 0
+    Slot 8:
+      Type: ARROW
+      Name: '&5&lKit &8MCSG'
+      Amount: 1
+      Data: 0
+  Cost: 0.0
+  Name: MCSG
+Assassin:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: IRON_HELMET
+      Data: 0
+      Name: '&0&lKit &8&lAssassin'
+    Leggings:
+      Type: CHAINMAIL_LEGGINGS
+      Data: 0
+      Name: '&0&lKit &8&lAssassin'
+    Boots:
+      Type: CHAINMAIL_BOOTS
+      Data: 0
+      Name: '&0&lKit &8&lAssassin'
+    Chestplate:
+      Type: CHAINMAIL_CHESTPLATE
+      Data: 0
+      Name: '&0&lKit &8&lAssassin'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: IRON_SWORD
+      Name: '&0&lKit &8&lAssassin'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 1
+    Slot 7:
+      Type: BOW
+      Amount: 1
+      Data: 0
+      Name: '&0&lKit &8&lAssassin'
+    Slot 8:
+      Type: ARROW
+      Amount: 10
+      Data: 0
+      Name: '&0&lKit &8&lAssassin'
+  Cost: 0.0
+  Name: Assassin
+Classic:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: IRON_HELMET
+      Data: 0
+      Name: '&0&lKit &8&lClassic'
+    Leggings:
+      Type: IRON_LEGGINGS
+      Data: 0
+      Name: '&0&lKit &8&lClassic'
+    Boots:
+      Type: IRON_BOOTS
+      Data: 0
+      Name: '&0&lKit &8&lClassic'
+    Chestplate:
+      Type: IRON_CHESTPLATE
+      Data: 0
+      Name: '&0&lKit &8&lClassic'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: IRON_SWORD
+      Name: '&0&lKit &8&lClassic'
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: BOW
+      Amount: 1
+      Data: 0
+      Name: '&0&lKit &8&lClassic'
+    Slot 8:
+      Type: ARROW
+      Amount: 32
+      Data: 0
+      Name: '&0&lKit &8&lClassic'
+  Cost: 0.0
+  Name: Classic
+Pyro:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: CHAINMAIL_HELMET
+      Enchantments:
+        PROTECTION_FIRE: 1
+      Data: 0
+      Name: '&0&lKit &8&lPyro'
+    Leggings:
+      Type: CHAINMAIL_LEGGINGS
+      Enchantments:
+        PROTECTION_FIRE: 1
+      Data: 0
+      Name: '&0&lKit &8&lPyro'
+    Boots:
+      Type: CHAINMAIL_BOOTS
+      Enchantments:
+        PROTECTION_FIRE: 1
+      Data: 0
+      Name: '&0&lKit &8&lPyro'
+    Chestplate:
+      Type: CHAINMAIL_CHESTPLATE
+      Enchantments:
+        PROTECTION_FIRE: 1
+      Data: 0
+      Name: '&0&lKit &8&lPyro'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: STONE_SWORD
+      Name: '&0&lKit &8&lPyro'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        FIRE_ASPECT: 1
+    Slot 6:
+      Type: POTION
+      Amount: 1
+      Data: 35
+      Name: '&0&lKit &8&lPyro'
+    Slot 7:
+      Type: BOW
+      Amount: 1
+      Data: 0
+      Name: '&0&lKit &8&lPyro'
+      Enchantments:
+        ARROW_FIRE: 1
+    Slot 8:
+      Type: ARROW
+      Amount: 16
+      Data: 0
+      Name: '&0&lKit &8&lPyro'
+  Cost: 0.0
+  Name: Pyro
+Archer:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: IRON_HELMET
+      Data: 0
+      Name: '&0&lKit &8&lArcher'
+    Leggings:
+      Type: IRON_LEGGINGS
+      Data: 0
+      Name: '&0&lKit &8&lArcher'
+    Boots:
+      Type: IRON_BOOTS
+      Data: 0
+      Name: '&0&lKit &8&lArcher'
+    Chestplate:
+      Type: GOLD_CHESTPLATE
+      Data: 0
+      Name: '&0&lKit &8&lArcher'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: STONE_SWORD
+      Name: '&0&lKit &8&lArcher'
+      Amount: 1
+      Data: 0
+    Slot 7:
+      Type: BOW
+      Amount: 1
+      Data: 0
+      Name: '&0&lKit &8&lArcher'
+      Enchantments:
+        ARROW_DAMAGE: 1
+        ARROW_INFINITE: 1
+    Slot 8:
+      Type: ARROW
+      Amount: 1
+      Data: 0
+      Name: '&0&lKit &8&lArcher'
+  Cost: 0.0
+  Name: Archer
+Alchemist:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: CHAINMAIL_HELMET
+      Data: 0
+      Name: '&0&lKit &8&lAlchemist'
+    Leggings:
+      Type: CHAINMAIL_LEGGINGS
+      Data: 0
+      Name: '&0&lKit &8&lAlchemist'
+    Boots:
+      Type: CHAINMAIL_BOOTS
+      Data: 0
+      Name: '&0&lKit &8&lAlchemist'
+    Chestplate:
+      Type: IRON_CHESTPLATE
+      Data: 0
+      Name: '&0&lKit &8&lAlchemist'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: STONE_SWORD
+      Name: '&0&lKit &8&lAlchemist'
+      Amount: 1
+      Data: 0
+    Slot 4:
+      Type: BOW
+      Amount: 1
+      Data: 0
+      Name: '&0&lKit &8&lAlchemist'
+    Slot 5:
+      Type: POTION
+      Amount: 1
+      Data: 66
+      Name: '&0&lKit &8&lAlchemist'
+    Slot 6:
+      Type: POTION
+      Amount: 1
+      Data: 5
+      Name: '&0&lKit &8&lAlchemist'
+    Slot 7:
+      Type: POTION
+      Amount: 1
+      Data: 5
+      Name: '&0&lKit &8&lAlchemist'
+    Slot 8:
+      Type: ARROW
+      Name: '&0&lKit &8&lAlchemist'
+      Amount: 20
+      Data: 0
+  Cost: 0.0
+  Name: Alchemist
+Soldato:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 6717235
+      Type: LEATHER_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &2&lSoldato'
+    Leggings:
+      Dye: 6717235
+      Type: LEATHER_LEGGINGS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &2&lSoldato'
+    Boots:
+      Dye: 8375321
+      Type: LEATHER_BOOTS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &2&lSoldato'
+    Chestplate:
+      Dye: 8375321
+      Type: LEATHER_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&lKit &2&lSoldato'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: STONE_SWORD
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &2&lSoldato'
+    Slot 1:
+      Type: CARROT_ITEM
+      Amount: 64
+      Data: 0
+      Name: '&5&lKit &2&lSoldato'
+  Cost: 0.0
+  Name: Soldato
+Misterioso:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Item:
+      Type: SKULL_ITEM
+      Data: 1
+      Name: '&5&l&nKit &0Misterioso'
+    Chestplate:
+      Dye: 1644825
+      Type: LEATHER_CHESTPLATE
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&l&nKit &0Misterioso'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 22:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 23:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 31:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 21:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 27:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 0:
+      Type: GOLD_AXE
+      Name: '&5&l&nKit &0Misterioso'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        DAMAGE_ALL: 5
+    Slot 13:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 35:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 1:
+      Type: POTION
+      Amount: 1
+      Data: 78
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 2:
+      Type: POTION
+      Amount: 1
+      Data: 78
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 3:
+      Type: POTION
+      Amount: 1
+      Data: 78
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 4:
+      Type: POTION
+      Amount: 1
+      Data: 78
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 5:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 6:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 7:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+    Slot 8:
+      Type: POTION
+      Amount: 1
+      Data: 16418
+      Name: '&5&l&nKit &0Misterioso'
+  Cost: 0.0
+  Name: Misterioso
+Nether:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 10040115
+      Type: LEATHER_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+      Data: 0
+      Name: '&5&l&nKit &4Nether'
+    Leggings:
+      Dye: 10040115
+      Type: LEATHER_LEGGINGS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+      Data: 0
+      Name: '&5&l&nKit &4Nether'
+    Boots:
+      Dye: 14188339
+      Type: LEATHER_BOOTS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+      Data: 0
+      Name: '&5&l&nKit &4Nether'
+    Chestplate:
+      Dye: 14188339
+      Type: LEATHER_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+      Data: 0
+      Name: '&5&l&nKit &4Nether'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: GOLD_SWORD
+      Name: '&5&l&nKit &4Nether'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        DAMAGE_ALL: 1
+        FIRE_ASPECT: 2
+    Slot 5:
+      Type: POTION
+      Name: '&5&l&nKit &4Nether'
+      Amount: 1
+      Data: 67
+    Slot 6:
+      Type: POTION
+      Name: '&5&l&nKit &4Nether'
+      Amount: 1
+      Data: 16451
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &4Nether'
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &4Nether'
+  Cost: 0.0
+  Name: Nether
+Ghiacciolo:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 3361970
+      Type: LEATHER_HELMET
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Leggings:
+      Dye: 3361970
+      Type: LEATHER_LEGGINGS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 3
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Boots:
+      Dye: 5013401
+      Type: LEATHER_BOOTS
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Chestplate:
+      Dye: 5013401
+      Type: LEATHER_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 0:
+      Type: WOOD_SWORD
+      Name: '&5&l&nKit &3Ghiacciolo'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        DAMAGE_ALL: 2
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 2:
+      Type: POTION
+      Amount: 1
+      Data: 16458
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 4:
+      Type: POTION
+      Amount: 1
+      Data: 16458
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 6:
+      Type: POTION
+      Amount: 1
+      Data: 16458
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &3Ghiacciolo'
+    Slot 8:
+      Type: POTION
+      Amount: 1
+      Data: 16458
+      Name: '&5&l&nKit &3Ghiacciolo'
+  Cost: 0.0
+  Name: Ghiacciolo
+Riccone:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: GOLD_HELMET
+      Enchantments:
+        DURABILITY: 3
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Leggings:
+      Type: GOLD_LEGGINGS
+      Enchantments:
+        DURABILITY: 3
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Boots:
+      Type: GOLD_BOOTS
+      Enchantments:
+        DURABILITY: 3
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Chestplate:
+      Type: GOLD_CHESTPLATE
+      Enchantments:
+        DURABILITY: 3
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 22:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 23:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 20:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 21:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 26:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 27:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 24:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 25:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 28:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 29:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 30:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 11:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 33:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 12:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 34:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 31:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 32:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 15:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&5&l&nKit &9Riccone'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+    Slot 13:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 35:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 1:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 14:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 19:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 18:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 2:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 3:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 4:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 5:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&l&nKit &9Riccone'
+  Cost: 0.0
+  Name: Riccone
+God:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 16777215
+      Type: LEATHER_HELMET
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&l&nKit &f&lGOD'
+    Leggings:
+      Dye: 16777215
+      Type: LEATHER_LEGGINGS
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&l&nKit &f&lGOD'
+    Boots:
+      Dye: 16777215
+      Type: LEATHER_BOOTS
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&l&nKit &f&lGOD'
+    Chestplate:
+      Dye: 16777215
+      Type: LEATHER_CHESTPLATE
+      Enchantments:
+        DURABILITY: 3
+        PROTECTION_ENVIRONMENTAL: 4
+      Data: 0
+      Name: '&5&l&nKit &f&lGOD'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: IRON_SWORD
+      Name: '&5&l&nKit &f&lGOD'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DURABILITY: 3
+        KNOCKBACK: 2
+    Slot 8:
+      Type: GOLDEN_APPLE
+      Amount: 32
+      Data: 0
+      Name: '&5&l&nKit &f&lGOD'
+  Cost: 0.0
+  Name: God
+Porcospino:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Dye: 15892389
+      Type: LEATHER_HELMET
+      Enchantments:
+        THORNS: 3
+      Data: 0
+      Name: '&5&lKit &dPorcospino'
+    Leggings:
+      Dye: 15892389
+      Type: LEATHER_LEGGINGS
+      Enchantments:
+        THORNS: 3
+      Data: 0
+      Name: '&5&lKit &dPorcospino'
+    Boots:
+      Dye: 15892389
+      Type: LEATHER_BOOTS
+      Enchantments:
+        THORNS: 3
+      Data: 0
+      Name: '&5&lKit &dPorcospino'
+    Chestplate:
+      Dye: 15892389
+      Type: LEATHER_CHESTPLATE
+      Enchantments:
+        THORNS: 3
+      Data: 0
+      Name: '&5&lKit &dPorcospino'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: GOLD_AXE
+      Name: '&5&lKit &dPorcospino'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 4
+    Slot 5:
+      Type: GOLDEN_APPLE
+      Name: '&5&lKit &dPorcospino'
+      Amount: 8
+      Data: 0
+    Slot 6:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &dPorcospino'
+    Slot 7:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &dPorcospino'
+    Slot 8:
+      Type: MUSHROOM_SOUP
+      Amount: 1
+      Data: 0
+      Name: '&5&lKit &dPorcospino'
+  Cost: 0.0
+  Name: Porcospino
+Enderman:
+  GUI Item:
+    Type: DIAMOND_SWORD
+    Amount: 1
+    Data: 0
+  Armour:
+    Helmet:
+      Type: DIAMOND_HELMET
+      Enchantments:
+        OXYGEN: 3
+      Data: 0
+      Name: '&5&lKit &0Enderman'
+    Leggings:
+      Dye: 8339378
+      Type: LEATHER_LEGGINGS
+      Data: 0
+      Name: '&5&lKit &0Enderman'
+    Boots:
+      Dye: 8339378
+      Type: LEATHER_BOOTS
+      Data: 0
+      Name: '&5&lKit &0Enderman'
+    Chestplate:
+      Dye: 8339378
+      Type: LEATHER_CHESTPLATE
+      Enchantments:
+        PROTECTION_ENVIRONMENTAL: 2
+      Data: 0
+      Name: '&5&lKit &0Enderman'
+  Cooldown: 0
+  Commands: []
+  Items:
+    Slot 0:
+      Type: DIAMOND_SWORD
+      Name: '&5&lKit &0Enderman'
+      Amount: 1
+      Data: 0
+      Enchantments:
+        DAMAGE_ALL: 2
+    Slot 4:
+      Type: GOLDEN_APPLE
+      Amount: 1
+      Data: 1
+      Name: '&5&lKit &0Enderman'
+    Slot 5:
+      Type: ENDER_PEARL
+      Amount: 12
+      Data: 0
+      Name: '&5&lKit &0Enderman'
+    Slot 6:
+      Type: ENDER_PEARL
+      Amount: 12
+      Data: 0
+      Name: '&5&lKit &0Enderman'
+    Slot 7:
+      Type: ENDER_PEARL
+      Amount: 12
+      Data: 0
+      Name: '&5&lKit &0Enderman'
+    Slot 8:
+      Type: ENDER_PEARL
+      Amount: 12
+      Data: 0
+      Name: '&5&lKit &0Enderman'
+  Cost: 0.0
+  Name: Enderman
