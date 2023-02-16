@@ -1,0 +1,168 @@
+# AtomSpigot
+# Made by yooniks, discord: yooniks#0289
+# The best paperspigot fork ever. Crash patches and game performance in one.
+
+# Just settings, configure it however you want
+settings:
+  # Put your license key here!
+  # If you bought AtomSpigot and you do not have any license please PM me on discord: yooniks#0289
+  license: " Leaked by Haizivs @ Blackspigot.com "
+  nbt-limit: 2097152
+  knockback-profiles-enabled: true
+  # Should we block worlddownloader mod that steals maps/worlds?
+  anti-world-downloader: true
+  # Should we autorespawn players after they die?
+  auto-respawn: true
+  anticrash:
+    max-payload-capacity: 5000
+    firework-nbt-limit: 200
+    book-nbt-limit: 8000
+    block-invalid-movement: true
+    check-anvil-container: true
+    # This is optional option, please do not change packet length limits if not required!
+    min-first-login-packet-length: 7
+    max-first-login-packet-length: 1300
+    min-second-login-packet-length: 3
+    max-second-login-packet-length: 66
+    # Should we inform a console if someone tries to crash server with nullpings?
+    inform-console-if-exceed-login-packet-length-limit: true
+  ender-pearl:
+    allow-pearl-through-string: false
+    allow-pearl-through-fence-gate: false
+    allow-pearl-through-cobweb: false
+    allow-pearl-through-slab: false
+    endermite-spawning: true
+  antiredstone-clock:
+    # Maximal number of redstone blinks authorized during the Delay period
+    max-pulses: 150
+    # Time (in seconds) before the reset of the MaxImpulsion variable
+    delay: 300
+    # Is it necessary to drop items (Redstone / repeater) when a loop is destroyed?
+    drop-items: true
+    # Should we create a sign in place of destroyed redstone clock?
+    create-sign-when-clock-is-broken: true
+    sign-lines: 
+    - "&9Redstone"
+    - "&9clocks"
+    - "&0sono"
+    - "&4proibiti"
+    # The list of Worlds on which the plugin is disabled, put a fake name if none
+    ignore-worlds: 
+    - "ignoredWorld"
+    check-clock-comparator: true
+    check-clock-piston: true
+    check-clock-redstone-and-repeater: true
+    automatically-break-detected-clock: true
+    notify-staff-enabled: true
+    notify-staff-permission: "atomspigot.notify-clock"
+    notify-staff-message: "&1&lZera&3&lSpigot &8&l&m-> &cClock redstone disabilitato x: {X} y: {Y} Z: {Z}. Nel mondo {WORLD}"
+  # Make the redstone able to be powered only (e.g.) every 3 seconds if the redstone count on specific chunk is (e.g.) 30
+  redstone-limitter:
+    # Is redstone limitter enabled? AntiRedstoneClock must be enabled too.
+    enabled: false
+    # How big is the delay between powering the redstone again? In seconds. Default: 3 sec
+    powered-delay: 3
+    # We make a delay/limit for redstone powering (enabling/disabling) only if there are more than (e.g.) 30 redstones on chunk/
+    check-if-chunks-on-redstone-are-bigger-than: 20
+    # List of ignored worlds
+    ignored-worlds: 
+    - "ignoredWorld"
+  # AntiReach configuration! (Some good anticheat option!)
+  anti-reach:
+    enabled: true
+    max-distance: 3.5
+  performance:
+    # Should we fire PlayerMoveEvent? It is fired everytime player moves his mouse!
+    # Disabling this thing can really optimize your server performance!
+    fire-move-events: false
+    # Should we show falling blocks like sand?
+    # Disabling it can really optimize players fps, and does not have any influence on their game, they will just not see animation of falling blocks.
+    # Disabling it is just like weaker graphics option that very optimizes FPS
+    show-falling-sand: false
+    # Should we show tnt particles to players?
+    # Disabling it really optimizes players FPS drops while tnt explosions.
+    # Disabling it just does not particles etc. only the broken blocks, it is just like weaker graphics.
+    show-tnt-particles: false
+    # Should we optimize tnt movement?
+    optimize-tnt-movement: true
+    fix-east-west-canoons: true
+    # Kepping it true can optimize server performance (redstone mechanics).
+    disable-block-physics-for-redstone: true
+    # Kepping it false can optimize server performance.
+    load-chunks-for-light-checks: false
+    # If there was an issue loading the chunk from region, stage1 will fail and stage2 will load it sync
+    load-chunk-again-if-null: true
+    disable-anti-xray: true
+    # Want to see tnt explosions? Reduces fps if true.
+    do-not-show-tnt-explosions: true
+    # Want to see falling blocks? Reduces fps if true.
+    do-not-show-falling-blocks: true
+    # Disables mobs AI - can optimize server performance if true.
+    disable-mob-abi: false
+    antiredstone-clock: true
+    # Should we use PandaWire redstone algorithm?
+    alternative-redstone-algorithm: true
+    fire-tnt-dispense-event: false
+  book:
+    max-pages-size: 50
+    max-page-content-length: 500
+    max-author-length: 26
+    max-title-length: 26
+    max-stripped-chars-in-book: 257
+    max-page-bytes-allowed: 2560
+    max-page-bytes-total-size-multiplier: 0.98
+  developer-settings:
+    # Should we print packets that player send? It is useful when someone bypasses anticrash and we want to find out what crash he use
+    debug: false
+    threads-use-available-runtime-processors: true
+    threads: 20
+    tcp-no-delay: true
+  async:
+    async-hit-detection: false
+    async-knockback-detection: false
+    affinity-threads: false
+    allow-async-dispatch-commands: true
+    concurrent-world-support: false
+    async-bans-and-profiles-load: true
+  commands:
+    # Should we add commands like /kill, /gamemode etc?
+    register-vanilla-commands: true
+    register-op-and-deop-commands: false
+    # Should we add our /killentities command? Permission atomspigot.command.killentities
+    add-kill-entities-command: false
+    # Should we add our /ping command? Permission atomspigot.command.ping
+    add-ping-command: true
+    # Should we add our /setslots command? Permission atomspigot.command.setslots
+    add-set-slots-command: false
+
+packet-limiter:
+  enabled: true
+  packets-per-second: 500
+  # Should we limit arm animation packets?
+  arm-anim-enabl: false
+  arm-animation-timestamp: 100
+  allow-schematic-printer: false
+  lever-timestamp-enabled: true
+  # In milliseconds. 1500ms is 1.5 second
+  lever-timestamp: 1500
+  lever-message: "&cAttendi prima di riutilizzare la leva."
+  # Very fast and easy fix/patch for all nbt exploits, but if someone uses e.g CHEST with items inside (e.g on creative servers only, NBT+) then it has false detects. I really recommend it for pvp servers
+  bytebuf-limitation: true
+  bytebuf-limit: 5000
+
+messages:
+  # /ping command message
+  ping-command-yourself: "&7&oIl tuo ping risulta essere di &8> &f&l{PING} &7&oms"
+  # /ping command message
+  ping-command-other: "&7&oIl ping di &a{PLAYER} &7&orisulta essere di &8> &f&l{PING} &7&oms"
+  ping-command-player-is-offline: "&7&oIl giocatore &c{PLAYER} &7&orisulta essere &cOffline&7&o!"
+  # Message when player joins the server. Set to empty to display nothing.
+  join-message: "&2&l[&a&l+&2&l] &r&e{PLAYER} &aHa loggato."
+  # Message when player quits the server. Set to empty to display nothing.
+  quit-message: "&4&l[&c&l-&4&l] &r&e{PLAYER} &cHa sloggato."
+  # Message to staff (administrators) with permission atomspigot.crash-message
+  # Use %nl% to make next line.
+  # Available variables: {PLAYER} - player that tried to crash.
+  # {PACKET} - packet that the player used, {TIME} - taken time to block the packet, {DETAILS} - some details about crash
+  anticrash-staff-message: "%nl%&8&l&m-=-&r&8&l&3&lZera&9&lSpigot&8&l&m&m-=-%nl%&8&l&m-> &7&oIl giocatore &c{PLAYER}%nl%&8&l&m-> &7ha provato a far crashare il server!%nl%&8&l&m-> &7&lPacchetti&8: &e{PACKET}%nl%&8&l&m-> &7&lDettagli&8: &e{DETAILS}%nl%&8&l&m-> &7&lBloccato in&8: &e{TIME}&7ms%nl%&8&l&m-=-&r&8&l&3&lZera&9&lSpigot&8&l&m&m-=-"
+  anticrash-staff-permission: "atomspigot.crash-message"

@@ -1,0 +1,25 @@
+# Knockback profiles configuration of AtomSpigot.
+
+knockbacks:
+  default:
+    horizontal: 1.0
+    vertical: 1.0
+    airHorizontal: 1.1
+    airVertical: 1.1
+    verticalLimit: -1
+    horizontalLimit: -1
+    frictions: 2.0
+    friction: false
+    stopSprint: false
+    comboMode: false
+    potionSpeed: 0.5
+    potionOffSet: -20.0
+    potionDistance: 0.5
+    bowHorizontal: 1.0
+    bowVertical: 1.0
+    rodHorizontal: 1.0
+    rodVertical: 1.0
+    sprintHorizontal: 1.0
+    sprintVertical: 1.0
+    slowDown: 0.6
+defaultKnockback: default
