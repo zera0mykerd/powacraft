@@ -1,0 +1,29 @@
+prefix: '&5&l[&dAntiCheat&5&l] &e> &a'
+color:
+  error: '&c'
+  primary: '&7'
+  secondary: '&c'
+  title: '&9&l'
+  value: '&f'
+  success: '&a'
+commands:
+  error:
+    noPermission: No permission.
+    invalidArguments: Invalid arguments. Check the Guardian help page for more information.
+    playerOnly: This command is for players only.
+    playerNotFound: Could not find player.
+    dataNotFound: There was an error trying to find this specified user's data object.
+    consoleOnly: This command is for console only.
+  save:
+    startSaving: Saving all data...
+    completed: Completed!
+  reload:
+    startReloading: Fully reloading Guardian...
+    completed: Completed!
+  menu:
+    openedMenu: Opened the menu.
+  boxWand:
+    success: Gave you the magic box wand. Use it wisely.
+  alerts:
+    toggledOn: '&7Toggled your alerts &aon&7.'
+    toggledOff: '&7Toggled your alerts &coff&7.'

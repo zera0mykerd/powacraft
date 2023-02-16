@@ -1,0 +1,228 @@
+dependencies:
+  Atlas:
+    autoDownload: true
+checks:
+  Autoclicker (Type A):
+    maxVL: 20
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+    settings:
+      maxCps: 20
+      banCPS: 30
+  Autoclicker (Type B):
+    maxVL: 20
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Autoclicker (Type C):
+    maxVL: 60
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Autoclicker (Type D):
+    maxVL: 10
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+    settings:
+      maxCps: 20
+      banCPS: 30
+  Killaura (Type A):
+    maxVL: 150
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Killaura (Type B):
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Killaura (Type C):
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Killaura (Type F):
+    maxVL: 80
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Fly (Type A):
+    maxVL: 125
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Fly (Type B):
+    maxVL: 200
+    enabled: true
+    executable: false
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Fly (Type C):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Speed (Type A):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Speed (Type B):
+    maxVL: 125
+    enabled: true
+    executable: false
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Speed (Type C):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Timer (Type A):
+    maxVL: 100
+    enabled: true
+    executable: false
+    cancellable: true
+    execCommands:
+    - '%global%'
+    settings:
+      threshold: 960
+  GroundSpoof:
+    maxVL: 100
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Reach (Type A):
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Reach (Type B):
+    maxVL: 60
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+    settings:
+      boxExpand: 3.0
+      range: 200
+      vlMax: 7.0
+  Reach (Type C):
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+    settings:
+      boxExpand: 3.0
+      range: 200
+      vlMax: 7.0
+  Regen:
+    maxVL: 20
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  Fastbow:
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  BadPackets (Type A):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  BadPackets (Type B):
+    maxVL: 40
+    enabled: true
+    executable: false
+    cancellable: true
+    execCommands:
+    - '%global%'
+    settings:
+      maxMovement: 5.0
+  BadPackets (Type C):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+  BadPackets (Type F):
+    maxVL: 20
+    enabled: true
+    executable: false
+    cancellable: true
+    execCommands:
+    - '%global%'
+    settings:
+      maxMovement: 5.0
+  FastLadder:
+    maxVL: 50
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+    settings:
+      verboseMaxSpeed: 0.118
+      maxSpeed: 0.45
+  Criticals (Type A):
+    maxVL: 40
+    enabled: true
+    executable: true
+    cancellable: true
+    execCommands:
+    - '%global%'
+executableCommand:
+- kick %player% -s
+key: ''
+alerts:
+  alertMessage: '&8[&6&lGUARDIAN&8] &f%player% &7has failed &f%check% &c(x%vl%)'
+  alertsDelay: 1000
+  testMode: false
+  printToConsole: false
+  enableOnJoin: true
+updater:
+  notifyOnJoin: true
+  checkForUpdates: true

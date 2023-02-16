@@ -1,0 +1,8 @@
+version: 1.0
+FireworkColor: RED
+FireworkShape: BALL_LARGE
+FireworkFade: RED
+FireworkFlicker: true
+FireworkTrail: true
+FireworkPower: 0
+Firework-air-launch: true

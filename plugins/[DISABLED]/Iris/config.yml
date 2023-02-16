@@ -1,0 +1,4 @@
+#Iris Configuration File
+dependencies:
+  Atlas:
+    autoDownload: false
