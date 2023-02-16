@@ -1,8 +1,0 @@
-Prefix:
-  Plugin: '&6[&4KitsManager&6] &e&o'
-Command:
-  General:
-    In-game: '&cDevi essere un giocatore per usare quel comando!'
-    Usage: '&cUso corretto: &4/%s'
-    Not online: '%s non risulta online!'
-    No permission: '&4Accesso negato al comando.'
