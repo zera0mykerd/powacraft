@@ -1,0 +1,935 @@
+#     ....    .   .   ....
+#    .   .   .. ..   .   .
+#   .   .   . . .   ....
+#  .   .   .   .   .
+# ....    .   .   .      
+# DeathMessagesPrime Configuration File
+# SAVE THIS FILE AS UTF-8!!!! (without BOM)
+# Your text editor should support it. (Windows Notepad does probably not work)
+
+# Configuration version, do not change this unless you want your config to be 
+# reset.
+config-version: 47
+
+# World groups.
+# If a world is in a group, and a death occurs there, the appropriate death 
+# message will be shown in rest of the worlds in that same group too.
+# 
+# If _enabled is false, this feature is disabled. Instead, the death message 
+# behavior will be specified with per-world-messages.
+#
+# per-world-messages must be enabled to make world-groups work!
+world-groups:
+  _enabled: false
+  world:
+    - world
+    - world_nether
+    - world_the_end
+  
+# Following players will never have visible death messages.
+# ENTER UUIDs UNDER THIS LIST. To get an UUID of an online player, use  
+# /dmsg uuid player_name.  
+# Default: (empty)
+player-blacklist: 
+# - '00000000-0000-0000-0000-000000000000'
+  
+# List worlds, where death messages from PvP are not recorded, here.
+# Default: (empty)
+worlds-no-pvp-death-messages:
+# - world2
+
+# List worlds, where death messages from anything else than PvP are not 
+# recorded, here.
+# Default: (empty)
+worlds-no-natural-death-messages:
+# - world2
+
+# List worlds, where death messages are only shown to the killer and the 
+# victim, here.
+# Default: (empty)
+worlds-private-pvp-death-messages:
+# - world3
+
+# List worlds, where death messages are only shown to the player that died here.
+# Default: (empty)
+worlds-private-natural-death-messages:
+# - world3
+
+# Worlds with maximum radius (in blocks) for death messages, assumed infinite 
+# if world is not present.
+# Should a world have a death message radius, the messages will never be shown 
+# to players in any other world.
+worlds-death-message-radius:
+    #world: 10 
+
+# Similar to the above, but this only controls PVP messages (not natural
+# death messages). If both are set, the above worlds-death-message-radius
+# will affect the natural messages and this one will affect the PVP messages.
+# In order to only have a PVP message radius: add the world here only.
+# In order to only have a natural message radius: add the world under
+#          both options and set it to -1 here.
+worlds-pvp-death-message-radius:
+    #world: 10 
+    
+# If a player dies over death-count times within death-interval seconds,
+# death messages from that player will be hidden for death-cooldown seconds.
+# If death-reset is true, every hidden death message resets the cooldown.
+# Default: 3
+cooldown-death-count: 3
+# Default: 10
+cooldown-death-interval: 10
+# Default: 10
+cooldown-death-cooldown: 10
+# Default: false
+cooldown-death-reset: false
+
+# Show debug information upon death, useful for determining plugin conflicts, 
+# etc.
+# Default: false
+debug: false
+
+# Show death messages in all worlds, if false. Needs to be true in order to 
+# worldgroups to function.
+# Default: true
+per-world-messages: true
+
+# Death message compatibility: set the message as normal, until HIGHEST,
+# when it is emptied.
+# Use this if any conflicts arise.
+# Default: true
+death-message-compat-mode: true
+
+# Whether to use DMP broadcasting if a custom death message is set 
+# another plugin.
+# Default: false
+death-message-conflict-broadcast: false
+
+# Whether to enable namedmob messages. If disabled, namedmob messages
+# will not be shown and will be replaced with mob.
+# Default: true
+death-message-enable-namedmob: true
+
+# Show the rarity of items in the %weapon_name% and %weapon% tags.
+# (This affects the text colors and formatting for some items, such
+# as enchanted ones.)
+# Default: true
+death-message-show-rarity: true
+
+# Allows applying item flags on items that appear in death messages.
+# Note that this feature only works on Minecraft 1.8 and above.
+# Possible flags are documented under https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemFlag.html
+death-message-item-flags:
+# - HIDE_ATTRIBUTES
+# - HIDE_ENCHANTS
+
+# Heart compatibility mode: use mob instead of namedmob when the mob name 
+# contains heart characters.
+# Designed for mob health bar plugins, et cetera.
+# Enable this if death messages have mob names be a row of hearts representing 
+# health.
+# Default: false
+heart-compat-mode: false
+
+# If the mob name contains any of the following characters and 
+# heart-compat-mode is enabled, the default mob name is displayed. You can add 
+# characters if the health bar is still visible (copy the character from the 
+# death message logs) or remove them at will.
+heart-characters: "♡♥❤■"
+
+# Broadcast death message to console.
+# none: Do not print death message in console.
+# normal: Print the DeathMessagesPrime message in console.
+# verbose: Print a verbose message, including coordinates, and other info.
+# Verbose is useful for debugging
+# Default: normal
+console-death-message: normal
+
+# Clean prefix/suffix from messages printed in the console, 
+# ignored if console-death-message is not normal
+# Default: false
+console-death-message-strip-prefix: false
+
+# Clean color codes from messages printed in the console, 
+# ignored if console-death-message is not normal
+# Default: false
+console-death-message-strip-colors: false
+
+# Displays the death message in the console even if the world has disabled
+# death messages or set them to private. 
+# Default: true
+console-death-message-even-if-disabled: true
+
+# The priority for the listener. Set to lower value if there are any conflicts 
+# with plugins that provide their own death message systems.
+# In order from higher to lower: HIGHEST, HIGH, NORMAL, LOW, LOWEST
+# MONITOR is UNSUPPORTED - do not use it, as it causes conflicts and may
+# mess with plugins usando the API.
+# Default: HIGH
+death-listener-priority: HIGH
+
+# Whether to show the custom weapon death messages (ZombieCustom for example)
+# on all weapons (true), or only on weapons with custom names (false).
+# Default: false
+show-custom-death-msg-on-all-weapons: false
+
+# THIS FEATURE IS NOT IMPLEMENTED RIGHT NOW, AS THE API DOES NOT SUPPORT
+# MODIFYING PET DEATH MESSAGES.
+# Whether to show death messages for tamed and named pets.
+# (true is the vanilla Minecraft behavior)
+# Default: true
+show-named-pet-death-messages: true
+
+# Messages for enabling and disabling death messages usando /toggledeathmsg
+death-messages-hidden: "&a[DMP] &aAltri' messaggi di morte sono ora NASCOSTI"
+death-messages-shown: "&a[DMP] &aAltri' messaggi di morte sono ora VISIBILI"
+
+# Here are the actual death messages. They are as a list, so you can add as 
+# many as you want, and the plugin will support it. Color codes in format &0-&f 
+# and &k-&r are supported.
+#
+# %player% represents the player's name.
+# %name% represents the player's display name.
+# &o%killer%&c represents the killer player (in PvP reasons), or 
+#          pursuing mob (in DrowningMob etc. reasons) (mob names can be 
+#          changed in mob-names section).
+# %killer2% represents the killer player's display name in PvP reasons only.
+# &o%plrtag%&c represents the dead player's username with entity tooltip.
+# %victim% represents the dead player's display name with entity tooltip.
+# %entity% represents the killer's display name with entity tooltip.
+# %weapon_name% represents the weapon name.
+# %weapon% represents the weapon name (including the tooltip).
+# %world% represents the world name of the death.
+# %biome% represents the biome, where the death occurred. 
+# %x%, %y% and %z% represents the player death coordinates.
+# %distance% represents the distance between the player and the killer
+#            in blocks (if applicable)
+# %playerxp%, %playerlevel% represent the XP and level of the player.
+# %killerxp%, %killerlevel% are same for a killing *player*.
+#
+# Death messages for being ucciso  normally peaceful mobs also exist,
+# designed for custom maps, plugins or mods which may change functionality.
+death-messages: 
+  # Prefix of all death messages
+  prefix: "&0&l[&4&oPowaDeath&0&l] &c" 
+  # Suffix of all death messages
+  suffix: "" 
+  # If you want a prefix / suffix only for PVP messages, uncomment these:
+  # prefix-pvp: "&a[&eD&a] &c"
+  # suffix-pvp: ""
+  mob:
+    Bat:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Pipistrello"
+    BlazeMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Blaze"
+    BlazeFireball:
+      - "&o%plrtag%&c \u00E8 stato infuocato da Blaze"
+    Cat:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Gatto"
+    CaveSpider:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Ragno delle caverne"
+    Chicken:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Pollooooooooooooh"
+    Cod:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un pesciolino"
+    Cow:
+      - "&o%plrtag%&c \u00E8 stato ucciso da una Mucca"
+    Creeper:
+      - "&o%plrtag%&c \u00E8 saltato in aria da Creeper"
+    CreeperCharged: # charged Creeper
+      - "&o%plrtag%&c \u00E8 saltato in aria da Creeper caricato"
+    Dolphin:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Delfino"
+    Donkey:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Asino"
+    DrownedMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Annegato"
+    DrownedTrident:
+      - "&o%plrtag%&c \u00E8 stato impalato da un Annegato"
+    DrownedMeleeCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Annegato usando &f[%weapon%&f]"
+    DrownedTridentCustom:
+      - "&o%plrtag%&c \u00E8 stato impalato da Annegato usando &f[%weapon%&f]"
+    ElderGuardian:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un guardiano dell'elder"
+    EnderDragon:
+      - "&o%plrtag%&c \u00E8 stato ucciso dall'Ender dragon"
+    EnderDragonBreath:
+      - "&o%plrtag%&c \u00E8 stato arrostito dall'Ender dragon"
+    Enderman:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Enderman"
+    Endermite:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Endermite"
+    Evoker:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Evoker"
+    Fox:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Volpe"
+    Ghast:
+      - "&o%plrtag%&c \u00E8 stato infuocato da Ghast"
+    Giant:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Gigante"
+    Guardian:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Guardian"
+    Horse:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Cavallo"
+    HuskMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da uno Zombie del deserto"
+    HuskCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Zombie del deserto usando &f[%weapon%&f]"
+    Illusioner:
+      - "&o%plrtag%&c \u00E8 stato sparato da Illusioner"
+    IronGolem:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Iron Golem"
+    Llama:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Llama"
+    MagmaCube:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Magma Cube"
+    Mooshroom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Mooshroom"
+    Mule:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Mulo"
+    Panda:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Panda"
+    Parrot:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Parrot"
+    Phantom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Phantom"
+    Pig:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Maiale"
+    PillagerArrow:
+      - "&o%plrtag%&c \u00E8 stato sparato da Pillager"
+    PillagerMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Pillager"
+    PillagerArrowCustom:
+      - "&o%plrtag%&c \u00E8 stato sparato da Pillager usando &f[%weapon%&f]"
+    PillagerCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Pillager usando &f[%weapon%&f]"
+    PolarBear:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Orso polare"
+    PufferFish:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Pesce palla"
+    Rabbit:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Coniglio"
+    Ravager:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Ravager"
+    Salmon:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Salmone"
+    Sheep:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Pecora"
+    Shulker:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Shulker"
+    Silverfish:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Pesciolino d'argento"
+    SkeletonArrow:
+      - "&o%plrtag%&c \u00E8 stato sparato da Scheletro"
+    SkeletonArrowCustom:
+      - "&o%plrtag%&c \u00E8 stato sparato da Scheletro usando &f[%weapon%&f]"
+    SkeletonMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Scheletro"
+    SkeletonCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Scheletro usando &f[%weapon%&f]"
+    SkeletonHorse:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Cavallo Scheletro"
+    Slime:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Slime"
+    SnowGolem:
+      - "&o%plrtag%&c \u00E8 stato colpito da un Pupazzo di neve"
+    Spider:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Ragno"
+    Squid:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Calamaro"
+    StrayArrow:
+      - "&o%plrtag%&c \u00E8 stato sparato da Uno Scheletro innevato"
+    StrayMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Uno Scheletro innevato"
+    StrayCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Uno Scheletro innevato usando &f[%weapon%&f]"
+    TropicalFish:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Un pesce tropicale"
+    Turtle:
+      - "&o%plrtag%&c \u00E8 stato ucciso da una Tartaruga"
+    Vex:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Vex"
+    Vindicator:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Vindicator"
+    WanderingTrader:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Wandering Trader"
+    Witch:
+      - "&o%plrtag%&c \u00E8 stato ucciso da una Strega usando la magia"
+    Wither:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Wither"
+    WitherSpawnBoom: # Dies from wither spawn explosion
+      - "&o%plrtag%&c \u00E8 saltato in aria da Wither"
+    WitherSkeletonMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da uno Scheletro Wither"
+    WitherSkeletonCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da uno Scheletro Wither usando &f[%weapon%&f]"
+    Wolf:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Lupo"
+    ZombieMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Zombie"
+    ZombieCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Zombie usando &f[%weapon%&f]"
+    ZombiePigManMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Zombie Pigman"
+    ZombiePigManCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Zombie Pigman usando &f[%weapon%&f]"
+    ZombieVillagerMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Zombie Villager"
+    ZombieVillagerCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Zombie Villager usando &f[%weapon%&f]"
+    ZombieHorse:
+      - "&o%plrtag%&c \u00E8 stato ucciso da Cavallo Zombie"
+  namedmob: # For named mobs, use &o%killer%&c as mob
+    Bat:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    BlazeMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    BlazeFireball:
+      - "&o%plrtag%&c \u00E8 stato infuocato da &o%killer%&c"
+    Cat:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    CaveSpider:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Chicken:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Cod:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Cow:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Creeper:
+      - "&o%plrtag%&c \u00E8 saltato in aria da &o%killer%&c"
+    CreeperCharged: # charged Creeper
+      - "&o%plrtag%&c \u00E8 saltato in aria da &o%killer%&c"
+    Dolphin:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Donkey:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    DrownedMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    DrownedTrident:
+      - "&o%plrtag%&c \u00E8 stato impalato da &o%killer%&c"
+    DrownedMeleeCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    DrownedTridentCustom:
+      - "&o%plrtag%&c \u00E8 stato impalato da &o%killer%&c usando &f[%weapon%&f]"
+    ElderGuardian:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    EnderDragon:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    EnderDragonBreath:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando la magia"
+    Enderman:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Endermite:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Evoker:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Fox:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Ghast:
+      - "&o%plrtag%&c \u00E8 stato infuocato da &o%killer%&c"
+    Giant:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Guardian:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Horse:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    HuskMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    HuskCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    Illusioner:
+      - "&o%plrtag%&c \u00E8 stato sparato da &o%killer%&c"
+    IronGolem:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Llama:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    MagmaCube:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Mooshroom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Mule:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Panda:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Parrot:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Phantom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Pig:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    PillagerArrow:
+      - "&o%plrtag%&c \u00E8 stato sparato da &o%killer%&c"
+    PillagerMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    PillagerArrowCustom:
+      - "&o%plrtag%&c \u00E8 stato sparato da &o%killer%&c usando &f[%weapon%&f]"
+    PillagerCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    PolarBear:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    PufferFish:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Rabbit:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Ravager:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Salmon:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Sheep:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Shulker:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Silverfish:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    SkeletonArrow:
+      - "&o%plrtag%&c \u00E8 stato sparato da &o%killer%&c"
+    SkeletonMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    SkeletonArrowCustom:
+      - "&o%plrtag%&c \u00E8 stato sparato da &o%killer%&c usando &f[%weapon%&f]"
+    SkeletonCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    SkeletonHorse:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Slime:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    SnowGolem:
+      - "&o%plrtag%&c \u00E8 stato colpito da &o%killer%&c"
+    Spider:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Squid:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    StrayArrow:
+      - "&o%plrtag%&c \u00E8 stato sparato da &o%killer%&c"
+    StrayMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    StrayCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    TropicalFish:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Turtle:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Vex:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Villager:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Vindicator:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    WanderingTrader:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    Witch:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando la magia"
+    Wither:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    WitherSpawnBoom: # Dies from wither spawn explosion
+      - "&o%plrtag%&c \u00E8 saltato in aria da &o%killer%&c"
+    WitherSkeletonMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    WitherSkeletonCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    Wolf:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    ZombieMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    ZombieCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    ZombiePigManMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    ZombiePigManCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    ZombieVillagerMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    ZombieVillagerCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    ZombieHorse:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+  pvp:
+    PlayerMelee:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c"
+    PlayerCustom:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando &f[%weapon%&f]"
+    PlayerArrow:
+      - "&o%plrtag%&c \u00E8 stato sparato da &o%killer%&c"
+    PlayerTrident:
+      - "&o%plrtag%&c \u00E8 stato impalato da &o%killer%&c"
+    PlayerTridentCustom:
+      - "&o%plrtag%&c \u00E8 stato impalato da &o%killer%&c usando &f[%weapon%&f]"
+    PlayerFireball: # Just in case
+      - "&o%plrtag%&c \u00E8 stato infuocato da &o%killer%&c"
+    PlayerSnowball: # Just in case
+      - "&o%plrtag%&c \u00E8 stato colpito da &o%killer%&c"
+    PlayerProjectileCustom: # Bows, plugins like CrackShot
+      - "&o%plrtag%&c \u00E8 stato sparato da &o%killer%&c usando &f[%weapon%&f]"
+    PlayerPotion:
+      - "&o%plrtag%&c \u00E8 stato ucciso da &o%killer%&c usando la magia"
+  natural:
+    Thorns:
+      - "&o%plrtag%&c \u00E8 stato ucciso mentre provava a colpire &o%killer%&c"
+    TNT:
+      - "&o%plrtag%&c \u00E8 saltato in aria"
+    TNTKill:
+      - "&o%plrtag%&c \u00E8 saltato in aria da &o%killer%&c"
+    EnderCrystal:
+      - "&o%plrtag%&c \u00E8 stato ucciso da un Cristallo dell'end"
+    Bed: # exploding beds
+      - "&o%plrtag%&c \u00E8 stato ucciso da un letto esplosivo"
+    Cactus:
+      - "&o%plrtag%&c \u00E8 stato punto a morte"
+    CactusKill:
+      - "&o%plrtag%&c \u00E8 stato punto a morte mentre scappava da &o%killer%&c"
+    Anvil:
+      - "&o%plrtag%&c \u00E8 stato schiacciato da un incudine"
+    FallingBlock: # Only when a FallingBlock is modified to cause damage
+      - "&o%plrtag%&c \u00E8 stato schiacciato da un blocco cadente"
+    UnknownArrow: # arrow from unknown entity or source, /summon?
+      - "&o%plrtag%&c \u00E8 stato sparato da una freccia"
+    DispenserArrow:
+      - "&o%plrtag%&c \u00E8 stato sparato da una freccia"
+    DispenserFireball:
+      - "&o%plrtag%&c \u00E8 bruciato a morte"
+    DispenserSnowball:
+      - "&o%plrtag%&c \u00E8 stato ucciso da una palla di neve in un dispenser"
+    Drowning:
+      - "&o%plrtag%&c \u00E8 affogato"
+    DrowningKill:
+      - "&o%plrtag%&c \u00E8 stato affogato mentre scappava da &o%killer%&c"
+    PotionPoison: # Normally impossible
+      - "&o%plrtag%&c \u00E8 morto per avvelenamento"
+    PotionWither:
+      - "&o%plrtag%&c \u00E8 stato witherato a morte"
+    PotionHarming:
+      - "&o%plrtag%&c \u00E8 stato ucciso dalla magia"
+    FireBlock:
+      - "&o%plrtag%&c \u00E8 morto in fiamme"
+    FireBlockKill:
+      - "&o%plrtag%&c ha camminato tra le fiamme mentre scappava da &o%killer%&c"
+    FireTick:
+      - "&o%plrtag%&c \u00E8 bruciato a morte"
+    FireTickKill:
+      - "&o%plrtag%&c \u00E8 bruciato a morte mentre scappava da &o%killer%&c"
+    Magma:
+      - "&o%plrtag%&c ha scoperto il pavimento di lava"
+    MagmaKill:
+      - "&o%plrtag%&c ha camminato nella zona proibita di &o%killer%&c"
+    BerryBush:
+      - "&o%plrtag%&c \u00E8 morto avvelenato da una bacca"
+    BerryBushKill:
+      - "&o%plrtag%&c \u00E8 morto avvelenato da una bacca mentre scappava da &o%killer%&c"
+    Lava:
+      - "&o%plrtag%&c ha provato a nuotare nella lava"
+    LavaKill:
+      - "&o%plrtag%&c \u00E8 caduto nella lava mentre scappava da &o%killer%&c"
+    Lightning: # Happens when struck  lightning, vanilla: FireTick/FireBlock
+      - "&o%plrtag%&c \u00E8 stato fulminato a morte"
+    Starvation:
+      - "&o%plrtag%&c \u00E8 morto di fame"
+    Suffocation:
+      - "&o%plrtag%&c \u00E8 soffocato in un muro"
+    Cramming: # maxEntityCramming
+      - "&o%plrtag%&c \u00E8 stato schiacciato dalle entita"
+    CrammingKill:
+      - "&o%plrtag%&c \u00E8 stato schiacciato dalle entita"
+    Void:
+      - "&o%plrtag%&c \u00E8 andato fuori dal mondo"
+    VoidFall: # in DMP, if entity falls over y>=64 to the void
+      - "&o%plrtag%&c \u00E8 andato fuori dal mondo"
+    VoidKill:
+      - "&o%plrtag%&c \u00E8 andato fuori dal mondo mentre scappava da &o%killer%&c"
+    FallShort: # Fall distance 5 blocks or less, or ender pearl
+      - "&o%plrtag%&c \u00E8 caduto da una piccola altezza"
+    FallLong: # Fall distance over 5 blocks
+      - "&o%plrtag%&c \u00E8 caduto da una grande altezza"
+    FallLadder: 
+      - "&o%plrtag%&c \u00E8 caduto dalla scala"
+    FallVine: 
+      - "&o%plrtag%&c \u00E8 caduto da alcune viti"
+    FallWater: 
+      - "&o%plrtag%&c \u00E8 caduto da acqua"
+    FallFire: 
+      - "&o%plrtag%&c \u00E8 caduto in una macchia di fuoco"
+    FallCacti: 
+      - "&o%plrtag%&c \u00E8 caduto da un percorso"
+    FallKill:
+      - "&o%plrtag%&c \u00E8 stato condannato a cadere da &o%killer%&c"
+    FallKillWeapon:
+      - "&o%plrtag%&c \u00E8 stato condannato a cadere da &o%killer%&c usando &f[%weapon%&f]"
+    FallFinishKill:
+      - "&o%plrtag%&c \u00E8 stato buttato giu da &o%killer%&c"
+    FallFinishKillWeapon:
+      - "&o%plrtag%&c \u00E8 stato buttato giu da &o%killer%&c usando &f[%weapon%&f]"
+    FallExplosionKill: # FallKill caused  entity explosion
+      - "&o%plrtag%&c \u00E8 saltato in aria da un esplosione da &o%killer%&c"
+    FallLadderKill: 
+      - "&o%plrtag%&c \u00E8 stato sparato da giu le scale &o%killer%&c"
+    FallVineKill: 
+      - "&o%plrtag%&c \u00E8 stato sparato da alcune viti  &o%killer%&c"
+    Firework: 
+      - "&o%plrtag%&c \u00E8 stato ucciso dai fuochi d artificio"
+    Elytra: 
+      - "&o%plrtag%&c ha scoperto l'energia cinetica"
+    Suicide: # Some plugins may use this one, /suicide and /kill for example
+      - "&o%plrtag%&c \u00E8 morto"
+    Melting: # Some plugins may use this one, orig. Snowmans + hot biomes
+      - "&o%plrtag%&c \u00E8 morto"
+    DryOut: # Some plugins may use this one, orig. fish outside water
+      - "&o%plrtag%&c \u00E8 morto"
+    Custom: # Some plugins may use this one
+      - "&o%plrtag%&c \u00E8 morto"
+  unknown: 
+    - "&o%plrtag%&c \u00E8 morto"
+  # if any custom plugins offer custom messages, add them below.
+  # for example: for tag "foo.bar", use
+  # foo:
+  #   bar:
+  #     - "foo.bar death message"
+     
+mob-names:
+  Bat: "Pipistrello"
+  Blaze: "Blaze"
+  Cat: "Gatto"
+  CaveSpider: "Ragno delle caverne"
+  Chicken: "Polloooooooooooooooooh"
+  Cod: "Pesciolino"
+  Cow: "Mucca"
+  Creeper: "Creeper"
+  Dolphin: "Delfino"
+  Donkey: "Asino"
+  Drowned: "Annegato"
+  ElderGuardian: "Guardiano Elder"
+  EnderDragon: "Ender Dragon"
+  Enderman: "Enderman"
+  Endermite: "Endermite"
+  Evoker: "Evoker"
+  Fox: "Volpe"
+  Ghast: "Ghast"
+  Giant: "Gigante"
+  Guardian: "Guardiano"
+  Horse: "Cavallo"
+  Husk: "Zombie del deserto"
+  Illusioner: "Illusioner"
+  IronGolem: "Iron Golem"
+  Llama: "Llama"
+  MagmaCube: "Cubo di magma"
+  Mooshroom: "Mucca di fungo"
+  Mule: "Mulo"
+  Panda: "Panda"
+  Parrot: "Pappagallo"
+  Phantom: "Phantom"
+  Pig: "Maiale"
+  Pillager: "Pillager"
+  PolarBear: "Orso polare"
+  PufferFish: "Pesce palla"
+  Ocelot: "Ocelot"
+  Rabbit: "Coniglio"
+  Ravager: "Ravager"
+  Salmon: "Salmone"
+  Sheep: "Pecora"
+  Shulker: "Shulker"
+  Silverfish: "Pesciolino argento"
+  Skeleton: "Scheletro"
+  SkeletonHorse: "Cavallo scheletro"
+  Slime: "Slime"
+  SnowGolem: "Pupazzo di neve"
+  Spider: "Ragno"
+  Squid: "Calamaro"
+  Stray: "Scheletro innevato"
+  TraderLlama: "scambio del Llama"
+  TropicalFish: "Pesce tropicale"
+  Turtle: "Tartaruga"
+  Vex: "Vex"
+  Villager: "Villlager"
+  Vindicator: "Vindicator"
+  WanderingTrader: "Wandering Trader"
+  Witch: "Strega"
+  Wither: "Wither"
+  WitherSkeleton: "Scheletro Wither"
+  Wolf: "Lupo"
+  Zombie: "Zombie"
+  ZombieHorse: "Cavallo Zombie"
+  ZombiePigMan: "Zombie Pigman"
+  ZombieVillager: "Zombie Villager"
+
+custom-mob-death-messages:
+  # The following attribute takes in regular expressions and checks top-down 
+  # whether the names of the mobs match them.
+  # If there is no list, as in [], the plugin will look up the message from 
+  # the normal death messages.
+  # If the list only has an empty message, the death message for that mob will 
+  # be hidden.
+  # To match color codes, use the § character instead of &. (This file must be 
+  # encoded in UTF-8)
+  # Examples:
+  #
+  # "_*": # match all mobs
+  #   - "&o%plrtag%&c  ucciso  a mob"
+  #
+  # "^[Ss]_*": # match all mobs beginning with S or s
+  #   - "&o%plrtag%&c  ucciso  a mob"
+  #
+  # "§cMy Custom Boss": [] # display normal messages for mobs named 
+  #                        # 'My Custom Boss' written in red
+  #
+  # "My Custom Boss": # match all mobs with name being 'My Custom Boss'
+  #   - "&o%plrtag%&c  ucciso  a boss"
+  #   - "&o%plrtag%&c colpito  a boss"
+  #
+  # "§aMy Custom Boss": # match all mobs with name being 'My Custom Boss' 
+  #                     # written in light green
+  #   - "&o%plrtag%&c  ucciso  a boss"
+  #   - "&o%plrtag%&c colpito  a boss"
+  #
+  # "_*My Custom Boss_*": # match all mobs with name containing 'My Custom Boss'
+  #   - "&o%plrtag%&c  ucciso  a boss"
+  #   - "&o%plrtag%&c colpito  a boss"
+  #
+  # !!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!
+  #  IN REGEXES; ALL DOTS MUST BE REPRESENTED WITH UNDERSCORES
+  # !!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!
+  #
+  Melee:
+    "_*": []
+  Ranged:
+    "_*": []
+  Potion:
+    "_*": []
+  Thorns:
+    "_*": []
+  TNTKill:
+    "_*": []
+  CactusKill:
+    "_*": []
+  DrowningKill:
+    "_*": []
+  CrammingKill:
+    "_*": []
+  FireBlockKill:
+    "_*": []
+  FireTickKill:
+    "_*": []
+  LavaKill:
+    "_*": []
+  MagmaKill:
+    "_*": []
+  VoidKill:
+    "_*": []
+  FallKill:
+    "_*": []
+  Other:
+    "_*": []
+
+custom-user-death-messages:
+  # Same deal here. The plugin checks from the actual user names of players.
+  # custom-user-death-messages is preferred over custom-player-death-messages:
+  # empty list here will pass to custom-player-death-messages before passing 
+  # through to normal death messages.
+  Melee:
+    "_*": []
+  Ranged:
+    "_*": []
+  Potion:
+    "_*": []
+  Thorns:
+    "_*": []
+  TNTKill:
+    "_*": []
+  CactusKill:
+    "_*": []
+  DrowningKill:
+    "_*": []
+  CrammingKill:
+    "_*": []
+  FireBlockKill:
+    "_*": []
+  FireTickKill:
+    "_*": []
+  LavaKill:
+    "_*": []
+  MagmaKill:
+    "_*": []
+  VoidKill:
+    "_*": []
+  FallKill:
+    "_*": []
+  Other:
+    "_*": []
+
+custom-player-death-messages:
+  # Same deal here. The plugin checks from the display names of players.
+  Melee:
+    "_*": []
+  Ranged:
+    "_*": []
+  Potion:
+    "_*": []
+  Thorns:
+    "_*": []
+  TNTKill:
+    "_*": []
+  CactusKill:
+    "_*": []
+  DrowningKill:
+    "_*": []
+  CrammingKill:
+    "_*": []
+  FireBlockKill:
+    "_*": []
+  FireTickKill:
+    "_*": []
+  LavaKill:
+    "_*": []
+  MagmaKill:
+    "_*": []
+  VoidKill:
+    "_*": []
+  FallKill:
+    "_*": []
+  Other:
+    "_*": []
+
+custom-biome-names:
+  # See https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html.
+  # The key should be one from the list above, for example:
+  
+  # SAVANNA_ROCK: "Savanna Plateau"
+  
+custom-world-names:
+  # World name as the key and display name as the value.
+  
+  # "world": "World #1"
+  
+custom-messages-per-player:
+  # Add custom messages for players. Use the UUID as the key, then use a death 
+  # reason key with the list of messages.
+  # To get the UUID of an online player, use /dmsg uuid player_name
+  
+  # Will this override custom-mob-death-messages, custom-user-death-messages 
+  # and custom-player-death-messages?
+  override: true
+  # also affects custom-messages-per-killer-player
+  
+  # "123e4567-e89b-12d3-a456-426655440000":
+  #   natural:
+  #     TNT:
+  #       - "A VIP player, &o%plrtag%&c, blew up!"  
+  
+custom-messages-per-killer-player:
+  # Same as above, but for killing players in PVP events.
+  # To get the UUID of an online player, use /dmsg uuid player_name
+  
+  # "123e4567-e89b-12d3-a456-426655440000":
+  #   natural:
+  #     TNTKill:
+  #       - "&o%plrtag%&c got blown up  a VIP player, %entity%!"  
+  
+custom-messages-per-world:
+  # Add custom messages for worlds. Use the world name as the key, then 
+  # use a death reason key with the list of messages.
+  # This has lesser priority than custom-messages-per-player,
+  # custom-messages-per-killer-player or others.
+  
+  # "world":
+  #   natural:
+  #     TNT:
+  #       - "A player, &o%plrtag%&c, blew up in the specific world!"  
+  
