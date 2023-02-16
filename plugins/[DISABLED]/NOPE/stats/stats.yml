@@ -1,0 +1,74 @@
+Speed#1:
+  triggers: 3
+  vl: 19
+ClonedMovement#1:
+  triggers: 2
+  vl: 12
+Zoot#1:
+  triggers: 1
+  vl: 999187
+Bans:
+  Timings:
+  - '1565952334961'
+  - '1565952392802'
+  - '1565952418780'
+  - '1565952519108'
+  - '1565952574021'
+  - '1565952831035'
+  - '1565952885240'
+  - '1565953222279'
+  - '1565953665353'
+Flight#1:
+  triggers: 17
+  vl: 85
+Speed#2:
+  triggers: 3
+  vl: 337
+Flight#3:
+  triggers: 9
+  vl: 90
+NoSlowDown#2:
+  triggers: 10
+  vl: 1507
+NoSlowDown#4:
+  triggers: 10
+  vl: 947
+FastSneak#1:
+  triggers: 32
+  vl: 3109
+NoSlowDown#1:
+  triggers: 62
+  vl: 633
+InventoryMove#1:
+  triggers: 9
+  vl: 90
+AutoArmor#1:
+  triggers: 3
+  vl: 300
+GhostHand#1:
+  triggers: 4
+  vl: 20
+Scaffold#3:
+  triggers: 6
+  vl: 30
+Speed#3:
+  triggers: 162
+  vl: 986
+Timer#2:
+  triggers: 5
+  vl: 25
+NoFall#1:
+  triggers: 1
+  vl: 5
+Criticals#1:
+  triggers: 10
+  vl: 50
+Reach#1:
+  triggers: 1
+  vl: 30
+KillAura#3:
+  triggers: 1
+  vl: 20
+NoWeb#1:
+  triggers: 55
+  vl: 784

@@ -1,0 +1,420 @@
+on join:
+	send player title "&7&m[[&r &aWelcome &7&m]]" with subtitle "&b%player%" for 4 seconds
+	if player does not have permission "sentinel.silentjoin":
+		set join message to "&7[&a+&7] %player%"
+	else:
+		stop
+
+on join:
+	set {bug.%player%} to false
+
+on quit:
+	set {bug.%player%} to false
+
+on quit:
+	if player does not have permission "sentinel.silentquit":
+		set quit message to "&7[&c-&7] %player%"
+	else:
+		stop
+
+on death:
+	if attacker is a player:
+		if victim is a player:
+			if attacker is holding a bow:
+				set death message to "&a%attacker% &7&m->>>---->&r  &c%victim%"
+			else:
+				set death message to "&a%attacker% &7&m--[------&r  &c%victim%"
+	else:
+		set death message to "&7&lx &c%victim%"
+
+on respawn:
+	set {bug.%player%} to true
+	wait 3 seconds
+	set {bug.%player%} to false	
+
+on any move:
+	gamemode of player is not creative
+	set {block.%player%} to block below player
+	if {block.%player%} is air:
+		block east below player is not stairs
+		block west below player is not stairs
+		set {_fpos} to location of player
+		{bug.%player%} is false
+		wait 11 ticks
+		{bug.%player%} is false
+		if y-coord of player - y-coord of {_fpos} >= 2:
+			if y-coord of player - y-coord of {_fpos} > 1.5:
+				teleport player to {_fpos}
+				add 1 to {fly.%player%}
+				if {fly.%player%} >= 3:
+					kick the player due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+					clear {fly.%player%}
+				loop all players:
+					if {notify.%loop-player%} is true:
+						message "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cFly"
+			else:
+				player's gamemode is not Creative
+				if player is flying:
+					kick player due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+				else:
+					stop
+
+on leftclick:
+	add 1 to {click.%player%}
+	if {click.%player%} >= 16:
+		add 1 to {warn.%player%}
+		loop all players:
+			if {notify.%loop-player%} is true:
+				send "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cKillAura" to loop-player
+		if {warn.%player%} = 3:
+			kick the player due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+			clear {warn.%player%}
+
+every 1 seconds:
+	loop all players:
+		clear {click.%loop-player%}
+
+on damage:
+	if attacker is a player:
+		if victim is a player:
+			attacker's gamemode is not creative
+			set {_distance} to distance between attacker and victim
+			if {_distance} > 4:
+				if damage cause is not a projectile:
+					cancel event
+					add 1 to {reach.%attacker%}
+					loop all players:
+						if {notify.%loop-player%} is true:
+							message "&8[&4&lSentinel&8] &7The player &c%attacker% &7failed &cReach" to loop-player
+					{reach.%attacker%} >= 5:
+						kick the attacker due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+						clear {reach.%attacker%}
+on jump:
+	player's gamemode is not creative
+	{bug.%player%} is false
+	if {cool.%player%} is not set:
+		set {cool.%player%} to false
+	{cool.%player%} is false
+	{test.%player%} < 1
+	set {cool.%player%} to true
+	set {jumplocation.%player%} to location of player
+	wait 0.5 seconds
+	set {chakuchilocation.%player%} to location of player
+	set {cool.%player%} to false
+	{bug.%player%} is false
+	if distance between {jumplocation.%player%} and {chakuchilocation.%player%} is smaller than 5:
+		stop
+	else:
+		if block 1 below the player is stairs:
+			stop
+		if block 1 below the player is slabs:
+			stop
+		else:
+			teleport player to {jumplocation.%player%}
+			loop all players:
+				if {notify.%loop-player%} is true:
+					message "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cSpeed BHOP" to loop-player
+
+on walking on stairs:
+	add 2 to {test.%player%}
+	wait 1 seconds
+	add -2 to {test.%player%}
+
+on damage:
+	add 1 to {test.%victim%}
+	wait 1 seconds
+	add -1 to {test.%victim%}
+
+on join:
+	set {test.%player%} to 0
+
+on any move:
+	gamemode of player is not creative
+	set {_pos} to location of player
+	{bug.%player%} is false
+	wait 8 tick
+	{bug.%player%} is false
+	if y-coord of {_pos} - y-coord of player <= 1:
+		if distance between {_pos} and player is bigger than 4:
+			if block below player is stairs:
+				stop
+			else:
+				teleport player to {_pos}
+				add 1 to {speed.%player%}
+				if {speed.%player%} >= 3:
+					kick the player due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+					clear {speed.%player%}
+				loop all players:
+					if {notify.%loop-player%} is true:
+						message "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cSpeed"
+		else:
+			stop
+	else:
+		stop
+
+on inventory open:
+	gamemode of player is not creative
+	if player is sneaking:
+		kick the player due to "&8[&4&lSentinel&8] &7Sneak &cis not allowed!"
+		loop all players:
+			if {notify.%loop-player%} is true:
+				message "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cSneak"
+
+on chat:
+	gamemode of player is not creative
+	if player is sneaking:
+		kick the player due to "&8[&4&lSentinel&8] &7Sneak &cis not allowed!"
+		loop all players:
+			if {notify.%loop-player%} is true:
+				message "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cSneak"
+
+on shoot:
+	if projectile is an arrow:
+		if difference between {bow.%shooter%} and now is less than 2 ticks:
+			loop all players:
+				if {notify.%loop-player%} is true:
+					message "&8[&4&lSentinel&8] &7The player &c%shooter% &7failed &cFastbow" to loop-player
+				kick the shooter due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+		set {bow.%shooter%} to now
+
+on damage:
+	victim is a player
+	block at victim is not cobweb
+	victim is not riding
+	damage wasn't caused by lava, fire, burning, fall, poison or wither
+	victim doesn't have poison
+	victim doesn't have wither
+	victim isn't burning
+	block behind victim is air
+	if victim's ping < 100:
+		set {location1.%victim%} to victim's location
+		wait 6 ticks
+		set {location2.%victim%} to victim's location
+		if {location1.%victim%} = {location2.%victim%}:
+			add 1 to {nkb.%victim%}
+			if {nkb.%victim%} >= 4:
+				kick victim due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+				loop all players:
+					if {notify.%loop-player%} is true:
+						message "&8[&4&lSentinel&8] &7The player &c%victim% &7failed &cNoKnockback" to loop-player
+				wait 1 second
+				clear {nkb.%victim%}
+
+on walk on water:
+	{bug.%player%} is false
+	wait 5 tick
+	player's gamemode is not creative
+	player is not riding
+	player is not sneaking
+	if block below player is water:
+		if block south below player is water:
+			if block north below player is water:
+				if block west below player is water:
+					if block east below player is water:
+						block north-east below player is water
+						block north-west below player is water
+						block south-east below player is water
+						block south-west below player is water
+						if block south player is air:
+							if block north player is air:
+								if block west player is air:
+									block east player is air:
+										loop all players:
+											if {notify.%loop-player%} is true:
+												add 1 to {jesus.%player%}
+												if {jesus.%player%} >= 6:
+													kick player due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+													send "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cJesus" to loop-player
+													clear {jesus.%player%}
+												stop
+on any move:
+	{bug.%player%} is false
+	wait 5 tick
+	if player's gamemode is not creative:
+		if player is sneaking:
+			stop
+		else:
+			if block below player is water:
+				if block south below player is water:
+					if block north below player is water:
+						if block west below player is water:
+							if block east below player is water:
+								block north-east below player is water
+								block north-west below player is water
+								block south-east below player is water
+								block south-west below player is water
+								if block south player is air:
+									if block north player is air:
+										if block west player is air:
+											block east player is air:
+												loop all players:
+													if {notify.%loop-player%} is true:
+														add 1 to {jesus.%player%}
+														if {jesus.%player%} >= 6:
+															kick player due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+															send "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cJesus" to loop-player
+															clear {jesus.%player%}
+														stop
+on jump:
+	{bug.%player%} is false
+	wait 5 tick
+	if block below player is water:
+		if block south below player is water:
+			if block north below player is water:
+				if block west below player is water:
+					if block east below player is water:
+						block north-east below player is water
+						block north-west below player is water
+						block south-east below player is water
+						block south-west below player is water
+						if block south player is air:
+							if block north player is air:
+								if block west player is air:
+									block east player is air:
+										loop all players:
+											if {notify.%loop-player%} is true:
+												add 1 to {jesus.%player%}
+												if {jesus.%player%} >= 6:
+													kick player due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+													send "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cJesus" to loop-player
+													clear {jesus.%player%}
+												stop
+on damage:
+	set {bug.%victim%} to true
+	wait 8 tick
+	set {bug.%victim%} to false
+
+every 1 second:
+	loop all players:
+		wait 8 ticks
+		clear {jesus.%loop-player%}
+
+
+every 3 seconds:
+	loop all players:
+		clear {eat.%loop-player%}
+
+on damage:
+	chance of 30%
+	if attacker is a player:
+		if victim is a entity:
+			if {npc.%attacker%} is not set:
+				create a citizen named "AC%attacker%" 30 meters above attacker's location
+				set {npc.%attacker%} to true
+				wait 2.5 seconds
+				loop all entities:
+					if name of loop-entity is "AC%attacker%":
+						teleport loop-entity 5 meter above attacker
+						wait 10 tick
+						teleport loop-entity 2 meter below attacker
+						wait 10 tick
+						teleport loop-entity 2 meter behind attacker
+						wait 10 tick
+						execute console command "npc remove all"
+						delete {npc.%attacker%}
+			else:
+				stop
+on npc left click:
+	if citizen is named "AC%player%":
+		add 1 to {hits.%player%}
+		if {hits.%player%} >= 3:
+			kick the player due to "&8[&4&lSentinel&8] &6Sentinel caught you chating! (Anticheat)"
+			clear {hits.%player%}
+			loop all players:
+				if {notify.%loop-player%} is true:
+					message "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cKillaura" to loop-player
+
+every 5 seconds:
+	loop all players:
+		clear {hits.%loop-player%}
+
+on teleport:
+	if {bug.%player%} is false:
+		set {bug.%player%} to true
+		wait 4 seconds
+		set {bug.%player%} to false
+
+on place:
+	if event-block is fire:
+		stop
+	else:
+		if {fastplace.%player%} >= 2:
+			cancel event
+			loop all players:
+				if {notify.%loop-player%} is true:
+		else:
+			add 1 to {fastplace1.%player%}
+			wait 7 tick
+			if {fastplace1.%player%} >= 2:
+				add 1 to {fastplace.%player%}
+				loop all players:
+					if {notify.%loop-player%} is true:
+						message "&8[&4&lSentinel&8] &7The player &c%player% &7failed &cFastPlace" to loop-player
+		
+
+every 3 ticks:
+	loop all players:
+		clear {fastplace1.%loop-player%}
+
+every 5 seconds:
+	loop all players:
+		clear {fastplace.%loop-player%}
+	
+command /notify [<text>]:
+	trigger:
+		if player has permission "sentinel.notify":
+			if argument 1 is not set:
+				message "&8[&4&lSentinel&8] &c/Notify (on/off)"
+			else if argument 1 is "on":
+				set {notify.%player%} to true
+				message "&8[&4&lSentinel&8] &7The notifications are now enabled!"
+			else if argument 1 is "off":
+				delete {notify.%player%}
+				message "&8[&4&lSentinel&8] &7The notifications are now disabled!"
+		else:
+			message "&8[&4&lSentinel&8] &cYou do not have any permissions for this command!"
+
+on any move:
+	if {check.%player%} is true:
+		if {_w} is not set:
+			set {_w} to true
+			teleport player to {cloc.%player%}
+			message "&8[&4&lSentinel&8] &7You will be checked! Type in &c.help"
+			send player title "&4Type in:" with subtitle "&c.help" for 1 second
+			wait 2 second
+			delete {_w}
+	if {check2.%player%} is true:
+		if {_w} is not set:
+			set {_w} to true
+			teleport player to {cloc.%player%}
+			message "&8[&4&lSentinel&8] &7You will be checked! Type in &c-help"
+			send player title "&4Type in:" with subtitle "&c-help" for 1 second
+			wait 2 second
+			delete {_w}
+
+command /report [<player>]:
+	trigger:
+		if argument 1 is not set:
+			message "&8[&4&lSentinel&8] &c/Report (Player)"
+		else if argument 1 is "%player%":
+			message "&8[&4&lSentinel&8] &cYou can not report yourself!"
+		else:
+			message "&8[&4&lSentinel&8] &aYou successfully reported the player %arg-1%"
+			loop all players:
+				if {notify.%loop-player%} is true:
+					message "&8[&4&lSentinel&8] &7The player &a%player% &7has reported &c%arg-1%" to loop-player
+					
+command /sentinel [<text>]:
+	executable by: players
+	trigger:
+		if arg 1 is not set:
+			send "&aQBSentinel created by FuriousGamer V1.0"
+
+command /sentinel:
+	trigger:
+		message "&8&m-----------------&r&8[&4&lSentinel&8]&8&m-----------------"
+		message " "
+		message "&9/sentinel"
+		message "&9//Notify (on/off)"
+		message " "
+		message "&8&m-----------------&r&8[&4&lSentinel&8]&8&m-----------------"

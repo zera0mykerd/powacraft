@@ -1,0 +1,32 @@
+# 
+# +------------------------------------------------------+ #
+# |                CONFIGURATION FILES                   | #
+# |                DEVELOPED BY @ACCO                    | #
+# +------------------------------------------------------+ #
+Config:
+  ReasonKick: '&4&lIl tuo UUID risulta spooffato e se pensia sia un errore contatta
+    un admin.'
+  InfoOnLogin: true
+  BanIp:
+    Enable: false
+    Reason: '&4&lHai provato a spoofare &c&lUUID!'
+  Ban:
+    Enable: false
+    Reason: '&4&lHai provato a spoofare &c&lUUID!'
+Database:
+  Nicks:
+    Ricky_22: 107ac876-1f33-3815-a3c6-c47231f0b766
+    _ZERA_: d1c1f158-c05e-3c1f-a7d6-f2135738cc75
+    giacchin: 898bce4b-22e6-372e-a3c7-33b69070aa78
+    ZERA: 1de0cf95-fbd4-33aa-9c34-857b83e333b2
+    panda4k: ef55d9fc-8566-330f-958e-d5636705dcc4
+    _panda4k_: a1a681b8-edf6-35e0-b298-932796cebc18
+    Hibernatix: dc4b1eb4-6441-309b-8259-489fa662290b
+  UUID:
+    107ac876-1f33-3815-a3c6-c47231f0b766: Ricky_22
+    d1c1f158-c05e-3c1f-a7d6-f2135738cc75: _ZERA_
+    898bce4b-22e6-372e-a3c7-33b69070aa78: giacchin
+    1de0cf95-fbd4-33aa-9c34-857b83e333b2: ZERA
+    ef55d9fc-8566-330f-958e-d5636705dcc4: panda4k
+    a1a681b8-edf6-35e0-b298-932796cebc18: _panda4k_
+    dc4b1eb4-6441-309b-8259-489fa662290b: Hibernatix

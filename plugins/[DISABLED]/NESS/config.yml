@@ -1,0 +1,62 @@
+Configuration:
+#How often the banwaves are (seconds)
+  BanWaves: 60
+#How much VL is required to be registered for a banwave
+  VLForBanwave: -1
+#How much VL is required to be instantly banned
+  VLForInstaban: -1
+#Probability that the player will be lagged back
+  LagPossibility: 50
+#Minimum VL required to notify staff
+  MinimumVL: 20
+Settings:
+#Whether or not developer mode is enabled
+#In Developer mode players won't be banned, checks are shown to NESS.notify.developer
+  DeveloperMode: false
+  DebugMode: false
+#Whether to lag-back the player I DON'T RECOMMEND DOING THIS
+  Cancel: true
+#Basically if NESS is enabled at all
+  Global: true
+#Will NESS alert staff members in the server or all servers?
+  ServerOnly: false
+#Are manual bans enabled?
+  ManualBan: true
+#Should NESS handle bans? (Disable if you want to use CommandsOnBan to /ban the player)
+  HandleBans: true
+#Should NESS delete any/all items that have enchantment levels > 100
+  AllowEnchants: false
+#Should NESS automatically check for new updates? (I suggest keeping this enabled)
+CheckForUpdates: true
+Prefix: '&5&l[&dAntiCheat&5&l] &e> &a'
+#Should NESS create extremely detailed logs?
+StoreLogs: false
+#The different levels of severity, more levels = more alerts
+VlCols:
+  - '&a'
+  - '&6'
+  - '&c'
+AutoAnnouncer:
+  Enabled: false
+  Delay: 600 #600 seconds
+  Message: ''
+#Placeholders: %duration% %player% %hack% %token% (%vl% only for WarnHacks)
+BanMessage:
+  - '&5&l[&dAntiCheat&5&l] &e> &a'
+  - '&arimosso dal server per hacking'
+PacketMessage: 'Stai inviando troppi pacchetti al secondo'
+CommandsOnBan:
+  - ''
+CommandsOnBanwave:
+  - ''
+Messages:
+  WarnHacks: '%prefix% &e%player% &7suspected of %vlCol%%hack%&7.'
+  IsQueued: '%prefix% &e%player% &7is now queued for a banwave.'
+  NoPermission: '%prefix% You do not have permission to do that.'
+  WasBanned: '%prefix% &e%player% &7was banned by &4NESS&7.'
+#Disable certain checks via number (use Dev mode to see), you can also do 'Flight', 'Kill Aura' (etc)
+DisabledChecks:
+  - '0'
+  - 'exampleHack'
+DisabledWorlds:
+  - 'exampleWorld'

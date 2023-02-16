@@ -1,0 +1,197 @@
+# SpigotGuard - the best AntiCrash protection for your minecraft server
+# Made by yooniks, discord: yooniks#0289, discord server: https://mc-protection.eu/discord
+# For BungeeCord security ( Anti Bot & Anti Crash ) we recommend: https://minemen.com/resources/216/
+# Read more about SpigotGuard or tell your friends to buy it too! https://minemen.com/resources/175/
+
+# Do not use '\ n', use %nl%
+messages:
+  prefix: "&4&lSpigotGuard &8>> "
+  notification-permission: "spigotguard.notification"
+  notification-message: "%nl%{PREFIX}&8Il giocatore &c&o{PLAYER}&8 ha provato a far crashare il server.%nl%{PREFIX}&7&lPacchetti: &c{PACKET}%nl%{PREFIX}&7&lDettagli: &c{DETAILS}%nl%{PREFIX}&7&oPer eventuali info digitare: &e/spigotguard &o{PLAYER}&7&l%nl%&7&l"
+# Put your license key here.
+# If you do not have a one, please contact us on discord: https://discord.gg/AmvcUfn and send proof of payment
+license: "CrackedByZeraMykerd"
+# Commands that well be executed when player tried to crash server
+# Available variables: {PLAYER} and {IP}
+# Do not use dashes!
+commands-when-sure: 
+- "matrix kick {PLAYER} Tentativo di exploiting bloccato."
+debug: false
+# How big should be the difference beetwen NOW & LAST arm animation packets
+arm-animation-timestamp: 100
+block-itemname-when-no-anvil: true
+# Available types:
+# FIND <- Automatically finds a NMS version
+# v1_7, v1_8, v1_12, v1_14, v1_15
+# You can set it manually if you are using custom spigot and the SpigotGuard cannot get your nms server version.
+nms-version: "FIND"
+# Set it to bigger value if stuff like <tried to place book but is holding xxx> has false positives
+block-fake-packets-only-when-items-nbt-bigger-than: 1000
+# Should we use our own checks built-in into ViaVersion? (packet-size checks)
+viaversion-integration: true
+# Increase it if <ByteBuf/Too big packet size> has false positives
+# Max packet size
+viaversion-max-capacity: 5000
+# Should we allow creativeSlot packets when player is without gamemode? He may be not able to use printer if it is set to FALSE.
+allow-creative-inventory-click-without-gamemode: false
+
+payload-settings:
+  # Max CustomPayload packet size
+  max-capacity: 4800
+  # Should we block sending payload (book) packets while player does not hold a book in a hand?
+  fail-when-not-holding-book: true
+  # Should we block sending payload with MC|BSign when no book was used?
+  block-book-signing-when-no-book-placed: true
+# Should we block null address in LoginEvents?
+block-null-address: true
+null-address-kick: "&2&l[&aAntiBot&2&l] &6> &d&oI tuoi dati di login risultano invalidi."
+
+# How should we kick player when he tries to crash the server?
+kick:
+  # Available types:
+  # 0 - Instant channel close, kick without any message
+  # 1 - Kick with message (a bit slower because we have to send packet to player that he is kicked)
+  type: 0
+  message: "&2&l[&aAntiBot&2&l] &6> &d&oSei stato kickato per aver inviato troppi pacchetti."
+
+book:
+  max-pages: 50
+  # Set it to higher value if stuff like <too large page> has false positives
+  max-page-size: 900
+  # Max page size without color codes
+  max-stripped-page-size: 256
+  # Should we block BOOK_AND_QUILL and WRITTEN_BOOK on server? People will be kicked for using it
+  ban-books: true
+  # Max similar pages. Default: 4, Crash books very often use the same page text like 40 times.
+  max-similar-pages: 4
+  # Limit of 2-byte chars. 2-byte chars are non-english chars like China chars, Emojis and similars.
+  max-2byte-chars: 15
+  # Set it to true if your server does not use books very often
+  # It is fast, lightweight check that detects crash books very fast
+  # You could enable it if people do not even have access to book_and_quill and written_book on your server
+  fast-check: false
+  # Max fast-check nbt item length
+  fast-check-max-length: 500
+
+other-nbt:
+  max-lists: 10
+  max-list-size: 50
+  # Set it to higher value if stuff like <too large list length> has false positives
+  max-list-content: 900
+  max-keys: 20
+  max-array-size: 50
+  fireworks-charge-limit: 800
+  firework-limit: 300
+  banner-limit: 200
+  simple-nbt-limit: true
+  max-simple-nbt-limit: 10000
+
+position-checks:
+  # Should we allow POSITION packets with Integer.MAX_VALUE values? Phase cheats usually use it! It can also lag a server a bit.
+  allow-invalid-movement-v1: true
+  # Should we allow POSITION packets with Double.MAX_VALUE values? Phase cheats usually use it! It can also lag a server a bit.
+  allow-invalid-movement-v2: false
+  allow-invalid-vehicle-movement-v3: false
+  allow-invalid-vehicle-movement-v4: false
+  allow-invalid-vehicle-movement-v5: false
+  max-distance-between-player-and-block-position: 30
+
+skull-checks:
+  # Should we block head/skull textures that do not start with http://textures.minecraft.net ?
+  block-invalid-head-texture: true
+
+place-checks:
+  # Should player be able to send PacketPlayInBlockPlace with WRITTEN_BOOK and similars when he is not holding it? It is surely exploit.
+  block-placing-book-when-not-holding-it: true
+  # Should player be able to send PacketPlayInBlockPlace with FIREWORK and similars when he is not holding it? It is surely exploit.
+  block-placing-firework-when-not-holding-it: true
+  # Should player be able to send PacketPlayInBlockPlace with BANNER and similars when he is not holding it? It is surely exploit.
+  block-placing-banner-when-not-holding-it: true
+
+hacker-book:
+  enabled: false
+  content: "&n&cSalve, &4&l{PLAYER}&r!%nl% Non puoi far crashare questo server."
+  next-page: "&eSe risulti un falso positivo si prega di contattare lo staff."
+
+packet-decoder:
+  enabled: true
+  # Max packet decoding size
+  max-main-size: 5000
+  max-window-size: 1000
+  max-place-size: 1000
+  max-creative-size: 5000
+  max-payload-size: 3000
+  # Some changes when you use our ViaVersion fork
+  viaversion:
+    # FOR ViaVersion - Max packet size when there item inside the packet
+    max-item-size: 2100
+    # Should we ONLY check packet size inside ViaVersion if the item is book?
+    check-only-books: true
+    # Should we block (clear) every BOOK (written books, book_and_quill) packet, even if it does not exceed packet size limit?
+    # It could be very useful if you do not allow using/crafting books (written books, book and quill) on your server and want to block every exploit faster
+    clear-all-books: false
+
+inventories:
+  main-inventory:
+    name: "&4&lGestione di spigotguard"
+    size: 27
+    reload-item:
+      material: "STICK"
+      name: "&a&oRicarica i file di configurazione..."
+      lore: 
+      - "&8&l&m>&r &7&oClicca per ricaricare i files di configurazione"
+      slot: 14
+    recent-detections-item:
+      material: "DIAMOND_CHESTPLATE"
+      name: "&4&lRilevamenti recenti:"
+      lore: 
+      - "&8&l&m>&r &7Fare click per aprire inventario di rilevamenti recenti"
+      - "&8&l&m>&r &7Vedrai chi ha tentato di mandare in crash il server!"
+      slot: 12
+  recent-detections-inventory:
+    name: "&4&lRilevamenti recenti:"
+    size: 27
+    recent-detection-item:
+      name: "&c{PLAYER-NAME}"
+      lore: 
+      - " &4Nome pacchetto: &c{PACKET}"
+      - " &4Dettagli: &c{DETAILS}"
+      - " &4Ora del tentativo di crasher: &c{TIME}"
+      - " &4Ultimo accesso: &c{PLAYER-LAST-SEEN}"
+      - " "
+      - "   &c&lCome posso fixare i falsi positivi?"
+      - " &4&o{HOW-TO-FIX-FALSE-POSITIVE}"
+    no-detections-item:
+      name: "&4&lNessun detect rilevato!"
+      lore: 
+      - " &4Non abbiamo trovato persone che hanno tentato di bloccare il server :("
+      - " &4Sembra che i tuoi giocatori abbiano paura di provare i crasher!"
+  player-info-inventory:
+    name: "&cCrashers da parte di: &o{PLAYER}"
+    size: 27
+    crash-attempt-item:
+      name: "&c{TIME}"
+      lore: 
+      - " &4Nome pacchetto: &c{PACKET}"
+      - " &4Dettagli: &c{DETAILS}"
+      - " &4Tempo del crash: &c{TIME}"
+      - " &4Ultimo accesso: &c{LAST-SEEN}"
+      - " &4Indirizzo IP: &c{IP}"
+      - " "
+      - "   &c&lCome posso fixare i falsi positivi?"
+      - " &4{HOW-TO-FIX-FALSE-POSITIVE}"
+
+# Database Setup
+sql:
+  # After how many days to remove players from the database, which have been on server and no longer entered. Use 0 or less to stop
+  purge-time: 10
+  # Inform console about purging
+  purge-console-info: true
+  # Settings for mysql
+  hostname: "localhost"
+  port: 3306
+  user: "user"
+  password: "password"
+  database: "database"
+  # Available types: sqlite & mysql
+  storage-type: "sqlite"

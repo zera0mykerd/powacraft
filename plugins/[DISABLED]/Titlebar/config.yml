@@ -1,0 +1,88 @@
+# Titlebar v1.2.4.8 by sn1cko
+# Time is set in milliseconds which means every 20 = 1 second
+# for example: 6000 = 5 minuntes OR 300 = 15 seconds
+# 
+# The announcer will never stop if the time is set to 0
+# Else it will stop after the amount of milliseconds you wish
+# 
+# There are currently 15 variables available which can be built in
+# for example %player% - will display the playername or %health% - will give out the health
+# all other variables can be found on the website
+# http://dev.bukkit.org/bukkit-plugins/titlebar/pages/variables
+Titlebar:
+  Settings:
+    FirstJoin:
+      Toggle: true
+      Time: 30
+      Titles:
+      - '&8&lB'
+      - '&1&lBe'
+      - '&2&lBen'
+      - '&3&lBenv'
+      - '&4&lBenve'
+      - '&5&lBenven'
+      - '&6&lBenvenu'
+      - '&e&lBenvenut'
+      - '&a&lBenvenuto'
+      Subtitles:
+      - '&7&o%player%'
+      - '&9&o%player%'
+      - '&a&o%player%'
+      - '&b&o%player%'
+      - '&c&o%player%'
+      - '&d&o%player%'
+      - '&e&o%player%'
+      - '&d&o%player%'
+    Join:
+      Toggle: true
+      Time: 30
+      Titles:
+      - '&8&lB'
+      - '&1&lBe'
+      - '&2&lBen'
+      - '&3&lBenv'
+      - '&4&lBenve'
+      - '&5&lBenven'
+      - '&6&lBenvenu'
+      - '&e&lBenvenut'
+      - '&a&lBenvenuto'
+      Subtitles:
+      - '&7&o%player%'
+      - '&9&o%player%'
+      - '&a&o%player%'
+      - '&b&o%player%'
+      - '&c&o%player%'
+      - '&d&o%player%'
+      - '&e&o%player%'
+      - '&a&o%player%'
+      - '&b&o%player%'
+      - '&c&o%player%'
+      - '&d&o%player%'
+      - '&3&o%player%'
+      - '&1&o%player%'
+    Time:
+      Fade-In: 0
+      Stay: 3
+      Fade-Out: 0
+    Staff:
+      Permission: titlebar.staff
+    ColorCodes:
+      Toggle: true
+    TitleMessage:
+      Toggle: true
+TitlebarAnnouncer:
+  Settings:
+    Toggle: false
+    StopTime: 0
+    Time: 6000
+    Messages:
+      Titles:
+      - '&6&lTitlebar'
+      - '&2&lInfo'
+      - '&5&lAnnouncer'
+      - ''
+      Subtitles:
+      - '&e&oGrazie per aver scaricato questo plugin :)'
+      - '&a&oOra ci sono &2&o%onlineplayers% &a&o/ &2&o%maxonlineplayers% &a&odi giocatori'
+      - '&d&oRingraziamento speciale a @PhantomX'
+      - '&9&oe pure a @AgreSith ;)'

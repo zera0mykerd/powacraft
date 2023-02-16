@@ -1,0 +1,6 @@
+Messages:
+  PREFIX: '&8[&d&lMoreSounds&8]'
+  AVAILABLE_COMMANDS: '&8- &bAvailable commands'
+  SOUNDS_ENABLED: '&aYou have enabled your sounds.'
+  SOUNDS_DISABLED: '&cYou have disabled your sounds.'
+  UNKNOWN_COMMAND: '&cUnknown command! Use &8/&asounds &cfor more help.'

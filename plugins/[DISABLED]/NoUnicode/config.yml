@@ -1,0 +1,22 @@
+#               NoUnicode                       
+#                By Dreko_                
+# 
+# 
+# Message when a player uses unicode characters
+unicode_message: '&5&l[&dAntiCheat&5&l] &e> &a&oCaratteri unicode non permessi!'
+unicode_blocker: true
+bypass_permission_unicode: nounicode.bypass
+ignored_unicode_characters:
+- a
+- "\xe2\u0153\u2013"
+- "\xe2\u0153\xa2"
+swear_blocker: false
+bypass_permission_swear: swear.bypass
+ignore_es_and_s_at_end_of_word: true
+swear_message: '&cNon insultare !'
+insult:
+- fuck
+- bitch
+- motherfucker
+- noob
+use_command_permission: nounicode.command

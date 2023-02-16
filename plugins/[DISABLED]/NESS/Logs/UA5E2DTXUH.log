@@ -1,0 +1,91 @@
+BEGIN LOG User: ZERA_ TIME:1566209387518
+timerTick: 3.0 moveTicks: 11.0 packets: 1.0
+
+Speed: 395 VL: 0 TIME: 2 milliseconds X: 1104.43 Y: 9.31 Z: 237.82
+timerTick: 2.0 moveTicks: 5.0 packets: 1.0
+
+Speed: 395 VL: 10 TIME: 705 milliseconds X: 1107.55 Y: 9.31 Z: 234.71
+timerTick: 5.0 moveTicks: 6.0 packets: 1.0
+
+Speed: 395 VL: 20 TIME: 2.80 seconds X: 1114.92 Y: 8.61 Z: 227.89
+timerTick: 2.0 moveTicks: 10.0 packets: 1.0
+
+Speed: 395 VL: 30 TIME: 4.02 seconds X: 1120.02 Y: 9.31 Z: 224.57
+timerTick: 4.0 moveTicks: 6.0 packets: 1.0
+
+BunnyHop: 410 VL: 0 TIME: 4.83 seconds X: 1121.25 Y: 9.31 Z: 219.94
+clicks: 1.0 timerTick: 2.0 packets: 1.0
+
+BunnyHop: 410 VL: 25 TIME: 5.56 seconds X: 1122.33 Y: 9.31 Z: 215.33
+clicks: 3.0 timerTick: 15.0 moveTicks: 14.0 packets: 1.0
+
+BunnyHop: 410 VL: 50 TIME: 6.23 seconds X: 1122.70 Y: 9.31 Z: 210.52
+timerTick: 1.0 moveTicks: 5.0 packets: 1.0
+
+Speed: 395 VL: 30 TIME: 9.80 seconds X: 1136.91 Y: 9.31 Z: 211.13
+clicks: 2.0 timerTick: 7.0 moveTicks: 15.0 packets: 1.0
+
+BunnyHop: 410 VL: 70 TIME: 11.31 seconds X: 1142.16 Y: 8.31 Z: 204.08
+timerTick: 1.0 moveTicks: 9.0 packets: 1.0
+
+Speed: 395 VL: 40 TIME: 12.01 seconds X: 1142.62 Y: 8.31 Z: 200.08
+clicks: 2.0 timerTick: 6.0 moveTicks: 23.0 packets: 1.0
+
+Speed: 395 VL: 50 TIME: 12.87 seconds X: 1143.63 Y: 8.31 Z: 195.95
+clicks: 3.0 timerTick: 11.0 moveTicks: 32.0 packets: 1.0
+
+Timer: 181 VL: 0 TIME: 13.15 seconds X: 1142.14 Y: 9.77 Z: 193.43
+timerTick: 1.0 moveTicks: 5.0 packets: 1.0
+
+BunnyHop: 410 VL: 95 TIME: 13.43 seconds X: 1141.29 Y: 8.31 Z: 192.22
+packets: 1.0
+
+Speed: 395 VL: 55 TIME: 15.69 seconds X: 1133.22 Y: 9.81 Z: 188.32
+timerTick: 3.0 moveTicks: 14.0 packets: 1.0
+
+BunnyHop: 410 VL: 115 TIME: 16.37 seconds X: 1128.69 Y: 9.81 Z: 188.37
+timerTick: 10.0 moveTicks: 9.0 packets: 1.0
+
+BunnyHop: 410 VL: 140 TIME: 17.12 seconds X: 1124.56 Y: 9.31 Z: 185.85
+timerTick: 14.0 moveTicks: 15.0 packets: 1.0
+
+BunnyHop: 410 VL: 165 TIME: 18.44 seconds X: 1120.41 Y: 10.31 Z: 182.28
+timerTick: 13.0 moveTicks: 14.0 packets: 1.0
+
+BunnyHop: 410 VL: 185 TIME: 20.53 seconds X: 1111.77 Y: 10.31 Z: 177.20
+timerTick: 12.0 moveTicks: 15.0 packets: 1.0
+
+NoFall: 403 VL: 0 TIME: 23.70 seconds X: 1100.30 Y: 9.31 Z: 172.56
+timerTick: 12.0 moveTicks: 10.0 packets: 1.0
+
+NoFall: 403 VL: 20 TIME: 24.41 seconds X: 1100.30 Y: 9.31 Z: 172.53
+timerTick: 7.0 moveTicks: 5.0 packets: 1.0
+
+NoFall: 403 VL: 35 TIME: 25.11 seconds X: 1100.30 Y: 9.31 Z: 172.50
+timerTick: 14.0 moveTicks: 12.0 packets: 1.0
+
+NoFall: 403 VL: 55 TIME: 25.46 seconds X: 1100.30 Y: 10.82 Z: 172.50
+timerTick: 7.0 moveTicks: 6.0 packets: 1.0
+
+NoFall: 403 VL: 75 TIME: 27.22 seconds X: 1100.30 Y: 10.82 Z: 172.50
+timerTick: 7.0 moveTicks: 14.0 packets: 1.0
+
+NoFall: 403 VL: 95 TIME: 28.52 seconds X: 1100.28 Y: 9.31 Z: 171.28
+timerTick: 4.0 moveTicks: 3.0 packets: 1.0
+
+Speed: 192 VL: 55 TIME: 28.97 seconds X: 1099.76 Y: 10.78 Z: 168.74
+timerTick: 4.0 moveTicks: 3.0 packets: 1.0
+
+BunnyHop: 410 VL: 205 TIME: 28.97 seconds X: 1099.76 Y: 10.78 Z: 168.74
+timerTick: 10.0 moveTicks: 8.0 packets: 1.0
+
+BunnyHop: 410 VL: 230 TIME: 29.27 seconds X: 1100.04 Y: 10.29 Z: 170.24
+timerTick: 5.0 moveTicks: 4.0 packets: 1.0
+
+Speed: 192 VL: 70 TIME: 30.02 seconds X: 1099.36 Y: 10.62 Z: 167.76
+timerTick: 5.0 moveTicks: 4.0 packets: 1.0
+
+BunnyHop: 410 VL: 250 TIME: 30.02 seconds X: 1099.36 Y: 10.62 Z: 167.76
+timerTick: 1.0 moveTicks: 5.0 packets: 1.0
+
+NoFall: 403 VL: 110 TIME: 31.12 seconds X: 1100.02 Y: 9.31 Z: 170.31

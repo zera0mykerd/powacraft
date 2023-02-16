@@ -1,0 +1,89 @@
+Beginning log for ZERA_ (71d6c242-d0b0-30b9-9635-bce9cb6764aa)
+Hack: NoSlowDown (1002/1002)
+Timing: Instant
+Date: 12:49:34 PM CEST - 08/16/2019
+Time elapsed: 5.36 seconds
+Hack Score: 14.800149198060426
+
+Total amount of checks
+NoSlowDown#4: 2
+NoSlowDown#2: 2
+NoSlowDown#1: 62
+
+Quit server [49.89 seconds]
+
+Joined server [42.73 seconds]
+
+World change from spawn to FlagWars [9.91 seconds]
+
+Flagged NoSlowDown#2 | VL: 0 (+166) TPS: 19.8 [5.36 seconds]
+Flagged NoSlowDown#4 | VL: 166 (+110) TPS: 19.8 [5.36 seconds]
+Flagged NoSlowDown#2 | VL: 276 (+76) TPS: 19.8 [5.31 seconds]
+Flagged NoSlowDown#4 | VL: 352 (+20) TPS: 19.8 [5.31 seconds]
+Flagged NoSlowDown#1 | VL: 371 (+19) TPS: 19.8 [3.30 seconds]
+Flagged NoSlowDown#1 | VL: 390 (+18) TPS: 19.8 [3.30 seconds]
+Flagged NoSlowDown#1 | VL: 407 (+17) TPS: 19.8 [3.10 seconds]
+Flagged NoSlowDown#1 | VL: 424 (+16) TPS: 19.8 [3.05 seconds]
+Flagged NoSlowDown#1 | VL: 440 (+15) TPS: 19.8 [3.00 seconds]
+Flagged NoSlowDown#1 | VL: 455 (+15) TPS: 19.8 [2.95 seconds]
+Flagged NoSlowDown#1 | VL: 470 (+15) TPS: 19.8 [2.90 seconds]
+
+BANWAVE NoSlowDown#1 | VL: 485 (+15) TPS: 19.8 [2.85 seconds]
+BANWAVE Log ID: O5QJ1WS5MEAVIYH0
+
+Flagged NoSlowDown#1 | VL: 500 (+15) TPS: 19.8 [2.80 seconds]
+Flagged NoSlowDown#1 | VL: 515 (+15) TPS: 19.8 [2.75 seconds]
+Flagged NoSlowDown#1 | VL: 530 (+15) TPS: 19.8 [2.70 seconds]
+Flagged NoSlowDown#1 | VL: 545 (+15) TPS: 19.8 [2.65 seconds]
+Flagged NoSlowDown#1 | VL: 560 (+14) TPS: 19.8 [2.60 seconds]
+Flagged NoSlowDown#1 | VL: 574 (+12) TPS: 19.8 [2.55 seconds]
+Flagged NoSlowDown#1 | VL: 586 (+12) TPS: 19.8 [2.55 seconds]
+Flagged NoSlowDown#1 | VL: 598 (+11) TPS: 19.8 [2.35 seconds]
+Flagged NoSlowDown#1 | VL: 609 (+10) TPS: 19.8 [2.30 seconds]
+Flagged NoSlowDown#1 | VL: 619 (+10) TPS: 19.8 [2.25 seconds]
+Flagged NoSlowDown#1 | VL: 629 (+10) TPS: 19.8 [2.20 seconds]
+Flagged NoSlowDown#1 | VL: 639 (+10) TPS: 19.8 [2.15 seconds]
+Flagged NoSlowDown#1 | VL: 649 (+10) TPS: 19.8 [2.10 seconds]
+Flagged NoSlowDown#1 | VL: 659 (+10) TPS: 19.8 [2.05 seconds]
+Flagged NoSlowDown#1 | VL: 669 (+11) TPS: 19.8 [2.00 seconds]
+Flagged NoSlowDown#1 | VL: 680 (+11) TPS: 19.8 [1.95 seconds]
+Flagged NoSlowDown#1 | VL: 691 (+11) TPS: 19.8 [1.90 seconds]
+Flagged NoSlowDown#1 | VL: 702 (+10) TPS: 19.8 [1.85 seconds]
+Flagged NoSlowDown#1 | VL: 712 (+9) TPS: 19.8 [1.80 seconds]
+Flagged NoSlowDown#1 | VL: 721 (+8) TPS: 19.8 [1.8 seconds]
+Flagged NoSlowDown#1 | VL: 729 (+8) TPS: 19.8 [1.70 seconds]
+Flagged NoSlowDown#1 | VL: 737 (+7) TPS: 19.8 [1.60 seconds]
+Flagged NoSlowDown#1 | VL: 744 (+7) TPS: 19.8 [1.58 seconds]
+Flagged NoSlowDown#1 | VL: 751 (+7) TPS: 19.8 [1.50 seconds]
+Flagged NoSlowDown#1 | VL: 758 (+7) TPS: 19.8 [1.49 seconds]
+Flagged NoSlowDown#1 | VL: 765 (+7) TPS: 19.8 [1.40 seconds]
+Flagged NoSlowDown#1 | VL: 772 (+7) TPS: 19.8 [1.39 seconds]
+Flagged NoSlowDown#1 | VL: 779 (+7) TPS: 19.8 [1.30 seconds]
+Flagged NoSlowDown#1 | VL: 786 (+8) TPS: 19.8 [1.29 seconds]
+Flagged NoSlowDown#1 | VL: 793 (+8) TPS: 19.8 [1.20 seconds]
+Flagged NoSlowDown#1 | VL: 801 (+8) TPS: 19.8 [1.19 seconds]
+Flagged NoSlowDown#1 | VL: 809 (+8) TPS: 19.8 [1.10 seconds]
+Flagged NoSlowDown#1 | VL: 817 (+8) TPS: 19.8 [1.09 seconds]
+Flagged NoSlowDown#1 | VL: 825 (+8) TPS: 19.8 [1.00 seconds]
+Flagged NoSlowDown#1 | VL: 833 (+8) TPS: 19.8 [997 ms]
+Flagged NoSlowDown#1 | VL: 841 (+8) TPS: 19.8 [901 ms]
+Flagged NoSlowDown#1 | VL: 849 (+8) TPS: 19.8 [897 ms]
+Flagged NoSlowDown#1 | VL: 857 (+8) TPS: 19.8 [851 ms]
+Flagged NoSlowDown#1 | VL: 865 (+9) TPS: 19.8 [801 ms]
+Flagged NoSlowDown#1 | VL: 874 (+9) TPS: 20.0 [750 ms]
+Flagged NoSlowDown#1 | VL: 883 (+9) TPS: 20.0 [700 ms]
+Flagged NoSlowDown#1 | VL: 892 (+9) TPS: 20.0 [651 ms]
+Flagged NoSlowDown#1 | VL: 901 (+9) TPS: 20.0 [600 ms]
+Flagged NoSlowDown#1 | VL: 910 (+9) TPS: 20.0 [550 ms]
+Flagged NoSlowDown#1 | VL: 919 (+10) TPS: 20.0 [501 ms]
+Flagged NoSlowDown#1 | VL: 929 (+9) TPS: 20.0 [400 ms]
+Flagged NoSlowDown#1 | VL: 938 (+8) TPS: 20.0 [350 ms]
+Flagged NoSlowDown#1 | VL: 946 (+8) TPS: 20.0 [301 ms]
+Flagged NoSlowDown#1 | VL: 954 (+8) TPS: 20.0 [200 ms]
+Flagged NoSlowDown#1 | VL: 962 (+8) TPS: 20.0 [196 ms]
+Flagged NoSlowDown#1 | VL: 970 (+8) TPS: 20.0 [150 ms]
+Flagged NoSlowDown#1 | VL: 978 (+8) TPS: 20.0 [101 ms]
+Flagged NoSlowDown#1 | VL: 986 (+8) TPS: 20.0 [51 ms]
+Flagged NoSlowDown#1 | VL: 994 (+8) TPS: 20.0 [1 millisecond]
+
+Banning ZERA_ for NoSlowDown (VL: 1002)

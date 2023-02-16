@@ -1,0 +1,163 @@
+# Notifications
+notification:
+  enabled: true
+  # Send notifications to console
+  console: true
+  # Allow logging
+  log: false
+  # Format
+  format: '&5&l[&dAntiCheat&5&l] &e> &a<player> &7ha fallito ad usare &4<module> &7check [VL: <vl>] [Ping: <ping>] [Info: <info>]'
+  # You can block notification spam by increasing delay (Timestamp is in milliseconds)
+  delay: 800
+
+# Messages
+messages:
+  tag: '&5&l[&dAntiCheat&5&l] &e> &a'
+  no-perm: '&4Nessun permesso !'
+
+# KillAura check
+# Currently only checks for instant head movements.
+killaura:
+  enabled: true
+  actions: cancel:vl>=5:notify
+
+# Hitbox check
+# It will deny attacks when a player is hitting someone without looking at him
+hitbox:
+  enabled: true
+  actions: cancel
+
+# Limits the speed of sending command/message
+spam:
+  enabled: true
+  values:
+    # Timestamp is in milliseconds
+    chat:
+      delay: 1000
+    command:
+      delay: 5000
+  actions: cancel:pacmessage &cPer favore scrivi lentamente.
+
+# Blocks unknown characters
+unknowncharacters:
+  enabled: true
+  # If you have different characters in your language, use whitelist.
+  # Example:
+  # - a
+  # - b
+  whitelist:
+  - ò
+  - à
+  - ù
+  - ì
+  - è
+  - é
+  - &ograve
+  - &agrave
+  - &ugrave
+  - &igrave
+  - &egrave
+  - &eacute
+  actions: cancel:notify:pacmessage &cCaratteri ASCII non permessi, vale anche per caratteri accentati per motivi di sicurezza!
+
+# Blocks impossible angles like upside down head
+headroll:
+  enabled: true
+  actions: cancel:notify
+
+# Blocks interact with liquid
+impossibleinteract:
+  enabled: true
+  actions: cancel:notify
+
+# Limits incoming packets
+morepackets:
+  enabled: true
+  values:
+    # It will not check players when server's tps is below <min_tps>
+    min_tps: 10.0
+    # Increase this value if MorePackets causing false positives due to low TPS
+    tps_multiplier: 5.0
+    # Limits movement packets
+    movement:
+      # Max movement packets in 1 second
+      # Timestamp is in ticks
+      max_packets: 20.0
+  actions: cancel
+
+# NBT check
+# Currently checks invalid books (exploit in 1.7/1.8)
+# It will not affect your server if you're using newer versions
+nbt:
+  enabled: true
+  actions: cancel:notify:aackick <player> Tag NBT invalido!
+
+# InventoryMove, MoreInventory check
+# It will block movements while player have an open inventory, or when player have items in his/her crafting slot
+inventory:
+  enabled: true
+  actions: cancel:notify
+
+# SkinBlinker check
+# It will block packets when player sends too many skin change
+skinblinker:
+  enabled: true
+  actions: cancel:notify:vl>=10:aackick <player> Troppi pacchetti di skin!
+
+# Speed check
+speed:
+  enabled: true
+  values:
+    violation:
+      # Min violations before cancelling movement
+      min_vl: 6.0
+      # Violation multiplier
+      vl_multiplier: 10.0
+  actions: cancel:notify
+
+# Flight/Fly check
+flight:
+  enabled: false
+  actions: cancel:notify
+
+# Phase/NoClip check
+phase:
+  enabled: false
+  actions: cancel:notify
+
+# DamageIndicators/HealthESP module
+# Disabling sending packets to players about health informations
+damageindicators:
+  enabled: true
+
+login:
+  enabled: true
+  values:
+    # You can use these types to block: ALLOW, SERVER_LOAD
+    # ALLOW -> Allows you to join server anytime
+    # SERVER_LOAD -> Denies you while plugins and worlds are loading
+    block: SERVER_LOAD
+    # Blacklist IP's if too many connections coming from same ip with different names
+    blacklist:
+      enabled: true
+      # If IP tries to join with more than <max_accounts> accounts in <interval>ms during connection throttle, it will be blacklisted
+      # Blacklist automatically resets on server/plugin restart
+      max_accounts: 3
+      # Timestamp is in milliseconds
+      interval: 10000
+    # Blocks too fast re-logins
+    relog:
+      enabled: true
+      # Timestamp is in milliseconds
+      interval: 1500
+    # Interval between two connections
+    # Timestamp is in milliseconds
+    connection_throttle: 1000
+    # Messages
+    block_message: "Il server risulta occupato. Riprova tra qualche minuto."
+    kick_message: "Connessione persa, rientra."
+    blacklist_message: "Risulti in blacklist dal server!"
+    relog_message: "Troppe persone joinano, rientra."
+
+# Do not change this value !
+pac_version: 2.0.0-pre6

@@ -1,0 +1,27 @@
+71d6c242-d0b0-30b9-9635-bce9cb6764aa:
+  category:
+    lastJoin: 1.566209658823E12
+    teleported: 1.566209710262E12
+    packetTimes:
+    - 1.566209659248E12
+    packets: 1.0
+    lastYaw: -5.510398864746094
+    wasGround: 1.566209710261E12
+    oldYaw: -5.510398864746094
+    oldFire: -20.0
+    oldFlight: -0.4358577632471947
+    extremeYaw: 1.566209705205E12
+    lastMove: 1.56620970956E12
+    clickTimes:
+    - 1.566209706155E12
+    - 1.566209707561E12
+    lastDTG: 2.8229914715574482
+    timerTick: 9.0
+    moveTicks: 11.0
+    logStart: 1566209710263
+    log:
+    - 'BEGIN LOG User: ZERA_ TIME:1566209710263'
+    - 'timerTick: 9.0 moveTicks: 11.0 packets: 1.0'
+    - ''
+    - 'BunnyHop: 410 VL: 0 TIME: 0  X: 1570.07 Y: 4.75 Z: 255.99'
+  BunnyHop: 25

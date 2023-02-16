@@ -1,0 +1,34 @@
+Beginning log for ZERA_ (71d6c242-d0b0-30b9-9635-bce9cb6764aa)
+Hack: FastSneak (575/832)
+Timing: Banwave
+Date: 12:53:50 PM CEST - 08/16/2019
+Time elapsed: 1.74 minutes
+Hack Score: 0.07616286831314961
+
+Total amount of checks
+InventoryMove#1: 1
+AutoArmor#1: 3
+FastSneak#1: 4
+
+Joined server [1.95 minutes]
+
+World change from spawn to kitpvp [1.89 minutes]
+
+Flagged InventoryMove#1 | VL: 0 (+10) TPS: 19.6 [1.74 minutes]
+Flagged AutoArmor#1     | VL: 0 (+100) TPS: 19.6 [1.74 minutes]
+Flagged AutoArmor#1     | VL: 93 (+100) TPS: 20.0 [1.53 minutes]
+Flagged AutoArmor#1     | VL: 180 (+100) TPS: 20.0 [1.24 minutes]
+
+Quit server [1.13 minutes]
+
+Joined server [40.57 seconds]
+
+World change from spawn to FlagWars [35.76 seconds]
+
+Flagged FastSneak#1     | VL: 0 (+100) TPS: 20.0 [152 ms]
+Flagged FastSneak#1     | VL: 100 (+148) TPS: 20.0 [101 ms]
+Flagged FastSneak#1     | VL: 248 (+167) TPS: 20.0 [51 ms]
+
+BANWAVE FastSneak#1     | VL: 415 (+160) TPS: 20.0 [0]
+
+Banning ZERA_ for FastSneak (VL: 575)

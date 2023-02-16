@@ -1,0 +1,33 @@
+Beginning log for ZERA_ (71d6c242-d0b0-30b9-9635-bce9cb6764aa)
+Hack: NoSlowDown (500/500)
+Timing: Banwave
+Date: 12:49:31 PM CEST - 08/16/2019
+Time elapsed: 2.50 seconds
+Hack Score: 2.873104549082203
+
+Total amount of checks
+NoSlowDown#4: 2
+NoSlowDown#2: 2
+NoSlowDown#1: 8
+
+Quit server [47.04 seconds]
+
+Joined server [39.87 seconds]
+
+World change from spawn to FlagWars [7.05 seconds]
+
+Flagged NoSlowDown#2 | VL: 0 (+166) TPS: 19.8 [2.50 seconds]
+Flagged NoSlowDown#4 | VL: 166 (+110) TPS: 19.8 [2.50 seconds]
+Flagged NoSlowDown#2 | VL: 276 (+76) TPS: 19.8 [2.45 seconds]
+Flagged NoSlowDown#4 | VL: 352 (+20) TPS: 19.8 [2.45 seconds]
+Flagged NoSlowDown#1 | VL: 371 (+19) TPS: 19.8 [451 ms]
+Flagged NoSlowDown#1 | VL: 390 (+18) TPS: 19.8 [447 ms]
+Flagged NoSlowDown#1 | VL: 407 (+17) TPS: 19.8 [251 ms]
+Flagged NoSlowDown#1 | VL: 424 (+16) TPS: 19.8 [201 ms]
+Flagged NoSlowDown#1 | VL: 440 (+15) TPS: 19.8 [151 ms]
+Flagged NoSlowDown#1 | VL: 455 (+15) TPS: 19.8 [101 ms]
+Flagged NoSlowDown#1 | VL: 470 (+15) TPS: 19.8 [51 ms]
+
+BANWAVE NoSlowDown#1 | VL: 485 (+15) TPS: 19.8 [1 millisecond]
+
+Banning ZERA_ for NoSlowDown (VL: 500)

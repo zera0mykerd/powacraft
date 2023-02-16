@@ -1,0 +1,27 @@
+Beginning log for ZERA_ (71d6c242-d0b0-30b9-9635-bce9cb6764aa)
+Hack: NoWeb (633/698)
+Timing: Banwave
+Date: 01:07:45 PM CEST - 08/16/2019
+Time elapsed: 9.71 seconds
+Hack Score: 0.6037067545304777
+
+Total amount of checks
+InventoryMove#1: 7
+
+BANWAVE Log ID: TT65IYKVP1XB85K7
+
+Quit server [1.87 minutes]
+
+Joined server [25.86 seconds]
+
+World change from spawn to FlagWars [18.58 seconds]
+
+Flagged InventoryMove#1 | VL: 0 (+10) TPS: 21.4 [9.71 seconds]
+Flagged InventoryMove#1 | VL: 10 (+10) TPS: 21.4 [9.56 seconds]
+Flagged InventoryMove#1 | VL: 20 (+10) TPS: 21.4 [9.36 seconds]
+Flagged InventoryMove#1 | VL: 30 (+10) TPS: 21.4 [9.26 seconds]
+Flagged InventoryMove#1 | VL: 40 (+10) TPS: 21.4 [9.06 seconds]
+Flagged InventoryMove#1 | VL: 50 (+10) TPS: 21.4 [8.86 seconds]
+Flagged InventoryMove#1 | VL: 60 (+10) TPS: 21.4 [8.75 seconds]
+
+Banning ZERA_ for NoWeb (VL: 633)

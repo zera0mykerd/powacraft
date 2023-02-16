@@ -1,0 +1,66 @@
+Beginning log for ZERA_ (71d6c242-d0b0-30b9-9635-bce9cb6764aa)
+Hack: NoWeb (507/507)
+Timing: Banwave
+Date: 01:03:47 PM CEST - 08/16/2019
+Time elapsed: 1.91 minutes
+Hack Score: 0.23303039799435912
+
+Total amount of checks
+KillAura#3: 1
+Reach#1: 1
+Criticals#1: 6
+NoWeb#1: 36
+
+Flagged Criticals#1 | VL: 13 (+5) TPS: 20.0 [1.91 minutes]
+Flagged Criticals#1 | VL: 17 (+5) TPS: 20.0 [1.88 minutes]
+Flagged Criticals#1 | VL: 19 (+5) TPS: 20.0 [1.79 minutes]
+Flagged Criticals#1 | VL: 23 (+5) TPS: 20.0 [1.75 minutes]
+Flagged Criticals#1 | VL: 28 (+5) TPS: 20.0 [1.74 minutes]
+Flagged Criticals#1 | VL: 32 (+5) TPS: 20.0 [1.73 minutes]
+Flagged Reach#1     | VL: 0 (+30) TPS: 20.0 [1.71 minutes]
+Flagged KillAura#3  | VL: 0 (+20) TPS: 20.0 [1.71 minutes]
+ZERA_ ran command: /hub [35.36 seconds]
+
+World change from world to spawn [35.35 seconds]
+
+World change from spawn to FlagWars [32.97 seconds]
+
+Flagged NoWeb#1     | VL: 0 (+14) TPS: 20.0 [24.13 seconds]
+Flagged NoWeb#1     | VL: 14 (+14) TPS: 20.0 [24.08 seconds]
+Flagged NoWeb#1     | VL: 28 (+14) TPS: 20.0 [24.03 seconds]
+Flagged NoWeb#1     | VL: 42 (+14) TPS: 20.0 [23.98 seconds]
+Flagged NoWeb#1     | VL: 56 (+14) TPS: 20.0 [23.93 seconds]
+Flagged NoWeb#1     | VL: 70 (+14) TPS: 20.0 [22.42 seconds]
+Flagged NoWeb#1     | VL: 84 (+14) TPS: 20.0 [22.37 seconds]
+Flagged NoWeb#1     | VL: 94 (+25) TPS: 20.0 [15.15 seconds]
+Flagged NoWeb#1     | VL: 119 (+14) TPS: 20.0 [15.10 seconds]
+Flagged NoWeb#1     | VL: 132 (+14) TPS: 20.0 [13.04 seconds]
+Flagged NoWeb#1     | VL: 146 (+14) TPS: 20.0 [12.99 seconds]
+Flagged NoWeb#1     | VL: 160 (+9) TPS: 20.0 [12.94 seconds]
+Flagged NoWeb#1     | VL: 167 (+21) TPS: 20.0 [9.72 seconds]
+Flagged NoWeb#1     | VL: 187 (+14) TPS: 20.0 [7.57 seconds]
+Flagged NoWeb#1     | VL: 201 (+14) TPS: 20.0 [6.37 seconds]
+Flagged NoWeb#1     | VL: 215 (+14) TPS: 20.0 [6.36 seconds]
+Flagged NoWeb#1     | VL: 228 (+17) TPS: 20.0 [5.97 seconds]
+Flagged NoWeb#1     | VL: 245 (+15) TPS: 20.0 [5.92 seconds]
+Flagged NoWeb#1     | VL: 260 (+14) TPS: 20.0 [5.37 seconds]
+Flagged NoWeb#1     | VL: 274 (+14) TPS: 20.0 [5.32 seconds]
+Flagged NoWeb#1     | VL: 287 (+14) TPS: 20.0 [3.96 seconds]
+Flagged NoWeb#1     | VL: 301 (+14) TPS: 20.0 [3.91 seconds]
+Flagged NoWeb#1     | VL: 315 (+10) TPS: 20.0 [3.51 seconds]
+Flagged NoWeb#1     | VL: 325 (+13) TPS: 20.0 [3.36 seconds]
+Flagged NoWeb#1     | VL: 338 (+14) TPS: 20.0 [3.31 seconds]
+Flagged NoWeb#1     | VL: 352 (+14) TPS: 20.0 [3.26 seconds]
+Flagged NoWeb#1     | VL: 366 (+14) TPS: 20.0 [3.21 seconds]
+Flagged NoWeb#1     | VL: 380 (+14) TPS: 20.0 [3.16 seconds]
+Flagged NoWeb#1     | VL: 394 (+14) TPS: 20.0 [3.11 seconds]
+Flagged NoWeb#1     | VL: 407 (+14) TPS: 20.0 [1.85 seconds]
+Flagged NoWeb#1     | VL: 421 (+14) TPS: 20.0 [1.80 seconds]
+Flagged NoWeb#1     | VL: 435 (+14) TPS: 20.0 [1.75 seconds]
+Flagged NoWeb#1     | VL: 449 (+14) TPS: 20.0 [1.20 seconds]
+Flagged NoWeb#1     | VL: 463 (+14) TPS: 20.0 [1.15 seconds]
+Flagged NoWeb#1     | VL: 476 (+17) TPS: 20.0 [50 ms]
+
+BANWAVE NoWeb#1     | VL: 493 (+14) TPS: 20.0 [0]
+
+Banning ZERA_ for NoWeb (VL: 507)

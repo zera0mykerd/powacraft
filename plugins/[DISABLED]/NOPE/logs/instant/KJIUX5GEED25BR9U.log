@@ -1,0 +1,34 @@
+Beginning log for ZERA_ (71d6c242-d0b0-30b9-9635-bce9cb6764aa)
+Hack: FastSneak (1012/1012)
+Timing: Instant
+Date: 12:54:45 PM CEST - 08/16/2019
+Time elapsed: 601 milliseconds
+Hack Score: 26.268219633943428
+
+Total amount of checks
+FastSneak#1: 13
+
+Quit server [49.18 seconds]
+
+Joined server [6.5 seconds]
+
+World change from spawn to FlagWars [4.59 seconds]
+
+Flagged FastSneak#1 | VL: 0 (+92) TPS: 19.8 [601 ms]
+Flagged FastSneak#1 | VL: 92 (+87) TPS: 19.8 [502 ms]
+Flagged FastSneak#1 | VL: 179 (+85) TPS: 19.8 [498 ms]
+Flagged FastSneak#1 | VL: 264 (+82) TPS: 19.8 [452 ms]
+Flagged FastSneak#1 | VL: 346 (+82) TPS: 19.8 [400 ms]
+
+BANWAVE FastSneak#1 | VL: 428 (+78) TPS: 19.8 [301 ms]
+BANWAVE Log ID: 06MZRK75DIPY53RW
+
+Flagged FastSneak#1 | VL: 506 (+77) TPS: 19.8 [295 ms]
+Flagged FastSneak#1 | VL: 583 (+74) TPS: 19.8 [252 ms]
+Flagged FastSneak#1 | VL: 657 (+74) TPS: 19.8 [200 ms]
+Flagged FastSneak#1 | VL: 731 (+72) TPS: 19.8 [100 ms]
+Flagged FastSneak#1 | VL: 803 (+71) TPS: 19.8 [95 ms]
+Flagged FastSneak#1 | VL: 874 (+69) TPS: 19.8 [50 ms]
+Flagged FastSneak#1 | VL: 943 (+69) TPS: 19.8 [0]
+
+Banning ZERA_ for FastSneak (VL: 1012)

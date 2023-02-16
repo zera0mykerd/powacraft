@@ -1,0 +1,18 @@
+Users:
+  71d6c242-d0b0-30b9-9635-bce9cb6764aa:
+    history:
+      '0':
+        type: hacking
+        severity: 3
+        reason: UA5E2DTXUH
+        user: NESS
+        date: 1566209437403
+        duration: 0
+      '1':
+        type: hacking
+        severity: 3
+        reason: 8DN627RJ16
+        user: NESS
+        date: 1566209710265
+        duration: 86400
+LastShutdown: 1.566209717153E12

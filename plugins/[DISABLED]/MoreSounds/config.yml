@@ -1,0 +1,118 @@
+# For further instruction,
+# see dev.bukkit.org/server-mods/more-sounds
+#                                             .
+sounds:
+  join: note-pling
+  leave: note-bass
+  chat: item-pickup
+  command: item-pickup
+  hit: hurt-flesh, 1.2
+  hit-sword: zombie-metal, 1.5
+  hit-arrow: orb-pickup, 0.8
+  teleport: portal-travel, 2.0
+  on-death: wither-spawn
+  hotbar-scroll: note-sticks, 1.8, 0.8
+  inventory-click: orb-pickup
+update-notifications: false
+teleport-particles: true
+Sound:
+  PLAYER_JOIN:
+    Name: BLOCK_NOTE_BLOCK_PLING
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_QUIT:
+    Name: BLOCK_NOTE_BLOCK_BASEDRUM
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_CHANGED_WORLD:
+    Name: ENTITY_ENDERMAN_TELEPORT
+    Pitch: 0.5
+    Volume: 1.0
+    Enabled: true
+  PLAYER_CHAT:
+    Name: ENTITY_ITEM_PICKUP
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_COMMAND:
+    Name: ENTITY_ITEM_PICKUP
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_HIT:
+    Name: ENTITY_IRON_GOLEM_DEATH
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_HIT_SWORD:
+    Name: ENTITY_ZOMBIE_ATTACK_IRON_DOOR
+    Pitch: 1.5
+    Volume: 1.0
+    Enabled: true
+  PLAYER_HIT_ARROW:
+    Name: ENTITY_EXPERIENCE_ORB_PICKUP
+    Pitch: 0.8
+    Volume: 1.0
+    Enabled: true
+  PLAYER_TELEPORT:
+    Name: ENTITY_VILLAGER_YES
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_DEATH:
+    Name: ENTITY_WITHER_SPAWN
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_RESPAWN:
+    Name: ENTITY_BAT_TAKEOFF
+    Pitch: 0.5
+    Volume: 1.0
+    Enabled: true
+  PLAYER_MINING:
+    Name: ENTITY_ENDER_DRAGON_FLAP
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_CUTTING:
+    Name: ENTITY_WOLF_AMBIENT
+    Pitch: 0.5
+    Volume: 1.0
+    Enabled: true
+  PLAYER_HOTBAR_SCROLL:
+    Name: BLOCK_NOTE_BLOCK_HAT
+    Pitch: 0.8
+    Volume: 1.8
+    Enabled: true
+  PLAYER_SWAP_ITEMS:
+    Name: BLOCK_NOTE_BLOCK_HARP
+    Pitch: 2.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_CRAFT_ITEM:
+    Name: ENTITY_PLAYER_LEVELUP
+    Pitch: 0.8
+    Volume: 2.0
+    Enabled: true
+  PLAYER_BREAK_BLOCK:
+    Name: ENTITY_VILLAGER_DEATH
+    Pitch: 2.0
+    Volume: 2.0
+    Enabled: true
+  PLAYER_PLACE_BLOCK:
+    Name: ENTITY_IRON_GOLEM_HURT
+    Pitch: 2.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_HARVESTING:
+    Name: ENTITY_CAT_AMBIENT
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: true
+  PLAYER_INVENTORY_CLICK:
+    Name: BLOCK_WOODEN_BUTTON_CLICK_ON
+    Pitch: 1.0
+    Volume: 1.0
+    Enabled: false

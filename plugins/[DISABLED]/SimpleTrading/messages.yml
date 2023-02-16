@@ -1,0 +1,44 @@
+# Message sent to player requesting the trade, @p is the placeholder for the player they are trading with
+trade-request: "&6Hai richiesto uno scambio con @p"
+
+# Message sent to the person being requested to trade
+requested-message: "&6@p vuole commerciare con te. Usa /trade accept oppure Shift+Right-Click per accettare!"
+
+# Message if your partner is already in a trade
+is-involved: "&6@p risulta gia coinvolto in un altro commercio"
+
+# Message when the player has no pending trade requests
+not-involved: "&6Non hai richieste commerciali in sospeso"
+
+# Message when the trade requests timed out
+request-timed-out: "&6La richiesta di scambio risulta scaduta"
+
+# Message sent to the player who didn't close the trade window, @p is the trading partner
+cancel-message: "&6@p ha annullato il commercio!"
+
+# Message to the player closing the trade window, @p is the other player
+decline-message: "&6Hai annullato il commercio con @p"
+
+# Message to the initiator when the trade has been declined while requesting
+decline-request-message: "&6Il tuo partner ha rifiutato la tua richiesta di scambio."
+
+# Message when the trade partner logs out, @p is the other player
+left-message: "&4Il tuo partner commerciale ha lasciato il gioco"
+
+# Message when your trade partner dies, use @p as a placeholder for their name
+death-message: "&4Il tuo partner commerciale risulta morto"
+
+# Message when your trade partner moves too far away, and the trade is cancelled, use @p as a placeholder for their name
+moved-away: "&4Il tuo partner commerciale risulta ora troppo lontano!"
+
+# Message when your partner leaves the world, use @p as a placeholder for their name
+left-world: "&4Il tuo partner ha lasciato il mondo!"
+
+# Message when your partner accepts the trade, use @p as a placeholder for their name
+accepted: "&6@p ha accettato il tuo scambio"
+
+# Message when your partner or you is in creative, use @p as a placeholder for their name
+creative: "&4@p non puoi commerciare, tu o il tuo partner commerciale siete in modalita creativa"
+
+# Message when the player confirms, use @p as a placeholder
+confirmed: "&6@p Ha confermato lo scambio"

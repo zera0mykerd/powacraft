@@ -1,0 +1,23 @@
+NoPermission: '&5&l[&dAntiCheat&5&l] &e> &cNon hai il permesso &e%perm%&c.'
+Toggle: '&5&l[&dAntiCheat&5&l] &e> &a &7Tu %status% &7%name%&7.'
+Format:
+  Regular: '&5&l[&dAntiCheat&5&l] &e> &e%player%&7 failed a%n% %vlCol%%hack% &7check. (VL: &e&o%vl%&7)'
+  Bungee: '&5&l[&dAntiCheat&5&l] &e> &e%player%&7 failed a%n% %vlCol%%hack% &7check. (VL: &e&o%vl%&7) &9[&b%server%&9]'
+  Developer: '&5&l[&dAntiCheat&5&l] &e> &e%player%&7 failed &c%debug% &4%addVl%'
+  Banwave: '&5&l[&dAntiCheat&5&l] &e> &e%player% &7is now queued for a banwave.'
+AllChecksEnabled: '&aSuccessfully enabled all checks.'
+Help:
+  default:
+  - perm:nope.command.clear &c/nope clear [Player/All] [Hack/All] &7- Clears VLs of players
+  - perm:nope.command.vl &c/nope vl <Player> &7- Tells you VLs
+  - perm:nope.command.toggle &c/nope toggle [Setting] &7- Toggle lagbacks, devmode, etc.
+  - perm:nope.command.reset &c/nope reset &7- Reset configs
+  - perm:nope.command.banwave &c/nope banwave &7- Manually initiates a banwave
+  - perm:nope.command.banwave.addplayer &c/nope banwave [Player] &7Adds a player to the banwave
+  - perm:nope.command.time &c/nope time &7- Shows time to next banwave
+  - perm:nope.command.flag &c/nope flag [Player] h:[Hack] v:[VL]
+  - perm:nope.command.checks &c/nope checks &7- Lists all checks
+  - perm:nope.command.removebanwave &c/nope removebanwave [Player] &7- Removes a player from the banwave
+  - perm:nope.command.stats &c/nope stats &7- View NOPE statistics and manage checks
+  - perm:nope.command.enablechecks &c/nope enablechecks &7- Enable all checks
+  - perm:nope.command.testanimation &c/nope testanimation [Player] &7- Test NOPE's animation

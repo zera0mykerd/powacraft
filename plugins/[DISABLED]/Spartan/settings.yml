@@ -1,0 +1,55 @@
+Punishments:
+  broadcast_on_punishment: false
+  max_wave_size: 100
+  enable_raw_report_command: false
+  enable_raw_ban_commands: false
+  enable_raw_kick_command: false
+  Commands: {}
+Logs:
+  log_file: false
+Notifications:
+  cross_server_notifications: powacraft
+  awareness_notifications: true
+  individual_only_notifications: false
+  enable_notifications_on_login: true
+  send_silent_notifications: true
+  send_uncertain_notifications: true
+Chat:
+  message_cooldown: 3
+  command_cooldown: 3
+  prevent_same_message: true
+  blocked_words: waraccademy, manuel
+  blocked_commands: waraccademy, manuel
+  staff_chat_character: '@'
+Protections:
+  explosion_detection_cooldown: 4
+  reconnect_cooldown: 1
+  use_tps_protection: true
+  max_supported_player_latency: 500
+  use_teleport_protection: true
+  avoid_self_bow_damage: true
+  player_limit_per_ip: 0
+  interactions_per_tick: 10
+  disallowed_building: true
+  custom_knockback: true
+  limit_server_flying: true
+Important:
+  op_bypass: false
+  enable_permissions: true
+  use_permission_cache: false
+  server_version: Configura il plugin se risulta impossibile riconoscere la versione del server.
+  violations_reset_seconds: 60
+  violations_reset_on_kick: false
+  bedrock_player_prefix: '*'
+  cloud_feature: false
+Detections:
+  ground_teleport_on_detection: true
+  fall_damage_on_teleport: true
+  allow_cancelled_hit_checking: false
+  update_blocks_upon_violation: false
+  ignore_shields: false
+Performance:
+  enable_performance_optimizer: true
+  enable_false_positive_detection: true
+  disable_problematic_detections: true
+  use_vanilla_ground_method: false

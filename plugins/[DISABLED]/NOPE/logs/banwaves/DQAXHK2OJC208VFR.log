@@ -1,0 +1,25 @@
+Beginning log for ZERA_ (71d6c242-d0b0-30b9-9635-bce9cb6764aa)
+Hack: FastSneak (581/581)
+Timing: Banwave
+Date: 12:46:58 PM CEST - 08/16/2019
+Time elapsed: 201 milliseconds
+Hack Score: 20.811940298507462
+
+Total amount of checks
+FastSneak#1: 6
+
+Quit server [20.61 seconds]
+
+Joined server [9.21 seconds]
+
+World change from spawn to FlagWars [3.52 seconds]
+
+Flagged FastSneak#1 | VL: 0 (+105) TPS: 20.0 [201 ms]
+Flagged FastSneak#1 | VL: 105 (+101) TPS: 20.0 [155 ms]
+Flagged FastSneak#1 | VL: 206 (+100) TPS: 20.0 [105 ms]
+Flagged FastSneak#1 | VL: 306 (+95) TPS: 20.0 [54 ms]
+Flagged FastSneak#1 | VL: 401 (+91) TPS: 20.0 [5 ms]
+
+BANWAVE FastSneak#1 | VL: 492 (+89) TPS: 20.0 [0]
+
+Banning ZERA_ for FastSneak (VL: 581)

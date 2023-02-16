@@ -1,0 +1,246 @@
+Fly:
+  B:
+    enabled: true
+    autoban: true
+  C:
+    enabled: true
+    autoban: true
+  D:
+    enabled: true
+    autoban: true
+  G:
+    enabled: true
+    autoban: true
+  K:
+    enabled: true
+    autoban: true
+  E:
+    enabled: true
+    autoban: true
+  F:
+    enabled: true
+    autoban: true
+  O:
+    enabled: true
+    autoban: true
+  I:
+    enabled: true
+    autoban: true
+AutoClicker:
+  X:
+    enabled: true
+    autoban: true
+  E:
+    enabled: true
+    autoban: true
+  D:
+    enabled: true
+    autoban: true
+  Y:
+    enabled: true
+    autoban: true
+  B:
+    enabled: true
+    autoban: true
+  J:
+    enabled: true
+    autoban: true
+  A:
+    enabled: true
+    autoban: true
+  C:
+    enabled: true
+    autoban: true
+Speed:
+  F:
+    enabled: true
+    autoban: true
+  A:
+    enabled: true
+    autoban: true
+  B:
+    enabled: true
+    autoban: true
+  E:
+    enabled: true
+    autoban: true
+KillAura:
+  A:
+    enabled: true
+    autoban: true
+  C:
+    enabled: true
+    autoban: true
+  F:
+    enabled: true
+    autoban: true
+  H2:
+    enabled: true
+    autoban: true
+  O:
+    enabled: true
+    autoban: true
+  G:
+    enabled: true
+    autoban: true
+  N:
+    enabled: true
+    autoban: true
+  B:
+    enabled: true
+    autoban: true
+  K:
+    enabled: true
+    autoban: true
+  E:
+    enabled: true
+    autoban: true
+  M:
+    enabled: true
+    autoban: true
+  H:
+    enabled: true
+    autoban: true
+  D:
+    enabled: true
+    autoban: true
+AimAssist:
+  A:
+    enabled: true
+    autoban: true
+  H:
+    enabled: true
+    autoban: true
+  C:
+    enabled: true
+    autoban: true
+Velocity:
+  C:
+    enabled: true
+    autoban: true
+  B:
+    enabled: true
+    autoban: true
+  A:
+    enabled: true
+    autoban: true
+Inventory:
+  B:
+    enabled: true
+    autoban: true
+  C:
+    enabled: true
+    autoban: true
+  A:
+    enabled: true
+    autoban: true
+  J:
+    enabled: true
+    autoban: true
+Scaffold:
+  A:
+    enabled: true
+    autoban: true
+  D:
+    enabled: true
+    autoban: true
+BadPackets:
+  J:
+    enabled: true
+    autoban: true
+  C:
+    enabled: true
+    autoban: true
+  Q:
+    enabled: true
+    autoban: true
+  W:
+    enabled: true
+    autoban: true
+  L:
+    enabled: true
+    autoban: true
+  Z:
+    enabled: true
+    autoban: true
+  S:
+    enabled: true
+    autoban: true
+  F:
+    enabled: true
+    autoban: true
+  A:
+    enabled: true
+    autoban: true
+  T:
+    enabled: true
+    autoban: true
+  G:
+    enabled: true
+    autoban: true
+  K:
+    enabled: true
+    autoban: true
+  V:
+    enabled: true
+    autoban: true
+  O:
+    enabled: true
+    autoban: true
+  D:
+    enabled: true
+    autoban: true
+  R:
+    enabled: true
+    autoban: true
+  Y:
+    enabled: true
+    autoban: true
+  P:
+    enabled: true
+    autoban: true
+  B:
+    enabled: true
+    autoban: true
+  I:
+    enabled: true
+    autoban: true
+  X:
+    enabled: true
+    autoban: true
+  U:
+    enabled: true
+    autoban: true
+  H:
+    enabled: true
+    autoban: true
+  E:
+    enabled: true
+    autoban: true
+Reach:
+  B:
+    enabled: true
+    autoban: true
+  A:
+    enabled: true
+    autoban: true
+  C:
+    enabled: true
+    autoban: true
+Payload:
+  B:
+    enabled: true
+    autoban: true
+  A:
+    enabled: true
+    autoban: true
+Timer:
+  A:
+    enabled: true
+    autoban: true
+  C:
+    enabled: true
+    autoban: true
+  B:
+    enabled: true
+    autoban: true
