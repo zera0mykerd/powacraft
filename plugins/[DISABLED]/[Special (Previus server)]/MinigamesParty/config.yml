@@ -1,0 +1,330 @@
+# MinigamesParty Config #
+# rewards are always a random amount between max_reward and min_reward
+# if use_economy is true, the winner gets money,
+# otherwise the winner gets credits, which are saved in the config
+config:
+  auto_updating: true
+  min_players: 3
+  game-on-join: false
+  max_reward: 30
+  min_reward: 20
+  use_economy: true
+  use_item_rewards: false
+  item_reward_maxamount: 10
+  item_reward_minamount: 3
+  item_reward_id: 264
+  max_players: 50
+  scoreboardoutgame: true
+  announcements: true
+  seconds_for_each_minigame: 60
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  database: bukkit
+  user: root
+  pw: toor
+strings:
+  you_left: Sei uscito dal gioco.
+  next_round_30_seconds: Prossimo round in 30 secondi! se vuoi uscire fai /mp leave.
+  description:
+    colormatch: Saltate sul colore corrispondente al colore della lana nel vostro inventario!
+    deadend: Non cadere mentre i blocchi stanno scomparendo dietro di voi!
+    disintegration: Non cadere mentre il piano sta scomparendo!
+    jumpnrun: Salta dall'altra parte!
+    lastarcherstanding: Spara gli altri con l'arco!
+    minefield: Eseguire al traguardo, senza toccare le miniere!
+    sheepfreenzy: Taglia piu pecore possibili.
+    smokemonster: Scappa dal mostro di fumo!
+    spleef: Distruggi il terreno sotto gli altri ed usa le palle di neve a tuo vantaggio!
+    slapfight: Fa cadere gli altri giocatori.
+    chickentag: Passa il pollo agli altri oppure perdi!
+  your_place: tu hai <place> piazzato.
+shop:
+  grenades_price: 70
+  jumpboost_price: 60
+  deadendboost_price: 50
+  chickentagboost_price: 60
+  slapfight_knockback_price: 100
+  smokemonsterboost_price: 150
+  jumpnrunboost_price: 150
+  sheepfreenzyimmunity_price: 100
+  megagrenades_price: 130
+  giampa3999:
+    sheepfreenzy_explosion_immunity: -3
+  ZERA:
+    sheepfreenzy_explosion_immunity: -1
+  OGPI_99:
+    sheepfreenzy_explosion_immunity: 0
+  giacchin:
+    sheepfreenzy_explosion_immunity: -3
+  _ZERA_:
+    sheepfreenzy_explosion_immunity: 0
+lobby:
+  world: minigames
+  location:
+    x: -3
+    y: 89
+    z: -222
+minigames:
+  ColorMatch:
+    spawn:
+      world: minigames
+      location:
+        x: -2426
+        y: 112
+        z: -155
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2426
+        y: 140
+        z: -155
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  Spleef:
+    spawn:
+      world: minigames
+      location:
+        x: -2426
+        y: 112
+        z: -71
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2426
+        y: 140
+        z: -71
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  MineField:
+    spawn:
+      world: minigames
+      location:
+        x: -2426
+        y: 112
+        z: -17
+    finishline:
+      world: minigames
+      location:
+        x: -2426
+        y: 112
+        z: 43
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2426
+        y: 140
+        z: 13
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  JumpnRun:
+    spawn:
+      world: minigames
+      location:
+        x: -2426
+        y: 112
+        z: 67
+    finishline:
+      world: minigames
+      location:
+        x: -2426
+        y: 112
+        z: 127
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2426
+        y: 140
+        z: 97
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  DeadEnd:
+    spawn:
+      world: minigames
+      location:
+        x: -2342
+        y: 112
+        z: -155
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2342
+        y: 140
+        z: -155
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  DisIntegration:
+    spawn:
+      world: minigames
+      location:
+        x: -2258
+        y: 112
+        z: -155
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2258
+        y: 140
+        z: -155
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  LastArcherStanding:
+    spawn:
+      world: minigames
+      location:
+        x: -2174
+        y: 112
+        z: -155
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2174
+        y: 140
+        z: -155
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  SheepFreenzy:
+    spawn:
+      world: minigames
+      location:
+        x: -2342
+        y: 112
+        z: -71
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2342
+        y: 140
+        z: -71
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  SmokeMonster:
+    spawn:
+      world: minigames
+      location:
+        x: -2258
+        y: 112
+        z: -71
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2258
+        y: 140
+        z: -71
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  SlapFight:
+    spawn:
+      world: minigames
+      location:
+        x: -2174
+        y: 112
+        z: -71
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2174
+        y: 140
+        z: -71
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+  ChickenTag:
+    spawn:
+      world: minigames
+      location:
+        x: -2342
+        y: 112
+        z: 13
+    spectatorlobby:
+      world: minigames
+      location:
+        x: -2342
+        y: 140
+        z: 13
+    lobby:
+      world: minigames
+      location:
+        x: -3
+        y: 89
+        z: -222
+    enabled: true
+ZERA:
+  wins: 38
+  credits: 1576
+giampa3999:
+  wins: 15
+  credits: 558
+Smolet:
+  wins: 9
+  credits: 204
+ZERA_:
+  wins: 10
+  credits: 224
+OGPI_99:
+  wins: 1
+  credits: 22
+zLasa001:
+  wins: 3
+  credits: 51
+benny:
+  wins: 1
+  credits: 25
+Pr0tect_Star:
+  wins: 2
+  credits: 58
+giacchin:
+  wins: 14
+  credits: 355
+_ZERA_:
+  wins: 11
+  credits: 274

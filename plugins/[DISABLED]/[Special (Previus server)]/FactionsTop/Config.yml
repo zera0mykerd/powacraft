@@ -1,0 +1,277 @@
+# FactionsTop by Novucs.
+# 
+# Configuration walkthrough:
+# - config-version: Should not be touched, determines config version.
+# - command-aliases: List of command to rebind to "/ftop".
+# - gui-settings: All settings related to GUIs.
+# - - line-count: Number of inventory lines.
+# - - inventory-name: Name used in inventory header.
+# - - layout: Fully configurable GUI layout.
+# - ignored-faction-ids: Faction IDs to not calculate for factions top.
+# - disable-chest-events: Disables chest events, improves performance.
+# - factions-per-page: Number of factions displayed per page in "/ftop".
+# - sign-update-ticks: Duration in ticks between sign updates.
+# - liquid-update-ticks: Duration in ticks between liquid economy updates.
+# - chunk-queue-size: Hard-limit maximum chunks to be queued for recalculation.
+# - chunk-recalculate-millis: Duration in millis between chunk recalculations.
+# - chat: Chat placeholder settings.
+# - - enabled: Are FactionsTop placeholders going to be used?
+# - - rank-placeholder: The text to replace in the original chat format.
+# - - rank-found: How the placeholder should look when a rank is found.
+# - - rank-not-found: How the placeholder should look when a rank is NOT found.
+# - placeholders: MVdWPlaceholderAPI settings.
+# - - faction-not-found: What to replace with when no faction is found.
+# - - enabled-ranks: The ranks to be loaded into the MVdWPlaceholderAPI.
+# - database: Various database settings, MySQL and H2 are supported.
+# - - persist-interval: Millis between database updates.
+# - - persist-factions: Saves factions in database for websites to parse.
+# - enabled: Toggles whether specific worth types should be recalculated.
+# - perform-recalculate: Toggles chunk recalculation for the listed reasons.
+# - bypass-recalculate-delay: Toggles which reason bypasses the delay.
+# - spawner-prices: Value for specific spawners.
+# - block-prices: Value for specific blocks.
+# 
+# Layout types:
+# - button_back/button_next: When clicked, moves to relavent page.
+# - - enabled/disabled: Button looks, enabled when the page is available.
+# - - - text: Item name.
+# - - - lore: Item lore.
+# - - - material: Item material.
+# - - - data: Item data.
+# - faction_list: Adds a list of factions to the GUI.
+# - - faction-count: Number of factions to add to the GUI.
+# - - fill-empty: Leaves the remainder slots blank when true.
+# - - text: Item name.
+# - - lore: Item lore.
+# 
+# Valid spawners (Case insensitive):
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+# 
+# Valid materials (Case insensitive):
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# 
+# Valid worth types (Case insensitive):
+# - CHEST
+# - PLAYER_BALANCE
+# - FACTION_BALANCE
+# - SPAWNER
+# - BLOCK
+# 
+# Valid recalculation reasons (Case insensitive):
+# - COMMAND
+# - UNLOAD
+# - CLAIM
+# - BREAK
+# - PLACE
+# - EXPLODE
+# - CHEST
+# 
+# Placeholders:
+# Header/Footer only:
+# - {button:back} - Goes to previous page.
+# - {button:next} - Goes to next page.
+# 
+# Header, footer and body:
+# - {page:back} - Previous page number.
+# - {page:this} - Current page number.
+# - {page:next} - Next page number.
+# - {page:last} - Last page number.
+# 
+# Body only:
+# - {rank} - Faction rank.
+# - {relcolor} - Relation color of the faction listed to the viewer.
+# - {faction} - Faction name.
+# - {worth:total} - Total worth of faction listed.
+# - {count:total:spawner} - Total spawner count.
+# - {worth:<worth type>} - Value of a specific worth type.
+# - {count:spawner:<spawner>} - Count of a specific spawner type.
+# - {count:material:<material>} - Count of a specific material.
+# 
+# MVdW Placeholders:
+# - {factionstop_name:*}
+# - - The faction name of a rank by replacing * with a number.
+# - - The faction name in last place by replacing * with "last".
+
+config-version: 7
+messages:
+  count-format: '#,###'
+  currency-format: $#,###.##
+  button-back:
+    enabled: '&b[<]'
+    disabled: '&7[<]'
+    tooltip:
+    - '&dCommand: &b/f top {page:back}'
+  button-next:
+    enabled: '&b[>]'
+    disabled: '&7[>]'
+    tooltip:
+    - '&dCommand: &b/f top {page:next}'
+  header: '&6_______.[ &2Top Factions {button:back} &6{page:this}/{page:last} {button:next}
+    &6]._______'
+  no-entries: '&eNo entries to be displayed.'
+  body:
+    text: '&e{rank}. {relcolor}{faction} &b{worth:total}'
+    tooltip:
+    - '&e&l-- General --'
+    - '&dTotal Worth: &b{worth:total}'
+    - '&dBlock Worth: &b{worth:block}'
+    - '&dChest Worth: &b{worth:chest}'
+    - '&dSpawner Worth: &b{worth:spawner}'
+    - '&dPlayer Balances: &b{worth:player_balance}'
+    - '&dFaction Bank: &b{worth:faction_balance}'
+    - ''
+    - '&e&l-- Spawners --'
+    - '&dSlime: &b{count:spawner:slime}'
+    - '&dSkeleton: &b{count:spawner:skeleton}'
+    - '&dZombie: &b{count:spawner:zombie}'
+    - ''
+    - '&e&l-- Materials --'
+    - '&dEmerald Block: &b{count:material:emerald_block}'
+    - '&dDiamond Block: &b{count:material:diamond_block}'
+    - '&dGold Block: &b{count:material:gold_block}'
+    - '&dIron Block: &b{count:material:iron_block}'
+    - '&dCoal Block: &b{count:material:coal_block}'
+  footer: ''
+  permission: '&cYou do not have permission.'
+  recalculation-start: '&eAll faction totals are being resynchronized'
+  recalculation-finish: '&eResynchronization of faction totals complete'
+  recalculation-stop: '&eResynchronization of faction totals stopped'
+gui-settings:
+  command-aliases:
+  - f topgui
+  line-count: 1
+  inventory-name: '&lTop Factions | Page {page:this}'
+  layout:
+  - type: button_back
+    enabled:
+      text: '&bBack'
+      lore: []
+      material: wool
+      data: 5
+    disabled:
+      text: '&7Back'
+      lore: []
+      material: wool
+      data: 14
+  - type: faction_list
+    faction-count: 7
+    fill-empty: true
+    text: '&e{rank}. {relcolor}{faction} &b{worth:total}'
+    lore:
+    - '&e&l-- General --'
+    - '&dTotal Worth: &b{worth:total}'
+    - '&dBlock Worth: &b{worth:block}'
+    - '&dChest Worth: &b{worth:chest}'
+    - '&dSpawner Worth: &b{worth:spawner}'
+    - '&dPlayer Balances: &b{worth:player_balance}'
+    - '&dFaction Bank: &b{worth:faction_balance}'
+    - ''
+    - '&e&l-- Spawners --'
+    - '&dSlime: &b{count:spawner:slime}'
+    - '&dSkeleton: &b{count:spawner:skeleton}'
+    - '&dZombie: &b{count:spawner:zombie}'
+    - ''
+    - '&e&l-- Materials --'
+    - '&dEmerald Block: &b{count:material:emerald_block}'
+    - '&dDiamond Block: &b{count:material:diamond_block}'
+    - '&dGold Block: &b{count:material:gold_block}'
+    - '&dIron Block: &b{count:material:iron_block}'
+    - '&dCoal Block: &b{count:material:coal_block}'
+  - type: button_next
+    enabled:
+      text: '&bNext'
+      lore: []
+      material: wool
+      data: 5
+    disabled:
+      text: '&7Next'
+      lore: []
+      material: wool
+      data: 14
+settings:
+  command-aliases:
+  - f top
+  ignored-faction-ids:
+  - none
+  - safezone
+  - warzone
+  - '0'
+  - '-1'
+  - '-2'
+  disable-chest-events: false
+  factions-per-page: 9
+  sign-update-ticks: 1
+  liquid-update-ticks: 100
+  chunk-queue-size: 200
+  recalculate-chunks-per-tick: 50
+  chunk-recalculate-millis: 120000
+  chat:
+    enabled: false
+    rank-placeholder: '{factions_top_rank}'
+    rank-found: '&2[&e#{rank}&2]'
+    rank-not-found: ''
+  placeholders:
+    faction-not-found: '-'
+    enabled-ranks:
+    - 1
+    - 2
+    - 3
+  database:
+    jdbc-url: jdbc:h2:./plugins/FactionsTop/database
+    username: root
+    password: pa$$w0rd
+    maximum-pool-size: 10
+    max-lifetime: 5000
+    idle-timeout: 5000
+    connection-timeout: 5000
+    persist-interval: 60000
+    persist-factions: false
+  enabled:
+    chest: true
+    player_balance: true
+    faction_balance: true
+    spawner: true
+    block: true
+  perform-recalculate:
+    command: true
+    unload: true
+    claim: true
+    break: true
+    place: true
+    explode: true
+    chest: true
+  bypass-recalculate-delay:
+    command: true
+    unload: true
+    claim: true
+    break: false
+    place: false
+    explode: false
+    chest: false
+  spawner-prices:
+    skeleton: 30000.0
+    zombie: 25000.0
+    slime: 75000.0
+  block-prices:
+    gold_block: 250.0
+    iron_block: 75.0
+    diamond_block: 1000.0
+    emerald_block: 1250.0
+    coal_block: 25.0
+Options:
+  broadcast-when-starting-calculation: true
+  broadcast-when-stopping-calculation: true
+  factions-per-page: 10
+  chunks-calculated-per-second: 40
+  ftop-command-delay: 5
+  ftop-recalculation-delay-in-seconds: 1800
+  include-block-value-in-total-worth: true
+  include-spawner-value-in-total-worth: true
+  include-player-balance-in-total-worth: true
+  include-itemworth-in-total-worth: true
+  prevent-ftop-usage-while-calculating: true
+  mysql-save-interval-in-seconds: 300
+  Resynchronization-Interval-in-Seconds:
+    RichestMember: 60
+    ServerTotal: 60
+  ftop-command-name: top

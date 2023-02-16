@@ -1,0 +1,14 @@
+Different-Prefix-for-ftop1-to-ftop5: true
+FactionsTop:
+  '1':
+    prefix: '&4&l[&6&l#&4&l1&4&l]'
+  '2':
+    prefix: '&4&l[&6&l#&c&l2&4&l]'
+  '3':
+    prefix: '&4&l[&6&l#&6&l3&4&l]'
+  '4':
+    prefix: '&4&l[&6&l#&a&l4&4&l]'
+  '5':
+    prefix: '&4&l[&6&l#&b&l5&4&l]'
+  normal:
+    prefix: '&4&l[&6&l#&b&l%ftop%&4&l]'

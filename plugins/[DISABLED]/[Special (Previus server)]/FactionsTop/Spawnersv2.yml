@@ -1,0 +1,220 @@
+'1':
+  material: MOB_SPAWNER
+  data: 4
+  price: 2000.0
+  spawnername: ElderGuardian
+'2':
+  material: MOB_SPAWNER
+  data: 6
+  price: 2000.0
+  spawnername: Stray
+'3':
+  material: MOB_SPAWNER
+  data: 23
+  price: 2000.0
+  spawnername: Husk
+'4':
+  material: MOB_SPAWNER
+  data: 31
+  price: 2000.0
+  spawnername: Donkey
+'5':
+  material: MOB_SPAWNER
+  data: 32
+  price: 2000.0
+  spawnername: Mule
+'6':
+  material: MOB_SPAWNER
+  data: 34
+  price: 2000.0
+  spawnername: Evoker
+'7':
+  material: MOB_SPAWNER
+  data: 35
+  price: 2000.0
+  spawnername: Vex
+'8':
+  material: MOB_SPAWNER
+  data: 36
+  price: 2000.0
+  spawnername: Vindicator
+'9':
+  material: MOB_SPAWNER
+  data: 37
+  price: 2000.0
+  spawnername: Illusioner
+'10':
+  material: MOB_SPAWNER
+  data: 50
+  price: 500000.0
+  spawnername: Creeper
+'11':
+  material: MOB_SPAWNER
+  data: 51
+  price: 70000.0
+  spawnername: Skeleton
+'12':
+  material: MOB_SPAWNER
+  data: 52
+  price: 45000.0
+  spawnername: Spider
+'13':
+  material: MOB_SPAWNER
+  data: 53
+  price: 10000.0
+  spawnername: Giant
+'14':
+  material: MOB_SPAWNER
+  data: 54
+  price: 70000.0
+  spawnername: Zombie
+'15':
+  material: MOB_SPAWNER
+  data: 55
+  price: 10000.0
+  spawnername: Slime
+'16':
+  material: MOB_SPAWNER
+  data: 56
+  price: 20000.0
+  spawnername: Ghast
+'17':
+  material: MOB_SPAWNER
+  data: 57
+  price: 750000.0
+  spawnername: Pigman
+'18':
+  material: MOB_SPAWNER
+  data: 58
+  price: 200000.0
+  spawnername: Enderman
+'19':
+  material: MOB_SPAWNER
+  data: 59
+  price: 2000.0
+  spawnername: CaveSpider
+'20':
+  material: MOB_SPAWNER
+  data: 60
+  price: 1.5E7
+  spawnername: SilverFish
+'21':
+  material: MOB_SPAWNER
+  data: 61
+  price: 350000.0
+  spawnername: Blaze
+'22':
+  material: MOB_SPAWNER
+  data: 62
+  price: 10000.0
+  spawnername: MagmaCube
+'23':
+  material: MOB_SPAWNER
+  data: 63
+  price: 5.0E7
+  spawnername: EnderDragon
+'24':
+  material: MOB_SPAWNER
+  data: 64
+  price: 500000.0
+  spawnername: Wither
+'25':
+  material: MOB_SPAWNER
+  data: 65
+  price: 10000.0
+  spawnername: Bat
+'26':
+  material: MOB_SPAWNER
+  data: 66
+  price: 15000.0
+  spawnername: Witch
+'27':
+  material: MOB_SPAWNER
+  data: 67
+  price: 2000.0
+  spawnername: Endermite
+'28':
+  material: MOB_SPAWNER
+  data: 68
+  price: 2000.0
+  spawnername: Guardian
+'29':
+  material: MOB_SPAWNER
+  data: 90
+  price: 10000.0
+  spawnername: Pig
+'30':
+  material: MOB_SPAWNER
+  data: 91
+  price: 10000.0
+  spawnername: Sheep
+'31':
+  material: MOB_SPAWNER
+  data: 92
+  price: 50000.0
+  spawnername: Cow
+'32':
+  material: MOB_SPAWNER
+  data: 93
+  price: 5000.0
+  spawnername: Chicken
+'33':
+  material: MOB_SPAWNER
+  data: 94
+  price: 10000.0
+  spawnername: Squid
+'34':
+  material: MOB_SPAWNER
+  data: 95
+  price: 10000.0
+  spawnername: Wolf
+'35':
+  material: MOB_SPAWNER
+  data: 96
+  price: 100000.0
+  spawnername: MushroomCow
+'36':
+  material: MOB_SPAWNER
+  data: 97
+  price: 10000.0
+  spawnername: Snowman
+'37':
+  material: MOB_SPAWNER
+  data: 98
+  price: 10000.0
+  spawnername: Ocelot
+'38':
+  material: MOB_SPAWNER
+  data: 99
+  price: 1500000.0
+  spawnername: IronGolem
+'39':
+  material: MOB_SPAWNER
+  data: 100
+  price: 100000.0
+  spawnername: Horse
+'40':
+  material: MOB_SPAWNER
+  data: 101
+  price: 10000.0
+  spawnername: Rabbit
+'41':
+  material: MOB_SPAWNER
+  data: 102
+  price: 2000.0
+  spawnername: PolarBear
+'42':
+  material: MOB_SPAWNER
+  data: 103
+  price: 2000.0
+  spawnername: Llama
+'43':
+  material: MOB_SPAWNER
+  data: 105
+  price: 2000.0
+  spawnername: Parrot
+'44':
+  material: MOB_SPAWNER
+  data: 120
+  price: 120000.0
+  spawnername: Villager

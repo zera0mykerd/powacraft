@@ -1,0 +1,7 @@
+Config:
+  CC:
+    message: ''
+  ICC:
+    message: ''
+  permissions:
+    message: Accesso Negato.

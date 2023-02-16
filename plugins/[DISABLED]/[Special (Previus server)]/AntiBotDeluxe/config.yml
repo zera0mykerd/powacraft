@@ -1,0 +1,491 @@
+#                 _   _ ____        _   _____       _
+#     /\         | | (_)  _ \      | | |  __ \     | |
+#    /  \   _ __ | |_ _| |_) | ___ | |_| |  | | ___| |_   ___  _____
+#   / /\ \ | '_ \| __| |  _ < / _ \| __| |  | |/ _ \ | | | \ \/ / _ \
+#  / ____ \| | | | |_| | |_) | (_) | |_| |__| |  __/ | |_| |>  <  __/
+# /_/    \_\_| |_|\__|_|____/ \___/ \__|_____/ \___|_|\__,_/_/\_\___|
+#
+# Authors: FusionCoding & Jouii
+# Version: 10.1
+# State: RELEASE
+# Anonymous statistics are sent to bStats.
+
+# Thank you for using AntiBotDeluxe
+# The default config requires very little to no configuration to make it fit your setup.
+
+# Version of configuration file
+# - Do not touch this number!
+version: 1.0.4
+
+###############################
+##          General          ##
+###############################
+
+# General configuration of the plugin
+general:
+  # The prefix for AntiBotDeluxe
+  prefix: "&2&l[&aAntiBot&2&l] &6> &d"
+
+  # Enable or disable logging. Due to asynchronous logging this should be kept on.
+  log: false
+
+  # If enabled, AntiBotDeluxe will stop logging new connections
+  # if the server is under attack. This will increase the I/O
+  # performance and will reduce CPU usage.
+  light-logging: true
+
+  # Enable or disable debug messages. Can be useful for troubleshooting.
+  debug: false
+
+  # Set the default language which the plugin should use.
+  # Following codes can be used: EN, DE, FR, IT, ES ...
+  locale: EN
+
+  # Storage configuration
+  # Available options: File, SQL
+  storage:
+    type: File
+
+  # Console configuration
+  console-filter:
+    enabled: true
+
+    filter:
+      - "InitialHandler is pinging"
+      - "InitialHandler has connected"
+      - "Connection reset by peer"
+      - "Unexpected packet received"
+      - "read timed out"
+      - "to process!"
+      - "Empty Packet!"
+      - "bad packet ID"
+      - "InitialHandler - encountered exception"
+      - "com.mojang.authlib.GameProfile@"
+      - "lost connection: Timed out"
+      - "lost connection: Disconnected"
+      - "Took too long to log in"
+
+  # Configuration for automatic whitelisting
+  auto-whitelist:
+    enabled: false
+
+    # Time in minutes the player has to play until whitelisted.
+    # Default: 10
+    time: 10
+
+  # MySQL configuration
+  mysql-data:
+
+    # - Possible options:
+    #   - mysql
+    #   - mariadb
+    database-type: mysql
+
+    # Set the address and port for the database server.
+    # If no port is specified the default port is used.
+    # Specify as "address:port" if it's different.
+    address: localhost
+
+    # Set the name of the database for data to be stored in.
+    # The database has to be created already.
+    database: antibotdeluxe
+
+    # Credentials for the database.
+    username: root
+    password: ''
+
+    hikari-settings:
+      # Sets the maximum size of the MySQL connection pool.
+      # - Basically this value will determine the maximum number of actual
+      #   connections to the database backend.
+      # - More information about determining the size of connection pools can be found here:
+      #   https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing
+      maximum-pool-size: 10
+
+      # Sets the minimum number of idle connections that the pool will try to maintain.
+      # - For maximum performance and responsiveness to spike demands, it is recommended to not set
+      #   this value and instead allow the pool to act as a fixed size connection pool.
+      #   (set this value to the same as 'maximum-pool-size')
+      minimum-idle: 10
+
+      # This setting controls the maximum lifetime of a connection in the pool in milliseconds.
+      # - The value should be at least 30 seconds less than any database or infrastructure imposed
+      #   connection time limit.
+      maximum-lifetime: 1800000 # 30 minutes
+
+      # This setting controls the maximum number of milliseconds that the plugin will wait for a
+      # connection from the pool, before timing out.
+      connection-timeout: 5000 # 5 seconds
+
+# General configuration for caching
+cache:
+
+  # Configuration for proxy detection result caching.
+  proxy-results:
+    # Time the result will be cached in seconds
+    # Default: 86400
+    expires-after: 86400 # 24 hours
+
+  # Configuration for blacklist caching
+  blacklist:
+    # Time the result will be cached in seconds
+    # Default: 86400
+    expires-after: 86400 # 24 hours
+
+  # Configuration for pinging
+  ping:
+    # Time the result will be cached in seconds
+    # Default: 15
+    expires-after: 15
+
+  # Configuration for connections per IP
+  connections-per-ip:
+    # Time the result will be cached in seconds
+    # Default: 21600
+    expires-after: 21600 # 6 hours
+
+  # Configuration for analyze result caching
+  analyze:
+    # Time the result will be cached in seconds
+    # Default: 3600
+    expires-after: 3600 # 60 minutes
+
+    # Should all connections be cached?
+    # Enable this to only cache when there is no attack running.
+    lightweight-caching: false
+
+# General configuration for geolocation settings.
+geolocation:
+  # Should the plugin check for connection origin locations?
+  enabled: false
+
+
+# General configuration for connection analyzing
+analysis:
+
+  # Configure the order in which checks are ran
+  order:
+    - ConnectionsPerIP
+    - Blacklist
+    - MOTDPingDetection
+#    - DeluxeCaptcha
+    - ForceRejoin
+    - ProxyDetection
+#    - GeoDetection
+
+  # Whitelist configuration
+  whitelist:
+    # Should the whitelist be enabled?
+    enabled: false
+
+  checks:
+    # ForceRejoin - This check forces a player to rejoin once.
+    forcerejoin:
+
+      # Time in seconds the player has to wait before he attempts again
+      # - this will prevent bots from spam joining
+      # Default: 10
+      time: 10
+
+      # Set the conditions which have to be fired for this check to be run
+      # Available options: STANDARD, STANDARD_NO_PING, STANDARD_SLOW, STANDARD_BYPASS
+      # Recommended:           x             x               x
+      conditions:
+        - STANDARD
+        - STANDARD_SLOW
+        - STANDARD_NO_PING
+
+    # Blacklist - This check compares the connection with the blacklist
+    blacklist:
+
+      # Set the conditions which have to be fired for this check to be run
+      # Available options: STANDARD, STANDARD_NO_PING, STANDARD_SLOW, STANDARD_BYPASS
+      # Recommended:                                                                  - always executed
+      conditions: []
+
+    # ProxyDetection - This check detects Proxies & VPN's
+    proxydetection:
+
+      # Set the conditions which have to be fired for this check to be run
+      # Available options: STANDARD, STANDARD_NO_PING, STANDARD_SLOW, STANDARD_BYPASS
+      # Recommended:                                                                  - always executed
+      conditions: []
+
+    # MOTDPingDetection - This check detects if a player has pinged the server
+    motdpingdetection:
+
+      # Set the conditions which have to be fired for this check to be run
+      # Available options: STANDARD, STANDARD_NO_PING, STANDARD_SLOW, STANDARD_BYPASS
+      # Recommended:                          x
+      conditions:
+        - STANDARD_NO_PING
+
+    # DeluxeCaptcha - This check forces the player to manually verify himself
+    deluxecaptcha:
+
+      # Set the conditions which have to be fired for this check to be run
+      # Available options: STANDARD, STANDARD_NO_PING, STANDARD_SLOW, STANDARD_BYPASS
+      # Recommended:                                                          x
+      conditions:
+        - STANDARD_BYPASS
+
+    # ConnectionsPerIP - This check detects fast joining bots.
+    connectionsperip:
+
+      # Amount of how many players per IP are allowed to connect within a specific time
+      # - this will prevent attacks with a low proxy amount
+      amount: 3
+
+      # Set the conditions which have to be fired for this check to be run
+      # Available options: STANDARD, STANDARD_NO_PING, STANDARD_SLOW, STANDARD_BYPASS
+      # Recommended:                                                                  - always executed
+      conditions: []
+
+    # GeoDetection - Detects the country of the connection.
+    geodetection:
+
+      # Specify which countries you want to allow or disallow.
+      # - The mode specifies in which way the countries should be handled
+      #   If set to BLACKLIST all the following countries will be disallowed.
+      #   If set to WHITELIST only the following countries will be allowed.
+      country-list:
+        mode: BLACKLIST
+        list:
+          - Brazil
+          - Russia
+
+      # Set the conditions which have to be fired for this check to be run
+      # Available options: STANDARD, STANDARD_NO_PING, STANDARD_SLOW, STANDARD_BYPASS
+      # Recommended:                                                                  - always executed
+      conditions: []
+
+  # Configure the different conditions that can be triggered.
+  # - This is needed for checks to be ran dependent on each situation
+  conditions:
+
+    # This condition is configurated to be triggered whenever a normal attack is detected
+    # - this means that there are multiple pings and connections per second
+    # - enum name: STANDARD
+    standard-attack:
+      # Amount of pings per second to trigger this condition.
+      # Default: 5
+      pings: 5
+
+      # Amount of connections per second to trigger this condition.
+      # Default: 35
+      connections: 35
+
+      # Time in seconds this condition will be triggered after fired.
+      # Default: 30
+      time: 30
+
+    # This condition is configurated to be triggered whenever a normal attack without pings is detected
+    # - this means that there are multiple connections, but not many pings per second.
+    # - enum name: STANDARD_NO_PING
+    standard-no-ping:
+      # Amount of pings per second to trigger this condition. <- reverted
+      # - reverted means, that this value only triggers if its below the number
+      # Default: 5
+      pings: 5
+
+      # Amount of connections per second to trigger this condition.
+      # Default: 35
+      connections: 35
+
+      # Time in seconds this condition will be triggered after fired.
+      # Default: 30
+      time: 30
+
+    # This condition is configurated to be triggered as a backup for small attacks
+    # - this means that this condition is also likely to be triggered without attacks
+    # - enum name: STANDARD_SLOW
+    standard-slow:
+      # Amount of pings per second to trigger this condition.
+      # Default: 0
+      pings: 0
+
+      # Amount of connections per second to trigger this condition.
+      # Default: 5
+      connections: 5
+
+      # Time in seconds this condition will be triggered after fired.
+      # Default: 30
+      time: 30
+
+    # This condition is configurated to be triggered whenever a bypassing attack is detected
+    # - this means that there are many connections, but no detections.
+    # - enum name: STANDARD_BYPASS
+    standard-bypass:
+      # Detection rate in %, this is a prediction of how many bots are detected.
+      # - If the rate drops below the set number, this condition will be fired.
+      # Default: 96(%)
+      detection-rate: 96
+
+      # Amount of connections per second to trigger this condition.
+      # Default: 50
+      connections: 50
+
+      # Time in seconds this condition will be triggered after fired.
+      # Default: 15
+      time: 45
+
+# General configuration for DeluxeCaptcha
+# - This system is the first public available captcha system
+#   outside of the game. This system has been designed to
+#   work with any kind of server. You can also use your
+#   own domain for the system.
+deluxecaptcha:
+  # Should DeluxeCaptcha be enabled?
+  enabled: false
+
+  # Here you can configure the connection variables
+  # used to connect to DeluxeCaptcha.
+  connection:
+
+    # Here you can set the preferred api server
+    # - The default server used is satellite.antibotdeluxe.com.
+    #   This will use our redundant API system to select the best
+    #   server for you.
+    # - If you want to force an api server you can use the following syntax:
+    #   country.node.satellite.antibotdeluxe.com
+    #
+    # - Available options:
+    #   - us-01.satellite.antibotdeluxe.com
+    address: satellite.antibotdeluxe.com
+    port: 8080
+
+    # The standard URL that will be used is https://deluxecaptcha.com
+    # If you want to use a custom URL you will have to do a few basic steps
+    #
+    # Step 1: Go to your domains DNS area and create a new record.
+    # Step 2: Create a CNAME record with your wished domain pointing to whitelabel.deluxecaptcha.com
+    # Step 3: Enter your domain that you want to use here.
+    # Example: captcha.myserver.com
+    custom-url:
+      # Do you want to use a custom domain?
+      enabled: false
+      # Enter the URL that you want to use.
+      # WARNING: This will only work if the record exists!!!
+      url: captcha.myserver.com
+
+
+# General configuration for the Layer-7 protection
+layer-7-protection:
+  # Should the Layer-7 protection be enabled?
+  enabled: true
+
+  # Limit the amount of pings per second allowed per IP.
+  refresh-limit:
+    seconds: 5
+    limit: 7
+
+  # Configuration for server icon limits
+  server-icon:
+    # Should the server icon only be sent once per IP?
+    # - This would prevent attacks towards the icon file
+    send-only-once: true
+
+
+# General configuration for firewall integration.
+firewall-hook:
+  # Should the general firewall be enabled?
+  enabled: false
+
+  # Configuration for hooks with the machine to allow network level mitigation
+  hooks:
+    '1':
+      # Name of the hook
+      name: "IPTables & IPSet"
+      enabled: false
+      # Requires software for the hook to run
+      required-software:
+        '1':
+          name: "IPTables"
+          validation-command: "sudo iptables --version" # Requires sudo to allow non users (https://superuser.com/questions/1041621/how-to-enable-user-to-change-iptables-rules)
+          validation-response: "iptables v"
+
+        '2':
+          name: "IPSet"
+          validation-command: "sudo ipset --version" # Requires sudo to allow non users (https://superuser.com/questions/1041621/how-to-enable-user-to-change-iptables-rules)
+          validation-response: "ipset v"
+      # Commands which are ran while the server is booting.
+      firewall-commands:
+        '1':
+          command: "sudo ipset flush antibotdeluxe"
+        '2':
+          # Creates the set and sets the timeout.
+          command: "sudo ipset -N -! antibotdeluxe hash:net maxelem 150000 timeout 86400" # <- 24 hours
+        '3':
+          command: "sudo iptables -N AntiBotDeluxe"
+        '4':
+          command: "sudo iptables -F AntiBotDeluxe"
+        '5':
+          command: "sudo iptables -A AntiBotDeluxe -p tcp -m set --match-set antibotdeluxe src -j DROP"
+        '6':
+          command: "sudo iptables -D INPUT -p tcp -j AntiBotDeluxe"
+        '7':
+          command: "sudo iptables -A INPUT -p tcp -j AntiBotDeluxe"
+
+      # Commands that are run to perform action
+      action-commands:
+        add-to-firewall:
+          command: "sudo ipset -A antibotdeluxe %ip%"
+
+        remove-from-firewall:
+          command: "sudo ipset -D antibotdeluxe %ip%"
+
+
+# General configuration for proxy and VPN detection
+ip-scoring:
+  external-services:
+    '1':
+      name: "proxycheck.io"
+      action: BLACKLIST
+      enabled: true
+      connection:
+        url: "http://proxycheck.io/v2/%ip%?key=%key%&vpn=1"
+        detection-trigger: "yes"
+        automatic-placeholders:
+          key: "111111-222222-333333-444444"
+    '2':
+      name: "getipintel.net"
+      action: BLACKLIST
+      enabled: true
+      connection:
+        url: "http://check.getipintel.net/check.php?ip=%ip%&contact=%email%%flags%"
+        detection-trigger: "1"
+        automatic-placeholders:
+          email: "put.your@email.adress"
+          flags: "&flags=m"
+    '3':
+      name: "vpnblocker.net"
+      enabled: true
+      action: BLACKLIST
+      connection:
+        url: "http://api.vpnblocker.net/v2/json/%ip%"
+        detection-trigger: "\"host-ip\": true"
+    '4':
+      name: "stopforumspam.com"
+      enabled: true
+      action: KICK
+      connection:
+        url: "http://www.stopforumspam.com/api?ip=%ip%"
+        detection-trigger: "<appears>yes</appears>"
+    '5':
+      name: "teoh.io"
+      enabled: false
+      action: KICK
+      connection:
+        url: "https://ip.teoh.io/api/vpn/%ip%"
+        detection-trigger: "\"vpn_or_proxy\": \"yes\""
+    '6':
+      name: "IPQualityScore"
+      enabled: false
+      action: BLACKLIST
+      connection:
+        url: "https://www.ipqualityscore.com/api/json/ip/%key%/%ip%?strictness=%strictness%"
+        detection-trigger: "\"proxy\":true"
+        automatic-placeholders:
+          key: "111111-222222-333333-444444"
+          strictness: "1"
+

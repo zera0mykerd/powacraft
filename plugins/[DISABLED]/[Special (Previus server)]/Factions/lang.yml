@@ -1,0 +1,702 @@
+root:
+  AUTHOR: misc
+  RESPONSIBLE: misc
+  LANGUAGE: English
+  ENCODING: UTF-8
+  LOCALE: en_US
+  REQUIRESUNICODE: 'false'
+  DEFAULT: 'true'
+  STATE: complete
+  LOCAL:
+    AUTHOR: misc
+    RESPONSIBLE: misc
+    LANGUAGE: English
+    REGION: US
+    STATE: complete
+COMMAND:
+  ADMIN:
+    NOTMEMBER: '%1$s<i> non risulta un membro della tua fazione.'
+    NOTADMIN: <b>Tu non sei l admin della fazione.
+    TARGETSELF: <b>Il giocatore bersagliato non deve essere te stesso.
+    DEMOTES: <i>Hai retrocesso %1$s<i> dalla tua posizione di admin fazioni.
+    DEMOTED: <i>Sei stato retrocesso dalla posizione di amministratore di fazione da %1$s<i>.
+    PROMOTES: <i>Hai promosso %1$s<i> alla posizione di fazione admin.
+    PROMOTED: '%1$s<i> ha dato %2$s<i> la leadership di %3$s<i>.'
+    DESCRIPTION: Consegnare i diritti di amministratore
+  AHOME:
+    DESCRIPTION: Manda un giocatore a casa sua, qualunque cosa accada.
+    NOHOME: '%1$s non possiede una casa.'
+    SUCCESS: $1%s mandato a casa loro.
+    OFFLINE: '%1$s risulta offline.'
+    TARGET: Sei stato mandato a casa tua.
+  ANNOUNCE:
+    DESCRIPTION: Annuncia un messaggio ai giocatori nella fazione.
+  AUTOCLAIM:
+    ENABLED: <i>ora auto-claiming terra per <h>%1$s<i>.
+    DISABLED: <i>Auto-claiming terra disabilitata.
+    REQUIREDRANK: <b>Devi essere <h>%1$s<b> per claimare la terra.
+    OTHERFACTION: <b>Non puoi claimare la terraa per <h>%1$s<b>.
+    DESCRIPTION: Auto-claim mentre cammini
+  AUTOHELP:
+    HELPFOR: Help per comandi "
+  BOOM:
+    PEACEFULONLY: <b>Questo comando risulta utilizzabile solo da fazioni specificamente designate come pacifiche.
+    TOTOGGLE: per abilitare o disabilitare le esplosioni
+    FORTOGGLE: per abilitare o disabilitare le esplosioni
+    ENABLED: '%1$s<i> ha %2$s esplosioni nel tuo territorio.'
+    DESCRIPTION: Disabilita o Abilita le esplosioni (fazioni pacifiche only)
+  BYPASS:
+    ENABLE: <i>Hai attivato la modalita di esclusione dell amministratore. Sarai in grado di costruire o distruggere ovunque.
+    ENABLELOG: ' ha ABILITATO  la admin bypass mode.'
+    DISABLE: <i>Hai disabilitato la admin bypass mode.
+    DISABLELOG: ' ha DISABILITATO la admin bypass mode.'
+    DESCRIPTION: Attiva la modalita di bypass dell admin
+  CHAT:
+    DISABLED: <b>I canali di chat integrati sono disabilitati su questo server.
+    INVALIDMODE: <b>Modalita chat non riconosciuta. <i>Si prega di inserire uno dei due 'a','f' or 'p'
+    DESCRIPTION: Cambia la modalita di chat
+    MODE:
+      PUBLIC: <i>Modalita di chat pubclica.
+      ALLIANCE: <i>Modalita chat solo Alleanza.
+      TRUCE: <i>Tregua solo la modalita chat.
+      FACTION: <i>Modalita chat solo fazione.
+  CHATSPY:
+    ENABLE: <i>Hai attivato la modalita di spionaggio della chat.
+    ENABLELOG: ' ha ABILITATO lo spionaggio della chat.'
+    DISABLE: <i>Hai disabilitato la modalita di spionaggio della chat.
+    DISABLELOG: ' ha DISABILITATO lo spionaggio della chat.'
+    DESCRIPTION: Abilita la modalita di spionaggio delle chat
+  CLAIM:
+    INVALIDRADIUS: <b>Se si specifica un raggio, deve essere almeno 1.
+    DENIED: <b>Non sei autorizzato a claimare in un raggio.
+    DESCRIPTION: Richiedi la terra da dove ti trovi
+  CLAIMLINE:
+    INVALIDRADIUS: <b>Se si specifica una distanza, deve essere almeno 1.
+    DENIED: <b>Non sei autorizzato a claimare in linea.
+    DESCRIPTION: Richiedi il terreno in linea retta.
+    ABOVEMAX: <b>Il limite massimo per la linea di reclamo e <b>%s<b>.
+    NOTVALID: '%s<b> non e una direzione cardinale. Puoi usare <h>nord<b>, <h>est<b>,
+      <h>sud <b>o <h>ovest<b>.'
+  CONFIG:
+    NOEXIST: <b>Nessuna impostazione di configurazione "<h>%1$s<b>" esistente.
+    SET:
+      'TRUE': '" opzione impostata su true (Abilitata).'
+      'FALSE': '" opzione impostata su false (Disabilitata).'
+      ADDED: '"%1$s" settaggio: "%2$s" aggiunto.'
+      REMOVED: '"%1$s" settaggio: "%2$s" rimosso.'
+    OPTIONSET: '" opzione impostata su '
+    COLOURSET: '" opzione colore impostata su "'
+    INTREQUIRED: 'Impossibile impostare "%1$s": Un integer (whole number) valore richiesto.'
+    LONGREQUIRED: 'Impossibile impostare "%1$s": Un long integer (whole number) valore
+      richiesto.'
+    DOUBLEREQUIRED: 'Impossibile impostare "%1$s": Un double (numeric) valore richiesto.'
+    FLOATREQUIRED: 'Impossibile impostare "%1$s": Un float (numeric) valore richiesto.'
+    INVALID:
+      COLOUR: 'Impossibile impostare "%1$s": "%2$s" non risulta essere un colore valido.'
+      COLLECTION: '"%1$s" non e un tipo di raccolta dati che puo essere modificato
+        con questo comando.'
+      MATERIAL: 'Non si puo cambiare "%1$s" set: "%2$s" non e un valido materiale.'
+      TYPESET: '"%1$s" non e un set di tipi di dati che puo essere modificato con
+        questo comando.'
+    MATERIAL:
+      ADDED: '"%1$s" set: Materiale "%2$s" aggiunto.'
+      REMOVED: '"%1$s" set: Materiale "%2$s" rimosso.'
+    LOG: ' (comando eseguito da %1$s.)'
+    ERROR:
+      SETTING: Errore durante l'impostazione della configurazione "%1$s" to "%2$s".
+      MATCHING: Impostazione di configurazione "%1$s" non poteva essere abbinato, anche se lo dovrebbe essere...
+      TYPE: '''%1$s'' is of type ''%2$s'', che non puo essere modificato con questo
+        comando.'
+    DESCRIPTION: cambia il conf.json impostazione
+  CONVERT:
+    BACKEND:
+      RUNNING: Gia in esecuzione quel backend.
+      INVALID: backend invalido
+    DESCRIPTION: Converti il backend del plug-in
+  CREATE:
+    MUSTLEAVE: <b>Devi prima lasciare la tua fazione attuale.
+    INUSE: <b>Quel tag risulta gia in uso.
+    TOCREATE: per creare una nuova fazione
+    FORCREATE: per aver creato una nuova fazione
+    ERROR: <b>Errore interno nel creare una nuova fazione.
+    CREATED: '%1$s<i> ha creato una nuova fazione %2$s'
+    YOUSHOULD: '<i>Dovresti ora: %1$s'
+    CREATEDLOG: ' ha creato una nuova fazione: '
+    DESCRIPTION: Crea una nuova fazione
+  DEINVITE:
+    CANDEINVITE: 'Giocatori che puoi invitare: '
+    CLICKTODEINVITE: Fai clic per revocare l invito per %1$s
+    ALREADYMEMBER: '%1$s<i> e gia membro di %2$s'
+    MIGHTWANT: '<i>Potresti volere: %1$s'
+    REVOKED: '%1$s<i> revocato il tuo invito a <h>%2$s<i>.'
+    REVOKES: '%1$s<i> revocato %2$s''s<i> invito.'
+    DESCRIPTION: Rimuovi un invito in sospeso
+  DELFWARP:
+    DELETED: <i>elimina un warp <a>%1$s
+    INVALID: <i>non trovo quel warp <a>%1$s
+    TODELETE: per eliminare un warp
+    FORDELETE: per eliminare un warp
+    DESCRIPTION: Elimina un warp della fazione
+  DESCRIPTION:
+    CHANGES: 'Hai modificato la descrizione per <h>%1$s<i> a:'
+    CHANGED: '<i>La fazione %1$s<i> ha cambiato la sua descrizione a:'
+    TOCHANGE: per cambiare la descrizione della fazione
+    FORCHANGE: per cambiare la descrizione della fazione
+    DESCRIPTION: Cambia la descrizione della fazione
+  DISBAND:
+    IMMUTABLE: <i>Non puoi eliminare Wilderness, SafeZone, o WarZone.
+    MARKEDPERMANENT: <i>Questa fazione risulta designata come permanente, quindi non puoi scioglierla.
+    BROADCAST:
+      YOURS: <h>%1$s<i> ha eliminato la tua fazione.
+      NOTYOURS: <h>%1$s<i> ha eliminato la fazione %2$s.
+    HOLDINGS: <i>Ti e stata data la banca della fazione sciolta, per un totale %1$s.
+    DESCRIPTION: Elimina una fazione
+  FWARP:
+    CLICKTOWARP: Clicca per i warp!
+    COMMANDFORMAT: <i>/f warp <warpname>
+    WARPED: <i>warpato a <a>%1$s
+    INVALID: <i>Non trovo il warp <a>%1$s
+    TOWARP: per il warp
+    FORWARPING: per il warp
+    WARPS: 'Warps: '
+    DESCRIPTION: Ti teletrasporta a un warp
+  HELP:
+    '404': <b>Questa pagina non esiste
+    NEXTCREATE: <i>Scopri come creare una fazione nella pagina successiva.
+    HOME: '<i>E non dimenticare di impostare la tua casa:'
+    BANK:
+      '1': <i>La tua fazione ha una banca utilizzata per pagare determinati
+      '2': <i>cose, quindi dovra essere depositato del denaro.
+      '3': <i>Per saperne di piu, usa il comando money.
+    PLAYERTITLES: <i>I titoli dei giocatori sono solo per divertimento. Nessuna regola collegata a loro.
+    OWNERSHIP:
+      '1': <i>I terreni reclamati con set di proprieta sono ulteriormente protetti
+      '2': <i>che solo il proprietario (i), l'amministratore della fazione e possibilmente il
+      '3': <i>i moderatori di fazioni hanno pieno accesso.
+    RELATIONS:
+      '1': <i>Imposta la relazione che DESIDERI avere con un'altra fazione.
+      '2': <i>La tua relazione di default con altre fazioni sara neutrale.
+      '3': <i>Se ENTRAMBE le fazioni scelgono "alleato" diventerai alleato.
+      '4': <i>Se UNA fazione sceglie "nemico" sarai nemico.
+      '5': <i>Non puoi mai ferire membri o alleati.
+      '6': <i>Non puoi ferire i neutrali nel loro territorio.
+      '7': <i>Puoi sempre ferire nemici e giocatori senza fazione.
+      '8': ''
+      '9': <i>I danni dei nemici sono ridotti nel tuo territorio.
+      '10': <i>Quando muori perdi potere. tuttavia e ripristinato nel tempo.
+      '11': <i>Il potere di una fazione e la somma di tutto il potere membro.
+      '12': <i>Il potere di una fazione determina quanta terra puo contenere.
+      '13': <i>Puoi rivendicare terre da fazioni con troppo poco potere.
+    PERMISSIONS:
+      '1': <i>Solo i membri della fazione possono costruire e distruggere da soli
+      '2': '<i>territorio. Anche l uso dei seguenti articoli e limitato:'
+      '3': <i>Porta, Cassa, Fornace, Distributore, diodo.
+      '4': ''
+      '5': <i>Assicurati di mettere le piastre a pressione davanti alle porte per il tuo
+      '6': <i>visitatori ospiti. Altrimenti non possono farcela. Puoi
+      '7': <i>utilizzalo anche per creare aree riservate ai membri.
+      '8': <i>Poiche i distributori sono protetti, e possibile creare trappole senza
+      '9': <i>preoccuparsi che quelle frecce vengano rubate.
+    ADMIN:
+      '1': <c>/f claim safezone <i>Per claimare la SafeZone
+      '2': <c>/f claim warzone <i>Per claimare la WarZone
+      '3': <c>/f autoclaim [safezone|warzone] <i>per claimare
+    MOAR:
+      '1': 'Finalmente alcuni comandi per gli amministratori del server:'
+      '2': '<i>Piu comandi per gli amministratori del server:'
+      '3': '<i>Ancora piu comandi per gli amministratori del server:'
+    DESCRIPTION: Visualizza una pagina di aiuto
+  HOME:
+    DISABLED: <b>Siamo spiacenti, le case delle fazioni sono disabilitate su questo server.
+    TELEPORTDISABLED: <b>Spiacenti, la possibilita di teletrasportarsi nelle case di Faction e disabilitata su questo server.
+    NOHOME: '<b>La tua fazione non ha una casa. '
+    INENEMY: <b>Non puoi teletrasportarti nella tua casa di fazione mentre ti trovi nel territorio di una fazione nemica.
+    WRONGWORLD: <b>Non puoi teletrasportarti nella tua casa di fazione mentre ti trovi in un mondo diverso.
+    ENEMYNEAR: <b>Non puoi teletrasportarti nella casa della tua fazione mentre un nemico si trova entro% s blocchi da te.
+    TOTELEPORT: per teletrasportarti a casa della tua fazione
+    FORTELEPORT: per teletrasportarti a casa della tua fazione
+    DESCRIPTION: Teletrasportati nella casa della fazione
+  INVITE:
+    TOINVITE: per invitare qualcuno
+    FORINVITE: per aver invitato qualcuno
+    CLICKTOJOIN: Clicca per unirti!
+    INVITEDYOU: ' ti ha invitato a partecipare '
+    INVITED: '%1$s<i> ha invitato %2$s<i> alla tua fazione.'
+    ALREADYMEMBER: '%1$s<i> e gia membro di %2$s'
+    DESCRIPTION: Invita un giocatore nella tua fazione
+  JOIN:
+    CANNOTFORCE: <b>Non hai il permesso di spostare gli altri giocatori in una frazione.
+    SYSTEMFACTION: <b>I giocatori possono unirsi solo alle fazioni normali. Questa e una fazione del sistema.
+    ALREADYMEMBER: <b>%1$s %2$s ha gia un membro %3$s
+    ATLIMIT: ' <b>!<white> La fazione %1$s ha raggiunto un limite di %2$d membri,
+      cosi %3$s non puoi attualmente entrare.'
+    INOTHERFACTION: <b>%1$s devi andare %2$s prima la fazione attuale.
+    NEGATIVEPOWER: <b>%1$s non puoi unirti a una fazione con un livello di potere negativo.
+    REQUIRESINVITATION: <i>Questa fazione richiede un invito.
+    ATTEMPTEDJOIN: '%1$s<i> ha provato ad entrare nella tua fazione.'
+    TOJOIN: per entrare in una fazione
+    FORJOIN: per entrare in una fazione
+    SUCCESS: <i>%1$s e entrato con successo %2$s.
+    MOVED: <i>%1$s ti ha spostato nella fazione %2$s.
+    JOINED: <i>%1$s e entrato nella tua fazione.
+    JOINEDLOG: '%1$s e entrato nella tua fazione %2$s.'
+    MOVEDLOG: '%1$s ha mosso il giocatore %2$s nella fazione %3$s.'
+    DESCRIPTION: Entra in una fazione
+  KICK:
+    CANDIDATES: 'Giocatori che puoi espellere: '
+    CLICKTOKICK: 'Clicca per espellere '
+    SELF: <b>Non puoi espellere te stesso.
+    NONE: Quel giocatore non e in una fazione.
+    NOTMEMBER: '%1$s<b> non e membro di %2$s'
+    INSUFFICIENTRANK: <b>Il tuo grado e troppo basso per espellere questo giocatore.
+    NEGATIVEPOWER: <b>Non puoi espellere quel membro finche il loro potere non e positivo.
+    TOKICK: per espellere qualcuno dalla fazione
+    FORKICK: per espellere qualcuno dalla fazione
+    FACTION: '%1$s<i> ha espulso %2$s<i> dalla fazione! :O'
+    KICKS: <i>Tu sei stato espulso %1$s<i> dalla fazione %2$s<i>!
+    KICKED: '%1$s<i> espulso da %2$s<i>! :O'
+    DESCRIPTION: Espelle un giocatore dalla fazione
+  LIST:
+    FACTIONLIST: 'Lista delle fazioni '
+    TOLIST: per la lista delle fazioni
+    FORLIST: per la lista delle fazioni
+    ONLINEFACTIONLESS: 'Online factionless: '
+    DESCRIPTION: Vedi la lista delle fazioni
+  LOCK:
+    LOCKED: <i>Fazioni risulta ora bloccato
+    UNLOCKED: <i>Fazioni risulta ora sbloccato
+    DESCRIPTION: Blocca tutte le cose scritte. Apparentemente.
+  LOGINS:
+    TOGGLE: '<i>Impostare le notifiche di accesso / disconnessione per i membri di
+      Faction su: <a>%s'
+    DESCRIPTION: Attiva / disattiva le notifiche di accesso / disconnessione per i membri di Faction
+  MAP:
+    TOSHOW: per vedere la mappa
+    FORSHOW: per vedere la mappa
+    UPDATE:
+      ENABLED: <i>Map auto update <green>ABILITATO.
+      DISABLED: <i>Map auto update <red>DISABILITATO.
+    DESCRIPTION: Vede il territorio della mappa, e imposta un auto update facoltativo
+  MOD:
+    CANDIDATES: 'Giocatori che puoi promuovere: '
+    CLICKTOPROMOTE: 'Fai clic per promuovere '
+    NOTMEMBER: '%1$s<b> non e un membro della tua fazione.'
+    NOTADMIN: <b>Non sei admin della fazione.
+    SELF: <b>Il giocatore bersaglio non deve essere te stesso.
+    TARGETISADMIN: <b>Il giocatore bersaglio e un amministratore di fazione. Diminuili prima.
+    REVOKES: <i>Hai rimosso lo stato di moderatore da %1$s<i>.
+    REVOKED: '%1$s<i> non e piu moderatore nella tua fazione.'
+    PROMOTES: '%1$s<i> e stato promosso moderatore nella tua fazione.'
+    PROMOTED: <i>Tu sei stato promosso %1$s<i> a moderatore.
+    DESCRIPTION: Concedere o revocare i diritti del moderatore
+  MODIFYPOWER:
+    ADDED: '<i>Aggiunto <a>%1$f <i>potenza a <a>%2$s. <i>Nuova potenza totale arrotondata:
+      <a>%3$d'
+    DESCRIPTION: Modifica la potenza della fazione o del giocatore
+  MONEY:
+    LONG: <i>Il denaro della fazione comanda.
+    DESCRIPTION: Comandi denaro fazione
+  MONEYBALANCE:
+    SHORT: Mostra il guadagno della fazione
+    DESCRIPTION: Mostra il tuo guadagno della fazione
+  MONEYDEPOSIT:
+    DESCRIPTION: Deposita i soldi
+    DEPOSITED: '%1$s ha depositato %2$s nella banca della fazione: %3$s'
+  MONEYTRANSFERFF:
+    DESCRIPTION: Transfer f -> f
+    TRANSFER: '%1$s ha trasferito %2$s dalla fazione "%3$s" alla fazione "%4$s"'
+  MONEYTRANSFERFP:
+    DESCRIPTION: Transfer f -> p
+    TRANSFER: '%1$s ha trasferito %2$s dalla fazione "%3$s" al giocatore "%4$s"'
+  MONEYTRANSFERPF:
+    DESCRIPTION: Transfer p -> f
+    TRANSFER: '%1$s ha trasferito %2$s dalla fazione"%3$s" alla fazione "%4$s"'
+  MONEYWITHDRAW:
+    DESCRIPTION: Ritirare soldi
+    WITHDRAW: '%1$s ha ritirato %2$s dalla banca della fazione: %3$s'
+  OPEN:
+    TOOPEN: per aprire o chiudere la fazione
+    FOROPEN: per aprire o chiudere la fazione
+    OPEN: aperto
+    CLOSED: chiuso
+    CHANGES: '%1$s<i> ha cambiato la fazione in <h>%2$s<i>.'
+    CHANGED: <i>La fazione %1$s<i> e ora %2$s
+    DESCRIPTION: Passa se e richiesto un invito per partecipare
+  OWNER:
+    DISABLED: <b>Siamo spiacenti, ma le aree di proprieta sono disabilitate su questo server.
+    LIMIT: <b>Siamo spiacenti, ma hai raggiunto il <h>limite di %1$d <b>arene possedute per fazione.
+    WRONGFACTION: <b>Questa terra non e rivendicata dalla tua fazione, quindi non puoi ambientarla la ownership.
+    NOTCLAIMED: <b>Questa terra non e rivendicata da una fazione. Ownership non risulta possibile.
+    NOTMEMBER: '%1$s<i> non e un membro di questa fazione.'
+    CLEARED: <i>Hai eliminato la proprieta per questa area rivendicata.
+    REMOVED: <i>Hai rimosso la proprieta di questa terra rivendicata da %1$s<i>.
+    TOSET: per stabilire la proprieta della terra richiesta
+    FORSET: per stabilire la proprieta della terra richiesta
+    ADDED: <i>Tu hai aggiunto %1$s<i> all'elenco dei proprietari per questo terreno rivendicato.
+    DESCRIPTION: Imposta la proprieta della terra richiesta
+  OWNERLIST:
+    DISABLED: <b>Siamo spiacenti, ma le aree di proprieta sono disabilitate su questo server.
+    WRONGFACTION: <b>Questa terra non e rivendicata dalla tua fazione.
+    NOTCLAIMED: <i>Questa terra non e rivendicata da nessuna fazione, quindi nessun proprietario.
+    NONE: <i>Nessun proprietario impostato qui; tutti nella fazione hanno accesso.
+    OWNERS: '<i>Proprietario attuale di questa terra: %1$s'
+    DESCRIPTION: Vede la lista di proprietari di questa terra
+  PEACEFUL:
+    DESCRIPTION: Imposta una fazione in pace
+    YOURS: '%1$s ha %2$s nella tua fazione'
+    OTHER: '%s<i> ha %s nella fazione ''%s<i>''.'
+    GRANT: concesso lo stato pacifico a
+    REVOKE: rimosso lo stato pacifico da
+  PERMANENT:
+    DESCRIPTION: Attiva / disattiva la permanenza di una fazione
+    GRANT: aggiunto lo stato permanente a
+    REVOKE: rimosso lo stato permanente da
+    YOURS: '%1$s ha %2$s alla tua fazione'
+    OTHER: '%s<i> ha %s alla fazione ''%s<i>''.'
+  PERMANENTPOWER:
+    DESCRIPTION: Attiva / disattiva la permanenza del potere delle fazioni
+    GRANT: aggiunto lo stato di potenza permanente a
+    REVOKE: rimosso lo stato di potenza permanente da
+    SUCCESS: <i>Tu %s <h>%s<i>.
+    FACTION: '%s<i> %s alla tua fazione'
+  POWER:
+    TOSHOW: per mostrare le informazioni sulla potenza del giocatore
+    FORSHOW: per mostrare le informazioni sulla potenza del giocatore
+    POWER: '%1$s<a> - Potenza / Potenza massima: <i>%2$d / %3$d %4$s'
+    BONUS: ' (bonus: '
+    PENALTY: ' (punizione: '
+    DESCRIPTION: Vede le informazioni sulla potenza del giocatore
+  POWERBOOST:
+    HELP:
+      '1': <b>Devi specificare "p" o "player" per bersagliare un giocatore o "f" o "faction" per bersagliare una fazione.
+      '2': <b>ex. /f powerboost p SomePlayer 0.5  -or-  /f powerboost f SomeFaction -5
+    INVALIDNUM: <b>e necessario specificare un valore numerico valido per l'importo del bonus / penalita di potenza.
+    PLAYER: Giocatore "%1$s"
+    FACTION: Fazione "%1$s"
+    BOOST: <i>%1$s ora ha un bonus / penalita di potere di %2$d ai livelli di potenza minima e massima.
+    BOOSTLOG: '%1$s ha impostato il bonus / penalita di potere per %2$s to %3$d.'
+    DESCRIPTION: Applica bonus / penalita di potere permanente al giocatore o alla fazione specificati
+  RELATIONS:
+    ALLTHENOPE: <b>No! Non puoi.
+    MORENOPE: <b>No! Non puoi dichiarare una relazione con te stesso :)
+    ALREADYINRELATIONSHIP: <b>Hai gia impostato quel desiderio di relazione %1$s.
+    TOMARRY: per cambiare un desiderio di relazione
+    FORMARRY: per cambiare un desiderio di relazione
+    MUTUAL: <i>La tua fazione e ora %1$s<i> a %2$s
+    PEACEFUL: <i>Cio non avra alcun effetto mentre la tua fazione e pacifica.
+    PEACEFULOTHER: <i>Cio non avra alcun effetto mentre la loro fazione e pacifica.
+    DESCRIPTION: Imposta il desiderio di relazione con un'altra fazione
+    EXCEEDS:
+      ME: <i>Impossibile impostare il desiderio di relazione. Puoi solo avere %1$s %2$s.
+      THEY: <i>Impossibile impostare il desiderio di relazione. Possono solo avere %1$s %2$s.
+    PROPOSAL:
+      '1': '%1$s<i> desidera essere tuo %2$s'
+      '2': <i>Usa <c>/%1$s %2$s %3$s<i> per accettare.
+      SENT: '%1$s<i> sono stati informati che desideri essere %2$s'
+  RELOAD:
+    TIME: <i>Ricaricati <h>tutti i file di configurazione <i>dal disco, entro <h>%1$d ms<i>.
+    DESCRIPTION: Ricarica il config del plugin
+  SAFEUNCLAIMALL:
+    DESCRIPTION: Non rivendicare tutte le terre sicure
+    UNCLAIMED: <i>Hai annullato TUTTA la terra della zona sicura.
+    UNCLAIMEDLOG: '%1$s non rivendicato tutte le zone sicure.'
+  SAVEALL:
+    SUCCESS: <i>Fazioni salvate su disco!
+    DESCRIPTION: Salva tutti i dati su disco
+  SCOREBOARD:
+    DESCRIPTION: Scoreboard
+  SETFWARP:
+    NOTCLAIMED: <i>Tu ora puoi impostare i warp nel tuo territorio di fazione.
+    LIMIT: <i>La tua fazione ha gia la quantita massima di warps impostati <a>(%1$d).
+    SET: <i>Imposta un warp <a>%1$s <i>alla tua posizione.
+    TOSET: per impostare un warp
+    FORSET: per impostare un warp
+    DESCRIPTION: Imposta un warp in fazioni
+  SETHOME:
+    DISABLED: <b>Siamo spiacenti, le case delle fazioni sono disabilitate su questo server.
+    NOTCLAIMED: <b>Spiacenti, la tua casa di fazione puo essere impostata solo all'interno del tuo territorio rivendicato.
+    TOSET: per impostare la fazione a casa
+    FORSET: per impostare la fazione a casa
+    SET: '%1$s<i> prepara la casa per la tua fazione. Ora puoi usare:'
+    SETOTHER: <b>Hai impostato la casa per il %1$s<i> fazione.
+    DESCRIPTION: Imposta la casa per la tua fazione
+  SETMAXVAULTS:
+    DESCRIPTION: Imposta il numero massimo di vaults per una fazione.
+    SUCCESS: '&aImpostato il massimo vaults per &e%s &aa &b%d'
+  VAULT:
+    DESCRIPTION: /f vault <number> per aprire una delle tue fazioni vaults.
+    TOOHIGH: '&cHai provato ad aprire le vaults %d ma nella tua fazione ha %d vaults.'
+  SHOW:
+    NOFACTION:
+      SELF: Non sei in una fazione
+      OTHER: Questa non e una fazione
+    TOSHOW: per mostrare informazioni sulla fazione
+    FORSHOW: per mostrare informazioni sulla fazione
+    DESCRIPTION: '<a>Descrizione: <i>%1$s'
+    PEACEFUL: La fazione e pacifica
+    PERMANENT: <a>Questa fazione e permanente, rimanendo anche senza membri.
+    JOINING: '<a>Entrando: <i>%1$s '
+    INVITATION: invito richiesto
+    UNINVITED: nessun invito richiesto
+    NOHOME: n/a
+    POWER: '<a>terra / Potenza / Potenza massima: <i> %1$d/%2$d/%3$d %4$s.'
+    BONUS: ' (bonus: '
+    PENALTY: ' (punizione: '
+    DEPRECIATED: (%1$s ammortizzati)
+    terraVALUE: '<a>Totale terra valore: <i>%1$s %2$s'
+    BANKCONTAINS: '<a>La banca contiene: <i>%1$s'
+    ALLIES: 'Alleati: '
+    ENEMIES: 'Nemici: '
+    MEMBERSONLINE: 'Membri online: '
+    MEMBERSOFFLINE: 'Membri offline: '
+    COMMANDDESCRIPTION: Vede le informazioni della fazione
+    DEATHS:
+      TIL:
+        RAIDABLE: '<i>DTR: %1$d'
+    EXEMPT: <b>Questa fazione e esente e non puo essere vista.
+    LANDVALUE: '<a>Valore totale della zona: <i>%1$s %2$s'
+  SHOWINVITES:
+    PENDING: 'Giocatori con inviti in sospeso: '
+    CLICKTOREVOKE: Fai clic per revocare l'invito per %1$s
+    DESCRIPTION: Mostra inviti di fazioni in sospeso
+  STATUS:
+    FORMAT: '%1$s Potenza: %2$s Ultimo accesso: %3$s'
+    ONLINE: Online
+    AGOSUFFIX: ' fa.'
+    DESCRIPTION: Vede lo stato di un giocatore
+  STUCK:
+    TIMEFORMAT: m 'minuti', s 'secondi.'
+    CANCELLED: <a>Teletrasporto annullato perche sei stato danneggiato
+    OUTSIDE: <a>Teletrasporto annullato perche te ne sei andato da <i>%1$d <a>raggio di blocchi
+    EXISTS: <a>Stai gia teletrasportando, devi aspettare <i>%1$s
+    START: '<a>Il teletrasporto avra inizio <i>%s<a>. Non subire o infliggere danni. '
+    TELEPORT: <a>Teletrasportato in modo sicuro a %1$d, %2$d, %3$d.
+    TOSTUCK: teletrasportarsi in sicurezza %1$s out
+    FORSTUCK: per %1$s avviare un teletrasporto sicuro fuori
+    DESCRIPTION: Ti teletrasporta in sicurezza dalla fazione nemica
+  TAG:
+    TAKEN: <b>Quel tag e gia stato preso
+    TOCHANGE: per cambiare il tag fazione
+    FORCHANGE: per cambiare il tag di fazione
+    FACTION: '%1$s<i> ha cambiato il tag della fazione in %2$s'
+    CHANGED: <i>La fazione %1$s<i> ha cambiato il nome in %2$s.
+    DESCRIPTION: Cambia il tag fazione
+  TITLE:
+    TOCHANGE: per cambiare il titolo di un giocatore
+    FORCHANGE: per aver cambiato il titolo di un giocatore
+    CHANGED: '%1$s<i> ha cambiato un titolo: %2$s'
+    DESCRIPTION: Imposta o rimuovi il titolo di un giocatore
+  TOGGLEALLIANCECHAT:
+    DESCRIPTION: Attiva o meno la visualizzazione della chat dell'alleanza
+    IGNORE: La chat dell Alleanza ora e ignorata
+    UNIGNORE: La chat dell Alleanza non viene piu ignorata
+  TOGGLESB:
+    DISABLED: Non e possibile attivare / disattivare la scoreboard mentre sono disabilitati.
+  TOP:
+    DESCRIPTION: Ordina le fazioni per vedere la parte superiore di alcuni criteri.
+    TOP: Top fazioni da %s. Pagina %d/%d
+    LINE: '%d. &6%s: &c%s'
+    INVALID: Impossibile ordinare per %s. prova balance, online, membri, potenza o terra.
+  UNCLAIM:
+    SAFEZONE:
+      SUCCESS: <i>Safe zone unclaimata.
+      NOPERM: <b>Non hai il permesso di unclaimare la Safe zone.
+    WARZONE:
+      SUCCESS: <i>War zone unclaimata.
+      NOPERM: <b>Non hai il permesso di unclaimare la War zone.
+    UNCLAIMED: '%1$s<i> unclaimato parte della tua terra.'
+    UNCLAIMS: <i>Hai unclaimato questa terra.
+    LOG: '%1$s ha unclaimato la terra a (%2$s) dalla fazione: %3$s'
+    WRONGFACTION: <b>Non possiedi questa terra.
+    TOUNCLAIM: per unclaimare questa terra
+    FORUNCLAIM: per unclaimare questa terra
+    FACTIONUNCLAIMED: '%1$s<i> ha unclaimato un po di terra.'
+    DESCRIPTION: Liberati dalla terra in cui ti trovi
+  UNCLAIMALL:
+    TOUNCLAIM: per annullare ogni fazione per la terra
+    FORUNCLAIM: per annullare ogni fazione per la terra
+    UNCLAIMED: '%1$s<i> ha unclaimato tutto nella terra della tua fazione.'
+    LOG: '%1$s ha unclaimato tutto: %2$s'
+    DESCRIPTION: Unclaima tutta la terra per la tua fazione
+  VERSION:
+    VERSION: <i>Tu ora stai usando la versione %1$s
+    DESCRIPTION: Mostra le informazioni sulla versione del plugin e della traduzione
+  WARUNCLAIMALL:
+    DESCRIPTION: Unclaima tutta la terra in Warzone
+    SUCCESS: <i>Tu hai unclaimato tutta la terra in Warzone.
+    LOG: '%1$s ha unclaimato tutta la terra in Warzone.'
+command:
+  help:
+    invitations: '<i>Potresti volerlo chiudere e usare gli inviti:'
+LEAVE:
+  PASSADMIN: <b>Devi prima assegnare il ruolo di amministratore a qualcun altro.
+  NEGATIVEPOWER: <b>Non puoi andartene finche il tuo potere non e positivo.
+  TOLEAVE: per lasciare la tua fazione.
+  FORLEAVE: per lasciare la tua fazione.
+  LEFT: '%s<i> ha lasciato la fazione %s<i>.'
+  DISBANDED: <i>%s<i> e stata eliminata.
+  DISBANDEDLOG: La fazione %s (%s) e stata eliminata a causa dell'ultimo giocatore (%s).
+  DESCRIPTION: Esci dalla fazione
+CLAIM:
+  PROTECTED: <b>Questa e una terra protetta
+  DISABLED: <b>In questo mondo non e possibile claimare la terra.
+  CANTCLAIM: <b>Non puoi claimare terra per <h>%s<b>.
+  ALREADYOWN: '%s<i> sei gia proprietario della terra terra.'
+  MUSTBE: <b>Devi essere <h>%s<b> per claimare la terra.
+  MEMBERS: Le fazioni devono avere almeno <h>%s<b> membri per claimare la terra.
+  SAFEZONE: <b>Non puoi claimare la Safe Zone.
+  WARZONE: <b>Non puoi claimare la War Zone.
+  POWER: <b>Non puoi claimare la terra se hai poca potenza!
+  LIMIT: <b>Limite raggiunto, non puoi claimare altra terra!
+  ALLY: <b>Non puoi claimare la terra dei tuoi alleati.
+  CONTIGIOUS: <b>Puoi claimare solo terra aggiuntiva collegata al tuo primo reclamo o controllata da un altra fazione!
+  FACTIONCONTIGUOUS: <b>Puoi claimare solo terra aggiuntiva collegata al tuo primo reclamo!
+  PEACEFUL: '%s<i> possiede questa terra. La tua fazione e pacifica, quindi non puoi
+    claimare terra da altre fazioni.'
+  PEACEFULTARGET: '%s<i> possiede questa terra ed e una fazione pacifica. Non puoi
+    reclamare terra da loro.'
+  THISISSPARTA: '%s<i> possiede questa terra ed e abbastanza forte da mantenerla.'
+  BORDER: <b>Devi iniziare a claimare terra al confine del territorio.
+  TOCLAIM: per claimare questa terra
+  FORCLAIM: per aver rivendicato questa terra
+  TOOVERCLAIM: per riclaimare questa terra
+  FOROVERCLAIM: per riclaimare questa terra
+  CLAIMED: <h>%s<i> claimata la terra per <h>%s<i> da <h>%s<i>.
+  CLAIMEDLOG: '%s claimed terra alle (%s) per la fazione: %s'
+  OVERCLAIM:
+    DISABLED: <i>Claim disabilitato in questo server.
+  TOOCLOSETOOTHERFACTION: <i>Il tuo claim e troppo vicino ad un altra fazione %d
+  OUTSIDEWORLDBORDER: <i>Il tuo reclamo e fuori dal confine.
+  OUTSIDEBORDERBUFFER: <i>Il tuo reclamo e fuori dal confine. %d i chunks sono in una maniera anomala.
+GENERIC:
+  YOU: Tu
+  YOURFACTION: La tua fazione
+  NOPERMISSION: <b>Non hai il permesso per %1$s.
+  DOTHAT: Fai quello
+  NOPLAYERMATCH: <b>Nessuna partita giocata trovata per "<p>%1$s<b>".
+  NOPLAYERFOUND: <b>Nessun giocatore "<p>%1$s<b>" non puo essere trovato.
+  ARGS:
+    TOOFEW: '<b>Troppo pochi argomenti. <i>Usa:'
+    TOOMANY: '<b>Strano argomento "<p>%1$s<b>". <i>Usa i comandi:'
+  DEFAULTDESCRIPTION: Nessuna descrizione :(
+  OWNERS: 'Proprietario(i): %1$s'
+  PUBLICterra: Terra di fazione pubblica.
+  FACTIONLESS: factionless
+  SERVERADMIN: L admin del server
+  DISABLED: disabilitato
+  ENABLED: abilitato
+  INFINITY: âˆž
+  CONSOLEONLY: Questo comando non puo essere eseguito come giocatore.
+  PLAYERONLY: <b>Questo comando puo essere utilizzato solo dai giocatori in gioco.
+  ASKYOURLEADER: '<i> Chiedi al tuo leader di:'
+  YOUSHOULD: '<i>Dovresti:'
+  YOUMAYWANT: '<i>Potresti volerlo: '
+  TRANSLATION:
+    VERSION: 'Traduzione: Italiana'
+    CONTRIBUTORS: 'Contributori della traduzione: ZERA'
+    RESPONSIBLE: 'Responsabile della traduzione: ZERA'
+  FACTIONTAG:
+    TOOSHORT: <i>Il tag della fazione risulta troppo lunga da <h>%1$s<i> caratteri.
+    TOOLONG: <i>Il tag della fazione risulta troppo corta da <h>%s<i> caratteri.
+    ALPHANUMERIC: <i>Il tag alfanumerico. "<h>%s<i>" non risulta abilitato.
+  PLACEHOLDER: <Questo e un segnaposto per un messaggio che non dovresti vedere>
+  PUBLICLAND: Terra pubblica di fazione.
+COMPASS:
+  SHORT:
+    NORTH: N
+    EAST: E
+    SOUTH: S
+    WEST: W
+CHAT:
+  FACTION: chat della fazione
+  ALLIANCE: chat fazione alleata
+  TRUCE: chat di tregua
+  PUBLIC: chat pubblica
+ECON:
+  'OFF': no %s
+RELATION:
+  MEMBER:
+    SINGULAR: membro
+    PLURAL: membri
+  ALLY:
+    SINGULAR: alleato
+    PLURAL: alleati
+  TRUCE:
+    SINGULAR: tregua
+    PLURAL: tregue
+  NEUTRAL:
+    SINGULAR: neutrale
+    PLURAL: neutrali
+  ENEMY:
+    SINGULAR: nemico
+    PLURAL: nemici
+ROLE:
+  ADMIN: admin
+  MODERATOR: moderatore
+  NORMAL: membro
+REGION:
+  SAFEZONE: Zona protetta
+  WARZONE: Zona protetta
+  WILDERNESS: Zona selvaggia
+  PEACEFUL: Territorio pacifico
+PLAYER:
+  CANTHURT: <i>Non puoi danneggiare altri giocatori in %s
+  SAFEAUTO: <i>questa terra ora e safe zone.
+  WARAUTO: <i>Questa terra ora e war zone.
+  OUCH: <b>Ouch, questo sta iniziando a fare male. Dovresti riposare.
+  USE:
+    WILDERNESS: <b>Tu non puoi usare <h>%s<b> in zona selvaggia.
+    SAFEZONE: <b>Tu non puoi usare <h>%s<b> in zona protetta.
+    WARZONE: <b>Tu non puoi usare <h>%s<b> in zona protetta.
+    TERRITORY: <b>Tu non puoi <h>%s<b> nel territorio di <h>%s<b>.
+    OWNED: '<b>Tu non puoi usare <h>%s<b> in questo territorio, di proprieta di: %s<b>.'
+  COMMAND:
+    WARZONE: <b>Tu non puoi usare il comando '%s' in zona protetta.
+    NEUTRAL: <b>Tu non puoi usare il comando '%s' in territorio neutrale.
+    ENEMY: <b>Tu non puoi usare il comando '%s' in territorio nemico.
+    PERMANENT: <b>Tu non puoi usare il comando '%s' perche sei in una fazione permanente.
+    ALLY: <b>Tu non puoi usare il comando '%s' in territorio alleato.
+    WILDERNESS: <b>Tu non puoi usare il comando '%s' in zona selvaggia.
+  POWER:
+    NOLOSS:
+      PEACEFUL: <i>Non hai perso alcun potere poiche sei in una fazione pacifica.
+      WORLD: <i>Non hai perso alcuna potenza in questo mondo.
+      WILDERNESS: <i>Non hai perso alcun potere da quando eri nella zona selvaggia.
+      WARZONE: <i>Non hai perso alcun potere da quando eri in una zona protetta.
+    LOSS:
+      WARZONE: |-
+        <b>Il mondo in cui ti trovi ha una perdita di potenza normalmente disabilitata, ma hai comunque perso energia da quando ti trovavi in una zona di guerra.
+        <i>La tua potenza ora <h>%d / %d
+    NOW: <i>La tua potenza ora<h>%d / %d
+  PVP:
+    LOGIN: <i>Tu non puoi attaccare gli altri giocatori per %d secondi dopo il login.
+    REQUIREFACTION: <i>Tu non puoi far del male agli altri giocatori fino a quando non ti unisci a una fazione.
+    FACTIONLESS: <i>Tu non puoi ferire i giocatori che attualmente non fanno parte di una fazione.
+    PEACEFUL: <i>I giocatori pacifici non possono partecipare al combattimento.
+    NEUTRAL: <i>Tu non puoi ferire fazioni neutrali. Dichiarali come nemici.
+    CANTHURT: <i>Tu non puoi attaccare %s<i>.
+    NEUTRALFAIL: <i>Tu non puoi hurt %s<i> nel loro territorio, a meno che tu non li dichiari nemici.
+    TRIED: '%s<i> ha provato a colpire te.'
+NOPAGES: <i>Scusa. Non ci sono pagine disponibili.
+INVALIDPAGE: <i>Pagina invalida. Deve essere tra 1 e %1$d
+title: '&bFazioni &0|&r'
+wilderness: '&2Zona selvaggia'
+wilderness-description: ''
+warzone: '&6Zona protetta'
+warzone-description: Non puoi modificare i blocchi.
+safezone: '&6Zona protetta'
+safezone-description: Non puoi modificare i blocchi.
+toggle-sb: To ora hai scoreboards per modificare {value}
+faction-leave: <a>Uscendo da %1$s, <a>Entrando in %2$s
+default-prefix: '{relationcolor}[{faction}] &r'
+faction-login: '&e%1$s &9ha loggato.'
+faction-logout: '&e%1$s &9ha leftato..'
+nofactions-prefix: '&6[&a4-&6]&r'
+date-format: MM/d/yy h:ma
+raidable-true: 'true'
+raidable-false: 'false'
+WARMUPS:
+  NOTIFY:
+    TELEPORT: '&eTi teletrasporterai a &d%1$s &ein &d%2$d &esecondi.'
+  ALREADY: '&cTi stai gia scaldando.'
+  CANCELLED: '&cHai annullato il riscaldamento.'

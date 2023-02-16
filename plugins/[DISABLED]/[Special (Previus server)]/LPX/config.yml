@@ -1,0 +1,160 @@
+license: "cracked"
+
+messages:
+  prefix: "&4&lAntiCrasher &0&l>>>&c&o"
+  message: "%prefix% %player% &e&n%message%"
+  kick: "%prefix% %player% &e&nBloccato."
+  kick-message: "%prefix% Hai inviato pacchetti sospetti!"
+  alert-on: "%prefix% &7Notifiche &a&nabilitate"
+  alert-off: "%prefix% &7Notifiche &c&ndisabilitate"
+  #Commands to be execute when a player gets kicked, example:
+  # - "ban %player%"
+  kick-commands: [ ]
+
+options:
+  #If this option is set to true players won't be able to use /lpx
+  hide-commands: true
+
+  #Decide to always block a specific packet
+  blocks: { }
+
+checks:
+  modes:
+    #Enable this if your server allows the use of printer/schematica mod.
+    #If this value is enabled other max pps packets config will be ignored
+    allow-printer: false
+    #Lower this value if player doesn't enter in printer mode correctly
+    place-threshold: 11
+    #Idle time after exiting printer mode
+    disable-delay: 2000
+  netty:
+    #Checks the size of every packet received, it could "false" on 1.13+ servers because they have big items, you can increase it
+    max-size: 12288
+
+    #Paper 1.12 values
+    page-max: 2560
+    total-multiplier: 0.98
+    max-iterations: 8
+
+    #Max packet per seconds
+    max-pps: 750
+
+    #Max packet per second over the threshold
+    max-large-pps: 6
+    #Anything over this size will be rate limited.
+    large-packet-threshold: 2560
+  #Sent when left clicking
+  arm-animation:
+    max: 50
+    max-vl: 3
+    reset-vl: 1000
+    kick: true
+  block-place:
+    max: 50
+    max-vl: 4
+    reset-vl: 50
+    #When you place a block that you don't have
+    desync:
+      enabled: true
+      kick: true
+    #When you place a block too far away
+    long:
+      max: 3
+      enabled: true
+      kick: true
+  #Sent when you click an inventory
+  window-click:
+    max: 40
+    max-vl: 4
+    reset-vl: 300
+    #When you click an item that doesn't exists
+    desync:
+      enabled: true
+      kick: true
+    #When you click an item when you shouldn't
+    illegal:
+      enabled: true
+      kick: true
+  payload:
+    start-delay: 500
+    max: 10
+    max-vanilla: 10
+    max-vl: 3
+    reset-vl: 800
+  position:
+    max: 60
+    max-vl: 3
+    reset-vl: 1000
+    kick: true
+    #When you teleport to high coordinates
+    anti-cheat: true
+  #When you move too fast
+  invalid-position:
+    enabled: true
+    kick: true
+    max-vl: 3
+    reset-vl: 1000
+    add-delay: 50
+  #When you move into an unloaded chunk
+  unloaded-chunk:
+    enabled: true
+    kick: true
+    max-vl: 5
+    reset-vl: 1000
+    add-delay: 200
+  inventory:
+    open-check: true
+    empty-slot-check: true
+    invalid-slot-check: true
+    max-slot-check: true
+  item-checker:
+    flood:
+      max-ips: 40
+      max-vl: 3
+      reset-vl: 1000
+      add-delay: 250
+    max-size: 12288
+    max-enchantment: 127
+    min-enchantment: 0
+    max-name: 128
+    max-lore: 1024
+    max-amount: 64
+    kick: true
+  books:
+    max-pages: 50
+    max-bytes: 512
+    #Destroys books that forces player to execute commands
+    destroy-command: false
+    #Destroys books with invalid translations that can crash certain clients
+    destroy-invalid-translation: true
+    #Enable this if players have creative mode and you don't want illegal items
+    destroy: true
+  signs:
+    max-rows: 4
+    max-characters: 384
+
+#Packet logger
+logger:
+  enabled: false
+  #These players won't be packet logged
+  whitelist:
+    #- ZERA
+    #- _Panda4k_
+    #- Hibernatix
+
+  #List of packets to ignore
+  #open spigot jar and find net.minecraft.server.PacketPlayIn.####)
+  ignore:
+    - PacketPlayInFlying
+    - PacketPlayInKeepAlive
+    - PacketPlayInLook
+    - PacketPlayInPosition
+    - PacketPlayInPositionLook
+    - PacketPlayInArmAnimation
+    - PacketPlayInTransaction
+
+  settings:
+    #Max files can be created in a run (newer files will replace older once reached the limit)
+    max-files: 10
+    #Max packets to log on each file
+    max-ppfs: 1000

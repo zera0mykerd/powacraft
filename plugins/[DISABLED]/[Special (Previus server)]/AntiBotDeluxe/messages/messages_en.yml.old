@@ -1,0 +1,128 @@
+kick-messages:
+  forcerejoin:
+    - "&8&l< &4&lPowa&c&lFirewall &8&l>"
+    - ""
+    - "&7La tua connessione risulta in verifica!"
+    - "&7--------------------------------"
+    - ""
+    - "&6Per favore riconnetti dopo 10 secondi"
+    - ""
+    - "&7-----------------------------"
+    - "&7Credi che questo sia un problema?"
+    - "&7Contatta lo staff per info"
+  blacklist:
+    - "&8&l< &4&lPowa&c&lFirewall &8&l>"
+    - ""
+    - "&7La tua connessione risulta in verifica!"
+    - "&7--------------------------------"
+    - ""
+    - "&cIl tuo indirizzo IP risulta in blacklist!"
+    - ""
+    - "&7-----------------------------"
+    - "&7Credi che questo sia un problema?"
+    - "&7Contatta lo staff per info"
+  deluxecaptcha:
+    - "&8&l< &4&lPowa&c&lFirewall &8&l>"
+    - ""
+    - "&7La tua connessione risulta in verifica!"
+    - "&7--------------------------------"
+    - "&b↓ &7Si prega di seguire questi passaggi: &b↓"
+    - ""
+    - "&61. &7Visita https://deluxecaptcha.com                "
+    - "&62. &7Digita &e%session% &7nel campo                          "
+    - "&63. &7Segui i passaggi e prova a riconnetterti! "
+    - ""
+    - "&7-----------------------------"
+  motdpingdetection:
+    - "&8&l< &4&lPowa&c&lFirewall &8&l>"
+    - ""
+    - "&7La tua connessione risulta in verifica!"
+    - "&7--------------------------------"
+    - "&b↓ &7Si prega di seguire questi passaggi: &b↓"
+    - ""
+    - "&61. &7Assicurati di avere il server nella lista"
+    - "&62. &7Attendere che il MOTD si carichi almeno una volta                                  "
+    - "&63. &7Connettiti al server                                                           "
+    - ""
+    - "&7-------------------------------------------------------"
+    - "&7Credi che questo sia un problema?"
+    - "&7Contatta lo staff per info"
+  connectionsperip:
+    - "&8&l< &4&lPowa&c&lFirewall &8&l>"
+    - "&7La tua connessione risulta in verifica!"
+    - "&7--------------------------------"
+    - ""
+    - "&cTroppi account dalla tua rete sono connessi!"
+    - ""
+    - "&7-----------------------------"
+    - "&7Credi che questo sia un problema?"
+    - "&7Contatta lo staff per info"
+  proxydetection:
+    - "&8&l< &4&lPowa&c&lFirewall &8&l>"
+    - "&7La tua connessione risulta in verifica!"
+    - "&7--------------------------------"
+    - ""
+    - "&4Il tuo indirizzo IP risulta contrassegnato come dannoso!"
+    - "&cPer favore disabilita la VPN/Proxy"
+    - ""
+    - "&7-----------------------------"
+    - "&7Credi che questo sia un problema?"
+    - "&7Contatta lo staff per info"
+  geodetection:
+    - "&8&l< &4&lPowa&c&lFirewall &8&l>"
+    - "&7La tua connessione risulta in verifica!"
+    - "&7--------------------------------"
+    - ""
+    - "&4Nazione non ammessa sul server!"
+    - ""
+    - "&7-----------------------------"
+    - "&7Credi che questo sia un problema?"
+    - "&7Contatta lo staff per info"
+
+actionbar:
+  no-attack-detected: "&a%connectionsPerSecond%&7/&4%detectionsPerSecond% &b--&7% &aNessun attacco ✔ &7» &6%animation%"
+  under-attack: "&a%connectionsPerSecond%&7/&4%detectionsPerSecond% &c%detectionRate%&7% rilevato &7- &c✖ &7» &6%animation%"
+
+command:
+  general:
+    not-online: "Utente offline."
+    no-permissions: "&cNon hai i permessi per eseguire questo comando!"
+  reload: "&aPlugin ricaricato con successo."
+  drop: "&aLa cache in blacklist risulta ora ripristinata."
+  toggle:
+    enabled: "Le notifiche sono ora &aabilitate&7."
+    disabled: "Le notifiche sono ora &cdisabilitate&7."
+  whitelist:
+    add:
+      success: "Utente aggiunto alla whitelist."
+      failed: "Utente risulta gia in whitelisted."
+    remove:
+      success: "Utente rimosso alla whitelist."
+      failed: "Utente non risulta in whitelisted"
+  blacklist:
+    invalid-address: "Indirizzo IP digitato non valido."
+    add:
+      success: "Indirizzo IP aggiunto alla blacklist."
+      failed: "Indirizzo IP risulta gia in blacklist."
+    remove:
+      success: "Indirizzo IP rimosso alla blacklist."
+      failed: "Indirizzo IP non risulta in blacklist."
+  check:
+    id-invalid: "ID inserito risulta invalido."
+    id-not-found: "ID non trovato nella cache."
+    preparing: "Preparazione in corso..."
+
+  stats:
+    - "&7-----------------------------------------------"
+    - "&bStatistiche per AntiBotDeluxe."
+    - "&bVisualizzatore ultimo riavvio del server."
+    - ""
+    - "&9Connessioni totali: &b%totalConnections%"
+    - "&9Rilevazioni totali: &b%totalDetections%"
+    - "&9Indirizzi IP blacklistati: &b%totalBlacklist%"
+    - "&9Pings totali: &b%totalPings%"
+    - ""
+    - "&bIl server sta attualmente funzionando a &a%latency%ms &bdi latenza."
+    - "&7-----------------------------------------------"
+    - ""
+

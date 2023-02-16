@@ -1,0 +1,198 @@
+#  ▀█████████▄   ▄██████▄      ███             ▄████████    ▄████████ ███▄▄▄▄       ███        ▄████████ ▄██   ▄
+#    ███    ███ ███    ███ ▀█████████▄        ███    ███   ███    ███ ███▀▀▀██▄ ▀█████████▄   ███    ███ ███   ██▄ 
+#    ███    ███ ███    ███    ▀███▀▀██        ███    █▀    ███    █▀  ███   ███    ▀███▀▀██   ███    ███ ███▄▄▄███ 
+#   ▄███▄▄▄██▀  ███    ███     ███   ▀        ███         ▄███▄▄▄     ███   ███     ███   ▀  ▄███▄▄▄▄██▀ ▀▀▀▀▀▀███ 
+#  ▀▀███▀▀▀██▄  ███    ███     ███          ▀███████████ ▀▀███▀▀▀     ███   ███     ███     ▀▀███▀▀▀▀▀   ▄██   ███ 
+#    ███    ██▄ ███    ███     ███                   ███   ███    █▄  ███   ███     ███     ▀███████████ ███   ███ 
+#    ███    ███ ███    ███     ███             ▄█    ███   ███    ███ ███   ███     ███       ███    ███ ███   ███ 
+#  ▄█████████▀   ▀██████▀     ▄████▀         ▄████████▀    ██████████  ▀█   █▀     ▄████▀     ███    ███  ▀█████▀  
+#                                                                                             ███    ███
+#                        ___  _________________  ___  ___    ________  ____  __  _____
+#                       / _ \/  _/ __/ ___/ __ \/ _ \/ _ \  / ___/ _ \/ __ \/ / / / _ \
+#                      / // // /_\ \/ /__/ /_/ / , _/ // / / (_ / , _/ /_/ / /_/ / ___/
+#                     /____/___/___/\___/\____/_/|_/____/  \___/_/|_|\____/\____/_/ 
+#
+#                                         Join to receive SUPPORT.
+#                                        https://discord.gg/uxRTwDa
+#
+
+#-♛-»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»-♛-#
+#          ___ ___  _  _ ___ ___ ___ _   _ ___    _   ___ _    ___          #
+#         / __/ _ \| \| | __|_ _/ __| | | | _ \  /_\ | _ ) |  | __|         #
+#        | (_| (_) | .` | _| | | (_ | |_| |   / / _ \| _ \ |__| _|          #
+#         \___\___/|_|\_|_| |___\___|\___/|_|_\/_/ \_\___/____|___|         #
+#                                                                           #
+#            You can configurate this values, but, BE CAREFUL!              #
+#           Make sure that you understand what you are changing!            #
+#                                                                           #
+#-♛-«««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««-♛-#
+
+# This should be "true" if you use the Spigot version "1.8.x"
+# This should be "false" if you use the Spigot version "1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x"
+old-version: true
+
+# Should sending metrics be enabled?
+metrics: true
+
+# How many milliseconds players need to wait before joining after the anti bot protection is enabled and if they are not whitelisted.
+join:
+  delay: 500000
+
+# Blacklisting settings
+blacklisting:
+  # Blacklisting mode ("FILE" or "BOTH")
+  # FILE - blacklisted ip will be saved to a special file
+  # BOTH - blacklisted ip will be saved to a special file and a system command will be run (e.g. to firewall it)
+  #
+  # P.S: If you decided to use "BOTH" blacklisting mode, your server needs to be run using root
+  mode: BOTH
+  # Blacklist command.
+  # If you are using Windows (instead of Unix-like system), replace the command with that one:
+  # "cmd /c netsh advfirewall firewall add rule name=blacklist dir=in interface=any protocol=TPC localport=25565 action=block remoteip={ip}/32"
+  add-command: "ipset -! -A blacklist {ip}"
+  # Un blacklist command.
+  # If you are using Windows (instead of Unix-like system), replace the command with that one:
+  # "cmd /c netsh firewall delete rule name=blacklist remoteip={ip}/32"
+  remove-command: "ipset -! -A blacklist {ip}"
+  # System commands
+  system-commands:
+    # Command that will be executed to install the ipset package
+    # Depending on your Linux distribution the install command might vary
+    # These are some of the commands to install ipset using different package-management utilities:
+    # "apt --yes install ipset" - APT (e.g. Debian, Ubuntu)
+    # "yum -y install ipset" - YUM (e.g. CentOS, older versions of Fedora)
+    # "dnf -assumeyes install ipset" - DNF (e.g. newer versions of Fedora)
+    ipset-install: "apt-get --yes install ipset"
+    # Command that will be executed to configurate the ipset
+    ipset-configurate: "ipset create -! blacklist hash:ip hashsize 4096"
+    # Command taht will be executed to configurate the iptables
+    iptables-configurate: "iptables -I INPUT -p tcp --dport 25565:25600 -m set --match-set blacklist src -j DROP"
+
+# Anti bot protection enabling conditions
+attack:
+  # How many successful connections needs to be performed in how many milliseconds to trigger anti bot protection
+  fast:
+    amount: 8
+    time: 1000
+  # How many pings needs to be done in how many milliseconds to trigger anti bot protection
+  fast-ping:
+    amount: 8
+    time: 1000
+  # Only for dev! (don't touch!)
+  slow:
+    enabled: false
+    players: 7
+    time: 35000
+
+# How much time (in milliseconds) a player needs to spend on the server in order to get whitelisted?
+whitelist:
+  play-time: 120000
+
+# Configuration related to the anti bot protection mode.
+protection:
+  # How much time (in milliseconds) will be the anti bot protection mode on?
+  enabled-time: 60000
+
+# How many players with the same ip address can be playing at the same time?
+connected:
+  players: 10
+
+# Auto blacklist dropping settings
+blacklist-dropping:
+  # If the blacklist dropping should be enabled.
+  enabled: false
+  # Dropping mode ("TIME" or "AFTER_ATTACK")
+  # time - blacklist will be dropped every 'time' value minutes
+  # after_attack - blacklist will be dropped after the attack
+  mode: TIME
+  # Time what is repeated dropping blacklist (in minutes)
+  time: 12000
+
+# Auto logs dropping settings.
+logs-dropping:
+  # If the logs dropping should be enabled
+  enabled: false
+  # Dropping mode ("TIME" or "AFTER_ATTACK")
+  # time - logs will be dropped every 'time' value minutes
+  # after_attack - logs will be dropped after the attack
+  mode: TIME
+  # Time what is repeated dropping logs (in minutes)
+  time: 120
+
+# How many pings in how many seconds an IP address has to make in order to get blacklisted.
+# This works only if the anti bot protection is enabled.
+# Format: "<pings>/<seconds>".
+ping-limits:
+    - "1/10"
+    - "4/1"
+    - "6/2"
+    - "10/4"
+    - "15/7"
+    - "20/10"
+    - "25/15"
+    - "50/30"
+
+# Anti bot MOTD settings.
+anti-bot-motd:
+  # Should the anti bot MOTD be enabled?
+  enabled: false
+  # A MOTD that will be shown to players that
+  # didn't complete the ping check yet.
+  pings-needed: "&f&l     Your Server &7- &b&l Anti Bot Protection\n&f        Refresh the server list &a{amount} &fmore time(s)"
+  # A MOTD that will be shown to players that
+  # completed the ping check and can join the server.
+  pings-completed: "&f&l     Your Server &7- &b&l Anti Bot Protection\n&f  Now you can join the server &awithout &frefreshing"
+
+#-♛-»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»-♛-#
+#        ___  _  _ _ __   __  ___ ___  ___   _____ _  _ ___   ___  _____   __       #
+#       / _ \| \| | |\ \ / / | __/ _ \| _ \ |_   _| || | __| |   \| __\ \ / /       #
+#      | (_) | .` | |_\ V /  | _| (_) |   /   | | | __ | _|  | |) | _| \ V /        #
+#       \___/|_|\_|____|_|   |_| \___/|_|_\   |_| |_||_|___| |___/|___| \_/         #
+#                                                                                   #
+#                       Don't touch any of these values!                            #
+#              All these things are only understood by the developer!               #
+#                                                                                   #
+#-♛-«««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««-♛-#
+
+# Same player check settings.
+same-player:
+  # Should the check be enabled?
+  enabled: true
+
+# Strange player check settings.
+strange-player:
+  # Should the check be enabled?
+  enabled: true
+  # Only for dev! (don't touch!)
+  amount: 1
+
+# Connection settings.
+connection:
+  # Only for dev! (don't touch!)
+  fast:
+    amount: 4
+    time: 1000
+
+# Only for dev! (don't touch!)
+ping-check:
+  # Only for dev! (don't touch!)
+  ask-range: "50-80"
+
+# Only for dev! (don't touch!)
+player:
+  enabled: true
+  amount: 1
+  time: 60000
+
+# Only for dev! (don't touch!)
+chain2:
+  enabled: false
+
+#     ▄████████  ███▄▄▄▄   ████████▄
+#     ███    ███ ███▀▀▀██▄ ███   ▀███
+#     ███    █▀  ███   ███ ███    ███
+#    ▄███▄▄▄     ███   ███ ███    ███
+#   ▀▀███▀▀▀     ███   ███ ███    ███
+#     ███    █▄  ███   ███ ███    ███
+#     ███    ███ ███   ███ ███   ▄███
+#     ██████████  ▀█   █▀  ████████▀

@@ -1,0 +1,19 @@
+messages:
+  cannot_invite_yourself: '&cNon puoi invitare te stesso!'
+  player_not_online: "&4<player> &c\xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 online!"
+  you_invited: '&ahai invitato &2<player>&a!'
+  you_were_invited: '&2<player> &ati ha invitato ad unirsi alla sua / il suo partito!
+    tipo &2/party accetta <player> &aaccettare.'
+  not_invited_to_any_party: '&cNon siete invitati a nessun partito.'
+  not_invited_to_players_party: '&cNon siete invitati al party di &4<player>&c.'
+  player_not_in_party: "&4<player> &cnon \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 nel\
+    \ tuo gruppo."
+  you_joined_party: "&7Si \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 iscritto al partito\
+    \ di &8<player>&7."
+  player_joined_party: "&2<player> &a\xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 entrato\
+    \ nel party."
+  you_left_party: '&7sei uscito dal party di &8<player>&7.'
+  player_left_party: '&4<player> &cuscito dal party.'
+  party_disbanded: "&cil party \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 disabilitato."
+  party_too_big_to_join: "&cIl suo partito \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8\
+    \ troppo grande per aderire a questa arena."

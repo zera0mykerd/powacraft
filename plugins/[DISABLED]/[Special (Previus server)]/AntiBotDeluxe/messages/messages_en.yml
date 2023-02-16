@@ -1,0 +1,63 @@
+kick-messages:
+  forcerejoin:
+    - "&2&l[&aAntiBot&2&l] &6> &d&oPer favore riconnetti dopo 10 secondi"
+  blacklist:
+    - "&2&l[&aAntiBot&2&l] &6> &d&oIl tuo indirizzo IP risulta in blacklist"
+  deluxecaptcha:
+    - "&2&l[&aAntiBot&2&l] &6> &d&oIndirizzo IP bloccato per motivi di sicurezza"
+  motdpingdetection:
+    - "&2&l[&aAntiBot&2&l] &6> &d&oDevi avere il server in lista e ricaricarlo e poi rientrare"
+  connectionsperip:
+    - "&2&l[&aAntiBot&2&l] &6> &d&oTroppi accounts della tua rete si sono connessi"
+  proxydetection:
+    - "&2&l[&aAntiBot&2&l] &6> &d&oPer favore disabilita la VPN/Proxy"
+  geodetection:
+    - "&2&l[&aAntiBot&2&l] &6> &d&oNazione non ammessa sul server"
+
+actionbar:
+  no-attack-detected: "&a%connectionsPerSecond%&7/&4%detectionsPerSecond% &b--&7% &aNessun attacco ✔ &7» &6%animation%"
+  under-attack: "&a%connectionsPerSecond%&7/&4%detectionsPerSecond% &c%detectionRate%&7% rilevato &7- &c✖ &7» &6%animation%"
+
+command:
+  general:
+    not-online: "Utente offline."
+    no-permissions: "&cNon hai i permessi per eseguire questo comando!"
+  reload: "&aPlugin ricaricato con successo."
+  drop: "&aLa cache in blacklist risulta ora ripristinata."
+  toggle:
+    enabled: "Le notifiche sono ora &aabilitate&7."
+    disabled: "Le notifiche sono ora &cdisabilitate&7."
+  whitelist:
+    add:
+      success: "Utente aggiunto alla whitelist."
+      failed: "Utente risulta gia in whitelisted."
+    remove:
+      success: "Utente rimosso alla whitelist."
+      failed: "Utente non risulta in whitelisted"
+  blacklist:
+    invalid-address: "Indirizzo IP digitato non valido."
+    add:
+      success: "Indirizzo IP aggiunto alla blacklist."
+      failed: "Indirizzo IP risulta gia in blacklist."
+    remove:
+      success: "Indirizzo IP rimosso alla blacklist."
+      failed: "Indirizzo IP non risulta in blacklist."
+  check:
+    id-invalid: "ID inserito risulta invalido."
+    id-not-found: "ID non trovato nella cache."
+    preparing: "Preparazione in corso..."
+
+  stats:
+    - "&7-----------------------------------------------"
+    - "&bStatistiche per AntiBotDeluxe."
+    - "&bVisualizzatore ultimo riavvio del server."
+    - ""
+    - "&9Connessioni totali: &b%totalConnections%"
+    - "&9Rilevazioni totali: &b%totalDetections%"
+    - "&9Indirizzi IP blacklistati: &b%totalBlacklist%"
+    - "&9Pings totali: &b%totalPings%"
+    - ""
+    - "&bIl server sta attualmente funzionando a &a%latency%ms &bdi latenza."
+    - "&7-----------------------------------------------"
+    - ""
+

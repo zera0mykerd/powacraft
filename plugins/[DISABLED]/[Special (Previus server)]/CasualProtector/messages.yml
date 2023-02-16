@@ -1,0 +1,97 @@
+antibot:
+  cannot-join-from-vpn: '&2&l[&aAntiBot&2&l] &6> &d&oVPN/Proxy rilevata!'
+  too-big-ping: '&2&l[&aAntiBot&2&l] &6> &d&oPing troppo alto! (Massimo consentito:
+    {LIMIT})'
+  limiter:
+    similar:
+      names:
+        disconnect-message: '&2&l[&aAntiBot&2&l] &6> &d&oTroppi giocatori sul server
+          con un nickname simile.'
+    connection-throttle:
+      disconnect-message: '&2&l[&aAntiBot&2&l] &6> &d&oPer favore attendi {SECONDS}s
+        per rientrare!'
+    last-name-length:
+      disconnect-message: '&2&l[&aAntiBot&2&l] &6> &d&oTroppi giocatori con lo stesso
+        nick in join, attendi 10 secondi...'
+  banned-nickname: '&2&l[&aAntiBot&2&l] &6> &d&oNickname non permesso in questo server'
+  too-many-accounts-per-ip: '&2&l[&aAntiBot&2&l] &6> &d&o Hai raggiunto il limite
+    di %limit% accounts entrati con questo IP!'
+  double-join: '&2&l[&aAntiBot&2&l] &6> &d&oSei stato verificato, per favore rientra!'
+  channel-verification:
+    broadcast: '&2&l[&aAntiBot&2&l] &6> &d&o%player% rilevato come bot e di conseguenza
+      bloccato!'
+    kickmessage: '&2&l[&aAntiBot&2&l] &6> &d&oSei stato rilevato come bot! Il tuo
+      account risulta ora bloccato per 10 minuti.'
+  too-big-ping-bypass-permission: casualprotector.pingbypass
+bad-item-data: '&2&l[&aAntiBot&2&l] &6> &d&oDati NBT invalidi'
+block:
+  forge: '&2&l[&aAntiBot&2&l] &6> &d&oNon puoi entrare con la Forge!'
+  wdl: '&2&l[&aAntiBot&2&l] &6> &d&oNon puoi usare la WorldDownloader!'
+  proxy: '&2&l[&aAntiBot&2&l] &6> &d&oUtente proxy rilevato!'
+  liteloader: '&2&l[&aAntiBot&2&l] &6> &d&oNon puoi entrare con la Liteloader!'
+  badlion: '&2&l[&aAntiBot&2&l] &6> &d&oNon puoi usare la mod del badlion!'
+  lmc: '&2&l[&aAntiBot&2&l] &6> &d&oNon puoi usare la LabyMod!'
+  invalid-chars: '&2&l[&aAntiBot&2&l] &6> &d&oNon puoi inviare questo tipo di caratteri.'
+  bedit: '&2&l[&aAntiBot&2&l] &6> &d&oNon puoi modificare i libri!'
+too-many-packets: '&2&l[&aAntiBot&2&l] &6> &d&oStai inviando troppi pacchetti al secondo!'
+interact:
+  blocked-item: '&2&l[&aAntiBot&2&l] &6> &d&oOggetti con dati NBT invalidi rilevato
+    e di conseguenza bloccata interazione.'
+hacked-items-kick-message: '&2&l[&aAntiBot&2&l] &6> &d&oOggetto hackerato rilevato.'
+redstone:
+  cancelled-admins-permission: casualprotector.redstone.admin
+  cancelled-admins-message: '&2&l[&aAntiBot&2&l] &6> &d&o Cancellate azioni redstone!
+    Redstones al chunk: {REDSTONES}, in: {LOCATION}'
+  cancelled-admins-message-enabled: true
+payload:
+  deserialize:
+    jigsaw: '&2&l[&aAntiBot&2&l] &6> &d&oPacchetti payload bloccati!'
+    too-fast-bedit: '&2&l[&aAntiBot&2&l] &6> &d&oStai modificando un libro troppo
+      rapidamente!'
+    invalid-book-data: '&2&l[&aAntiBot&2&l] &6> &d&oDati libro invalidi!'
+hacked-items:
+  over-enchanted-item-message: '&2&l[&aAntiBot&2&l] &6> &d&oIncantamento troppo alto
+    per il tuo giocatore.'
+  max-enchantment-level: 10
+  bypass-when-has-lore:
+  - Incantamento, incantamento di test
+  max-itemmeta-size: 17384
+max-entities-on-chunk: 1000
+connection-closer:
+  send-message-to-ops: true
+  send-message-to-players-with-perm: casualprotector.admin
+  message-to-ops: '&2&l[&aAntiBot&2&l] &6> &d&o&n%player% &d&oha provato a far crashare
+    il server!'
+uuid-spoof:
+  kick-message: '&2&l[&aAntiBot&2&l] &6> &d&oIl tuo UUID risulta invalido.'
+packet-filter:
+  invalid-packet: '&2&l[&aAntiBot&2&l] &6> &d&oPacchetti invalidi rilevati!'
+prefix: '&r'
+anti-wolrd-edit-exploit-message: '&2&l[&aAntiBot&2&l] &6> &d&oIl tuo messaggio contiene
+  caratteri bloccati!'
+anti-run-commands:
+  when-holding-book: '&2&l[&aAntiBot&2&l] &6> &d&oNon puoi eseguire i comandi.'
+max-pluginmessage-capacity: 7000
+command:
+  no-permission: Non hai il permesso! (casualprotector.command)
+bypass-when-tps-under: 18.7
+max-packet-buffer-size: 16384
+too-many-items:
+  cleared: '&2&l[&aAntiBot&2&l] &6> &d&o Rimossi troppi oggetti a terra!'
+payload-without-book: '&2&l[&aAntiBot&2&l] &6> &d&oNon hai un libro nel tuo inventario!'
+sign-exploit-message: '&2&l[&aAntiBot&2&l] &6> &d&oIl tuo cartello contiene caratteri
+  non consentiti!'
+too-many-similar-wc-packets: '&2&l[&aAntiBot&2&l] &6> &d&oStai inviando troppi pacchetti
+  WindowClick!'
+memory-info:
+  message: |-
+    &l&m-=-=-=-=&rCProtector&l&m-=-=-=-=
+    Ram: {USED-RAM}/{MAX-RAM}
+    Tps: {TPS}
+    &l&m-=-=-=-=&rCProtector&l&m-=-=-=-=
+max-packet-capacity: 80000
+anti-logged-from-another-location: '&2&l[&aAntiBot&2&l] &6> &d&oUn giocatore con lo
+  stesso nome risulta gia connesso sul server!'
+exploit:
+  commands-on-try:
+  - matrix notify %name% Ha provato a far crashare il server!

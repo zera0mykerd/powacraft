@@ -1,0 +1,7 @@
+Enabled-Message: '&7Spia dei comandi &a&lAbilitata&7.'
+Disabled-Message: '&7Spia dei comandi &c&lDisabilitata&7.'
+Enabled-Message-Others: '&7Spia dei comandi &a&lAbilitata&7 per &e&l%player%&7.'
+Disabled-Message-Others: '&7Spia dei comandi &c&lDisabilitata&7 per &e&l%player%&7.'
+Chat-Format: '&c%player%&8: &7%message%'
+Ignored-Commands:
+  - '/example'

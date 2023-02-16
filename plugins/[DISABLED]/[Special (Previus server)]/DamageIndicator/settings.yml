@@ -1,0 +1,16 @@
+# DamageIndicator by TheZephex�
+
+# Enable this if you want to see the BloodEffect
+BloodEffect: false
+
+# Use %health% for the regain health you get
+# Use %damage% for the damage you get
+Format:
+  EntityRegain: '&2&l+&a&o%health%'
+  EntityDamage: '&4&l-&c&o%damage%'
+
+# Which entities you want to use?
+UseAt:
+  Player: true
+  Monster: true
+  Animals: true

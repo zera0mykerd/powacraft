@@ -1,0 +1,75 @@
+ConfigVersion: '2.0'
+Exploits:
+  BookExploit:
+    RemoveBooksNotMatchingCharset: true
+    BookAuthorWhitelist: []
+    PageCountThreshold: 5
+    ValidCharset: US-ASCII
+    DisableBookWriting: false
+  TNTDupe:
+    PreventIndirectTNTPowerDupe: true
+  MineCart:
+    MinecartBlockWhiteList: []
+    RemoveExistingGlitchedMinecarts: false
+    PreventMinecartGlitch: true
+  OverStack:
+    StackWhiteListMode: true
+    PreventOverStackedItemInHoppers: true
+    AllowStack:
+    - NONE
+    RemoveOverstackedItems: false
+    FixOverstackedItemInstead: false
+    GroupStack: []
+    RemoveItemsOfType: []
+  SignExploit:
+    DestroyBadSignsOnChunkLoad: false
+  Fishing:
+    KickForAutoClickerFishing: true
+  FishMod:
+    WarnPlayerThenKickInsteadOfNotify: false
+    WatchForAutoFishMod: true
+    MaxFishAllowedBeforeKick: 5
+    MaxFishToNotifyStaffThenBlock: 5
+  Other:
+    PreventHoppersToUnloadedChunks: true
+    PreventBedrockDestruction: true
+  PortalDupe:
+    NetherWhiteListMode: true
+    NetherWhiteList: []
+    NotifyBlockedPortalAttempts: true
+    EndWhiteList: []
+    EndWhiteListMode: true
+    BlockNonPlayersInNetherPortal: true
+    BlockNonPlayersInEndPortal: true
+  Enchants:
+    FixIllegalEnchants: true
+    EnchantedItemWhitelist: []
+    RemoveCustomAttributes: true
+    AllowBypass: false
+    CustomEnchantOverride: []
+    RemoveUnbreakableFlag: true
+    OnlyFunctionInWorlds: []
+  DropperDupe:
+    BlockLoopedDroppers: true
+  Nether:
+    NetherYLevel: 128
+    ExcludeNetherWorldFromHeightCheck: []
+    BlockPlayersAboveNether: true
+  3rdParty:
+    BlockCMIShulkerStacking: true
+UserRequested:
+  Mobs:
+    PreventZombieItemPickup: true
+  Misc:
+    NotifyInsteadOfBlock: []
+  ItemRemoval:
+    ItemLoresToRemove: []
+    RemoveItemsMatchingName: false
+    ItemNamesToRemove: []
+    NameLoreStrictMatchMode: false
+Misc:
+  LogOffensesInSeparateFile: false
+  NotifyNearbyPlayers: false
+  BreakMachinesInsteadOfDroppingItems: true
+  InGameOffenseNotifications: true
+  DisableInWorlds: []

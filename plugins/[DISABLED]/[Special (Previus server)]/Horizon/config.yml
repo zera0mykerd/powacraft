@@ -1,0 +1,428 @@
+########## Horizon Config ##########
+# Welcome to Horizon's configuration file.
+# Before changing anything, please note that all settings has been tested.
+# It is recommended not to change any settings if it is not necessary.
+#
+# Issue-Tracker: https://github.com/CraftG/Horizon/issues
+# Discord: https://discord.gg/s8RyWzJ
+# I hope you have a good time here.
+####################################
+
+settings:
+  # Disable drag down feature?
+  enable_drag_down: true
+  # If drag down feature is disabled, should Horizon use drag back instead?
+  drag_back_instead: true
+
+  bungee:
+    # Do you want to enable bungee mode?
+    enabled: false
+    # IP of BungeeCord
+    host: 127.0.0.1
+    # The same to Horizon config in BungeeCord.
+    port: 8888
+
+badpackets:
+  cancel_vl: 0
+  modules:
+    Derp:
+      # Do you want to enable the KeepAliveExploit check?
+      enabled: false
+      vl_addition: 6
+    CustomPayloadExploit:
+      # Do you want to enable the CustomPayloadExploit check?
+      enabled: false
+      vl_addition: 5
+
+      check_size: 30000
+  # Action map
+  action:
+    8:
+      - 'matrix notify %player% sembra usare exploit'
+    14:
+      - 'matrix notify %player% risulta sospetto per inviare pacchetti erranti'
+    20:
+      - 'matrix notify %player% kickato per aver inviato pacchetti erranti'
+      - 'spartan kick %player% Hai inviato pacchetti erranti'
+
+fastuse:
+  cancel_vl: 3
+  modules:
+    FastEat:
+      # Do you want to enable the FastEat check?
+      enabled: true
+      vl_addition: 2
+      # What delay should be enforced for eating an item?
+      # Measured in ms
+      min_time: 1250
+    FastBow:
+      # Do you want to enable the FastBow check?
+      enabled: true
+      vl_addition: 2
+    FastToggle:
+      # Do you want to enable the FastToggle check?
+      enabled: true
+      vl_addition: 4
+
+      # How many times should a player be allowed to toggle use-item in a second?
+      max_use_toggles: 40
+  # Action map
+  action:
+    6:
+      - 'matrix notify %player% sta consumando gli oggetti velocemente'
+    9:
+      - 'matrix notify %player% sospetto per aver usato la FastUse'
+    12:
+      - 'matrix notify %player% kickato per aver consumato il cibo velocemente'
+      - 'spartan kick %player% Stai usando troppo velocemente gli oggetti'
+
+fly:
+  cancel_vl: 10
+  modules:
+    Ability:
+      # Do you want to enable the Ability check?
+      enabled: true
+      vl_addition: 5
+    Elytra:
+      # Do you want to enable the Elytra check?
+      enabled: true
+      vl_addition: 3
+    Equality:
+      # Do you want to enable the Equality check?
+      enabled: true
+      vl_addition: 3
+    Expect:
+      # Do you want to enable the Expect check?
+      enabled: true
+      vl_addition: 2
+    Step:
+      # Do you want to enable the Step check?
+      enabled: true
+      vl_addition: 3
+  # Action map
+  action:
+    90:
+      - 'matrix notify %player% ha provato a usare la fly'
+    120:
+      - 'matrix notify %player% risulta sospetto per Fly'
+    160:
+      - 'matrix notify %player% kickato per fly'
+      - 'spartan kick %player% Movimenti sospetti'
+
+fastbreak:
+  cancel_vl: 2
+  modules:
+    Limit:
+      # Do you want to enable the Limit check?
+      enabled: true
+      vl_addition: 1
+  # Action map
+  action:
+    12:
+      - 'matrix notify %player% sta rompendo i blocchi velocemente'
+    15:
+      - 'matrix notify %player% risulta sospetto per FastBreak'
+    18:
+      - 'matrix notify %player% kickato per FastBreak'
+      - 'spartan kick %player% Hai spaccato i blocchi troppo velocemente'
+
+speed:
+  cancel_vl: 10
+  modules:
+    Expect:
+      # Do you want to enable the Expect check?
+      enabled: false
+      vl_addition: 2
+    FastFall:
+      # Do you want to enable the Expect check?
+      enabled: true
+      vl_addition: 3
+    Limit:
+      # Do you want to enable the Limit check?
+      enabled: false
+      vl_addition: 2
+    Sneak:
+      # Do you want to enable the Limit check?
+      enabled: false
+      vl_addition: 3
+
+      # How many times should a player be allowed to toggle sneak in a second?
+      max_sneak_toggles: 20
+    Sprint:
+      # Do you want to enable the Sprint check?
+      enabled: true
+      vl_addition: 3
+    Strafe:
+      # Do you want to enable the Strafe check?
+      enabled: true
+      vl_addition: 1
+    Ladder:
+      # Do you want to enable the Ladder check?
+      enabled: true
+      vl_addition: 3
+  # Action map
+  action:
+    80:
+      - 'matrix notify %player% si sta muovendo velocemente'
+    120:
+      - 'matrix notify %player% sospetto per utilizzo di Speed'
+    150:
+      - 'matrix notify %player% sta usando la Speed'
+
+timer:
+  cancel_vl: 8
+  modules:
+    Analysis:
+      # Do you want to enable the Analysis check?
+      enabled: true
+      vl_addition: 1
+
+      # Measured in nanosecond
+      analysis_time: 7000000000
+
+      # Measured in nanosecond
+      min_move_interval: 48000000
+  # Action map
+  action:
+    50:
+      - 'matrix notify %player% sta inviando pacchetti di movimento troppo in fretta'
+    60:
+      - 'matrix notify %player% sospetto per utilizzo di Timer'
+    80:
+      - 'matrix notify %player% kickato per Timer'
+      - 'spartan kick %player% Stai inviando troppi pacchetti al secondo'
+
+cheststealer:
+  cancel_vl: 3
+  modules:
+    Limit:
+      # Do you want to enable the Limit check?
+      enabled: true
+      vl_addition: 2
+  # Action map
+  action:
+    12:
+      - 'matrix notify %player% forse sta usando ChestStealer'
+    15:
+      - 'matrix notify %player% sospetto per ChestStealer'
+    20:
+      - 'matrix notify %player% kickato per ChestStealer'
+      - 'spartan kick %player% ChestStealer non permessa'
+
+velocity:
+  cancel_vl: 1
+  modules:
+    Expect:
+      # Do you want to enable the Expect check?
+      enabled: true
+      vl_addition: 2
+  # Action map
+  action:
+    16:
+      - 'matrix notify %player% ha un contraccolpo anomalo'
+    20:
+      - 'matrix notify %player% sospetto per uso di AntiVelocity'
+    25:
+      - 'matrix notify %player% sta usando AntiVelocity'
+
+killaura:
+  cancel_vl: 8
+  modules:
+    Heuristic:
+      # Do you want to enable the Heuristic check?
+      enabled: true
+      vl_addition: 3
+    Click:
+      # Do you want to enable the Click check?
+      enabled: true
+      vl_addition: 2
+    KeepSprint:
+      # Do you want to enable the KeepSprint check?
+      enabled: true
+      vl_addition: 2
+    Impossible:
+      # Do you want to enable the Impossible check?
+      enabled: true
+      vl_addition: 4
+    Reach:
+      # Do you want to enable the Reach check?
+      enabled: true
+      vl_addition: 2
+
+      max_reach: 3.49
+      max_reach_creative: 5.0
+    SuperKnockback:
+      # Do you want to enable the SuperKnockback check?
+      enabled: true
+      vl_addition: 6
+  # Action map
+  action:
+    10:
+      - 'matrix notify %player% forse sta usando la KillAura'
+    12:
+      - 'matrix notify %player% sospetto per aver usato la KillAura'
+
+liquidwalk:
+  cancel_vl: 5
+  modules:
+    Hover:
+      # Do you want to enable the Hover check?
+      enabled: true
+      vl_addition: 3
+    Jump:
+      # Do you want to enable the Jump check?
+      enabled: true
+      vl_addition: 1
+  # Action map
+  action:
+    20:
+      - 'matrix notify %player% forse sta usando LiquidWalk o Jesus'
+    28:
+      - 'matrix notify %player% risulta sospetto per LiquidWalk o Jesus'
+    36:
+      - 'matrix notify %player% kickato per LiquidWalk o Jesus'
+      - 'spartan kick %player% Rilevati movimenti anomali in acqua'
+
+nofall:
+  cancel_vl: 1
+  modules:
+    GroundSpoof:
+      # Do you want to enable the GroundSpoof check?
+      enabled: false
+      vl_addition: 1
+  # Action map
+  action:
+    10:
+      - 'matrix notify %player% sospetto per Nofall'
+    12:
+      - 'matrix notify %player% molto sospetto per NoFall'
+    16:
+      - 'matrix notify %player% usa NoFall'
+
+phase:
+  cancel_vl: 5
+  modules:
+    Collision:
+      # Do you want to enable the Collision check?
+      enabled: false
+      vl_addition: 2
+  # Action map
+  action:
+    20:
+      - 'matrix notify %player% forse sta usando la Phase'
+    25:
+      - 'matrix notify %player% sospetto per Phase'
+    30:
+      - 'matrix notify %player% usa la Phase'
+
+scaffold:
+  cancel_vl: 6
+  modules:
+    Rotation:
+      # Do you want to enable the Rotation check?
+      enabled: true
+      vl_addition: 2
+  # Action map
+  action:
+    10:
+      - 'matrix notify %player% forse sta usando Scaffold'
+    12:
+      - 'matrix notify %player% sospetto per Scaffold'
+    15:
+      - 'matrix notify %player% kickato per Scaffold'
+      - 'spartan kick %player% ScaffoldWalk non permessa'
+
+freecam:
+  # Unused
+  cancel_vl: 0
+  modules:
+    Packet:
+      # Do you want to enable the Packet check?
+      enabled: true
+      # Unused
+      vl_addition: 0
+  # Unused action map
+  action: {}
+
+esp:
+  # Unused
+  cancel_vl: 0
+  # Please think carefully before enabling this check.
+  # Your server has more players, more cpu consuming will be.
+  modules:
+    StorageESP:
+      # Do you want to enable the StorageESP check?
+      enabled: false
+      # Unused
+      vl_addition: 0
+      # Check interval
+      # Increasing it can save more performance
+      # Decreasing it can make the check more accurate
+      # Measured in tick
+      check_interval: 3
+
+      # Storages within this distance will be shown.
+      min_distance: 8
+
+      # Storages outside this distance will not be checked.
+      max_distance: 80
+    PlayerESP:
+      # Do you want to enable the PlayerESP check?
+      enabled: false
+      # Unused
+      vl_addition: 0
+      # Check interval
+      # Increasing it can save more performance
+      # Decreasing it can make the check more accurate
+      # Measured in tick
+      check_interval: 3
+
+      # Players within this distance will be shown.
+      min_distance: 8
+
+      # Players outside this distance will not be checked.
+      max_distance: 60
+  # Unused action map
+  action: {}
+
+healthtag:
+  # Unused
+  cancel_vl: 0
+  modules:
+    HealthSpoof:
+      # Do you want to enable the HealthSpoof check?
+      enabled: true
+      # Unused
+      vl_addition: 0
+    ItemSpoof:
+      # Do you want to enable the ItemSpoof check?
+      enabled: true
+      # Unused
+      vl_addition: 0
+      # Should Horizon spoof item amount?
+      spoof_amount: true
+      # Should Horizon spoof item enchantments?
+      spoof_enchantments: true
+      # Should Horizon spoof item durability?
+      # This will also spoof unbreakable flag
+      spoof_durability: true
+  # Unused action map
+  action: {}
+
+bowaimbot:
+  # Unused
+  cancel_vl: 0
+  modules:
+    Velocity:
+      # Do you want to enable the Velocity check?
+      enabled: true
+      # Unused
+      vl_addition: 0
+      # Multiply the velocity of arrows to make hack client failed to expect the arrow's trajectory.
+      # It can be harmful if you set it too high.
+      multiplier: 1.3
+      # The y-axis will be added for arrows.
+      # Your players may complain if you set it too high.
+      y_addition: 0.1
+  # Unused action map
+  action: {}

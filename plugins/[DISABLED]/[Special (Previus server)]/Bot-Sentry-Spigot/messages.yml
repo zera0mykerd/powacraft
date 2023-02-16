@@ -1,0 +1,189 @@
+#     ▄▄▄▄███▄▄▄▄      ▄████████    ▄████████    ▄████████    ▄████████    ▄██████▄     ▄████████    ▄████████
+#   ▄██▀▀▀███▀▀▀██▄   ███    ███   ███    ███   ███    ███   ███    ███   ███    ███   ███    ███   ███    ███ 
+#   ███   ███   ███   ███    █▀    ███    █▀    ███    █▀    ███    ███   ███    █▀    ███    █▀    ███    █▀  
+#   ███   ███   ███  ▄███▄▄▄       ███          ███          ███    ███  ▄███         ▄███▄▄▄       ███        
+#   ███   ███   ███ ▀▀███▀▀▀     ▀███████████ ▀███████████ ▀███████████ ▀▀███ ████▄  ▀▀███▀▀▀     ▀███████████ 
+#   ███   ███   ███   ███    █▄           ███          ███   ███    ███   ███    ███   ███    █▄           ███ 
+#   ███   ███   ███   ███    ███    ▄█    ███    ▄█    ███   ███    ███   ███    ███   ███    ███    ▄█    ███ 
+#    ▀█   ███   █▀    ██████████  ▄████████▀   ▄████████▀    ███    █▀    ████████▀    ██████████  ▄████████▀
+
+# When a player tries to use a feature reserved for the newer versions.
+old-version: "&cfunzione in questa versione disabilitata."
+
+# When a sender doesn't have the required permissions
+no-permissions: "&cAccesso negato al comando."
+
+# When a sender isn't a player
+not-player: "&cDevi essere un giocatore per eseguire questa azione."
+
+# When a given argument is not an integer when it was supposed to be
+not-integer: "&cSintassi errata."
+
+# When you type "/bot-sentry" or "/b-s"
+main-help:
+- "&6&m--------------&c &lAIUTO BOT SENTRY &6&m--------------"
+- "&f "
+- "&9Alias: &b/b-s &7& &b/bot-sentry"
+- "&f "
+- "&7/b-s stats &8> &eVede in totale tutti gli ip in blacklist e whitelist"
+- "&7/b-s on/off &8> &eDisabilita o abilita manualmente la protezione AntiBot"
+- "&7/b-s notifications on/off &8> &eAbilita o disabilita le notifiche nella barra"
+- "&7/b-s drop blacklist &8> &eRimuove tutti gli IP in blacklist"
+- "&7/b-s drop whitelist &8> &eRimuove tutti gli IP in whitelist"
+- "&7/b-s drop logs &8> &eDistrugge tutti i logs"
+- "&7/b-s list blacklist <pagina> &8> &eStampa gli IP in blacklist"
+- "&7/b-s list whitelist <pagina> &8> &eStampa gli IP in whitelist"
+- "&7/b-s blacklist <ip> &8> &eBlacklista gli IP"
+- "&7/b-s un-blacklist <ip> &8> &eUn-blacklista gli IP"
+- "&7/b-s help &8> &eRicevi aiuto"
+- "&f "
+- "&6&m-----------------------------------------------"
+
+# When you type "/bot-sentry drop" or "/b-s drop"
+drop-help:
+- "&6&m--------------&c &lAIUTO BOT SENTRY &6&m--------------"
+- "&f "
+- "&7/b-s drop blacklist &8> &eRimuove tutti gli IP in blacklist"
+- "&7/b-s drop whitelist &8> &eRimuove tutti gli IP in whitelist"
+- "&7/b-s drop logs &8> &eRimuove tutti i logs"
+- "&f "
+- "&6&m-----------------------------------------------"
+
+# When you type "/bot-sentry list" or "/b-s list"
+list-help:
+- "&6&m--------------&c &lAIUTO BOT SENTRY &6&m--------------"
+- "&f "
+- "&7/b-s list blacklist <pagina> &8> &eStampa tutti gli IP in blacklist"
+- "&7/b-s list whitelist <pagina> &8> &eStampa tutti gli IP in whitelist"
+- "&f "
+- "&6&m-----------------------------------------------"
+
+# When you type "/bot-sentry stats" or "/b-s stats"
+statistics:
+- "&6&m-----------------------------------"
+- "&f "
+- "&9➤ &fStatistiche correnti:"
+- "&f "
+- "&b» &fBlacklistati: &7{blacklisted_ips}"
+- "&b» &fWhitelistati: &7{whitelisted_ips}"
+- "&f "
+- "&6&m-----------------------------------"
+
+# When you type "/bot-sentry list blacklist <pagina>" or "/b-s list blacklist <pagina>"
+blacklist-list-page-not-exist: "&cPage with that number does not exist."
+blacklist-list-page-header:
+- "&6&m------------&c &lBLACKLIST &6&m------------"
+- ""
+- "&fIP blacklistati in totale: &a{blacklisted_ips}"
+- ""
+blacklist-list-page-entry: " &7{index}. &c{ip}"
+blacklist-list-page-footer:
+- ""
+- "&fPagina: &a{page}&f/&a{pages}"
+- ""
+- "&6&m------------------------------------"
+
+# When you type "/bot-sentry list whitelist <pagina>" or "/b-s list whitelist <pagina>"
+whitelist-list-page-not-exist: "&cLa pagina con quel numero non esiste."
+whitelist-list-page-header:
+- "&6&m------------&c &lWHITELIST &6&m------------"
+- ""
+- "&fIP in whitelistati in totale: &a{whitelisted_ips}"
+- ""
+whitelist-list-page-entry: " &7{index}. &a{ip}"
+whitelist-list-page-footer:
+- ""
+- "&fPagina: &a{page}&f/&a{pages}"
+- ""
+- "&6&m------------------------------------"
+
+# When you type "/bot-sentry blacklist" or "/b-s blacklist"
+blacklist-usage: "&cSintassi corretta: /b-s blacklist <ip>."
+blacklist-already: "&cIP risulta gia in blacklist."
+blacklist-done: "&fTu ora hai blacklistato IP &a{ip}&f."
+
+# When you type "/bot-sentry un-blacklist" or "/b-s un-blacklist"
+un-blacklist-usage: "&cSintassi corretta: /b-s un-blacklist <ip>."
+un-blacklist-not: "&cIP non risulta in blacklist."
+un-blacklist-done: "&fTu ora hai un-blacklistato IP &a{ip}&f."
+
+# When you type "/bot-sentry drop blacklist" or "/b-s drop blacklist"
+blacklist-dropped: "&fAbbiamo bannato &a{amount} &fblacklistati IP(s)."
+
+# When you type "/bot-sentry drop whitelist" or "/b-s drop whitelist"
+whitelist-dropped: "&fAbbiamo bannato &a{amount} &fwhitelistati IP(s)."
+
+# When you type "/bot-sentry drop logs" or "/b-s drop logs"
+logs-dropped: "&aTu hai ora perso tutti i logs."
+
+# When you type "/bot-sentry help" or "/b-s help"
+help: "Ti aiuta uno staffer"
+
+# When you type "/bot-sentry on/off" or "/b-s on/off"
+anti-bot-enabled: "&fProtezione AntiBot &aabilitata&f."
+anti-bot-enabled-already: "&fProtezione AntiBot risulta gia &aabilitata&f."
+anti-bot-disabled: "&fProtezione AntiBot &cdisabilitata&f."
+anti-bot-disabled-already: "&fProtezione AntiBot risulta gia &cdisabilitata&f."
+
+# When you type "/bot-sentry notifications on/off" or "/b-s notifications on/off"
+notifications-help:
+- "&6&m--------------&c &lAIUTO BOT SENTRY &6&m--------------"
+- "&f "
+- "&7/b-s notifications on &8> &eAbilita la visualizzazione delle notifiche sulla barra delle azioni"
+- "&7/b-s notifications off &8> &eDisabilita la visualizzazione delle notifiche sulla barra delle azioni"
+- "&f "
+- "&6&m-----------------------------------------------"
+notifications-enabled: "&fNotifiche &aabilitate&f."
+notifications-disabled: "&fNotifiche &cdisabilitate&f."
+
+# When you get notified by the anti bot protection on the action bar
+anti-bot-enabled-action-bar: "&fProtezione AntiBot &aabilitata"
+anti-bot-disabled-action-bar: "&fProtezione AntiBot &cdisabilitata"
+anti-bot-enabling-action-bar: "&fAttacco bot rilevato, &aabilitando &fla protezione AntiBot"
+anti-bot-disabling-action-bar: "&fAttacco bot non rilevato, &cdisabilitando &fla protezione AntiBot"
+ips-join-try-action-bar: "&a{amount} &fIP(s) ha provato ad accedere per &apochi secondi"
+ip-blacklisted-action-bar: "&a{ip} &finserito in blacklist per &c{check}"
+ip-whitelisted-action-bar: "&a{ip} &finserito in whitelist"
+
+# When the anti bot protection mode gets automatically enabled or disabled
+anti-bot-enabling: "&eAttacco bot rilevato. &aAbilitando &ela protezione AntiBot..."
+anti-bot-disabling: "&eAttacco bot finito. &cDisabilitando &ela protezione AntiBot..."
+
+# When the user is getting kicked by the anti bot protection
+kicked: "&2&l[&aAntiBot&2&l] &6> &d&oSei stato espulso per motivi di sicurezza."
+kicked-re-join: "&2&l[&aAntiBot&2&l] &6> &d&oSei stato espulso per motivi di sicurezza. Per favore, rientra."
+kicked-re-join-time: "&2&l[&aAntiBot&2&l] &6> &d&oAl momento sei in blacklist per motivi di sicurezza. Per favore, rientra in {time} secondi."
+kicked-blacklisted: "&2&l[&aAntiBot&2&l] &6> &d&oAl momento sei in blacklist per motivi di sicurezza."
+
+# When the console is printing the message about anti bot protection getting enabled
+console-anti-bot-enabling:
+- "&f======"
+- "&aProtezione AntiBot attivata."
+- "&f======"
+
+# When the console is printing the message about anti bot protection getting disabled
+console-anti-bot-disabling:
+- "&f======"
+- "&cProtezione AntiBot disattivata."
+- "&f======"
+
+# When the console is printing the message (every 1 second while the anti bot protection is enabled) about the blacklisted ips during the last second
+console-blacklisted-info: "&a{amount} &fIP(s) messo in blacklist per &aqualche secondo&f!"
+
+# When you need to pass the captcha
+captcha-re-join-ping: "&2&l[&aAntiBot&2&l] &6> &d&oRicarica la lista server Esattamente {amount} di volte per entrare."
+
+# Title of the amount of the aborted connections.
+aborted-connections-title: "&2&l[&aAntiBot&2&l] &6> &d&oConnessione abortita"
+
+# Sub title of the amount of the aborted connections.
+aborted-connections-sub-title: "&f&l{connections} &a&lconnessioni totalmente interrotte"
+
+#     ▄████████  ███▄▄▄▄   ████████▄
+#     ███    ███ ███▀▀▀██▄ ███   ▀███
+#     ███    █▀  ███   ███ ███    ███
+#    ▄███▄▄▄     ███   ███ ███    ███
+#   ▀▀███▀▀▀     ███   ███ ███    ███
+#     ███    █▄  ███   ███ ███    ███
+#     ███    ███ ███   ███ ███   ▄███
+#     ██████████  ▀█   █▀  ████████▀

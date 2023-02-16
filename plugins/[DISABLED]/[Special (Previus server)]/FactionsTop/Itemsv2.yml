@@ -1,0 +1,408 @@
+'1':
+  material: BEDROCK
+  data: 0
+  price: 200.0
+'2':
+  material: OBSIDIAN
+  data: 0
+  price: 10.0
+'3':
+  material: TNT
+  data: 0
+  price: 20.0
+'4':
+  material: GOLDEN_APPLE
+  data: 0
+  price: 50.0
+'5':
+  material: GOLDEN_APPLE
+  data: 1
+  price: 5000.0
+'6':
+  material: DIAMOND_BLOCK
+  data: 0
+  price: 1700.0
+'7':
+  material: EMERALD_BLOCK
+  data: 0
+  price: 2000.0
+'8':
+  material: GOLD_BLOCK
+  data: 0
+  price: 500.0
+'9':
+  material: IRON_BLOCK
+  data: 0
+  price: 1200.0
+'10':
+  material: COAL_BLOCK
+  data: 0
+  price: 300.0
+'11':
+  material: REDSTONE_BLOCK
+  data: 0
+  price: 450.0
+'12':
+  material: DIAMOND_HELMET
+  data: 0
+  price: 250.0
+'13':
+  material: DIAMOND_CHESTPLATE
+  data: 0
+  price: 350.0
+'14':
+  material: DIAMOND_LEGGINGS
+  data: 0
+  price: 350.0
+'15':
+  material: DIAMOND_BOOTS
+  data: 0
+  price: 250.0
+'16':
+  material: DRAGON_EGG
+  data: 0
+  price: 1.5E7
+'17':
+  material: MOB_SPAWNER
+  data: 4
+  price: 2000.0
+'18':
+  material: MOB_SPAWNER
+  data: 6
+  price: 2000.0
+'19':
+  material: MOB_SPAWNER
+  data: 23
+  price: 2000.0
+'20':
+  material: MOB_SPAWNER
+  data: 31
+  price: 2000.0
+'21':
+  material: MOB_SPAWNER
+  data: 32
+  price: 2000.0
+'22':
+  material: MOB_SPAWNER
+  data: 34
+  price: 2000.0
+'23':
+  material: MOB_SPAWNER
+  data: 35
+  price: 2000.0
+'24':
+  material: MOB_SPAWNER
+  data: 36
+  price: 2000.0
+'25':
+  material: MOB_SPAWNER
+  data: 37
+  price: 2000.0
+'26':
+  material: MOB_SPAWNER
+  data: 50
+  price: 500000.0
+'27':
+  material: MOB_SPAWNER
+  data: 51
+  price: 70000.0
+'28':
+  material: MOB_SPAWNER
+  data: 52
+  price: 45000.0
+'29':
+  material: MOB_SPAWNER
+  data: 53
+  price: 10000.0
+'30':
+  material: MOB_SPAWNER
+  data: 54
+  price: 70000.0
+'31':
+  material: MOB_SPAWNER
+  data: 55
+  price: 10000.0
+'32':
+  material: MOB_SPAWNER
+  data: 56
+  price: 20000.0
+'33':
+  material: MOB_SPAWNER
+  data: 57
+  price: 750000.0
+'34':
+  material: MOB_SPAWNER
+  data: 58
+  price: 200000.0
+'35':
+  material: MOB_SPAWNER
+  data: 59
+  price: 2000.0
+'36':
+  material: MOB_SPAWNER
+  data: 60
+  price: 1.5E7
+'37':
+  material: MOB_SPAWNER
+  data: 61
+  price: 350000.0
+'38':
+  material: MOB_SPAWNER
+  data: 62
+  price: 10000.0
+'39':
+  material: MOB_SPAWNER
+  data: 64
+  price: 500000.0
+'40':
+  material: MOB_SPAWNER
+  data: 65
+  price: 10000.0
+'41':
+  material: MOB_SPAWNER
+  data: 66
+  price: 15000.0
+'42':
+  material: MOB_SPAWNER
+  data: 67
+  price: 2000.0
+'43':
+  material: MOB_SPAWNER
+  data: 68
+  price: 2000.0
+'44':
+  material: MOB_SPAWNER
+  data: 90
+  price: 10000.0
+'45':
+  material: MOB_SPAWNER
+  data: 91
+  price: 10000.0
+'46':
+  material: MOB_SPAWNER
+  data: 92
+  price: 50000.0
+'47':
+  material: MOB_SPAWNER
+  data: 93
+  price: 5000.0
+'48':
+  material: MOB_SPAWNER
+  data: 94
+  price: 10000.0
+'49':
+  material: MOB_SPAWNER
+  data: 95
+  price: 10000.0
+'50':
+  material: MOB_SPAWNER
+  data: 96
+  price: 100000.0
+'51':
+  material: MOB_SPAWNER
+  data: 97
+  price: 10000.0
+'52':
+  material: MOB_SPAWNER
+  data: 98
+  price: 10000.0
+'53':
+  material: MOB_SPAWNER
+  data: 99
+  price: 1500000.0
+'54':
+  material: MOB_SPAWNER
+  data: 100
+  price: 100000.0
+'55':
+  material: MOB_SPAWNER
+  data: 101
+  price: 10000.0
+'56':
+  material: MOB_SPAWNER
+  data: 102
+  price: 2000.0
+'57':
+  material: MOB_SPAWNER
+  data: 103
+  price: 2000.0
+'58':
+  material: MOB_SPAWNER
+  data: 105
+  price: 2000.0
+'59':
+  material: MOB_SPAWNER
+  data: 120
+  price: 120000.0
+'60':
+  material: MONSTER_EGG
+  data: 4
+  price: 500.0
+'61':
+  material: MONSTER_EGG
+  data: 6
+  price: 500.0
+'62':
+  material: MONSTER_EGG
+  data: 23
+  price: 500.0
+'63':
+  material: MONSTER_EGG
+  data: 31
+  price: 500.0
+'64':
+  material: MONSTER_EGG
+  data: 32
+  price: 500.0
+'65':
+  material: MONSTER_EGG
+  data: 34
+  price: 500.0
+'66':
+  material: MONSTER_EGG
+  data: 35
+  price: 500.0
+'67':
+  material: MONSTER_EGG
+  data: 36
+  price: 500.0
+'68':
+  material: MONSTER_EGG
+  data: 37
+  price: 500.0
+'69':
+  material: MONSTER_EGG
+  data: 50
+  price: 2500.0
+'70':
+  material: MONSTER_EGG
+  data: 51
+  price: 500.0
+'71':
+  material: MONSTER_EGG
+  data: 52
+  price: 500.0
+'72':
+  material: MONSTER_EGG
+  data: 53
+  price: 500.0
+'73':
+  material: MONSTER_EGG
+  data: 54
+  price: 500.0
+'74':
+  material: MONSTER_EGG
+  data: 55
+  price: 500.0
+'75':
+  material: MONSTER_EGG
+  data: 56
+  price: 500.0
+'76':
+  material: MONSTER_EGG
+  data: 57
+  price: 500.0
+'77':
+  material: MONSTER_EGG
+  data: 58
+  price: 500.0
+'78':
+  material: MONSTER_EGG
+  data: 59
+  price: 500.0
+'79':
+  material: MONSTER_EGG
+  data: 60
+  price: 500.0
+'80':
+  material: MONSTER_EGG
+  data: 61
+  price: 500.0
+'81':
+  material: MONSTER_EGG
+  data: 62
+  price: 500.0
+'82':
+  material: MONSTER_EGG
+  data: 64
+  price: 500.0
+'83':
+  material: MONSTER_EGG
+  data: 65
+  price: 500.0
+'84':
+  material: MONSTER_EGG
+  data: 66
+  price: 500.0
+'85':
+  material: MONSTER_EGG
+  data: 67
+  price: 500.0
+'86':
+  material: MONSTER_EGG
+  data: 68
+  price: 500.0
+'87':
+  material: MONSTER_EGG
+  data: 90
+  price: 500.0
+'88':
+  material: MONSTER_EGG
+  data: 91
+  price: 500.0
+'89':
+  material: MONSTER_EGG
+  data: 92
+  price: 500.0
+'90':
+  material: MONSTER_EGG
+  data: 93
+  price: 500.0
+'91':
+  material: MONSTER_EGG
+  data: 94
+  price: 500.0
+'92':
+  material: MONSTER_EGG
+  data: 95
+  price: 500.0
+'93':
+  material: MONSTER_EGG
+  data: 96
+  price: 500.0
+'94':
+  material: MONSTER_EGG
+  data: 97
+  price: 500.0
+'95':
+  material: MONSTER_EGG
+  data: 98
+  price: 500.0
+'96':
+  material: MONSTER_EGG
+  data: 99
+  price: 500.0
+'97':
+  material: MONSTER_EGG
+  data: 100
+  price: 500.0
+'98':
+  material: MONSTER_EGG
+  data: 101
+  price: 500.0
+'99':
+  material: MONSTER_EGG
+  data: 102
+  price: 500.0
+'100':
+  material: MONSTER_EGG
+  data: 103
+  price: 500.0
+'101':
+  material: MONSTER_EGG
+  data: 105
+  price: 500.0
+'102':
+  material: MONSTER_EGG
+  data: 120
+  price: 500.0

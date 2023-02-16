@@ -1,0 +1,84 @@
+PluginPrefix: '§e §6§l [StackProtector] '
+ChestRemoved: Rimossa cassa da ~entity~ @
+ChestPrevented: prevenuto il giocatore ~player~ dal mettere una cassa a ~entity~ @
+BookRemoved: '§e Trovato un libro anomalo scritto da ~author~'
+SignRemoved: Trovato un cartello con caratteri non consentiti nel mondo @
+SignRemovedOnPlace: rilevato un cartello piazzato da §b ~name~ §e che contiene caratteri non permessi.  Possibile uso di exploit! @
+SignKickPlayerMsg: Piazzare cartelli con caratteri unicode non permesso.
+ShulkerClick: '§e Rimossa scatola di skulker con interno un altra scatola di §b ~name~ §e'
+ItemFrameRemoveOnExtend: Rimosso un frame di oggetto contenente - ~contents~ sul retro di un pistone retrattile @
+ItemFrameRemoveOnRetract: Rimosso un frame di oggetto contenente - ~contents~ trainato da un pistone appiccicoso
+PistonRetractionDupe: Arrestato un tentativo di duplicazione con pistone @ ~removedblocks~
+NetherPortalBlock: '§e Impedito ad un entita di entrare o uscire dal nether §b ~name~ §e
+  @'
+EndPortalBlock: '§e Impedito ad un entita di entrare o uscire dall end: §b ~name~ §e @'
+MinecartGlitch1: '§e Rilevato e rimosso un minecart glitchato  ~blocktype~
+  @'
+MinecartGlitch2: Fermato un minecart da un glitch in un blocco @
+ZeroTickGlitch: stoppato 1.13 - 1.14 Zero tick crop growth glitch rimosso (~removedblocks~) @
+NamedItemRemovalHopper: Trovato un oggetto rinominato ~item~ in una tramoggia, e rimosso @
+NamedItemRemovalPlayer: '§e Trovato un oggetto rinominato ~item~ appartenente a §b ~name~ §e, ora
+  rimosso. @'
+ItemTypeRemovedPlayer: '§e Trovato un oggetto in blacklist che si chiama ~item~ appartenente a §b ~name~ §e,
+  e ora rimosso'
+SilkTouchBookBlocked: Stoppato  §b ~name~ §e dal distruggere il ~block~ usando il libro con tocco di velluto @
+PistonHeadRemoval: Una testa del pistone e esplosa rimossa la base del pistone @
+IllegalStackLogin: '§e Stack illegale di oggetto ~item~ (~amount~) dal giocatore
+  §b ~name~ §e al login.'
+IllegalStackOffhand: Rimosso uno stack illegale di oggetti nella mano off con nome §b ~name~ §e, ~item~ ( ~amount~)
+IllegalStackPlayerBody: '§e Stack illegale di oggetti rimosso ~item~ (~amount~) dal corpo di §b ~name~ §e
+  .'
+IllegalStackItemScan: '§e Stack illegale di oggetti rimosso ~item~ (~amount~) dal giocatore
+  §b ~name~ §e .'
+IllegalStackOnClick: '§e Stack illegale di oggetti rimosso ~item~ (~amount~) dal giocatore
+  §b ~name~ §e nel click dell inventario.'
+IllegalStackShorten: '§e Fixato uno stack illegale di ~item~ (~amount~) triggerato dal giocatore
+  §b ~name~ §e.'
+IllegalStackUnstack: '§e Unstackato uno stack illegale di ~item~ (~amount~) triggerato dal
+  giocatore: §b ~name~ §e.  ~lost~ oggetti persi.'
+InvalidPotionRemoved: '§e Rimossa pozione invalida da §b ~name~ §e avente i seguenti effetti
+  ~effects~'
+UnbreakableItemCleared: Rimossa flag indistruttibile ~item~ trovata nel giocatore §b ~name~ §e
+CustomAttribsRemoved: Rimossi attribbuti personalizzati ~item~ fatto da §b ~name~ §e (~attributes~)
+GlideActivateMaxBuild: Prevenuto §b ~name~ §e per attivare elytra nell altezza massima di build dei blocchi. @
+GlideAboveMaxBuild: Il giocatore §b ~name~ §e sta usando l elytra in un luogo non adatto. @
+CorrectedPlayerLocation: (possibile glitch di enderpearl in un blocco) Teletrasporto corretto per ~player~ @
+StoppedPushableArmorStand: Impedito il sollevamento di un supporto di armatura attraverso un pistone @
+PlayerDisabledBookMsg: "\xa7cSiamo spiacenti ma la modifica del libro del giocatore risulta disabilitata su questo server!"
+PlayerKickMsgFishing: "\xa7cAuto Clicker Fishing non permessa in questo server!"
+PlayerKickMsgFishMod: "\xa7cAttenzione! sembra che tu stia usando un AutoFish\
+  \ Mod...  Per favore cambia la frequenza con cui stai pescando per evitare di essere kickato!"
+PlayerSwimExploitMsg: "\xa7cQuesto villager risulta occupato a nuotare invece che commerciare con te\
+  \ ora!"
+PlayerCMIShulkerNest: "\xa7cSiamo spiacenti, ma non puoi mettere una shulker in un altra shulker!"
+PlayerDisabledHorseChestMsg: "\xa7cSiamo spiacenti, ma le chests su cavalli, lama, muli etc sono\
+  \ disabilitate!"
+PlayerNearbyNotification: rilevato un exploit nelle vicinanze ~prot~
+PlayerNetherBlock: "\xa7cScusa §b ~name~ §e ma i giocatori non possono andare sopra il nether!"
+StaffMsgDropperExploit: Rilevato un hopper/dropper loop exploit e quindi ora e stato rimosso @
+StaffMsgSpawnerReset: un ~type~ spawner resettato ad uno spawner di maiali per §b ~name~ §e @
+StaffMsgCreativeBlock: §b ~name~ §e rimossa la possibilita di caricare un oggetto illegale dalla creativa.
+StaffMsgNetherBlock: §b ~name~ §e rimossa la possibilita di accedere sopra il nether @
+StaffMsgNetherFix: §b ~name~ §e teletrasportato sotto il nether @
+StaffMsgBookRemoved: '§e Rimosso un libro scrivibile dal giocatore §b ~name~ §e motivo il libro
+  risulta disabilitato!'
+StaffProtectionToggleMsg: '§e La protezione ~protection~ risulta tornata in ~status~ da§b ~name~ §e'
+StaffInvalidProtectionMsg: "\xa7cE necessario fornire un nome di protezione valido per tali valori\
+  \ a:"
+StaffOptionUpdated: "\xa7aOpzione aggiornata con successo!"
+StaffSingleWordsOnly: "\xa7cQuesta protezione non supporta le parole multiple!"
+StaffStringUpdated: "\xa7aValore aggiornato alla stringa ~value~"
+StaffEnchantBypass: "\xa7cFare click tasto sinistro del mouse sull elemento in mano\
+  \ per EnchantedItemWhitelist,clic sinistro con niente in mano \
+  \ ."
+StaffEnchantBypassCancel: "\xa7cEnchantedItemWhitelist DISABILITATO."
+StaffEnchantBypassAdded: "\xa7aAggiunto ~itemdata~ in EnchantedItemWhitelist!"
+StaffSpamFishingNotice: "\xa7a~player~ sta spammando la pesca! ~casts~ casts senza 2\
+  \ secondi! @"
+StaffBadShulkerRemoved: Rimossa shulker hackerata con oggetti eccessivi (~size~) da §b ~name~ §e @
+StaffBadShulkerInWorld: '§e Rimossa shulker droppata con oggetti eccessivi
+   (~size~) dal mondo: @'
+IllegalEnchantLevel: "\xa7aFixato Livello di incantamento ~enchant~.(~lvl~) sull ~item~ trovato\
+  \ sul giocatore: ~player~"
+IllegalEnchantType: "\xa7aNon riesco a fixare il livello di incantamento ~enchant~.(~lvl~) sull ~item~ trovato\
+  \ sul giocatore: ~player~ incantamento non valido per questo tipo di oggetto!"

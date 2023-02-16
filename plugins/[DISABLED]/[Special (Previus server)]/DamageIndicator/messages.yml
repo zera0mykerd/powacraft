@@ -1,0 +1,18 @@
+config-version: 2
+
+no-permission: "&4Accesso negato al comando!"
+player-required: "&cIl comando dovrebbe eseguirlo un giocatore."
+
+command:
+  help:
+    - "&8&m*]----------[*&r &6&lPowa&e&lIndicator &8&m*]----------[*&r"
+    - "&e/damageindicator help&f -&6 controlla la pagina di aiuto"
+    - "&e/damageindicator toggle <on/off>&f -&6 attiva o disattiva idicatore di danno per client"
+    - "&e/damageindicator reload&f -&6 Ricarica il plugin comprese le traduzioni"
+    - "&8&m*]--------------------------------------[*&r"
+  toggle:
+    enable: "&2&lPowaIndicator &a&odisplays abilitato!"
+    disable: "&4&lPowaIndicator &c&odisplays disabilitato!"
+  reload: "&6&nRicaricato con successo il plugin!"
+
+health: " &c❤"

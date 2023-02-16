@@ -1,0 +1,23 @@
+{
+  "d1c1f158-c05e-3c1f-a7d6-f2135738cc75": {
+    "factionId": "0",
+    "role": "NORMAL",
+    "title": "",
+    "power": 0.94198,
+    "powerBoost": 0.0,
+    "lastPowerUpdateTime": 1650104372955,
+    "lastLoginTime": 1650104372955,
+    "chatMode": "PUBLIC",
+    "ignoreAllianceChat": false,
+    "id": "d1c1f158-c05e-3c1f-a7d6-f2135738cc75",
+    "name": "_ZERA_",
+    "monitorJoins": false,
+    "spyingChat": false,
+    "showScoreboard": false,
+    "warmupTask": 0,
+    "isAdminBypassing": false,
+    "kills": 0,
+    "deaths": 9,
+    "willAutoLeave": true
+  }
+}
