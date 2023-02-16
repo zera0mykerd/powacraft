@@ -1,0 +1,200 @@
+﻿#Stampa tutti i pacchetti inviati da un giocatore e il loro valori come interi, oggetti, stringhe etc..
+debug-mode: false
+#Stampa info sul limite dei pacchetti raggiunti etc. - stampa tutti i log! Se vuoi vedere tutte le info sul limite dei pacchetti, giocatori cacciati etc - abilitalo.
+print-everything: true
+optimize-fps:
+#nasconderà i blocchi candenti come la sabbia - sistema veramente gli fps
+  sand: true
+  #nasconderà i blocchi candenti come la tnt - molto buono per le castle mod, survival
+  tnt: true
+  #nasconderà i mob spawner, non è raccomandato per le modalità survival, easyhc etc. - se i mob sono abilitati sul tuo server NON attivare questa modalità
+  mobs: false
+#se ci sono nuovi valori disponibili per il config, il plugin si potrà occupare di cambiarlo a old_config.yml e crearne uno nuovo??
+replace-to-old: false
+redstone:
+  enabled: true
+  #max powered redstones per chunk
+  limit-per-chunk: 50
+  #max powered redstones per world
+  limit-per-world: 450
+anti-run-commands:
+  #replace it with "/plot" or something if you just want to block /plot commands when holding book
+  #"*" blocks all commands
+  blocked-commands:
+    - "*"
+  #bypassed/whitelisted commands - when you use "*" in blocked commands and "/ah" is in whitelisted-commands players will be able to execute "/ah" command
+  whitelisted-commands:
+    - "/auctionhouse"
+    - "/ah"
+  #you only need it enabled when your version is 1.8-1.8.3 or your ALL players have creative gamemode
+  enabled: true
+nbthelper:
+  enabled: true
+  block-address-if-invalid: true
+  check-shulker-boxes: true
+  #for italian, deutsch, china etc. servers, for e.g. polish server - the 340 is enough and max limit.
+  page-length-limit: 502
+  #block firework exploits, thats the better way =( just removing the nbt data from firework item instead of checking it
+  remove-firework-data: true
+anti-uuid-spoof:
+  enabled: false
+logged-from-another-location:
+  block: true
+hacked-items:
+  #if you are using MyItems plugin or AdvancedEnchantments please disable this option.
+  block: true
+  #block too big enchantments (over-enchanted items) like sharpness, efficiency lvl 9999 (or just more than max_level - >5)
+  #it changes the level of enchantment to max level. for example if sharpness has 9999 level it will be changed to max_level (which is the 5 for e.g sharpness).
+  block-over-enchanted-items: true
+sign-exploit:
+  block: true
+world-edit-exploit:
+  block: true
+block-place-listener: true #se usi uno spigot 1.13 disattivalo, potrebbe causare errori in console
+chunk-cleaner: true
+ping:
+  enabled: false
+  limit: 1200 #Se il giocatore farà più di 1200 di ping verrà cacciato
+  check-tps-before: true #controlla i tps prima di cacciare qualcuno, quando il server lagga nessuno verrà cacciato
+too-many-items:
+  enabled: false
+  limit: 1000 #se ci sono più di 1000 oggetti droppati sul pavimento verranno eliminati
+arm-animation:
+  enabled: true
+  timestamp: 650 #in millisecondi (1000 = 1 secondo in 1.10-1.13 è automaticamente disabilitato poichè il server aggiunge automaticamente questa funzione)
+block-payload-book-edit:
+  enabled: true
+  block-fully: false #bloccherà la modifica/firma del libro senza controllare gli NBT
+  deserialize: true #se vuoi rendere i giocatori in grado di modificare e firmare i libri cambia block-fully in false
+window-click:
+  advanced-deserialization: true
+  max-similar-pages: 10
+  #checking and finding similar windowclick packets
+  #when player sends the same windowclick packet 50 times (each space between packets was smaller than 0.5second)
+  #he will be just kicked. useful feature if someone send spam packets
+  check-last-packet: true
+invalid-chars:
+#blocca i caratteri invalidi (oltre quelli inglesi etc. (es. cinesi, più grandi di un bit)
+  enabled: true
+  cancel-only-when-count-bigger-than: 20
+  #il plugin skipperà questi caratteri.. (non sono controllati)
+  #add here china chars (if you allow china people) or german if you allow german people
+  #you can remove 'X', it's here just for example
+  #remember to use 'someChar' instead of "someChar" !!
+  skipped:
+    - 'X'
+payload:
+  register-limit: 13 #limita per 60 seconds, se eccede, il giocatore sarà cacciato
+packet-limitter:
+  ABILITIES: 250
+  ARM_ANIMATION: 80
+  BLOCK_DIG: 120
+  BLOCK_PLACE: 80
+  BLOCK_PLACE_BOOKS: 5
+  ENTITY_ACTION: 60
+  KEEP_ALIVE: 5
+  POSITION: 250
+  SET_CREATIVE_SLOT: 200
+  SET_CREATIVE_SLOT_WRONG: 1
+  TAB_COMPLETE: 50
+  UPDATE_SIGN: 8
+  USE_ENTITY: 80
+  USE_ITEM: 80
+  WINDOW_CLICK: 80
+  WINDOW_CLICK_WRONG: 15
+block:
+  big-position: true #per i server creative/vanilla
+  fully-book: false #se il giocatore clicca sul libro verrà cacciato (senza controllare gli NBT) (il libro potrebbe avere grandi NBT, è usato per far laggare i server)
+  hopper-creative-crasher: false
+  buffer-overflow: true
+  #caccia i giocatori se provano a usare forge o wdl
+  wdl: true #world downloader
+  wdl-bypass:
+    "yooniks"
+  forge: true #forge mod
+  forge-bypass:
+    "yooniks"
+  #labymod
+  lmc: false
+  lmc-bypass:
+    "yooniks"
+  #liteloader mod
+  liteloader: false
+  liteloader-bypass:
+    "yooniks"
+  proxy: true #se il canale contiene un proxy - il server caccierà il giocatore (il proxy è qualcosa per far laggare/crashare il server, e alcuni inviano pluginmessage al canale 'proxy')
+  #if player has 30 slots in opened inventory and he tries to click at 31 slot - the event is cancelled. (popular exploit)
+  too-big-slot: true  #if player has 30 slots in opened inventory and he tries to click at 31 slot - the event is cancelled. (popular exploit)
+#anti proxy/vpn - SE LO USI NEL BUNGEECORD E NELLO SPIGOT - PER FAVORE RIMUOVILO DA BUNGEECORD E LASCIALO SU SPIGOT!!!
+bad-ip-checkers:
+  ipintel:
+    timeout: 2500
+    enabled: true
+    query: "http://www.shroomery.org/ythan/proxycheck.php?ip={ADDRESS}"
+    result: "Y"
+    must-equal: false
+    limitable: false
+  stopforumspam:
+    timeout: 2500
+    enabled: true
+    query: "http://www.stopforumspam.com/api?ip={ADDRESS}"
+    result: "<appears>yes</appears>"
+    must-equal: false
+    limitable: false
+  ipapi:
+    timeout: 3000
+    #cambialo a true SOLO se hai configurato a "allowed-countries" - altrimenti tutti i giocatori non puliti saranno cacciati
+    enabled: false
+    limitable: true
+    #limitato per un minuto - se raggiunge il limite - i giocatori avranno l'accesso a entrare senza il controllo se loro usano una vps (solo per un minuto)
+    limit: 147
+    #cambialo nella tua nazione..
+    #list of all countries: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+    allowed-countries:
+      - "Poland"
+antibot:
+  #disable all features without setting everything to false, just one option!
+  #vpn/proxy checking, channel-verification,two-step-verificatin etc. will be set to false automatically!
+  disable-all-features: false
+  #if nickname starts with (e.g) "MCStorm" plugin will disconnect a player
+  check-nicknames:
+    enabled: true
+    blocked:
+      - "mcstorm"
+      - "cproxy"
+  last-name-length-checker:
+    enabled: true
+    sensibility: 4
+  #se ci sono più di 3 giocatori con lo stesso nome (es 1723162yooniks 12732173yooniks etc, o yooniks81273172, yooniks1273127312) la prossima connessione non verrà effettuata.
+  name-similarity-checker:
+    enabled: true
+    start: 0
+    end: 3
+    max-similar-names: 4
+  connection-throttle:
+    enabled: true
+    #15 secondi in millisecondi
+    delay: 15000
+  #metodo buono per le lobby ma potrebbe cacciare giocatori veri
+  #già testato con i bot - blocca bene
+  #se caccia giocatori veri molto spesso (o sempre) per favore, disabilitalo, probabilmente il tuo server usa un altro payload per ottenere la versione del server e il server è 1.8, 1.9, 1.10, 1.12 e 1.13
+  channel-verification:
+    enabled: true
+    #puoi cambiarlo in false se caccia giocatori veri potranno rientrare
+    block: false
+    #block account on 10 minutes if "block" is switched to true
+    block-minutes: 10
+  max-accounts-per-ip:
+     enabled: true
+     amount: 2 #se ci sono più giocatori connessi nel server con lo stesso ip la prossima connessionve verrà rifiutata
+  #se il giocatore è nuovo deve rientrare una seconda volta sul server poichè verrà cacciato con la motivazione "per favore, unisciti nuovamente"
+  two-step-verification: true
+blocked-commands:
+  - "/plugins"
+  - "/bukkit:pl"
+  - "/bukkit:plugins"
+  - "/version"
+  - "/ver"
+  - "/bukkit:version"
+  - "//calc"
+  - "//solve"

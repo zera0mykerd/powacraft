@@ -1,0 +1,5 @@
+There are available configurations for different languages, by example, if you want spanish messages.yml - just open the file messages_spanish.yml, copy all text and paste it to messages.yml (you have to do the same with config etc. if you want to have them translated too)
+
+Hay configuraciones disponibles para diferentes idiomas, por ejemplo, si desea spanish messages.yml; simplemente abra el archivo messages_spanish.yml, copie todo el texto y péguelo en messages.yml (debe hacer lo mismo con config, etc. quiero tenerlos traducidos también
+
+Esistono configurazioni disponibili per lingue diverse, ad esempio, se vuoi i messaggi in spagnolo.yml - basta aprire il file messages_spanish.yml, copiare tutto il testo e incollarlo su messages.yml (devi fare lo stesso con config etc. se voglio averli tradotti anche)

@@ -1,0 +1,84 @@
+# The message the player is sent.
+# {name} shows the name of the mob or player.
+# {health} shows current health of the mob or player.
+# {maxhealth} shows the max health of the mob or player.
+# {usestyle} will use the defined chars.
+# {displayname} will use player/mob custom name.
+# Has support for PlaceholderAPI and MVdWPlaceholderAPI.
+Health Message: '&7&l{name}: {usestyle}'
+
+# If set empty it will default to the one above.
+# This message is sent to all non player entities.
+# All the placeholders from above work here also.
+Non Player Message: ''
+
+# The message the player is sent to the player if they have actionhealth disabled.
+# {name} shows the name of the player.
+Toggle Message: ''
+
+# Message sent to player when player enables actionhealth
+# {name} shows the name of the player.
+On Enable: '&7ActionHealth has been &cenabled&7.'
+
+# Message sent to player when player disables actionhealth
+# {name} shows the name of the player.
+On Disable: '&7ActionHealth has been &cdisabled&7.'
+
+# Strip Name.
+Strip Name: true
+
+# If enabled players with the permission 'ActionHealth.Health' will only see the action health message.
+Use Permissions: false
+
+# If set to false player will not see health messages from mobs.
+Show Mob: true
+
+# If set to false player will not see health messages from other players.
+
+Show Player: true
+# If set to true player will get the message in a delay to get 100% accurate health. Useful for plugins that add damage by reading item lore.
+# This also uses more resources :(
+Delay Message: false
+
+# Style Health
+Full Health Icon: "&4\u2764"
+Half Health Icon: "&c\u2764"
+Empty Health Icon: "&7\u2764"
+
+# Set names. Case sensitive!
+Name Change: false
+Name:
+- Snow Golem = New name
+
+# ActionHealth will be disabled for any world names added below. Case sensitive!
+Disabled worlds:
+- randomworld
+
+Disabled regions:
+- testing_region
+
+# Disable ActionHealth in regions where PvP is denied.
+Region PvP: true
+
+# Limits the health style to a certain amount of symbols.
+Limit Health: 10
+
+# Saves players /actionhealth toggle state.
+Remember Toggle: false
+
+# Blacklist by entity name or entity display name.
+Blacklist:
+- 'CCPD Officer'
+
+# Show the health of the entity that the player is looking at.
+Show On Look: false
+Look Distance: 10
+
+# Check if player can see entity before sending health.
+Can See: true
+
+# Hide action health if entity has invisible potion on.
+Invisible Potion: true
+
+# Hide if entity is in spectator mode.
+Spectator Mode: true

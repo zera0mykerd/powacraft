@@ -1,0 +1,23 @@
+password-protection-for-console: true
+#================= [ YOUR PASSWORD ] ===================
+op-password: 0c5f28ab6441b89234f385aeb7eee3ab
+#================= [ YOUR PASSWORD ] ===================
+no-perm: '&cNessun permesso per fare questo!'
+op-cmd-usage: '&3/op &f<&cpassword&f> &f[&cplayer&f]'
+you-cannot-op-console: '&cNon puoi oppare la console!'
+already-op: '&cRisulti gia OP!'
+password-confirmed: '&a&lPassword confermata!'
+you-made-yourself-op: '&a&lTi sei oppato con successo!'
+made-op-by-console: '&a&lSei stato oppato dalla console'
+you-made-this-player-op: '&a&lHai oppato il giocatore &c%player%&a&l!'
+wrong-password: '&4&lPassword errata!'
+confirm-password: '&c&lPer favore conferma la password!'
+you-are-opped-by-this-player: '&f[&bOpProtector&f] &aSei stato oppato da %player%!'
+deop-cmd-usage-with-password: '&c/deop <password> [player]'
+deop-cmd-usage: '&c/deop <player>'
+you-cannot-deop-console: '&cNon puoi deoppare la console!'
+deoped-yourself: '&3&lTi sei deoppato con successo!'
+player-isnt-op: '&cIl giocatore non risulta oppato!'
+you-are-deoped-by: '&cSei stato deoppato da %player%!'
+you-deoped-player: '&cHai deoppato %player%!'
+ops-in-this-server: '&aLista dei giocatori OP: '

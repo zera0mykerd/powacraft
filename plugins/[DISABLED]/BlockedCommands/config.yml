@@ -1,0 +1,13 @@
+prefix: ''
+err_noPermission: Comando sconosciuto.
+blocked:
+- /help
+- /hey
+- /?
+- /plugins
+- /bukkit:plugins
+- /pl
+- /bukkit:pl
+- mv
+- mvtp
+- horizon

@@ -1,0 +1,60 @@
+max-entities-on-chunk: 1000
+sign-exploit-message: '&c你的告示牌有过多/非法的内容!'
+antibot:
+  limiter:
+    connection-throttle:
+      disconnect-message: '&c请等待&6{SECONDS}秒&c再加入服务器!'
+    similar:
+      names:
+        disconnect-message: '&c服务器中有过多与你ID相同的玩家，请修改你的ID再加入服务器!'
+    last-name-length:
+      disconnect-message: '&c现在有过多相似ID的玩家正在加入服务器，请等待10秒后再次加入。'
+  channel-verification:
+    broadcast: '&6服务器保护系统: &8%player% &c被判定为机器人，服务器保护系统已将此玩家屏蔽'
+    kickmessage: '&6服务器保护系统: &c你被服务器检测为机器人!请等待&610分钟&c后再加入服务器!&c如果这是一个错误的判断，请咨询服务器管理员'
+  double-join: "你已经通过了服务器保护系统认证，请再次加入服务器即可游玩。"
+  cannot-join-from-vpn: "检测到VPN/Proxy(可能是本地ip)"
+  too-big-ping: "你的延迟过高! (最高延迟:{LIMIT})"
+  too-many-names: "服务器中有很多跟你有相似ID的玩家，请更改你的ID再次加入服务器!"
+  too-many-accounts-per-ip: "你在使用相同IP的情况下在服务器内创建了超过%limit%个账号，请勿开小号游玩!"
+prefix: '&8[&6服务器保护系统&8] '
+too-many-items:
+  cleared:" 检测到服务器掉落物过多，服务器保护系统已进行清理..."
+payload:
+  deserialize:
+    too-fast-bedit: "检测到你过快编辑书本!"
+    invalid-book-data: "书本数据无效!"
+    jigsaw: "检测到使用Jigsaw客户端!"
+block:
+  proxy: "检测到你使用proxy，请删除后再次加入服务器!"
+  invalid-chars: "你刚刚发送了一些无效信息!"
+  wdl: "检测到你使用worlddownloader mod，请删除后再次加入服务器!"
+  bedit: "服务器已禁止玩家对书本的编辑!"
+  forge: "检测到你使用ForgeAPI，请删除后再次加入服务器!"
+  lmc: You cannot use labymod!
+  liteloader: You cannot use liteloader mod!
+connection-closer:
+  message-to-ops: '&c玩家%player% 刚刚试图让服务器崩溃!'
+  send-message-to-ops: true
+  send-message-to-players-with-perm: casualprotector.admin
+too-many-packets: 检测到你发送过多数据包到服务器!
+anti-logged-from-another-location: '&6[服务器保护系统] &c与你使用相同ID的玩家已存在于服务器中，请更换你的游戏ID!'
+hacked-items-kick-message: '&c请勿利用任何BUG刷取附魔/金额!'
+command:
+  no-permission: "你没有权限使用此指令! (casualprotector.command)"
+bypass-when-tps-under: 18.7
+anti-wolrd-edit-exploit-message: '&6[服务器保护系统] &c你发送的信息中含有服务器禁止的字符'
+uuid-spoof:
+  kick-message: '&c你的UUID无效，请禁用anti-uuid-spoof或使用高级帐户重新登录。'
+exploit:
+  commands-on-try:
+  - /ban %name% Exploiting
+  - /ban-ip %name% Exploiting
+hacked-items:
+  max-enchantment-level: 10
+  bypass-when-has-lore:
+  - bypassLoreLOLOLOLO, 当lore包含此文本时，黑客物品检测模块将跳过该项。该行检查为小写，因此使用“test”而不是“Test”"
+  max-itemmeta-size: 17384
+interact:
+  blocked-item: This item has invalid nbt data (such as too many nbt tags or banned
+    nbt tags)! You cannot interact with it.

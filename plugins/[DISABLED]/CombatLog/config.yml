@@ -1,0 +1,15 @@
+CombatLogTimeInSeconds: 30
+Messages:
+  CanLeave: '&4[&cAntiNabbo&4]&5> &aSei uscito dal combattimento.'
+  DiedWhileCombatLog: '&4[&cAntiNabbo&4]&5> &eSei morto per essere sloggato in combattimento.'
+  CannotTeleport: '&4[&cAntiNabbo&4]&5> &eNon puoi teletrasportarti in combattimento.'
+  CannotFly: '&4[&cAntiNabbo&4]&5> &eNon puoi volare in combattimento.'
+  NowInCombat: '&4[&cAntiNabbo&4]&5> &eOra sei in combattimento, Se slogghi morirai,
+    attendi 30 secondi, per info fai /combat.'
+  Offline: '&4[&cAntiNabbo&4]&5> &eIl giocatore risulta offline.'
+  IsNotCombatLogger: '&4[&cAntiNabbo&4]&5> &eIl giocatore non risulta in combattimento.'
+  YouAreNotCombatLogger: '&4[&cAntiNabbo&4]&5> &aTu ora non sei in combattimento.'
+  YouAreCombatLogger: '&4[&cAntiNabbo&4]&5> &eTu sei in combattimento per %variable%
+    secondi esatti.'
+  PlayerIsCombatLogger: '&4[&cAntiNabbo&4]&5> &e%namevariable% in combattimento per
+    %variable% secondi.'

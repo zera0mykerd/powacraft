@@ -1,0 +1,17 @@
+﻿antibot:
+  vpn: "&cNon puoi entrare con una vpn o un proxie!"
+  vpn-enabled: true
+  too-many-accounts: "&cHai più di %limit% account connessi con lo stesso ip!"
+  double-join: "&cSei verificato, rientra nel server!"
+  too-many-connections: "&cTroppi giocatori si stanno connettendo! Per favore, aspetta un po' di secondi.."
+  address-blocker-enabled: true
+  address-blocker-blocked: "&cQuesto indirizzo è bloccato!"
+  too-many-connections-enabled: true
+  #tra 1000 millisecondi
+  too-many-connections-limit: 5
+  too-many-connections-message: "&cCi sono troppe connessioni al secondo! Per favore, aspetta un momento e rientra! Probabilmente c'è un attacco bot."
+pluginmessage:
+  proxy: "&cPer favore, non usare proxy su questo server!"
+  wdl: "&cPer favore, non usare la world downloader!"
+  forge: "&cNon usare forge, per favore, usa una versione vanilla!"
+  register: "&cHai appena inviato troppi payloads col canale REGISTER prova a rientrare tra 60 secondi!"

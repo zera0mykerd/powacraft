@@ -1,0 +1,144 @@
+# --------------------------------------------------------------------------------------
+# Core in-game messages sent by ChatSentry can be modified here.
+
+# All lang entries support colorcodes (&[colorcode]) and hex values with "&#hexvalue" if you're running MC 1.16 or above. Easily find hex values with Google's color picker tool: https://www.google.com/search?q=color+picker
+
+# You can set ANY lang strings to "" to disable them. 
+# You can use '{PREFIX}' to insert the 'message-prefix' value any lang strings.
+# To insert line breaks, you can use '{NL}'.
+# --------------------------------------------------------------------------------------
+
+lang:
+
+  modules:
+
+    admin-notifier:
+      # For player names in block notify messages you can use:
+      # {PLAYER} - player username
+      # {PLAYER_DISPLAYNAME} - player display name with its original colors
+      # {PLAYER_DISPLAYNAME_STRIPPED} - player display name stripped of its original colors
+      # Below is the message sent to ops or players with the notify permission when ChatSentry blocks a message.
+
+      notify-msg: "&7(&b{VIOLATION_TYPE}&8 - &b{CONTEXT}&7) &c{PLAYER} &7typed: &8'&c&o{BLOCKED_CONTENT}&8' &7(Full message: &8'&c&o{ENTIRE_MESSAGE}&8'&7)"
+
+      # Under some circumstances some modules cannot display the exact content that was blocked. The message below will be used if the exact content cannot be displayed.
+      no-content-notify-msg: "&7(&b{VIOLATION_TYPE}&8 - &b{CONTEXT}&7) &c{PLAYER} &7typed: &8'&c&o{ENTIRE_MESSAGE}&8'"
+
+      # Under some circumstances some modules use custom formatted messages that doesn't apply to the usual format. The message below will be the format for the custom notifications.
+      custom-notify-msg: "&7(&b{VIOLATION_TYPE}&8 - &b{CONTEXT}&7) &7{NOTIFICATION}"
+
+      join-reminder: "{PREFIX} &bReminder: You currently have ChatSentry's violation notifications off. To turn them back on, type &d/kcs tvn"
+
+    anti-chat-flood:
+      trigger-repeated: "{PREFIX} &cPlease use less repeated letters/symbols in your messages to avoid chat flood."
+      trigger-too-long: "{PREFIX} &cYour message was blocked because floods chat; please lower your volume."
+
+    anti-command-prefix:
+      trigger: "{PREFIX} &cYou are not allowed to use prefixed commands from that module. Your command was ran without the prefix."
+
+    # Use actual new lines (- "text") instead of {NL}
+    anti-join-flood:
+      kick:
+      - "{PREFIX} &cToo many people are logging in!"
+      - "&fPlease wait a little before connecting again."
+
+    anti-parrot:
+      trigger: "{PREFIX} &cHey! Please don't copy other players' messages."
+
+    anti-statue-spambot:
+      trigger: "{PREFIX} &cHey! Please move before using chat; this is to prevent spam bots."
+
+    cap-limiter:
+      trigger: "{PREFIX} &cPlease lower your volume by using less CAPS in your messages."
+
+    chat-cooldown:
+      trigger: "{PREFIX} &cPlease slow your chat! Wait a bit before chatting again."
+
+    command-spy:
+      # For player names in commandspy format you can use:
+      # {PLAYER} - player username
+      # {PLAYER_DISPLAYNAME} - player display name with its original colors
+      # {PLAYER_DISPLAYNAME_STRIPPED} - player display name stripped of its original colors
+      format: "&7{PLAYER}&8: &7&o{COMMAND}"
+
+    link-and-ad-blocker:
+      trigger: "{PREFIX} &cMessage blocked: '&4{BLOCKED_CONTENT}&c' is potentially a disallowed link or ip."
+
+    spam-blocker:
+      trigger: "{PREFIX} &cPlease refrain from repeating the same (or similar) message again so quickly."
+
+    unicode-remover:
+      trigger: "{PREFIX} &cMessage blocked: use of ASCII lookalike unicode is not allowed."
+
+    word-and-phrase-filter:
+      trigger: "{PREFIX} &cMessage blocked: writing '&4{BLOCKED_CONTENT}&c' is not allowed."
+
+  misc:
+
+    message-prefix: "&6[&e&lChatSentry&6]"
+    no-permission: "{PREFIX} &cYou are not permitted to do that."
+    join-msg: "&3This server is guarded by &bChatSentry&3. Learn more at &bhttps://chatsentry.xyz&3."
+
+    # Block message header & footer: sent before/after any block messages from modules.
+    block-message-header: "&8&m----------------------------------------------------"
+    block-message-footer: "&8&m----------------------------------------------------"
+
+  commands:
+
+    commandspy:
+      toggled-on: "{PREFIX} &bYour command spy notifications have been turned &a&lon&b."
+      toggled-off: "{PREFIX} &bYour command spy notifications have been turned &c&loff&b."
+
+    tvn:
+      toggled-on: "{PREFIX} &bYour violation notifications have been turned &a&lon&b."
+      toggled-off: "{PREFIX} &bYour violation notifications have been turned &c&loff&b."
+
+    clearchat:
+      chat-cleared: "{PREFIX} &bChat has been cleared by {PLAYER_DISPLAYNAME}&b."
+      bypass-notif: "&7&oYour chat wasn't cleared because you are exempt."
+
+    togglechat:
+      chat-toggled-on: "{PREFIX} &bChat has been &aenabled&b by {PLAYER_DISPLAYNAME}&b."
+      chat-toggled-off: "{PREFIX} &bChat has been &cdisabled&b by {PLAYER_DISPLAYNAME}&b."
+      chat-is-toggled: "&cFailed to send message: chat is currently disabled."
+
+    warnings:
+      # For player names in the below messages you can use:
+      # {PLAYER} - player username
+      # {PLAYER_DISPLAYNAME} - player display name with its original colors
+      # {PLAYER_DISPLAYNAME_STRIPPED} - player display name stripped of its original colors
+      # {CURRENT_WARNS} - current general warning count
+      # {MAX_WARNS} - maximum general warning count
+      been-warned: "{PREFIX} &cYou've received a warning from &4{PLAYER}&c. &7(&c&l{CURRENT_WARNS}&8/&4&l{MAX_WARNS}&7)"
+      warnings-were-pardoned: "{PREFIX} &bYour admin-given warnings have been cleared by &3{PLAYER}&b."
+      warning-was-pardoned: "{PREFIX} &bOne of your admin-given warnings has been pardoned by &3{PLAYER}&b. &7(&c&l{CURRENT_WARNS}&8/&4&l{MAX_WARNS}&7)"
+
+      # For player names in the below messages you can use:
+      # {WARNER} - warner player username
+      # {WARNER_DISPLAYNAME} - warner player display name with its original colors
+      # {WARNER_DISPLAYNAME_STRIPPED} - warner player display name stripped of its original colors
+      # {WARNED} - warned player username
+      # {WARNED_DISPLAYNAME} - warned player display name with its original colors
+      # {WARNED_DISPLAYNAME_STRIPPED} - warned player display name stripped of its original colors
+      # {CURRENT_WARNS} - current general warning count
+      # {MAX_WARNS} - maximum general warning count
+      warned-broadcast-message: "{PREFIX} &4{WARNED_DISPLAYNAME} &cwas warned by &4{WARNER_DISPLAYNAME}&c. &7(&c&l{CURRENT_WARNS}&8/&4&l{MAX_WARNS}&7)"
+
+      # For player names in the below messages you can use:
+      # {PLAYER} - player username
+      # {CURRENT_WARNS} - current general warning count
+      # {MAX_WARNS} - maximum general warning count
+      warned-player: "{PREFIX} &3{PLAYER} &bhas successfully been warned. &7(&c&l{CURRENT_WARNS}&8/&4&l{MAX_WARNS}&7)"
+      all-warnings-pardoned: "{PREFIX} &bSuccessfully cleared &3{PLAYER}&b's admin-given warnings."
+      pardoned-warning: "{PREFIX} &bSuccessfully pardoned one of &3{PLAYER}&b's admin-given warnings. &7(&c&l{CURRENT_WARNS}&8/&4&l{MAX_WARNS}&7)"
+
+      # For player names in the below messages you can use:
+      # {PLAYER} - player username
+      # {MODULE_NAME} - name of the module
+      cleared-module-warnings: "{PREFIX} &bSuccessfully cleared &3{PLAYER}&b's {MODULE_NAME} warnings."
+      cleared-all-warnings: "{PREFIX} &bSuccessfully cleared all &3{PLAYER}&b's warnings."
+      module-warnings-were-cleared: "{PREFIX} &bYour {MODULE_NAME} warnings have been cleared by &3{PLAYER}&b."
+
+      # For player names in the below message you can use:
+      # {PLAYER} - player username
+      all-warnings-were-cleared: "{PREFIX} &bAll your warnings have been pardoned by &3{PLAYER}&b."

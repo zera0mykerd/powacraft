@@ -1,0 +1,31 @@
+# --------------------------------------------------------------------------------------
+# Command Spy:
+# Shows players real-time commands to admins. Commands can optionally be whitelisted or blacklisted. Does not require "process-commands" in the main config to be enabled to function.
+# To receive notifications, op or the permission: "chatsentry.commandspy" is required.
+# Players with op or the permissions: "chatsentry.commandspy" & "chatsentry.commandspy.toggle" can toggle their commandspy notifications off and on.
+# To make a player or group exempt from having their commands sent to players with command spy permission, add "chatsentry.commandspy.exempt" to their permissions.
+# --------------------------------------------------------------------------------------
+
+# If false, all commands will be "spied" on except for ones starting with the blacklisted ones. If true, only commands that start with any of the whitelisted ones will be "spied" on.
+use-command-whitelist: false
+
+# Commands that start with any of the ones on below on this list won't be sent to players with commandspy permission.
+# Set to "commandspy-command-blacklist: []" to have an empty list.
+# Make sure to put a "/" before any commands on the list below or the list will not work properly.
+# Only add base commands; don't add any command arguments. (spaces)
+commandspy-command-blacklist:
+- "/blacklistedcommand"
+
+# If use-command-whitelist is enabled, only commands that start with any of the words on the below list will be sent to players with commandspy permission.
+# Set to "commandspy-command-whitelist: []" to have an empty list.
+# Make sure to put a "/" before any commands on the list below or the list will not work properly.
+# Only add include base commands; don't add any command arguments. (spaces)
+commandspy-command-whitelist:
+- "/tell"
+- "/t"
+- "/msg"
+- "/w"
+- "/r"
+- "/whisper"
+- "/w"
+- "/pm"

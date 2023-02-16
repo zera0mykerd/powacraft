@@ -1,0 +1,8 @@
+Config:
+  banCommand: ban %player% cheating -s
+  viaVersionSupport: true
+  alertsPing: false
+  vlreset:
+    state: false
+    time: 300
+  LicenseKey: 'null'

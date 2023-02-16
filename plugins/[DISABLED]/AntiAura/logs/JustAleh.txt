@@ -1,0 +1,9 @@
+The player JustAleh failed the Accuracy check. The Accuracy check detected the person as using the Killaura hack.
+He/She hit more than the threshold at 2019/07/16 12:47:28.
+He/She had a NMS ping of 136
+The server TPS was at: 19.99804681538079
+
+If this is a false kick,
+It is recommended you go into the configuration and change the settings.
+Contact me if you need any help with that.
+Notes: 

@@ -1,0 +1,60 @@
+giu 09, 2020 4:44:40 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Loading...
+giu 09, 2020 4:44:40 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] You are using 4.5.0 protocolLib version.
+ Just quickly reminder: if you are running 1.14 or 1.15 - use the latest dev build (http://ci.dmulloy2.net/job/ProtocolLib%20Gradle/lastStableBuild/) if 1.8-1.13 - use the latest release (https://www.spigotmc.org/resources/protocollib.1997/download?version=241216) if 1.7 and below - use the 3.7.0 release (https://github.com/dmulloy2/ProtocolLib/releases/tag/3.7.0)
+giu 09, 2020 4:44:40 PM org.bukkit.plugin.PluginLogger log
+AVVERTENZA: [CasualProtector] We detected that you use ViaVersion! This plugin is changing some packets (for example: BlockPlacePacket) and some players can bypass anticrash if you will not remove the plugin, just informing. I'm going to create my own fork (version) of ViaVersion soon to fix these problems, it's the problem of ViaVersion, not CProtector, because of ViaVersion, Cprotector doesn't get real packets.
+giu 09, 2020 4:44:40 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Loaded in 92ms! 
+
+giu 09, 2020 4:44:40 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Please read readme.txt from the downloaded .zip file and the config.yml before using plugin, maybe you dont want to use some of features.
+giu 09, 2020 4:44:40 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Plugin created by yooniks, plugin for protecting servers against bots and hackers! For any bugs please send me private message on spigotmc or discord: yooniks#0289 | Our discord server: https://discord.gg/FgMFuWy
+giu 09, 2020 4:45:02 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Loaded 0 whitelisted players, 0 blocked addresses!
+giu 09, 2020 4:45:21 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:45:43 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:45:46 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:45:51 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:46:36 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:46:41 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:46:46 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:47:03 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:48:11 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:48:29 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:48:35 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:48:44 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:50:09 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:50:28 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:50:59 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:51:15 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:51:33 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Player _ZERA_ got kicked! (Tried to click in creativeInventory without creative mode!,) ping: 0, tps: 11,08 & 0,99
+giu 09, 2020 4:51:33 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Player _ZERA_ is trying to click in creative window (clientwindowcreativeaction) but he is not in creative gamemode! Cancelling=)
+giu 09, 2020 4:51:47 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] VPNListener -> _ZERA_'s address contains 127.0.0.1 ip! VpnListener doesn't check address info on localhost servers anyway. If that's not localhost server please make sure you have switched ip-forward & bungeecord to true in your spigot configuration.
+giu 09, 2020 4:51:50 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Player _ZERA_ got kicked! (Tried to click in creativeInventory without creative mode!,) ping: 0, tps: 11,08 & 0,99
+giu 09, 2020 4:51:50 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Player _ZERA_ is trying to click in creative window (clientwindowcreativeaction) but he is not in creative gamemode! Cancelling=)
+giu 09, 2020 4:52:09 PM org.bukkit.plugin.PluginLogger log
+INFORMAZIONI: [CasualProtector] Disabling CasualProtector v6.0-SNAPSHOT

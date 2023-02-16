@@ -1,0 +1,22 @@
+
+
+
+  ChatSentry : Release 4.3.1 Changelog
+
+
+  Check the wiki if you need help or to see detailed plugin information: https://wiki.chatsentry.xyz
+  Full changelogs including all previous logs can be found on the wiki: https://wiki.chatsentry.xyz/development/v4-changelog
+
+  Notable changes in each version are saved here for reference. If any actions are required from you after updating, they'll be stated here.
+
+
+
+Improvements:
+
+  * Performance improvements & optimizations
+
+Fixes:
+
+  * Fixed the Link & Ad Blocker under rare circumstances failing to skip to the next section of some sequences of input text and "detecting" sections that otherwise would be ignored
+
+  * Fixed potential ArrayIndexOutOfBoundsException related to the Link & Ad Blocker

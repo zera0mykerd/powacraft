@@ -1,0 +1,51 @@
+antibot:
+  v1:
+    broadcast: '&6CasualProtector: &8%player% &czostal uznany za bota, jego konto zostalo tymczasowo zablokowane!'
+    kickmessage: |-
+      &6CasualProtector: &cZostales uznany za bota! Twoje konto zostalo zablokowane na &610 minut
+      &cJezeli to nasz blad, przepraszamy! Nasz system tez moze sie mylic..
+  limiter:
+    last-name-length:
+      disconnect-message: '&cZbyt duzo graczy loguje sie w tym samym momencie! Poczekaj 10 sekund i wejdz od nowa.'
+    similar:
+      names:
+        disconnect-message: '&cNa serwerze jest juz zbyt duzo graczy z bardzo podobnym nickiem!'
+    connection-throttle:
+      disconnect-message: '&cPoczekaj &6{SECONDS}s &cprzed nastepnym polaczeniem!'
+  too-big-ping: 'Zbyt wysoki ping! (Max: {LIMIT})'
+  cannot-join-from-vpn: "Wykryto proxy lub vpn! (lub 127.0.0.1 ip) - jezeli to blad - skontaktuj sie z administracja i niech dodadza cie na liste bypass."
+  too-many-names: "Zbyt duzo graczy ma podobny nick! Sprobuj pozniej.."
+  double-join: "Zostales zweryfikowany! Wejdz ponownie na serwer."
+  too-many-accounts-per-ip: "Masz wiecej niz %limit% kont na ten sam adres ip!"
+sign-exploit-message: '&cTwoja tabliczka ma zbyt duzo znakow!'
+uuid-spoof:
+  kick-message: '&cTwoje UUID jest nieprawidlowe (inne niz te z premium-konta mojang)! Zaloguj sie ponownie z konta premium.'
+bypass-when-tps-under: 18.7
+exploit:
+  commands-on-try:
+  - /ban %name% Proba crashu
+  - /ban-ip %name% Proba crashu
+block:
+  forge: Nie mozesz uzywac forge!
+  wdl: Nie mozesz uzywac worldownloader moda!
+  bedit: Nie mozesz edytowac ksiazki!
+  invalid-chars: "Uzywasz nieprawidlowych znakow! Uzywaj tylko polskich znakow!"
+  proxy: "Wykryto proxy! (kanal)"
+connection-closer:
+  message-to-ops: '&cGracz %player% probowal zlagowac serwer!'
+  send-message-to-ops: false
+too-many-packets: "Wysylasz zbyt duzo pakietow, lag lub exploit?"
+payload:
+  deserialize:
+    jigsaw: Wykryto jigsawa!
+    invalid-book-data: Nieprawdliwe dane ksiazki!
+    too-fast-bedit: Zbyt szybko edytujesz ksiazke!
+anti-wolrd-edit-exploit-message: '&6[CasualProtector] &cTwoja wiadomosc zawiera niedozwolone znaki!'
+command:
+  no-permission: Nie masz uprawnien! (casualprotector.command)
+anti-logged-from-another-location: '&6[CasualProtector] &cGracz z identycznym nickiem gra juz na serwerze!'
+too-many-items:
+  cleared: Na ziemi bylo zbyt duzo itemow, usunieto je aby zoptymalizowac rozgrywke!
+max-entities-on-chunk: 1000
+hacked-items-kick-message: '&cZhackowane itemy nie sa dozwolone! Zbyt duzy enchant lub ilosc!'
+prefix: '&8[&6CasualProtector&8] '

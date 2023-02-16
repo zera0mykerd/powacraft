@@ -1,0 +1,4 @@
+# ChatSentry's persistent player-related data is stored here.
+commandspy-toggled-off-uuids: []
+violation-notifications-toggled-off-uuids: []
+show-kixmc-msg-to-ops-on-join: true

@@ -1,0 +1,111 @@
+#The Message that will be shown when a player is not allowed to join the Server!
+KickMessages:
+  BlackListed:
+    - "&2&l[&aAntiBot&2&l] &e> &d Sei stato kickato!"
+    - ""
+    - "&6Motivo: Sei nella BlackList!"
+  Proxy:
+    - "&2&l[&aAntiBot&2&l] &e> &d Sei stato kickato!"
+    - ""
+    - "&6Motivo: Proxy rilevato!"
+  NotPinged:
+    - "&2&l[&aAntiBot&2&l] &e> &d Sei stato kickato!"
+    - ""
+    - "&6Motivo: Per favore aggiungi il server alla tua lista!"
+  TooMuchPlayers:
+    - "&2&l[&aAntiBot&2&l] &e> &d Sei stato kickato!"
+    - ""
+    - "&6Motivo: Troppi giocatori si connettono allo stesso momento!"
+  AlreadyOnline:
+    - "&2&l[&aAntiBot&2&l] &e> &d Sei stato kickato!"
+    - ""
+    - "&6Motivo: Giocatore risulta gia online!"
+  TooMuchIPs:
+    - "&2&l[&aAntiBot&2&l] &e> &d Sei stato kickato!"
+    - ""
+    - "&6Motivo: Troppi giocatori sono loggati!"
+  TPSOverload:
+    - "&2&l[&aAntiBot&2&l] &e> &d Sei stato kickato!"
+    - ""
+    - "&6Motivo: Il server sta laggando e attendere qualche minuto!"
+#The Messages that will be shown in the ActionBar when the Server is getting Botted!
+AdminAlert:
+  Blacklisted: "&6%player% &7[%ip%] ha provato ad entrare. &e(Blacklisted)"
+  NotPinged: "&6%player% &7[%ip%] ha provato ad entrare. &e(No-Serverlist)"
+  Proxy: "&6%player% &7[%ip%] ha provato ad entrare. &e(Proxy)"
+  MaxIPs: "&6%player% &7[%ip%] connesso %value% volte con questo IP. &e(Multi-IP)"
+  TooMuchPlayers: "Tanti di questi %value% giocatori si sono connessi una volta. &e(%player% [%ip%])"
+  DoubleAccount: "&6%player% &7[%ip%] connesso con &6%other% &7[%otherip%]. &e(Multi-IP)"
+  Whitelisted: "&6Il giocatore %player% risulta ora aggiunto alla WhiteList automaticamente!"
+  AlreadyOnline: "&6%player% &7[%ip%] ha provato a connettersi mentre era gia online"
+  TPSOverload: "&6%player% &7[%ip%] ha provato a connettersi mentre il server era in overload! &7(TPS: &9%tps%&7)"
+  
+  
+ProxySettings:
+  #Proxy Percent buggy
+  ProxyMax: 70 
+  PercentCheck: false
+  ProxyCheck: true
+
+#Server has to be pinged (added to the serverlist)  
+PingSettings:
+  PingCheck: true
+  
+#MultiIP Blocking  
+MaxIPSettings:
+  MaxIPCheck: true
+  MaxIPs: 4
+  
+#How much players per second able to join  
+MaxPlayerSettings:
+  MaxPlayerCheck: true
+  PlayersPerSec: 10
+
+#Connect to IPBlacklist to detect Proxys
+BlackListSettings:
+  BlacklistGeneral: true
+  Blacklist1: true
+  Blacklist2: true
+  Blacklist3: true
+  
+#Check if a player with the same name is already online
+AlreadyOnlineSettings:
+  AlreadyOnlineCheck: true
+  
+#Settings if a Player connect with a second account.
+DoubleAccountSettings:
+  DoubleAccountChecking: true
+  
+#Blocking Players if the server is overloaded
+TPSSettings:
+  TPSChecking: true
+  MinTPS: 17.0
+  
+#The Messages that will be shown in the Chat!
+NoPermission: "Nessun permesso!"
+WhitelistAdded: "Il giocatore %player% risulta ora aggiunto alla WhiteList!"
+WhitelistRemoved: "Il giocatore %player% risulta ora rimosso dalla WhiteList!"
+BlacklistAdded: "Il giocatore %player% risulta ora aggiunto alla BlackList!"
+BlacklistRemoved: "Il giocatore %player% risulta ora rimosso dalla BlackList!"
+AlreadyOnWhitelist: "Il giocatore %player% risulta gia in WhiteList!"
+NotOnWhitelist: "Il giocatore %player% non risulta in WhiteList!"
+AlreadyOnBlacklist: "Il giocatore %player% risulta gia in BlackList!"
+NotOnBlacklist: "Il giocatore %player% non risulta in BlackList!"
+ForPlayersOnly: "Non puoi eseguire questo comando in console!"
+ToggleBotMessageOn: "Ora ricevi gli Bot-Messages!"
+ToggleBotMessageOff: "Ora non ricevi gli Bot-Messages!"
+PluginReloaded: "Plugin ricaricato con successo!"
+PlayerNotOnline: "Giocatore non online!"
+
+
+General:
+  RestartOnError: true
+  Log: false
+  AutoWhitelist: true
+  DetailsOnStart: false
+  Warmup:
+    Warmup: true
+    WarmupTime: 120
+  Debug: false
+#The time in Minutes
+  AutoWhitelistTime: 1

@@ -1,0 +1,2 @@
+Kauri;flagged:java.lang.Integer:138
+Kauri;banned:java.lang.Integer:0

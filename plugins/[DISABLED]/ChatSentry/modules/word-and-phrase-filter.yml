@@ -1,0 +1,72 @@
+# --------------------------------------------------------------------------------------
+# Intelligent Word & Phrase Filter:
+# Hyper intelligently detects swears configured blocked words or phrases (and words/phrases similar to those on the list) from being said in chat, commands, signs, anvils, and books (additional check contexts can be disabled).
+# Bypass permission: "chatsentry.wordandphrasefilter.bypass"
+# --------------------------------------------------------------------------------------
+
+# If "process-commands" is true in config.yml, this module will filter through all commands (apart from ignored commands on the list below) (of players without bypass permission or op)
+# If "process-signs" is true in config.yml, this module will filter through text written on signs (of players without bypass permission or op)
+# If "process-anvils" is true in config.yml, this module will filter through items renamed in anvils (of players without bypass permission or op)
+# If "process-books" is true in config.yml, this module will filter through writing in books (of players without bypass permission or op)
+
+# To block variants and attempts to bypass the filter, the module will check for similar words & phrases that are on the above list in players messages and commands.
+# The value below is how similar other words/phrases must be to a word/phrase on the blacklist to be considered an attempt to exploit / bypass the filter.
+# 1.0 = exactly as one of the phrases on the list (excluding character case)
+# 0.0 = not exact (this eliminates the purpose of the similarity checker)
+block-similarity-threshold: 0.84
+
+# When enabled, the filter will, based off the below charset process lookalike numbers and symbols as letters to detect players substituting letters with numbers numbers to bypass the filter. Ex. @ = A, # = H, 1 = I, 3 = E, etc.
+substitution-intelligence: true
+
+# Below is the substitutions the plugin will process. Please note that adding excessive amounts of substitutions will raise false positive rates. For the best results, it's recommended to try and keep this list pretty short and around or under ~12 substitutions.
+substitution-intelligence-charset:
+- "1 (->) I"
+- "2 (->) R"
+- "3 (->) E"
+- "4 (->) A"
+- "@ (->) A"
+- "< (->) C"
+- "# (->) H"
+- "$ (->) S"
+- "+ (->) T"
+- "( (->) C"
+- "{ (->) C"
+- "| (->) L"
+
+# When enabled, the filter will scan for existing commands from other plugins and allow them to go through, even if they are falsely detected due to being similar to a blocked word
+# Keeping this enabled is highly recommended, as it can prevent a lot of false positives depending on how many commands your server has.
+# Note that this option will only work if "process-commands" is true in config.yml
+ignore-detected-registered-commands: true
+
+# Below is the blacklist of words & phrases that will be blocked from being said in chat & commands.
+# Character case in the below list does not matter. Case variants are automatically checked by the plugin on all entries.
+
+# Set to "blocked-words-and-phrases: []" to have an empty list.
+
+# For preconfigured (English) lists of swears, slurs, etc. see here:
+# https://wiki.chatsentry.xyz/misc-info/preset-word-lists
+
+# Block list guide: HIGHLY RECOMMENDED TO READ TO PREVENT FALSE DETECTION ISSUES, OR USE THE PRESET LISTS !
+# https://wiki.chatsentry.xyz/word-and-phrase-filter-block-list-guide
+
+blocked-words-and-phrases:
+- "badword"
+- "anotherBlockedWord"
+- "a blocked phrase"
+- "exact::exact entry"
+- "exactcontains::exactcontains entry"
+
+# Below is the whitelist of words & phrases that will under all circumstances be ignored by the filter.
+# Since similar words/phrases to the blacklisted words/phrases are detected, the below list functions to fix the plugin not allowing valid but close matching words/phrases on entries you have no modifiers on.
+# Similarity checking is not active on these entries & character case does not matter.
+# Set to "whitelisted-words-and-phrases: []" to have an empty list.
+whitelisted-words-and-phrases:
+- "alwaysAllowThisWord"
+- "always allow this phrase"
+
+# IMPORTANT: The below list will only work if "process-commands" is true in config.yml
+# The below list is which commands (including all arguments) the module under all circumstances will not process.
+# Make sure to only include base commands; don't add any command arguments. (spaces)
+# Set to "whitelisted-commands: []" to have an empty list.
+whitelisted-commands:
+- "/exampleIgnoredCommand"

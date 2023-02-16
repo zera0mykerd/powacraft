@@ -1,0 +1,439 @@
+#Set UseAdvancedConfiguration to true to unlock all of the advanced strictness-based configuration options in config_advanced.yml.
+#By setting UseAdvancedConfiguration to true, you are telling AntiAura to ignore all strictness values (for example - Strictness: 6) in this configuration and instead use the advanced values in config_advanced.yml.
+#All other config values (not related to strictness) will still function if you enable this option.
+UseAdvancedConfiguration: false
+
+#If a person has been detected for hacking this many times, execute these commands.
+#Please visit this page for more information: https://www.spigotmc.org/resources/antiaura.1368/update?update=50139
+Violations:
+  #The command to be executed when a player is detected for any check.
+  #If you specify a kick from the check itself (e.g. add text to AngleCommand), KickCommand will be overwritten for that specific check.
+  #You may wish to use a command such as this: kick %PLAYER% %HACKNAME% is not allowed on this server!#broadcast %PLAYER% was kicked for %HACKNAME%! (%CHECKNAME%)
+  KickCommand: kick %PLAYER% Hack individuate %CHECKNAME% check!#broadcast %PLAYER% espulso per %CHECKNAME% check, usando %HACKNAME%!
+  #If this is true, all violation commands will be executed. For example, hack violations 6 = ALL commands before "6" will run.
+  #If this is false, only one command will be executed at a time. Setting this to false does NOT disable commands.
+  ExecuteAllCommands: true
+  #How much do you want to decrease violations per hour? 2 would make one violation decrease per half hour.
+  #This is only a rough estimate, as if a server is lagging significantly it may take longer due to slower ticking.
+  #If you don't want any violations to decrease per hour, set this value to 0.
+  ViolationDecreasePerHour: 1
+  #If a person has been detected for hacks the amount of times as the value below, the command will be executed.
+  #You can add new lines to this too! For example you could copy the line starting with "5", rename it to "10", and you'd have a new command at 10 violations!
+  2: kick %PLAYER% temporaneamente espulso per Hack!
+  5: kick %PLAYER% espulso per uso di %HACKNAME% hack %HACKAMOUNT% volte!
+
+
+Forcefield:
+
+  #The Consistency checks sample a number of hits and checks if they are too consistent within certain parameters.
+  Consistency:
+    #Enable the consistency check?
+    Enabled: true
+    HitPosition:
+      #How sensitive this check is when detecting players.
+      #9 is the most strict, and may flag players incorrectly.
+      #0 is the least strict, and probably won't detect anyone.
+      Strictness: 6
+    #This checks if all hits have similar head movement.
+    #This is fundamentally different than the HeadMove check, as HeadMove checks if they have TOO MUCH head movement. This simply checks for consistent head movement.
+    HeadMovementPerHit:
+      #How sensitive this check is when detecting players.
+      #9 is the most strict, and may flag players incorrectly.
+      #0 is the least strict, and probably won't detect anyone.
+      Strictness: 6
+      
+
+  Angle:
+    #Enable the blockage of clients hitting outside of their field of view?
+    Enabled: true
+    #How sensitive this check is when detecting players.
+    #9 is the most strict, and may flag players incorrectly.
+    #0 is the least strict, and probably won't detect anyone.
+    Strictness: 6
+
+  Reach:
+    #Block players hitting entities too far away?
+    Enabled: true
+    #How sensitive this check is when detecting players.
+    #9 is the most strict, and may flag players incorrectly.
+    #0 is the least strict, and probably won't detect anyone.
+    Strictness: 6
+
+  Occlusion:
+    #Block players from hitting entities through other entities or blocks?
+    Enabled: true
+    #How sensitive this check is when detecting players.
+    #9 is the most strict, and may flag players incorrectly.
+    #0 is the least strict, and probably won't detect anyone.
+    Strictness: 6
+
+  HeadMove:
+    #Enable the blockage of clients attacking during fast rotations?
+    Enabled: true
+    #How sensitive this check is when detecting players.
+    #9 is the most strict, and may flag players incorrectly.
+    #0 is the least strict, and probably won't detect anyone.
+    Strictness: 6
+    #A sub-section of the HeadMove check which cancels unlikely hits.
+    CancelMove:
+      #How sensitive this sub-check is when detecting players.
+      #9 is the most strict, and may flag players incorrectly.
+      #0 is the least strict, and probably won't detect anyone.
+      Strictness: 6
+
+  Position:
+    #Enable the position check?
+    #This checks for hits that are consistently positioned in exactly the same place on the target.
+    Enabled: true
+    #How sensitive this check is when detecting players.
+    #9 is the most strict, and may flag players incorrectly.
+    #0 is the least strict, and probably won't detect anyone.
+    Strictness: 6
+
+  Accuracy:
+    #Enable the accuracy check? This checks how many hits are on target.
+    #This does NOT check how close the cursor is to the hitbox of the enemy. It only checks for hits/misses. The angle check does that.
+    Enabled: true
+    #How sensitive this check is when detecting players.
+    #9 is the most strict, and may flag players incorrectly.
+    #0 is the least strict, and probably won't detect anyone.
+    Strictness: 6
+
+
+
+#Options to do with accounting for velocities (e.g. launchpads, pvp).
+VelocityAccounting:
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+
+#Blocks clients that click too fast.
+#Warning: This may catch and prevent the use of mouse macros and jitter clicking.
+FastClick:
+  #Enable FastClick blockage?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, it allows players 6 clicks per second (CPS).
+  #0 is the least strict, allowing 20 clicks per second.
+  #6 = 8CPS, 5 = 10CPS, 4 = 12CPS, etc. 
+  Strictness: 6
+
+
+
+#Block AutoBow/FastBow. Default settings can and will be fine for this.
+#This blocks NoSlowdown using bows too.
+#This is blocked as well as detected, so you could leave AutoBowCommand to blank and still have this feature work.
+AutoBow:
+  #Do you want to enable AutoBow blockage?
+  #This will temporarily block someone from using AutoBow until they stop using it.
+  Enable: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+
+
+#Blocks the AutoSoup hack.
+Soup:
+  #Do you want to enable anti-Autosoup?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+
+#Blocks map and tracer hacks. May cause a small amount of lag.
+Map:
+  #Do you want to enable the check (this ruins minimaps and tracers).
+  Enabled: true
+  #How strict this check is in hiding players and entities.
+  #Adjusting the strictness also adjusts how much performance this check uses.
+  #For example, a strictness of 9 would use more CPU, while a strictness of 0 would use less.
+  Strictness: 6
+  #This blocks ESP for tile entities, such as Chests (ChestESP) and hoppers.
+  TileESP:
+    #Enable the blockage of TileESP? 
+    Enabled: true
+    #How far away to hide tile entities?
+    #Increasing will cost slightly more performance.
+    Strictness: 6
+    #Enabling this will ensure that there is almost no way players will see the stone-to-tile transition.
+    #However this will show the tiles through thin (e.g. 1x1) walls, and will generally not hide them so well.
+    SuperLenientMode: false
+  #This will slightly impact your performance.
+  #It will block the X-Ray hack by hiding ores as stone.
+  XRay:
+    #Enable the blockage of X-Ray?
+    Enabled: false
+    #See advanced configuration more for X-Ray options.
+
+
+
+
+#The Anti-Knockback check. 
+Knockback:
+  #Do you want to enable AntiKnockback checking at all?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+
+
+#Some things about the plugin itself that are not related to any specific detection.
+Specifics:
+  #If this is enabled, players without AntiAura.command permission will not be able to use any commands.
+  CommandPermissions: false
+  #Don't change this. It will reset your whole config if you do.
+  version: 41
+  #Do you want to enable the AntiAura.bypass permission for admins not to be checked?
+  #This won't affect the AntiAura.debug or AntiAura.reload permission nodes.
+  EnablePermissions: false
+
+
+
+#Please keep in mind that the "criticals hack" on most clients simply jumps up and down to cause criticals like on a vanilla client.
+#This check aims to stop Criticals hacks which do MORE criticals than a normal client, and which try to FAKE criticals.
+#This isn't going to block clients which simply jump up and down.
+Criticals:
+  #Enable critical blocking?
+  Enabled: true
+  #Block hits where the player claims to be off the ground when they are not?
+  #This generally only blocks hits from "Packet" critical hack types on free clients such as Wurst.
+  #May not work on certain types of blocks (e.g. PVP on fences) due to ground checking difficulties.
+  BlockPacketCriticalHits: true
+  #Increase the threshold with a definite packet critical?
+  #If set to false it will only increase the threshold with likely criticals.
+  #Note that enabling this may cause the player to be detected twice with an attempted critical and a packet critical, causing a player to be detected much faster.
+  IncreaseThresholdWithPacketCriticals: true
+  #The decrease amount on a legitimate hit.
+  SafeHitDecrease: 2.0
+  #How many times should the player consistently attempt criticals before being detected?
+  Threshold: 8
+  #Command to execute when criticals is detected.
+  CriticalsCommand: # 
+  
+
+#Blocks players from eating food faster than normal.
+FastEat:
+  #Do you want to block hacked clients from being able to eat food quicker than normal?
+  Enabled: true
+  #The time, in seconds, that a player can consume food after last having consumed food.
+  Time: 1.5
+  #Block the player from eating if they are travelling at too high a speed (using NoSlowdown) while eating?
+  BlockIfSpeedTooHigh: true
+  #The maximum distance a player may have travelled recently to be allowed to eat the food.
+  #A value of 0.7 would probably suffice here however it is set to 1.4 to account for any latency or lag problems.
+  #Feel free to reduce to ~0.8.
+  MaxEatingTravelSpeed: 1.4
+  #How many times can a player attempt to use FastEat before being detected?
+  Threshold: 3
+  #How much the Threshold should decrease for each legitimate eating attempt.
+  SafeEatDecrease: 1.0
+  #Command to execute when FastEat is detected.
+  FastEatCommand: # 
+  
+
+#This check is generally only useful for cracked servers, as it's rarer for premium servers to receive bot attacks.
+Spambots:
+#This is a basic spambot-blockage thing to block spambots from running around on cracked servers.
+#Feel free to disable.
+  Captcha:
+    #Do you want to enable the CAPTCHA under a spambot attack?
+    #Till help to prevent spambots and such, by preventing actions if server is under a bot attack.
+    Enabled: false
+    #More options about this check can be found in the advanced configuration.
+
+
+#Blocks the step hack, where players instantly climb up blocks without jumping.
+#Should also block flight if they move up too fast, should also block HighJump, should also block spider.
+Step:
+  #Enable Step/HighJump/Spiider/Etc blockage?
+  #You must restart the server for changes of this value to take effect.
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+#This blocks any unexpected Y movement.
+#If a player goes upward unexpectedly without any blocks underneath them, this drags them down.
+Spider:
+  #Enable Spider blockage?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+ 
+
+
+#Checks the distance of player jumps.
+#When a player lands on a block, it checks the distance from the block the player jumped on to the block they are on now.
+#If it is too far, they are dragged back.
+Jump:
+  #Enable the jump check?
+  #The jump check will not check players who have a walk speed of 0.21 or above! (In Essentials, this is changed with the /speed command).
+  #Note with the Essentials speed command that the "speed values" are not the same as Minecraft's in-built walk speed values.
+  #For example the Essentials /speed 10 command will set the player to a walk speed of 1.0. /speed 1 will set the player to a walk speed of 0.2
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+
+
+#Block flight hacks?
+Flight:
+  #Enable fly checks?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+#This check blocks players from moving faster than normal and it also blocks Jesus and Sneak hacks (note that Jesus is also blocked by the Flight check).
+#The Speed check also passes information to the Reach check to allow Reach to block TP-Aura.
+#Disabling the Speed check will mean that TP-Aura will no longer be blocked by the Reach check.
+Speed:
+  #Enable Speedhack checks?
+  #WARNING: Disabling the Speed check takes away Speed data from other checks!
+  #Disabling this will make checks such as Reach and AntiKnockback work less effectively!
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+#This blocks teleportation hacks.
+#These are a bit like speed hacks, but trigger REAL TELEPORT EVENTS on the server. So Speed cannot block them.
+Teleport:
+  #Enable this check?
+  Enable: true
+  #More options for the Teleport check available in the advanced configuration.
+
+
+#Blocks FastPlace, a hack where players place blocks too fast.
+FastPlace:
+  #Enable blockage of this hack?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+#Blocks NoFall, a hack where players take no fall damage.
+#DistanceSpoof is also part of the NoFall check.
+NoFall:
+  #Enable blockage of this hack?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+#Blocks players from moving through blocks.
+Phase:
+  #Enable blockage Phase?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+
+#Blocks players placing blocks too fast.
+#Should block nuker, but it depends on the client.
+#Will also prevent players breaking blocks if using the "derp" hack.
+FastBreak:
+  #Enable blockage of this hack?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+
+#Blocks the NoSwing hack..
+NoSwing:
+  #Really wouldn't recommend you disable it. If you do, hackers can bypass AutoClicker, FastBreak, And a ton of other hacks.
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+#Block regeneration hack? This blocks clients from regenerating health really fast, and so being unkillable.
+#Please note that this now is a backup check for the MorePackets check. 
+#This check does not use packets, and so works by looking at the actual player health.
+Regen:
+  #Do you want to enable regeneration blocking?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+#This is the MorePackets check. It checks for packets used for hacks such as AntiFire, AntiPotion, and Regen!
+#Please note that this check only checks for one specific packet.
+#When I say "packets the client can send per second", I am referring to the amount of this specific packet type, not the amount of all packets.
+MorePackets:
+  #Enable the MorePackets check?
+  Enabled: true
+  #More options for this check can be found in the advanced configuration.
+
+
+#PotionSaver is a hack where, if a client has a positive potion (such as Speed) and stands still, the timer on the potion does not go down.
+#In short, this checks if the "Make potion go down" packet is not sent each second.
+PotionSaver:
+  #Enable the PotionSaver check?
+  Enabled: true
+  #How sensitive this check is when detecting players.
+  #9 is the most strict, and may flag players incorrectly.
+  #0 is the least strict, and probably won't detect anyone.
+  Strictness: 6
+
+#Block hacks using the Elytra?
+Elytra:
+  #Block players using Elytra from flying higher than they could usually?
+  #This goes down with a timer based on the optimum glide angle.
+  #So for example: If a player took off from a Y of 63, the next second they would have a max allowed Y of 62.
+  HeightBlockage: true
+  #Block players using Elytra travelling further than they could from their take-off position.
+  DistanceBlockage: true
+
+
+
+#This "Blocks" manual BowAimbot. There's no way to "detect" it, and hence no way to kick the player for it.
+BowAimbot:
+  #
+  #Let me explain how this works:
+  #
+  #You are changing the velocity of arrows that are shot from the player. 
+  #For example, a value of 1.1 would make the arrow shoot faster than on a normal server.
+  #Because the arrow has a different velocity than the hacked client expects, it makes the aiming marker useless.
+  #
+  ArrowVelocity: 1.2
+
+
+#The IllegalItem check blocks items with certain illegal parameters.
+#Items with disallowed parameters will be removed from the players' inventory.
+IllegalItem:
+  #Enable checking for illegal items?
+  Enabled: true
+  #More options about this check can be found in the advanced configuration.

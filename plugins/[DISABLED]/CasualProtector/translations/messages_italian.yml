@@ -1,0 +1,53 @@
+﻿antibot:
+  too-many-accounts-per-ip: Hai più di %limit% account su questo server con lo stesso ip!
+  cannot-join-from-vpn: VPN/Proxy trovati! (o ip locali)
+  too-big-ping: 'Ping troppo alto! (Massimo: {LIMIT})'
+  limiter:
+    last-name-length:
+      disconnect-message: '&cTroppi giocatori con lo stesso nome trovati.. Per favore,
+        aspetta 10 secondi e riprova a rientrare.'
+    connection-throttle:
+      disconnect-message: '&cPer favore, aspetta &6{SECONDS}s &cprima di rientrare!'
+    similar:
+      names:
+        disconnect-message: '&cSul server ci sono troppi giocatori col nickname simile!
+          Per favore, cambia il tuo nickname..'
+  double-join: Sei verificato, unisciti nuovamente!
+  too-many-names: Ci sono troppi giocatori con lo stesso nick! Cambia il tuo nickname e prova a rientrare!
+  channel-verification:
+    kickmessage: |-
+      &6CasualProtector: &cSei stato riconosciuto come bot! Il tuo account è stato bloccato per &610 minuti
+      &cSe è un errore scusami
+    broadcast: '&6CasualProtector: &8%player% &cè stato riconosciuto come bot e il suo
+      account è stato bloccato!'
+prefix: '&8[&6CasualProtector&8] '
+command:
+  no-permission: Non hai il permesso! (casualprotector.command)
+too-many-packets: Invii troppi pacchetti! Lag o exploit?
+block:
+  forge: Sei entrato con la forge!
+  wdl: Non puoi usare la worlddownloader!
+  proxy: Sei un utente con proxy?!
+  bedit: Non puoi modificare i libri!
+  invalid-chars: Hai scritto un messaggio non valido! Per favore, usa solo lettere inglesi..
+payload:
+  deserialize:
+    too-fast-bedit: Stai modificando un libro troppo velocemente!
+    invalid-book-data: Data del libro non valido!
+too-many-items:
+  cleared: Sul pavimento ci sono troppi oggetti! Ho rimosso tutto per ottimizzare il server :D
+connection-closer:
+  message-to-ops: '&cIl giocatore %player% ha provato a far crashare il server!'
+  send-message-to-ops: false
+exploit:
+  commands-on-try:
+ - /ban %name% Exploiting
+  - /ban-ip %name% Exploiting
+bypass-when-tps-under: 19.2
+max-entities-on-chunk: 1000
+anti-logged-from-another-location: '&6[CasualProtector] &cUn giocatore con questo nome è già online nel server!'
+hacked-items-kick-message: '&cGli oggetti presi dalle hack non sono ammessi nel server! Enchant o quantità
+  troppo alto.'
+anti-wolrd-edit-exploit-message: '&6[CasualProtector] &cIl tuo messaggio contiene
+  parole bannate!'
+sign-exploit-message: '&cLa linea del tuo cartello ha troppi caratteri!'

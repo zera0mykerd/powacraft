@@ -1,0 +1,52 @@
+# You can add as many languages as you want.
+# The language will change depending on the client language.
+# Supported Languages: https://minecraft.gamepedia.com/Language
+default: "en"
+
+# You can add as many languages as you want.
+langs:
+  en:
+    cleared: ""
+    reload: "&c&lCS: &aPlugin ricaricato con successo!"
+    help: |-
+      &aChatSentinel comandi:
+      &e/chatsentinel help &7- &bControlla la pagina di aiuto!
+      &e/chatsentinel reload &7- &bRicarica il plugin!
+    unknown_command: "&8&l[-&2&lPow&f&laCr&4&laft&8&l-] &6&l > &eComando inesistente."
+    no_permission: "&cAccesso negato al comando!"
+    blacklist_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oNon puoi scrivere '%message%'! (%warns%/%maxwarns%)"
+    caps_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oStai usando troppi caps!"
+    cooldown_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oAttendi %cooldown%s prima di scrivere!"
+    flood_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oNon puoi inviare messaggi troppo lunghi!"
+    syntax_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oSintassi disabilitata in questo server!"
+    filtered: "&6&l[&eAntiFlood&6&l] &0&l> &9&oQuesti caratteri non sono consentiti!"
+  es:
+    cleared: ""
+    reload: "&c&lCS: &aPlugin ricaricato con successo!"
+    help: |-
+      &aChatSentinel comandi:
+      &e/chatsentinel help &7- &bControlla la pagina di aiuto!
+      &e/chatsentinel reload &7- &bRicarica il plugin!
+    unknown_command: "&8&l[-&2&lPow&f&laCr&4&laft&8&l-] &6&l > &eComando inesistente."
+    no_permission: "&cAccesso negato al comando!"
+    blacklist_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oNon puoi scrivere '%message%'! (%warns%/%maxwarns%)"
+    caps_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oStai usando troppi caps!"
+    cooldown_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oAttendi %cooldown%s prima di scrivere!"
+    flood_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oNon puoi inviare messaggi troppo lunghi!"
+    syntax_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oSintassi disabilitata in questo server!"
+    filtered: "&6&l[&eAntiFlood&6&l] &0&l> &9&oQuesti caratteri non sono consentiti!"
+  pt-br:
+    cleared: ""
+    reload: "&c&lCS: &aPlugin ricaricato con successo!"
+    help: |-
+      &aChatSentinel comandi:
+      &e/chatsentinel help &7- &bControlla la pagina di aiuto!
+      &e/chatsentinel reload &7- &bRicarica il plugin!
+    unknown_command: "&8&l[-&2&lPow&f&laCr&4&laft&8&l-] &6&l > &eComando inesistente."
+    no_permission: "&cAccesso negato al comando!"
+    blacklist_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oNon puoi scrivere '%message%'! (%warns%/%maxwarns%)"
+    caps_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oStai usando troppi caps!"
+    cooldown_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oAttendi %cooldown%s prima di scrivere!"
+    flood_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oNon puoi inviare messaggi troppo lunghi!"
+    syntax_warn_message: "&6&l[&eAntiFlood&6&l] &0&l> &9&oSintassi disabilitata in questo server!"
+    filtered: "&6&l[&eAntiFlood&6&l] &0&l> &9&oQuesti caratteri non sono consentiti!"

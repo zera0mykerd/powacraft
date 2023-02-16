@@ -1,0 +1,18 @@
+antibot:
+  vpn: "&cDu kannst nicht mit Proxys/VPN joinen."
+  vpn-enabled: true
+  too-many-accounts: "&cDu hast mehr als %limit% Accounts auf dem Server mit der gleichen IP!"
+  double-join: "&cDu bist nun verifiziert, versuche es erneut."
+  #name-length-checker
+  too-many-connections: "&cZu viele Spieler loggen sich derzeit ein! Versuche es später erneut.."
+  address-blocker-enabled: true
+  address-blocker-blocked: "&cDie Addresse wurde blockiert."
+  too-many-connections-enabled: true
+  #between 1000 milliseconds
+  too-many-connections-limit: 5
+  too-many-connections-message: "&cEs gibt zu viele Verbindungen in 1 Sekunde! Bitte warte einen Moment und verbinde dich erneut! Es wurde ein Bot-Angriff entdeckt."
+pluginmessage:
+  proxy: "&cBitte, nutze keine Proxys!"
+  wdl: "&cBitte, nutze keinen Worlddownloader!"
+  forge: "&cBenutze nicht Forge, nutze bitte den normalen Client."
+  register: "&cDu hast zu viele Channel Register Payloads gesendet. Versuch es nach 60 Sekunden erneut!"

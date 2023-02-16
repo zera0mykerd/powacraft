@@ -1,0 +1,81 @@
+antibot:
+  too-many-accounts-per-ip: Du hast mehr als %limit% Accounts auf dem Server mit der gleichen IP!
+  cannot-join-from-vpn: '&6CProtector: &cVPN/Proxy (gebanntes Land/127.0.0.1 ip) erkannt!'
+  too-big-ping: '&bZu hohen Ping! (Max: {LIMIT})'
+  too-big-ping-bypass-permission: casualprotector.pingbypass
+  limiter:
+    last-name-length:
+      disconnect-message: '&6CProtector: &cZu viele Leute versuchen sich gerade zu verbinden. Bitte warte 10 Sekunden und versuche es erneut!'
+    connection-throttle:
+      disconnect-message: '&6CProtector: &cBitte warte &e{SECONDS}s &cSekunden bevor du dich erneut verbindest!'
+    similar:
+      names:
+        disconnect-message: '&6CProtector: &cAuf dem Server sind bereits zu viele Spieler
+          mit demselben Namen! Bitte ändere deinen Namen.'
+  double-join: Du bist nun verifiziert, bitte versuche es erneut.
+  banned-nickname: '&cDu kannst dich nicht mit dem Server verbinden..'
+  channel-verification:
+    kickmessage: |-
+      &6CasualProtector: &cDu wurdest als Bot erkannt! Dein Account wurde für &610 Minuten &cblockiert
+      &cFalls dies ein Fehler ist, entschuldigen wir uns dafür
+    broadcast: '&6CasualProtector: &8%player% &cwurde als Bot erkannt und sein
+      Account wurde vom Server blockiert!'
+prefix: '&8[&6CProtector&8] '
+command:
+  no-permission: Du hast keine Rechte! (casualprotector.command)
+too-many-packets: Du sendest zu viele Packete! Lag oder Exploit?
+too-many-similar-wc-packets: '&cDu hast zu viele WINDOW_CLICK Packete
+  in 0.5 Sekunden gesendet oder du hast öfter als 50 Mal auf dieselbe 
+  Position und denselben Gegenstand geklickt!'
+anti-logged-from-another-location: '&6[CasualProtector] &cDieser Spieler spielt bereits auf dem Server!'
+hacked-items-kick-message: '&cGehackte Items sind nicht auf dem Server erlaubt! (Zu viele
+  Verzauberungen oder zu viele Items.)'
+anti-wolrd-edit-exploit-message: '&6[CasualProtector] &cDeine Nachricht enthält blockierte Wörter!'
+sign-exploit-message: '&cDein Schild enthält zu viele ungültige Zeichen!'
+uuid-spoof:
+  kick-message: '&cDeine UUID ist ungültig! Bitte deaktiviere anti-uuid-spoof oder relogge
+    mit einem Premium Account.'
+block:
+  forge: Forge ist auf dem Server verboten!
+  wdl: Worlddownloader ist auf dem Server verboten!
+  lmc: LabyMod ist auf dem Server verboten!
+  liteloader: LiteLoader ist auf dem Server verboten!
+  proxy: Benutzt du Proxys?
+  bedit: Du kannst keine Bücher editieren!
+  invalid-chars: Du hast ungültige Zeichen verwendet! Bitte nutze nur Buchstaben..
+payload:
+  deserialize:
+    jigsaw: Jigsaw Client erkannt!
+    too-fast-bedit: Du hast Bücher zu schnell editiert!
+    invalid-book-data: Ungültige Book Data!
+too-many-items:
+  cleared: Auf dem Boden waren zu viele Items! Ich habe alle Items vom Boden enfernt.
+connection-closer:
+  message-to-ops: '&cPlayer %player% hat versucht den Server zu crashen!'
+  send-message-to-ops: false
+  send-message-to-players-with-perm: casualprotector.admin
+bypass-when-tps-under: 18.7
+max-entities-on-chunk: 1000
+interact:
+  blocked-item: Dieses Item besitzt eine ungültige NBT data (zu viele NBT Tags oder gebannte NBT Tags)! Du kannst es nicht benutzen.
+anti-run-commands:
+  when-holding-book: '&6CProtector: &cDu kannst keine Commands ausführen, wenn
+    du ein Buch in der Hand hälst. Es tut uns leid, dass es dich stört, aber wir wollen dich schützen!
+    Es verhindert, dass ungewollte Befehl ausgeführt werden.'
+hacked-items:
+  over-enchanted-item-message: '&6CProtector: &cDu hast ein Item in deinem Inventar mit zu
+    vielen Verzauberungen! Wir haben es mit normalen Verzauberungen ausgetauscht, hab
+    einen schönen Tag! &6=)'
+  max-enchantment-level: 10
+  max-itemmeta-size: 17384
+  bypass-when-has-lore:
+  - bypassLoreLOLOLOLO, wenn eine Lore diesen Namen beinhaltet, werden die Module das Item überspringen. Es werden die Kleinbuchstaben überprüft, so benutze "test" anstatt "Test"
+packet-filter:
+  invalid-packet: Es wirkt so als ob du ungültige Packete sendest.. Wenn das so ist, kontaktiere den Adminstrator oder den Developer auf Discord yooniks#2411.
+exploit:
+  commands-on-try:
+  - msg yooniks Dass ist ein Beispiel für einen Befehl! - Der Spieler %name% hat versucht den Server zu crashen! =(
+redstone:
+  cancelled-admins-message-enabled: true
+  cancelled-admins-permission: casualprotector.redstone.admin
+  cancelled-admins-message: '&8[&6CProtector&8] &cRedstone-Aktionen wurden abgebrochen! Redstone beim Chunk: &6{REDSTONES}&c, Standort: &6{LOCATION}'

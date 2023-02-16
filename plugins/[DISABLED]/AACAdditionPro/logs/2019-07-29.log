@@ -1,0 +1,435 @@
+[15:11:26.894] BrandHider was chosen not to be enabled.
+[15:11:26.914] LogBot was chosen not to be enabled.
+[15:11:26.915] ClientControl.BetterSprinting was chosen not to be enabled.
+[15:11:26.916] ClientControl.DamageIndicator was chosen not to be enabled.
+[15:11:26.917] ClientControl.5zig was chosen not to be enabled.
+[15:11:26.917] ClientControl.Forge was chosen not to be enabled.
+[15:11:26.918] ClientControl.LabyMod was chosen not to be enabled.
+[15:11:26.918] ClientControl.LiteLoader was chosen not to be enabled.
+[15:11:26.918] ClientControl.OldLabyMod was chosen not to be enabled.
+[15:11:26.918] ClientControl.PXMod was chosen not to be enabled.
+[15:11:26.919] ClientControl.Schematica was chosen not to be enabled.
+[15:11:26.921] ClientControl.Vape has been enabled.
+[15:11:26.921] ClientControl.VersionControl was chosen not to be enabled.
+[15:11:26.925] ClientControl.WorldDownloader has been enabled.
+[15:11:26.926] AutoFish is not compatible with your server version.
+[15:11:26.927] AutoPotion is not compatible with your server version.
+[15:11:26.928] Esp was chosen not to be enabled.
+[15:11:26.929] Fastswitch has been enabled.
+[15:11:26.930] ImpossibleChat has been enabled.
+[15:11:26.932] Inventory has been enabled.
+[15:11:26.933] KillauraEntity was chosen not to be enabled.
+[15:11:26.936] PacketAnalysis has been enabled.
+[15:11:26.938] Pingspoof has been enabled.
+[15:11:26.939] Scaffold has been enabled.
+[15:11:26.940] Skinblinker has been enabled.
+[15:11:26.940] Teaming was chosen not to be enabled.
+[15:11:26.940] Tower has been enabled.
+[15:11:49.587] PacketAnalysisData-Verbose | Player: ZERA_ sent unregistered KeepAlive packet.
+[15:11:49.847] ZERA_ failed PacketAnalysis | Vl: 20 | TPS: 20.0 | Ping: 0
+[15:11:49.974] Executed command: aacstaffnotify ZERA_ in spawn is suspected by PacketAnalysis
+[15:11:49.975] Executed command: aacstaffnotify ZERA_ in spawn is highly suspected by PacketAnalysis
+[15:12:19.580] Inventory-Verbose | Player: ZERA_ moved while having an open inventory.
+[15:12:19.581] ZERA_ has suspicious inventory interactions. | Vl: 3 | TPS: 20.0 | Ping: 29283
+[15:12:46.310] Inventory-Verbose | Player: ZERA_ moved while having an open inventory.
+[15:12:46.311] ZERA_ has suspicious inventory interactions. | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:12:47.377] Inventory-Verbose | Player: ZERA_ moved while having an open inventory.
+[15:12:47.378] ZERA_ has suspicious inventory interactions. | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:14:34.663] Inventory-Verbose | Player: ZERA_ moved while having an open inventory.
+[15:14:34.664] ZERA_ has suspicious inventory interactions. | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:14:35.637] PacketAnalysisData-Verbose | Player: ZERA_ sends packets with different delays. Mitigated Offset: 274.0
+[15:14:35.637] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:15:14.328] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:15:14.328] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:15:14.378] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:15:14.378] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:15:14.428] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:15:14.428] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:15:58.411] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:15:58.411] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:15:58.461] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:15:58.461] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:17:07.828] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:17:07.828] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:17:33.798] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:17:33.799] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:21:02.936] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:02.936] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:21:03.135] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:03.136] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:21:03.436] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:03.437] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:21:03.586] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:03.586] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:21:03.938] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:03.938] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:21:04.138] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:04.138] ZERA_ failed PacketAnalysis | Vl: 6 | TPS: 20.0 | Ping: 0
+[15:21:04.338] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:04.338] ZERA_ failed PacketAnalysis | Vl: 6 | TPS: 20.0 | Ping: 0
+[15:21:04.538] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:04.538] ZERA_ failed PacketAnalysis | Vl: 7 | TPS: 20.0 | Ping: 0
+[15:21:04.738] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:04.738] ZERA_ failed PacketAnalysis | Vl: 8 | TPS: 20.0 | Ping: 0
+[15:21:11.143] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:11.143] ZERA_ failed PacketAnalysis | Vl: 9 | TPS: 20.0 | Ping: 0
+[15:21:11.443] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:11.444] ZERA_ failed PacketAnalysis | Vl: 10 | TPS: 20.0 | Ping: 0
+[15:21:11.644] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:11.644] ZERA_ failed PacketAnalysis | Vl: 11 | TPS: 20.0 | Ping: 0
+[15:21:11.702] Executed command: aacstaffnotify ZERA_ in world is suspected by PacketAnalysis
+[15:21:11.844] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:11.844] ZERA_ failed PacketAnalysis | Vl: 12 | TPS: 20.0 | Ping: 0
+[15:21:12.044] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:12.044] ZERA_ failed PacketAnalysis | Vl: 13 | TPS: 20.0 | Ping: 0
+[15:21:12.244] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:12.244] ZERA_ failed PacketAnalysis | Vl: 14 | TPS: 20.0 | Ping: 0
+[15:21:41.110] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:41.110] ZERA_ failed PacketAnalysis | Vl: 12 | TPS: 20.0 | Ping: 0
+[15:21:53.190] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:53.190] ZERA_ failed PacketAnalysis | Vl: 12 | TPS: 20.0 | Ping: 0
+[15:21:54.194] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:54.195] ZERA_ failed PacketAnalysis | Vl: 13 | TPS: 20.0 | Ping: 0
+[15:21:59.246] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:59.246] ZERA_ failed PacketAnalysis | Vl: 13 | TPS: 20.0 | Ping: 0
+[15:21:59.746] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:21:59.746] ZERA_ failed PacketAnalysis | Vl: 14 | TPS: 20.0 | Ping: 0
+[15:22:00.246] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:00.246] ZERA_ failed PacketAnalysis | Vl: 15 | TPS: 20.0 | Ping: 0
+[15:22:00.745] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:00.746] ZERA_ failed PacketAnalysis | Vl: 16 | TPS: 20.0 | Ping: 0
+[15:22:01.746] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:01.747] ZERA_ failed PacketAnalysis | Vl: 17 | TPS: 20.0 | Ping: 0
+[15:22:06.547] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:06.547] ZERA_ failed PacketAnalysis | Vl: 17 | TPS: 20.0 | Ping: 0
+[15:22:06.797] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:06.797] ZERA_ failed PacketAnalysis | Vl: 18 | TPS: 20.0 | Ping: 0
+[15:22:06.851] Executed command: aacstaffnotify ZERA_ in world is highly suspected by PacketAnalysis
+[15:22:06.997] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:06.997] ZERA_ failed PacketAnalysis | Vl: 19 | TPS: 20.0 | Ping: 0
+[15:22:07.097] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:07.097] ZERA_ failed PacketAnalysis | Vl: 20 | TPS: 20.0 | Ping: 0
+[15:22:08.448] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:08.448] ZERA_ failed PacketAnalysis | Vl: 21 | TPS: 20.0 | Ping: 0
+[15:22:09.248] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:09.248] ZERA_ failed PacketAnalysis | Vl: 22 | TPS: 20.0 | Ping: 0
+[15:22:09.348] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:09.348] ZERA_ failed PacketAnalysis | Vl: 23 | TPS: 20.0 | Ping: 0
+[15:22:09.448] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:09.449] ZERA_ failed PacketAnalysis | Vl: 24 | TPS: 20.0 | Ping: 0
+[15:22:09.498] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:09.498] ZERA_ failed PacketAnalysis | Vl: 25 | TPS: 20.0 | Ping: 0
+[15:22:09.598] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:09.598] ZERA_ failed PacketAnalysis | Vl: 26 | TPS: 20.0 | Ping: 0
+[15:22:09.698] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:09.712] ZERA_ failed PacketAnalysis | Vl: 27 | TPS: 20.0 | Ping: 0
+[15:22:19.958] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:19.958] ZERA_ failed PacketAnalysis | Vl: 27 | TPS: 20.0 | Ping: 0
+[15:22:20.258] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:20.258] ZERA_ failed PacketAnalysis | Vl: 28 | TPS: 20.0 | Ping: 0
+[15:22:20.332] Executed command: aackick ZERA_ Il tuo client ha inviatto pacchetti sospetti
+[15:22:48.459] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:48.460] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:22:48.710] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:48.710] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:22:53.860] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:22:53.860] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:23:01.266] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:01.266] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:23:13.028] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:13.028] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:23:13.228] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:13.228] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:23:13.328] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:13.328] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:23:13.428] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:13.428] ZERA_ failed PacketAnalysis | Vl: 6 | TPS: 20.0 | Ping: 0
+[15:23:13.528] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:13.528] ZERA_ failed PacketAnalysis | Vl: 7 | TPS: 20.0 | Ping: 0
+[15:23:13.629] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:13.629] ZERA_ failed PacketAnalysis | Vl: 8 | TPS: 20.0 | Ping: 0
+[15:23:13.729] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:13.729] ZERA_ failed PacketAnalysis | Vl: 9 | TPS: 20.0 | Ping: 0
+[15:23:13.828] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:13.829] ZERA_ failed PacketAnalysis | Vl: 10 | TPS: 20.0 | Ping: 0
+[15:23:14.730] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:14.730] ZERA_ failed PacketAnalysis | Vl: 10 | TPS: 20.0 | Ping: 0
+[15:23:19.287] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:19.287] ZERA_ failed PacketAnalysis | Vl: 11 | TPS: 20.0 | Ping: 0
+[15:23:19.345] Executed command: aacstaffnotify ZERA_ in world is suspected by PacketAnalysis
+[15:23:19.437] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:19.437] ZERA_ failed PacketAnalysis | Vl: 12 | TPS: 20.0 | Ping: 0
+[15:23:19.687] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:19.687] ZERA_ failed PacketAnalysis | Vl: 13 | TPS: 20.0 | Ping: 0
+[15:23:20.437] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:20.437] ZERA_ failed PacketAnalysis | Vl: 14 | TPS: 20.0 | Ping: 0
+[15:23:21.536] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:21.537] ZERA_ failed PacketAnalysis | Vl: 15 | TPS: 20.0 | Ping: 0
+[15:23:21.837] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:23:21.837] ZERA_ failed PacketAnalysis | Vl: 16 | TPS: 20.0 | Ping: 0
+[15:24:01.999] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:01.999] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:24:02.349] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:02.349] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:24:02.850] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:02.850] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:24:03.400] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:03.401] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:24:04.005] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:04.005] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:24:04.650] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:04.650] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:24:05.251] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:05.251] ZERA_ failed PacketAnalysis | Vl: 6 | TPS: 20.0 | Ping: 0
+[15:24:37.552] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:37.552] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:24:52.018] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:52.018] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:24:58.277] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:58.277] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:24:58.427] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:58.427] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:24:58.577] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:58.577] ZERA_ failed PacketAnalysis | Vl: 6 | TPS: 20.0 | Ping: 0
+[15:24:58.727] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:58.727] ZERA_ failed PacketAnalysis | Vl: 7 | TPS: 20.0 | Ping: 0
+[15:24:58.878] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:24:58.879] ZERA_ failed PacketAnalysis | Vl: 8 | TPS: 20.0 | Ping: 0
+[15:25:01.080] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:01.080] ZERA_ failed PacketAnalysis | Vl: 9 | TPS: 20.0 | Ping: 0
+[15:25:03.585] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:03.585] ZERA_ failed PacketAnalysis | Vl: 10 | TPS: 20.0 | Ping: 0
+[15:25:03.685] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:03.685] ZERA_ failed PacketAnalysis | Vl: 11 | TPS: 20.0 | Ping: 0
+[15:25:03.740] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected by PacketAnalysis
+[15:25:03.834] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:03.835] ZERA_ failed PacketAnalysis | Vl: 12 | TPS: 20.0 | Ping: 0
+[15:25:03.984] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:03.985] ZERA_ failed PacketAnalysis | Vl: 13 | TPS: 20.0 | Ping: 0
+[15:25:06.835] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:06.835] ZERA_ failed PacketAnalysis | Vl: 13 | TPS: 20.0 | Ping: 0
+[15:25:06.935] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:06.935] ZERA_ failed PacketAnalysis | Vl: 14 | TPS: 20.0 | Ping: 0
+[15:25:07.085] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:07.086] ZERA_ failed PacketAnalysis | Vl: 15 | TPS: 20.0 | Ping: 0
+[15:25:07.235] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:07.235] ZERA_ failed PacketAnalysis | Vl: 16 | TPS: 20.0 | Ping: 0
+[15:25:23.447] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:23.447] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:25:23.547] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:23.547] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:25:31.451] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:31.451] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:25:31.550] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:31.551] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:25:36.706] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:36.706] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:25:36.906] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:36.906] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:25:37.862] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:37.862] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:25:38.764] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:38.764] ZERA_ failed PacketAnalysis | Vl: 6 | TPS: 20.0 | Ping: 0
+[15:25:42.716] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:42.716] ZERA_ failed PacketAnalysis | Vl: 7 | TPS: 20.0 | Ping: 0
+[15:25:42.767] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:42.767] ZERA_ failed PacketAnalysis | Vl: 8 | TPS: 20.0 | Ping: 0
+[15:25:42.866] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:42.867] ZERA_ failed PacketAnalysis | Vl: 9 | TPS: 20.0 | Ping: 0
+[15:25:43.017] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:43.017] ZERA_ failed PacketAnalysis | Vl: 10 | TPS: 20.0 | Ping: 0
+[15:25:43.166] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:43.166] ZERA_ failed PacketAnalysis | Vl: 11 | TPS: 20.0 | Ping: 0
+[15:25:43.217] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected by PacketAnalysis
+[15:25:45.716] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:45.717] ZERA_ failed PacketAnalysis | Vl: 11 | TPS: 20.0 | Ping: 0
+[15:25:45.772] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected by PacketAnalysis
+[15:25:48.168] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:48.168] ZERA_ failed PacketAnalysis | Vl: 12 | TPS: 20.0 | Ping: 0
+[15:25:48.218] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:48.218] ZERA_ failed PacketAnalysis | Vl: 13 | TPS: 20.0 | Ping: 0
+[15:25:48.318] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:48.318] ZERA_ failed PacketAnalysis | Vl: 14 | TPS: 20.0 | Ping: 0
+[15:25:48.517] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:25:48.518] ZERA_ failed PacketAnalysis | Vl: 15 | TPS: 20.0 | Ping: 0
+[15:26:11.393] PacketAnalysisData-Verbose | Player: ZERA_ sent packets out of order with an offset of: 1
+[15:26:11.393] ZERA_ failed PacketAnalysis | Vl: 15 | TPS: 20.0 | Ping: 335
+[15:26:15.504] PacketAnalysisData-Verbose | Player: ZERA_ sent packets out of order with an offset of: 1
+[15:26:15.504] ZERA_ failed PacketAnalysis | Vl: 16 | TPS: 20.0 | Ping: 773
+[15:26:16.348] PacketAnalysisData-Verbose | Player: ZERA_ sent packets out of order with an offset of: 1
+[15:26:16.348] ZERA_ failed PacketAnalysis | Vl: 18 | TPS: 20.0 | Ping: 915
+[15:26:16.364] Executed command: aacstaffnotify ZERA_ in kitpvp is highly suspected by PacketAnalysis
+[15:26:19.608] PacketAnalysisData-Verbose | Player: ZERA_ sent packets out of order with an offset of: 1
+[15:26:19.608] ZERA_ failed PacketAnalysis | Vl: 20 | TPS: 20.0 | Ping: 1020
+[15:26:20.858] PacketAnalysisData-Verbose | Player: ZERA_ sent packets out of order with an offset of: 1
+[15:26:20.858] ZERA_ failed PacketAnalysis | Vl: 22 | TPS: 20.0 | Ping: 1099
+[15:26:22.768] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:26:22.768] ZERA_ failed PacketAnalysis | Vl: 23 | TPS: 20.0 | Ping: 1158
+[15:26:23.017] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:26:23.018] ZERA_ failed PacketAnalysis | Vl: 24 | TPS: 20.0 | Ping: 1158
+[15:26:23.123] PacketAnalysisData-Verbose | Player: ZERA_ sends packets with different delays. Mitigated Offset: 1216.0
+[15:26:23.124] ZERA_ failed PacketAnalysis | Vl: 36 | TPS: 20.0 | Ping: 1158
+[15:26:23.183] Executed command: aackick ZERA_ Il tuo client ha inviatto pacchetti sospetti
+[15:28:08.654] PacketAnalysisData-Verbose | Player: ZERA sent equal rotations.
+[15:28:08.655] ZERA failed PacketAnalysis | Vl: 1 | TPS: 7.575 | Ping: 0
+[15:30:51.428] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 1 | TPS: 19.60 | Ping: 0
+[15:31:02.123] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 2 | TPS: 19.60 | Ping: 0
+[15:31:02.149] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected for ImpossibleChat
+[15:31:07.718] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:31:13.112] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:31:13.112] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:31:13.119] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:31:13.362] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:31:13.362] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:31:13.567] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:31:13.567] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:31:19.123] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:31:19.149] Executed command: aacstaffnotify ZERA_ in kitpvp is highly suspected for ImpossibleChat
+[15:31:25.022] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:31:25.038] Executed command: aacstaffnotify ZERA_ in kitpvp is highly suspected for ImpossibleChat
+[15:31:48.170] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 6 | TPS: 20.0 | Ping: 0
+[15:31:49.006] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:31:49.006] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:31:49.307] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:31:49.307] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:33:10.902] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:33:10.902] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:33:11.051] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:33:11.052] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:33:11.963] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:33:11.964] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:33:16.287] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:33:16.287] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 19.23 | Ping: 0
+[15:33:18.049] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:33:18.049] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 15.38 | Ping: 0
+[15:33:18.403] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:33:18.499] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 13.33 | Ping: 0
+[15:33:22.674] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:33:32.546] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:33:32.547] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:33:52.802] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:33:52.802] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:33:53.905] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:33:53.905] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:34:06.580] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:34:21.380] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:21.382] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:34:21.940] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:21.948] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:34:22.152] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:22.152] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:34:22.352] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:22.352] ZERA_ failed PacketAnalysis | Vl: 6 | TPS: 20.0 | Ping: 0
+[15:34:22.653] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:22.653] ZERA_ failed PacketAnalysis | Vl: 7 | TPS: 20.0 | Ping: 0
+[15:34:22.654] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:34:25.066] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:25.066] ZERA_ failed PacketAnalysis | Vl: 7 | TPS: 20.0 | Ping: 0
+[15:34:25.774] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:25.781] ZERA_ failed PacketAnalysis | Vl: 8 | TPS: 20.0 | Ping: 0
+[15:34:25.975] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:25.975] ZERA_ failed PacketAnalysis | Vl: 9 | TPS: 20.0 | Ping: 0
+[15:34:26.229] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:26.229] ZERA_ failed PacketAnalysis | Vl: 10 | TPS: 20.0 | Ping: 0
+[15:34:33.976] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:34:35.732] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:35.732] ZERA_ failed PacketAnalysis | Vl: 10 | TPS: 20.0 | Ping: 0
+[15:34:35.982] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:34:35.982] ZERA_ failed PacketAnalysis | Vl: 11 | TPS: 20.0 | Ping: 0
+[15:34:35.983] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected by PacketAnalysis
+[15:35:18.810] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:36:01.325] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 1 | TPS: 19.60 | Ping: 0
+[15:36:06.514] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:36:06.538] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected for ImpossibleChat
+[15:39:17.774] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:39:17.775] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:39:32.800] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:39:32.800] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:40:05.672] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:40:10.922] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:40:10.947] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected for ImpossibleChat
+[15:40:59.102] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:40:59.102] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:40:59.304] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:40:59.304] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:40:59.504] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:40:59.504] ZERA_ failed PacketAnalysis | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:40:59.657] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:40:59.657] ZERA_ failed PacketAnalysis | Vl: 4 | TPS: 20.0 | Ping: 0
+[15:40:59.861] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:40:59.861] ZERA_ failed PacketAnalysis | Vl: 5 | TPS: 20.0 | Ping: 0
+[15:41:00.069] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:41:00.070] ZERA_ failed PacketAnalysis | Vl: 6 | TPS: 20.0 | Ping: 0
+[15:41:00.115] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:41:00.115] ZERA_ failed PacketAnalysis | Vl: 7 | TPS: 20.0 | Ping: 0
+[15:41:00.873] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:41:00.876] ZERA_ failed PacketAnalysis | Vl: 8 | TPS: 20.0 | Ping: 0
+[15:41:01.073] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:41:01.073] ZERA_ failed PacketAnalysis | Vl: 9 | TPS: 20.0 | Ping: 0
+[15:41:01.279] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:41:01.279] ZERA_ failed PacketAnalysis | Vl: 10 | TPS: 20.0 | Ping: 0
+[15:41:01.425] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:41:01.478] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:41:01.478] ZERA_ failed PacketAnalysis | Vl: 11 | TPS: 20.0 | Ping: 0
+[15:41:01.530] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected by PacketAnalysis
+[15:41:12.329] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 2 | TPS: 20.0 | Ping: 0
+[15:41:12.332] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected for ImpossibleChat
+[15:41:18.174] ZERA_ sent illegal chat message (ImpossibleChat) | Vl: 3 | TPS: 20.0 | Ping: 0
+[15:50:13.423] Inventory-Verbose | Player: ZERA_ sent new rotations while having an open inventory.
+[15:50:13.758] ZERA_ has suspicious inventory interactions. | Vl: 1 | TPS: 15.87 | Ping: 0
+[15:50:13.759] Inventory-Verbose | Player: ZERA_ sent new rotations while having an open inventory.
+[15:50:13.759] ZERA_ has suspicious inventory interactions. | Vl: 2 | TPS: 15.87 | Ping: 0
+[15:50:13.845] Inventory-Verbose | Player: ZERA_ sent new rotations while having an open inventory.
+[15:50:13.845] ZERA_ has suspicious inventory interactions. | Vl: 3 | TPS: 13.51 | Ping: 0
+[15:50:13.891] Inventory-Verbose | Player: ZERA_ sent new rotations while having an open inventory.
+[15:50:13.891] ZERA_ has suspicious inventory interactions. | Vl: 4 | TPS: 13.51 | Ping: 0
+[15:50:19.753] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:50:19.753] ZERA_ failed PacketAnalysis | Vl: 1 | TPS: 10.10 | Ping: 0
+[15:50:19.754] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:50:19.754] ZERA_ failed PacketAnalysis | Vl: 2 | TPS: 10.10 | Ping: 0
+[15:50:21.496] PacketAnalysisData-Verbose | Player: ZERA_ sent unregistered KeepAlive packet.
+[15:50:21.496] ZERA_ failed PacketAnalysis | Vl: 22 | TPS: 8.620 | Ping: 0
+[15:50:21.499] Executed command: aacstaffnotify ZERA_ in kitpvp is suspected by PacketAnalysis
+[15:50:21.501] Executed command: aacstaffnotify ZERA_ in kitpvp is highly suspected by PacketAnalysis
+[15:50:45.856] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:50:45.856] ZERA_ failed PacketAnalysis | Vl: 21 | TPS: 19.60 | Ping: 0
+[15:50:46.207] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:50:46.207] ZERA_ failed PacketAnalysis | Vl: 22 | TPS: 19.60 | Ping: 0
+[15:50:46.208] PacketAnalysisData-Verbose | Player: ZERA_ sent equal rotations.
+[15:50:46.208] ZERA_ failed PacketAnalysis | Vl: 23 | TPS: 19.60 | Ping: 0
+[15:50:50.290] PacketAnalysisData-Verbose | Player: ZERA_ ignored KeepAlive packet.
+[15:50:50.291] ZERA_ failed PacketAnalysis | Vl: 32 | TPS: 20.0 | Ping: 7
+[15:50:50.359] Executed command: aackick ZERA_ Il tuo client ha inviatto pacchetti sospetti
+[15:51:12.834] PacketAnalysisData-Verbose | Player: ZERA sent equal rotations.
+[15:51:12.835] ZERA failed PacketAnalysis | Vl: 1 | TPS: 20.0 | Ping: 0
+[15:51:29.821] AACAdditionPro disabled.
+[15:51:29.823]  
+[19:18:10.676] BrandHider was chosen not to be enabled.
+[19:18:10.685] LogBot was chosen not to be enabled.
+[19:18:10.686] ClientControl.BetterSprinting was chosen not to be enabled.
+[19:18:10.686] ClientControl.DamageIndicator was chosen not to be enabled.
+[19:18:10.686] ClientControl.5zig was chosen not to be enabled.
+[19:18:10.686] ClientControl.Forge was chosen not to be enabled.
+[19:18:10.687] ClientControl.LabyMod was chosen not to be enabled.
+[19:18:10.687] ClientControl.LiteLoader was chosen not to be enabled.
+[19:18:10.688] ClientControl.OldLabyMod was chosen not to be enabled.
+[19:18:10.688] ClientControl.PXMod was chosen not to be enabled.
+[19:18:10.688] ClientControl.Schematica was chosen not to be enabled.
+[19:18:10.689] ClientControl.Vape has been enabled.
+[19:18:10.690] ClientControl.VersionControl was chosen not to be enabled.
+[19:18:10.692] ClientControl.WorldDownloader has been enabled.
+[19:18:10.692] AutoFish is not compatible with your server version.
+[19:18:10.692] AutoPotion is not compatible with your server version.
+[19:18:10.693] Esp was chosen not to be enabled.
+[19:18:10.694] Fastswitch has been enabled.
+[19:18:10.694] ImpossibleChat has been enabled.
+[19:18:10.696] Inventory has been enabled.
+[19:18:10.696] KillauraEntity was chosen not to be enabled.
+[19:18:10.698] PacketAnalysis has been enabled.
+[19:18:10.699] Pingspoof has been enabled.
+[19:18:10.700] Scaffold has been enabled.
+[19:18:10.700] Skinblinker has been enabled.
+[19:18:10.701] Teaming was chosen not to be enabled.
+[19:18:10.701] Tower has been enabled.
+[19:18:39.767] AACAdditionPro disabled.
+[19:18:39.768]  

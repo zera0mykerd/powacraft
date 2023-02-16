@@ -1,0 +1,145 @@
+#   ____   _               _     ____                   _
+#  / ___| | |__     __ _  | |_  / ___|    ___   _ __   | |_   _ __   _   _
+# | |     | '_ \   / _` | | __| \___ \   / _ \ | '_ \  | __| | '__| | | | |
+# | |___  | | | | | (_| | | |_   ___) | |  __/ | | | | | |_  | |    | |_| |
+#  \____| |_| |_|  \__,_|  \__| |____/   \___| |_| |_|  \__| |_|     \__, |
+#                                                                    |___/
+# Release 4.3.1
+
+# For more information on ChatSentry, see the wiki: https://wiki.chatsentry.xyz
+# For all ChatSentry's permissions and commands, see https://wiki.chatsentry.xyz/pac/
+
+# Just get ChatSentry? See the installation guide: https://wiki.chatsentry.xyz/installation
+
+
+# --------------------------------------------------------------------------------------
+# Core settings:
+# --------------------------------------------------------------------------------------
+
+# Should ChatSentry notify operators (and players with the permission "chatsentry.admin") when new plugin updates are available?
+# Keeping this on is highly recommended as otherwise you won't be able to take advantage of new features and fixes as quickly!
+check-for-updates: false
+
+# Should ChatSentry's modules filter commands as well as chat? Unless otherwise stated in their descriptions, modules require this option to be enabled in order to filter commands. Almost all modules support processing commands.
+process-commands: true
+
+# Should ChatSentry's applicable modules filter through writing on signs, renaming items in anvils, and writing in books?
+# Currently the only modules directly supporting these options are the Word & Phrase Filter, the Link & Ad Blocker, and the Unicode Remover
+process-signs: true
+process-anvils: true
+process-books: true
+
+# Context prediction aims to increase positive detections and decrease false positive detections through acting as a safenet for supported modules with sophisticated logic that dynamically adjusts thresholds and options real-time to react more precisely based on predicted context of messages. Adjustments are temporary & unique to messages; they do not permanently change any config options.
+context-prediction: true
+
+# This option applies to any modules or processes that try to identify urls from text (note that some modules that are not mainly based around urls still may process them). Should an experimental and improved version of the url identifier be used instead of the stable one? If you experience new kinds of false positives with this on, please report them.
+experimental-url-identifier: true
+
+# Should ChatSentry disable Minecraft's built in "Kicked for spamming" / "disconnect.spam" kick? There is no way to disable these kicks in the server configuration, however with a workaround ChatSentry can override it and prevent it from occurring. It's recommended to keep this enabled to give the auto punisher full punishment priority.
+disable-vanilla-spam-kick: false
+
+# Should chat detections and violations be logged for future reference? This is required to be enabled in order to make use of the lookup command.
+enable-violations-log: false
+
+# Below is which violations and detections are logged. Requires the above option to be enabled.
+# It's recommended you keep these as they are by default to prevent unnecessary detections being logged and taking up useless storage space.
+enable-logging-for:
+  chat-cooldown: false
+  link-and-ad-blocker: false
+  word-and-phrase-filter: false
+  spam-blocker: false
+  unicode-remover: false
+  cap-limiter: false
+  anti-parrot: false
+  anti-chat-flood: false
+  anti-statue-spambot: false
+  chat-executor: false
+
+# You can disable the functionality of particular module and restrictions' bypass permissions and force modules to apply themselves to players even with bypass permissions or op by enabling the overrides below
+# It's recommended you do this per-player/group with permissions by simply negating/disabling the bypass permission for modules/restrictions you'd like to apply to them if they have the bypass all permission. However, this option is available as a hard override
+# This option is also useful for testing purposes if you don't want to have to deop yourself to test a module or restriction
+override-bypass-permissions:
+  chat-cooldown: false
+  link-and-ad-blocker: false
+  word-and-phrase-filter: false
+  spam-blocker: false
+  unicode-remover: false
+  cap-limiter: false
+  anti-parrot: false
+  anti-chat-flood: false
+  anti-statue-spambot: false
+  anti-join-flood: false
+  chat-executor: false
+  auto-grammar: false
+  anti-command-prefix: false
+  command-spy: false
+  
+# --------------------------------------------------------------------------------------
+# Modules:
+# --------------------------------------------------------------------------------------
+
+# Below you can enable the modules you'd like to use. Go in to the modules config files in the modules folder to adjust their settings.
+
+# Intelligent Auto Punisher:
+# Automatically runs punishment commands on players who excessively trigger modules within a defined time frame.
+enable-auto-punisher: false
+
+# Intelligent Chat Cooldown:
+# Controls how quickly players can send messages and configured or all commands within a defined time frame.
+enable-chat-cooldown: true
+
+# Intelligent Spam Blocker:
+# Prevents players from repeating the same or similar messages over and over within a short period of time. The more times a player attempts to repeat a message when it's already being blocked, the longer before they will be able to repeat themselves again, creating a dynamic and infinitely expanding block period that will disallow spam bots trying to repeat the same messages over and over for long durations of time.
+enable-spam-blocker: true
+
+# Intelligent Link & Ad Blocker:
+# Prevents web links & server advertising (regular server ips & numeric server ips) with optional extra sensitivity bypass detection in chat, commands, signs, anvils, and books (additional check contexts can be disabled). Includes the ability to whitelist domains or all subdomains of a domain.
+enable-link-and-ad-blocker: true
+
+# Intelligent Word & Phrase Filter:
+# Hyper intelligently detects swears configured blocked words or phrases (and words/phrases similar to those on the list) from being said in chat, commands, signs, anvils, and books (additional check contexts can be disabled).
+enable-word-and-phrase-filter: false
+
+# Unicode Remover:
+# Removes non US-ASCII (US keyboard) characters in chat messages and commands to prevent alphanumeric lookalike unicode characters from being used to bypass filters & modules. Has the option to use a compatibility mode that only blocks unicode used by hacked clients - blocking virtually all alphanumeric lookalike unicode supported by MC while allowing other languages in chat, commands, signs, anvils, and books (additional check contexts can be disabled)
+enable-unicode-remover: true
+
+# Intelligent Cap Limiter:
+# Limits the use of excessive capital letters in messages without interference of messages using proper grammar. Can auto-set the message to lowercase or blocks it entirely. Player names are ignored.
+enable-cap-limiter: false
+
+# Anti Statue Spambot:
+# Prevents joining players abilities to send messages or commands until they move in order to protect against basic artificially controlled spam bots. Has an optional command whitelist. Does not require "process-commands" in the main config to be enabled to function.
+enable-anti-statue-spambot: false
+
+# Intelligent Anti Parrot:
+# Prevents players using hacked clients to automatically copy ("parrot") other players chat messages. Also prevents the same (non-generic) message from be said by multiple players within a short time frame.
+enable-anti-parrot: false
+
+# Intelligent Anti Chat Flood:
+# Prevents or intelligently modifies the use of excessive repeated characters and very long "words" without interfering with players using 'expressive' chat.
+enable-anti-chat-flood: true
+
+# Anti Join Flood:
+# Prevents more than a defined amount of players joining every minute to prevent bot join flooding to lag, spam, & or crash the server.
+enable-anti-join-flood: false
+
+# Anti Command Prefix:
+# Prevents players using prefixed commands to get around filters and discover potential sensitive server information like the plugins. Ex. /minecraft:me instead of /me. Does not require "process-commands" in the main config to be enabled to function. Optionally integrates with the Command Spy module; when a command is modified/a prefix is removed, it will appear crossed out in the command spy notification.
+enable-anti-command-prefix: true
+
+# Intelligent Chat Executor:
+# Modifies and or performs actions triggered by defined chat messages/commands using simple or complex matching techniques.
+enable-chat-executor: false
+
+# Auto Grammar:
+# Converts players' messages to use proper capitalization, periods, and correct typos in chat and configured or all commands.
+enable-auto-grammar: false
+
+# Command Spy:
+# Shows players real-time commands to admins. Commands can optionally be whitelisted or blacklisted. Does not require "process-commands" in the main config to be enabled to function.
+enable-command-spy: true
+
+# Admin Notifier:
+# Notifies admins real-time when a module is triggered with detailed information, allowing them to know when to take action if necessary.
+enable-admin-notifier: true

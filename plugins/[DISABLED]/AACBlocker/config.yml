@@ -1,0 +1,11 @@
+#Plugin made by ZugPilot
+#My SpigotMC profile: https://www.spigotmc.org/members/xxtobilp.202509/
+aacblocker:
+   #You can change this message to whatever you want. But always keep these ' characters at the front and at the end of the message.
+   #You can use [command] as a replacement for the blocked command the player typed
+   #Don't forget to save the config when you are done here.
+   fakemessage: '&rComando sconosciuto.'
+   #You can allow konsolas (Developer and Owner of AAC) to see your AAC license
+   #Just set this to false if you don't want this
+   #Only set this value to true or false or else it will cause an error.
+   allow_konsolas: false

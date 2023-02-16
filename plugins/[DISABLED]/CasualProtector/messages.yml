@@ -1,0 +1,94 @@
+antibot:
+  too-many-accounts-per-ip: "Hai pi\xc3\xb9 di %limit% account su questo server con\
+    \ lo stesso ip!"
+  cannot-join-from-vpn: VPN/Proxy trovati! (o ip locali)
+  too-big-ping: '&cPing troppo alto! (Massimo: &4{LIMIT} ms&c)'
+  limiter:
+    last-name-length:
+      disconnect-message: '&cTroppi giocatori con lo stesso nome trovati.. Per favore,
+        aspetta 10 secondi e riprova a rientrare.'
+    connection-throttle:
+      disconnect-message: '&cPer favore, aspetta &6{SECONDS}s &cprima di rientrare!'
+    similar:
+      names:
+        disconnect-message: '&cSul server ci sono troppi giocatori col nickname simile!
+          Per favore, cambia il tuo nickname..'
+  double-join: Sei verificato, unisciti nuovamente!
+  too-many-names: Ci sono troppi giocatori con lo stesso nick! Cambia il tuo nickname e prova a rientrare!
+  channel-verification:
+    kickmessage: "&8[&6PowaProtector&8] &cSei stato riconosciuto come bot! Il tuo\
+      \ account \xc3\xa8 stato bloccato per &610 minuti\n&cSe \xc3\xa8 un errore scusami"
+    broadcast: "&8[&6PowaProtector&8] &8%player% &c\xc3\xa8 stato riconosciuto come\
+      \ bot e il suo account \xc3\xa8 stato bloccato!"
+  banned-nickname: '&4&lNickname non permesso... =('
+  too-big-ping-bypass-permission: casualprotector.pingbypass
+prefix: ' '
+command:
+  no-permission: Non hai il permesso! (casualprotector.command)
+too-many-packets: Invii troppi pacchetti! Lag o exploit?
+block:
+  forge: Sei entrato con la forge!
+  wdl: Non puoi usare la worlddownloader!
+  proxy: Sei un utente con proxy?!
+  bedit: Non puoi modificare i libri!
+  invalid-chars: Hai scritto un messaggio non valido! Per favore, usa solo lettere inglesi..
+  liteloader: Non puoi usare la liteloader mod!
+  badlion: Non puoi usare la badlion mod!
+  lmc: Non puoi usare la labymod!
+payload:
+  deserialize:
+    too-fast-bedit: Stai modificando un libro troppo velocemente!
+    invalid-book-data: Data del libro non valido!
+    jigsaw: Client non permesso rilevato!
+too-many-items:
+  cleared: Sul pavimento ci sono troppi oggetti! Ho rimosso tutto per ottimizzare il server :D
+connection-closer:
+  message-to-ops: '&cIl giocatore %player% ha provato a far crashare il server!'
+  send-message-to-ops: true
+  send-message-to-players-with-perm: casualprotector.admin
+exploit:
+  commands-on-try:
+  - /matrix kick %name% Exploiting rilevato
+  - /matrix kick %name% Exploiting rilevato
+bypass-when-tps-under: 19.2
+max-entities-on-chunk: 1000
+anti-logged-from-another-location: "&5&l[&dAntiCheat&5&l] &e> Un giocatore con questo\
+  \ nome \xc3\xa8 gi\xc3\_ online nel server!"
+hacked-items-kick-message: "&cGli oggetti presi dalle hack non sono ammessi nel server!\
+  \ Enchant o quantit\xc3\_ troppo alto."
+anti-wolrd-edit-exploit-message: '&5&l[&dAntiCheat&5&l] &e> Il tuo messaggio contiene
+  parole bannate!'
+sign-exploit-message: '&cLa linea del tuo cartello ha troppi caratteri!'
+memory-info:
+  message: |-
+    &8&l&m-=-=-=-=&r&6CProtector&8&l&m-=-=-=-=
+    &7Ram: &a{USED-RAM}&8/&c{MAX-RAM}
+    &7Tps: &a{TPS}
+    &8&l&m-=-=-=-=&r&6CProtector&8&l&m-=-=-=-=
+interact:
+  blocked-item: Questo oggetto contiene dati NBT invalidi (come troppi tag nbt o tag nbt vietati)! Quindi non puoi interagire.
+uuid-spoof:
+  kick-message: '&4Il tuo UUID risulta invalido!'
+too-many-similar-wc-packets: '&cHai inviato troppi pacchetti windowclick simili! In
+  0.5 secondi hai fatto click nello stesso slot ed elemento >50 volte!'
+redstone:
+  cancelled-admins-message: '&8[&6PowaProtector&8] &cAzioni redstone cancellate! on
+    chunk: &6{REDSTONES}&c, location: &6{LOCATION}'
+  cancelled-admins-permission: casualprotector.redstone.admin
+  cancelled-admins-message-enabled: true
+max-packet-buffer-size: 16384
+payload-without-book: '&cNon hai libri in inventario!'
+max-packet-capacity: 80000
+hacked-items:
+  max-itemmeta-size: 17384
+  max-enchantment-level: 10
+  bypass-when-has-lore:
+  - bypassLoreLOLOLOLO, questo oggetto contiene testo hackerato e prendi spunto da "test" invece di "Test"
+  over-enchanted-item-message: '&6Protector: &cHai un oggetto troppo incantato (livello
+    di incantamento troppo alto) nel tuo inventario! Risolto con incantesimi permessi.'
+anti-run-commands:
+  when-holding-book: '&6Protector: &cNon puoi eseguire comandi con il libro in mano!'
+max-pluginmessage-capacity: 7000
+packet-filter:
+  invalid-packet: Sembra che tu stia inviando pacchetti non validi.
+bad-item-data: Invalid nbt item data

@@ -1,0 +1,18 @@
+# AntiCheatReloaded language file
+ALERT:
+- '&c%player% inserito ora nel gruppo %group%.'
+- '&cultimi check falliti di %player%: %check%.'
+- '&cScrivi ''/acr report %player% per informazioni.'
+WARNING:
+- '&5&l[&dAntiCheat&5&l] &e> &a&o Sei stato contrassegnato per utilizzo di cheats.'
+- '&5&l[&dAntiCheat&5&l] &e> &a&o Se pensi sia un falso positivo segnalalo allo staff.'
+BAN_REASON: '&5&l[&dAntiCheat&5&l] &e> &a&oBannato per vantaggi irregolari'
+BAN_BROADCAST: '&5&l[&dAntiCheat&5&l] &e> &a&o%player% bannato per cheating.'
+KICK_REASON: '&5&l[&dAntiCheat&5&l] &e> &a&oKickato per vantaggi irregolari'
+KICK_BROADCAST: '&5&l[&dAntiCheat&5&l] &e> &a&o%player% kickato per cheating.'
+SPAM_WARNING: '&5&l[&dAntiCheat&5&l] &e> &a&oSmettila di spammare sul server!'
+SPAM_KICK_REASON: '&5&l[&dAntiCheat&5&l] &e> &a&oKickato per spam eccessivo'
+SPAM_KICK_BROADCAST: '&5&l[&dAntiCheat&5&l] &e> &a&o%player% kickato per spam eccessivo.'
+SPAM_BAN_REASON: '&5&l[&dAntiCheat&5&l] &e> &a&oBannato per spamming'
+SPAM_BAN_BROADCAST: '&5&l[&dAntiCheat&5&l] &e> &a&o%player% bannato per spamming.'
+chat: {}

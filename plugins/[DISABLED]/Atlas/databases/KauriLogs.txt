@@ -1,0 +1,5 @@
+71d6c242-d0b0-30b9-9635-bce9cb6764aa;Fly (Type E):java.lang.Integer:87
+71d6c242-d0b0-30b9-9635-bce9cb6764aa;Criticals:java.lang.Integer:5
+71d6c242-d0b0-30b9-9635-bce9cb6764aa;Speed (Type F):java.lang.Integer:4
+71d6c242-d0b0-30b9-9635-bce9cb6764aa;Fly (Type D):java.lang.Integer:1
+71d6c242-d0b0-30b9-9635-bce9cb6764aa;Reach (Type B):java.lang.Integer:41

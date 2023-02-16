@@ -1,0 +1,4 @@
+# Modules in which have logging enabled store detections here.
+# WARNING: DO NOT MODIFY ANY DATA IN THIS FILE UNLESS YOU KNOW WHAT YOU'RE DOING: SMALL CHANGES CAN BREAK THE FILE.
+# The data here is formatted to be viewed the '/kcs lookup' command. You can configure what's logged here by modifying the admin notifier configuration file.
+# To safely and easily delete old violation data from this file, use the '/kcs cleanlogs' command.

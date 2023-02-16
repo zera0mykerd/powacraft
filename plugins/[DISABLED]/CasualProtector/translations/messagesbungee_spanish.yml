@@ -1,0 +1,17 @@
+﻿antibot:
+  vpn: "&cNo puedes unirte desde vpn/proxies!"
+  vpn-enabled: true
+  too-many-accounts: "&cTienes más de %limit% cuentas en este servidor con la misma ip!"
+  double-join: "&cYa estás verificado, únete al servidor de nuevo!"
+  too-many-connections: "&cDemasiados jugadores iniciando sesión! Por favor espere unos segundos.."
+  address-blocker-enabled: true
+  address-blocker-blocked: "&cEsta dirección está bloqueada!"
+  too-many-connections-enabled: true
+  #entre 1000 milisegundos
+  too-many-connections-limit: 5
+  too-many-connections-message: "&cHay demasiadas conexiones entre 1 segundo! Por favor, espere un momento y únase de nuevo! Probablemente se detectó un ataque de bot."
+pluginmessage:
+  proxy: "&cPor favor, no use proxy en este servidor!"
+  wdl: "&cPor favor, no use el programa de descarga mundial!"
+  forge: "&cNo uses forge, por favor únete usando el lanzador normal!"
+  register: "&cAcaba de enviar a muchas cargas útiles con el canal REGISTER. ¡Intente unirse después de 60 segundos!"

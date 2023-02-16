@@ -1,0 +1,49 @@
+﻿antibot:
+  too-many-accounts-per-ip: Tienes más de %limit% cuentas en este servidor con la misma ip!
+  cannot-join-from-vpn: VPN/Proxy detectado! (o localhost ip)
+  too-big-ping: 'Demasiado ping! (Max: {LIMIT})'
+  limiter:
+    last-name-length:
+      disconnect-message: '&cDemasiados jugadores con nick similar se están conectando .. Por favor espera 10 segundos y vuelve a intentarlo.'
+    connection-throttle:
+      disconnect-message: '&cPor favor, espere &6{SECONDS}s &cantes de la próxima incorporación!'
+    similar:
+      names:
+        disconnect-message: '&cEn el servidor ya hay demasiados jugadores con similar apodo! Por favor cambia tu apodo..'
+  double-join: Ya estás verificado, únete al servidor de nuevo!
+  too-many-names: Hay muchos jugadores con el mismo nick! Cambia tu apodo e intenta unirte de nuevo!
+  v1:
+    kickmessage: |-
+      &6CasualProtector: &cHas sido reconocido como un bot! Su cuenta ha sido bloqueada por 610 minutos.
+      &cSi esto es un error, lo siento.
+    broadcast: '&6CasualProtector: &8%player% &cha sido reconocido como un bot y su
+       cuenta bloqueada ahora!'
+prefix: '&8[&6CasualProtector&8] '
+command:
+  no-permission: No tienes permiso! (casualprotector.command)
+too-many-packets: Enviando demasiados paquetes! ¿Lag o exploit?
+block:
+  forge: No puedes unirte desde forge!
+  wdl: No puedes usar el mod de descarga mundial!
+  proxy: Eres usuario proxy?!
+  bedit: No puedes editar el libro!
+  invalid-chars: Acabas de escribir un mensaje inválido! Por favor use solo letras inglesas..
+payload:
+  deserialize:
+    too-fast-bedit: Estás editando el libro demasiado rápido!
+    invalid-book-data: ¡Datos de libro inválidos!
+too-many-items:
+  cleared: En el suelo había demasiados artículos! Acabo de eliminar todo para optimizar el servidor :D
+connection-closer:
+  message-to-ops: '&cPlayer %player% Acabo de intentar bloquear el servidor!
+  send-message-to-ops: false
+exploit:
+  commands-on-try:
+  - /ban %name% Exploiting
+  - /ban-ip %name% Exploiting
+bypass-when-tps-under: 19.2
+max-entities-on-chunk: 1000
+anti-logged-from-another-location: '&6[CasualProtector] &cEl jugador con ese nombre ya está jugando en este servidor!'
+hacked-items-kick-message: '&cLos elementos pirateados no están permitidos en este servidor! Demasiado grandes encantamientos o cantidad.'
+anti-wolrd-edit-exploit-message: '&6[CasualProtector] &cTu mensaje contiene palabras bloqueadas!'
+sign-exploit-message: '&cTu línea del cartel tiene demasiados caracteres!'

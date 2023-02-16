@@ -1,0 +1,17 @@
+By having purchased AntiAura ("the plugin"), you agree to the following...
+
+All code is Copyright of Joehot200(https://www.spigotmc.org/members/joehot200.147/), and any code should not be redistributed, copied, or modified.
+The plugin is a paid plugin, and should not be distributed to any non-purchaser, with the exception that any server owners may send the plugin to a developer with the sole purpose of the developer using the API (Application Programming Interface) of the plugin, and not to run the plugin on their own server(s).
+People other than the server owner may purchase the plugin for their server owner - As long as they are not then distributing AntiAura to multiple servers that are owned by different owners.
+
+Please note that the term "server" here replies to one single server or network of servers connected to with the same IP address.
+
+While this plugin attempts to stop cheats, there is no guarantee that this plugin will stop all cheats or that it cannot be bypassed.
+
+The plugin is allowed to send data to a remote server about itself. This means that AntiAura can send data about itself or its own performance, however will not send any information about your server (for example, it will NOT send any player information, world information or plugin information).
+
+You understand the plugin will create and modify files on your server (such as a config.yml, logs folder, etc). 
+
+You also understand that the plugin is provided as an assistant to stop cheaters in Minecraft, and that you use it as your OWN RISK. I am not responsible for any sort of damage caused by this plugin.
+
+You will not modify this EULA.txt file.

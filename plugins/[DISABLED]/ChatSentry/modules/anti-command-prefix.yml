@@ -1,0 +1,22 @@
+# --------------------------------------------------------------------------------------
+# Anti Command Prefix:
+# Prevents players using prefixed commands to get around filters and discover potential sensitive server information like the plugins. Ex. /minecraft:me instead of /me. Does not require "process-commands" in the main config to be enabled to function. Optionally integrates with the Command Spy module; when a command is modified/a prefix is removed, it will appear crossed out in the command spy notification.
+# Bypass permission: "chatsentry.anticommandprefix.bypass"
+# --------------------------------------------------------------------------------------
+
+# This module works by modifying command contents after they're sent by players. Ex. "/essentials:msg" will run without the prefix ("/msg")
+
+# Commands below will be allowed to be ran with their prefix.
+# Set to "allowed-prefixed-commands: []" to have an empty list.
+allowed-prefixed-commands:
+- "/plugin:command"
+- "/plugin2:command"
+
+# Prefixes below will be allowed to be ran no matter the command.
+# Set to "allowed-global-prefixes: []" to have an empty list.
+allowed-global-prefixes:
+- "plugin:"
+- "plugin2:"
+
+# Should the module send the message (changeable via lang.yml) notifying the player their command was modified when it removes a disallowed prefix?
+send-msg-when-modified: true

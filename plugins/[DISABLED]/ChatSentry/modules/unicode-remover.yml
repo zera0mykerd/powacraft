@@ -1,0 +1,15 @@
+# --------------------------------------------------------------------------------------
+# Unicode Remover:
+# Removes non US-ASCII (US keyboard) characters in chat messages and commands to prevent alphanumeric lookalike unicode characters from being used to bypass filters & modules. Has the option to use a compatibility mode that only blocks unicode used by hacked clients - blocking virtually all alphanumeric lookalike unicode supported by MC while allowing other languages in chat, commands, signs, anvils, and books (additional check contexts can be disabled)
+# Bypass permission: "chatsentry.unicoderemover.bypass"
+# --------------------------------------------------------------------------------------
+
+# If "process-commands" is true in config.yml, this module will filter through all commands (of players without bypass permission or op)
+# If "process-signs" is true in config.yml, this module will filter through text written on signs (of players without bypass permission or op)
+# If "process-anvils" is true in config.yml, this module will filter through items renamed in anvils (of players without bypass permission or op)
+# If "process-books" is true in config.yml, this module will filter through writing in books (of players without bypass permission or op)
+
+# Certain hacked clients allow players to type in alphanumeric lookalike unicode characters in order to bypass filters. Enabling this will only limit said alphanumeric lookalike unicode characters that are used by hacked clients and text generators to exploit filters while excluding unicode used by other languages.
+# Disabling this will block all unicode (which may cause issues if people speak other languages than English)
+# Though it allows for more protection if disabled, having this off may cause conflicts if players speak languages other than English.
+enable-compatibility-mode: true

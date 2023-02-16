@@ -1,0 +1,27 @@
+# --------------------------------------------------------------------------------------
+# Admin Notifier:
+# Notifies admins real-time when a module is triggered with detailed information, allowing them to know when to take action if necessary.
+# To receive notifications, op or the permission: "chatsentry.getnotified" is required.
+# --------------------------------------------------------------------------------------
+
+# Below are the modules that support real time notifications. Which of them should notifications be enabled for?
+# Please note that changing below values for modules which are not enabled in config.yml will have no effect.
+
+enable-notifications-for:
+  chat-cooldown: true
+  link-and-ad-blocker: true
+  word-and-phrase-filter: true
+  spam-blocker: true
+  unicode-remover: true
+  cap-limiter: true
+  anti-parrot: true
+  anti-chat-flood: true
+  anti-statue-spambot: true
+  anti-join-flood: true
+  chat-executor: true
+
+# Determines whether violation notifications should be sent to console in addition to players with notification permission.
+send-to-console: true
+
+# Should ChatSentry remind joining players (with violation notification permission) that they have violation notifications toggled off?
+remind-notifs-toggled-off-on-join: true

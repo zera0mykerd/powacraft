@@ -1,0 +1,169 @@
+# --------------------------------------------------------------------------------------
+# Intelligent Auto Punisher:
+# Automatically runs punishment commands on players who excessively trigger modules within a defined time frame.
+# Ops or players with "chatsentry.autopunisher.exempt" will be exempt to ONLY automatic warnings.
+# --------------------------------------------------------------------------------------
+
+# Config Guide:
+
+# Under punishment nodes you can:
+# Use the format "{player_msg}: message" to send a message to the player.
+# Use the format "{console_cmd}: command" to run a command as the console.
+# Use the format "{player_cmd}: command" to run a command as the player.
+# Use the format "{broadcast}: message" to broadcast a message to all players.
+
+# Within the above formats, you can use:
+# "{PLAYER}" - players username for commands.
+# "{PLAYER_DISPLAYNAME}" - players display name with its original colors
+# "{PLAYER_DISPLAYNAME_STRIPPED}" - players display name stripped of its original colors
+# "{CURRENT_WARNS}" - players current warning count for the target module.
+# "{MAX_WARNS}" - maximum warning count for the target module.
+
+# enabled: true/false nodes determine whether a warning will be added to the player who triggered the module.
+
+# Note: You need a plugin to handle the punishment commands for muting, banning, etc. For the best results, use Essentials or MaxBans' punishment commands.
+
+# In hours, how often should one warning (on every module) expire from players?
+# Set this to -1 to never have warnings expire automatically. This will disable the option below this option as well.
+warning-lifetime: 23
+
+# In hours, how often (after startup) should the warnings file be scanned for expired warnings? Keep this at 1 unless you experience tick lag from ChatSentry.
+# Note that the file is also checked on every server startup.
+check-expiry-interval: 1
+
+# Should the Auto Punisher send a message to the console when it warns a player, auto expires a players warning, or runs punishment actions on a player?
+verbose-in-console: true
+
+# When enabled, pardon messages will be hidden from receiver players only if triggered by the console. The point of this is so players don't see when their warnings are reset when triggered by the last punishment set under a module.
+suppress-pardons-from-console: true
+
+# Should a broadcast be sent to everybody when a player is manually warned via /warn? (broadcast is configurable via the misc-lang.yml file)
+broadcast-manual-warnings: true
+
+# Currently the only modules that support warnings are:
+# Chat Cooldown, Link & Ad Blocker, Word & Phrase Filter, Chat Executor, Unicode remover, Cap limiter, Anti Parrot, Anti chat flood, and Anti Statue Spambot
+
+# Manual = warnings that are applied manually via /cswarn <player>
+
+# Players module warnings can be manually cleared with "/cswarnings clearmodulewarnings <player> <module name>"
+# Players admin-given (manual) warnings can be cleared with "/cswarnings pardonallmanual <player>"
+
+
+
+# IMPORTANT: The applicable above pardon command should be ran at the end (highest) warning count to reset the players warning count immediately to prevent them getting warning counts higher than the max punishment, allowing them to get infinite warnings without punishment.
+
+
+
+warning-config:
+  manual:
+    enabled: true
+    punishments:
+      2:
+      - "{player_msg}: &cYou only have one warning remaining for the next 24 hours! Next time you'll be temporarily banned."
+      3:
+      - "{console_cmd}: ban {PLAYER} 12h Exceeded warnings"
+      - "{console_cmd}: cswarnings pardonallmanual {PLAYER}"
+  chat-cooldown:
+    enabled: true
+    punishments:
+      6:
+      - "{player_msg}: &cIf you keep violating the filter, you'll be muted! You've been warned."
+      12:
+      - "{console_cmd}: mute {PLAYER} 10m Chatting too fast"
+      - "{console_cmd}: cswarnings clearmodulewarnings {PLAYER} chat-cooldown"
+  link-and-ad-blocker:
+    enabled: true
+    punishments:
+      2:
+      - "{player_msg}: &cIf you violate the filter again, you'll be muted! You've been warned."
+      3:
+      - "{console_cmd}: mute {PLAYER} 1h Disallowed links/ips in chat."
+      - "{console_cmd}: kill {PLAYER}"
+      9:
+      - "{player_msg}: &cIf you violate the fiter again, you'll be banned! You've been warned."
+      10:
+      - "{console_cmd}: kill {PLAYER}"
+      - "{console_cmd}: tempban {PLAYER} 12h Disallowed links/ips in chat."
+      - "{console_cmd}: cswarnings clearmodulewarnings {PLAYER} link-and-ad-blocker"
+  word-and-phrase-filter:
+    enabled: true
+    punishments:
+      2:
+      - "{player_msg}: &cIf you violate the filter again, you'll be muted! You've been warned."
+      3:
+      - "{console_cmd}: mute {PLAYER} 1h Explicit language"
+      - "{console_cmd}: kill {PLAYER}"
+      9:
+      - "{player_msg}: &cIf you violate the fiter again, you'll be banned! You've been warned."
+      10:
+      - "{console_cmd}: kill {PLAYER}"
+      - "{console_cmd}: tempban {PLAYER} 1d Explicit language"
+      - "{console_cmd}: cswarnings clearmodulewarnings {PLAYER} word-and-phrase-filter"
+  chat-executor:
+    enabled: false
+    punishments: []
+  spam-blocker:
+    enabled: true
+    punishments:
+      3:
+      - "{player_msg}: &cIf you keep violating the filter, you'll be muted! You've been warned."
+      6:
+      - "{console_cmd}: mute {PLAYER} 1h Spam"
+      - "{console_cmd}: kill {PLAYER}"
+      9:
+      - "{player_msg}: &cIf you violate the fiter again, you'll be banned! You've been warned."
+      10:
+      - "{console_cmd}: kill {PLAYER}"
+      - "{console_cmd}: tempban {PLAYER} 12h Spam"
+      - "{console_cmd}: cswarnings clearmodulewarnings {PLAYER} spam-blocker"
+  unicode-remover:
+    enabled: true
+    punishments:
+      6:
+      - "{player_msg}: &cIf you violate the filter again, you'll be muted! You've been warned."
+      7:
+      - "{console_cmd}: mute {PLAYER} 1h Disallowed chat unicode"
+      - "{console_cmd}: cswarnings clearmodulewarnings {PLAYER} unicode-remover"
+  cap-limiter:
+    enabled: true
+    punishments:
+      3:
+      - "{player_msg}: &cIf you keep violating the filter, you'll be muted! You've been warned."
+      6:
+      - "{console_cmd}: mute {PLAYER} 1h Cap spam"
+      10:
+      - "{player_msg}: &cIf you violate the fiter again, you'll be banned! You've been warned."
+      11:
+      - "{console_cmd}: kill {PLAYER}"
+      - "{console_cmd}: tempban {PLAYER} 12h Cap spam"
+      - "{console_cmd}: cswarnings clearmodulewarnings {PLAYER} cap-limiter"
+  anti-parrot:
+    enabled: true
+    punishments:
+      2:
+      - "{player_msg}: &cIf you keep violating the filter, you'll be muted! You've been warned."
+      4:
+      - "{console_cmd}: mute {PLAYER} 1h Parroting players"
+      - "{console_cmd}: kill {PLAYER}"
+      5:
+      - "{player_msg}: &cIf you violate the fiter again, you'll be banned! You've been warned."
+      6:
+      - "{console_cmd}: kill {PLAYER}"
+      - "{console_cmd}: tempban {PLAYER} 12h Parroting players"
+      - "{console_cmd}: cswarnings clearmodulewarnings {PLAYER} anti-parrot"
+  anti-chat-flood:
+    enabled: true
+    punishments:
+      3:
+      - "{player_msg}: &cIf you keep violating the filter, you'll be muted! You've been warned."
+      6:
+      - "{console_cmd}: mute {PLAYER} 1h Excessive chat flood"
+      - "{console_cmd}: cswarnings clearmodulewarnings {PLAYER} anti-chat-flood"
+  anti-statue-spambot:
+    enabled: true
+    punishments:
+      3:
+      - "{console_cmd}: kick {PLAYER} Detected as statue spambot"
+      8:
+      - "{console_cmd}: tempban {PLAYER} 7d Statue spambot"
+      - "{console_cmd}: cswarnings clearmodulewarnings {PLAYER} anti-statue-spambot"

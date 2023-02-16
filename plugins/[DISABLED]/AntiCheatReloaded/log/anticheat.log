@@ -1,0 +1,8 @@
+[INFO|10:30:22]: ACR > _ZERA_ failed Flight (x8) | ping: 1ms, tps: 19,82 
+[INFO|10:30:26]: ACR > _ZERA_ failed Flight (x16) | ping: 0ms, tps: 19,68 
+[INFO|10:30:30]: ACR > _ZERA_ failed Flight (x24) | ping: 2ms, tps: 19,98 
+[INFO|10:32:19]: ACR > _ZERA_ failed Flight (x32) | ping: 0ms, tps: 19,87 
+[INFO|10:33:14]: ACR > _ZERA_ failed Flight (x40) | ping: 0ms, tps: 20 
+[INFO|10:56:37]: ACR > _ZERA_ failed NoFall (x8) | ping: 0ms, tps: 19,97 
+[INFO|11:07:11]: ACR > _ZERA_ failed NoFall (x16) | ping: 0ms, tps: 19,87 
+[INFO|11:09:08]: ACR > _ZERA_ failed Speed (x8) | ping: 0ms, tps: 20 

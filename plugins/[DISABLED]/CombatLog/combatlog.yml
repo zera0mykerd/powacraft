@@ -1,0 +1,85 @@
+############################################################
+# +-------- Designed and Developed by JackProehl --------+ #
+# |---------- Updated and Managed by iiSnipez -----------| #
+# |---- Consider donating to Jack: JohnProehl@me.com ----| #
+# +-- Consider donating to iiSnipez: paypal.me/Jarod05 --+ #
+############################################################
+
+# Please open a ticket to report all bugs and glitches on BukkitDev.
+
+UpdateCheck: true
+AutoDownload: false
+Metrics: true
+
+# Send a MOTD to players on login
+MOTD: true
+
+# Set Broadcast to true to broadcast when a player CombatLogs.
+Broadcast: true
+
+Tag-Duration: 10
+Block-Teleportation: true
+Block-Enderpearls: false
+Remove-Invis-Potion: true
+
+# Add modes you want removed during Combat under Remove-Modes.
+# Available Modes: fly, disguise.
+Remove-Modes:
+- fly
+- disguise
+
+# Set onKick to true to remove CombatTags when players are kicked.
+# Set onLagout to true to remove CombatTags when players lag out.
+Remove-Tag-On-Kick: false
+Remove-Tag-On-Lagout: false
+
+# To block all commands, add '*' under Commands
+Block-Commands: true
+Commands:
+  - home
+  - spawn
+  - tpa
+  - tpaccept
+  - tpahere
+  - warp
+  - fly
+  - disguise
+  - mvspawn
+  - mv spawn
+  - mvs
+  - hub
+  - tp
+  - f
+  - f home
+  - is go
+  - is
+  - island
+  - island go
+  - '*'
+  
+# Kill players when they CombatLog.
+Kill: true
+
+Disabled-Worlds:
+  - world_custom
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Messages                       | #
+# +------------------------------------------------------+ #
+############################################################
+
+# TO DISABLE A MESSAGE, SET IT AS 'false'!
+UpdateCheckMessage: '&4[&cAntiNabbo&4]&5>&e CombatLog update available! Use &f/cl update &cto download the update.'
+MOTDMessage: ''
+BroadcastMessage: '&4[&cAntiNabbo&4]&5> &6<name> &eHa sloggato in combattimento!'
+TaggerMessage: '&4[&cAntiNabbo&4]&5>&e Hai messo in combattimento &6<name>&e. Non sloggare!'
+TaggedMessage: '&4[&cAntiNabbo&4]&5>&e Sei stato messo in combattimento da &6<name>&e. Non sloggare!'
+UntagMessage: '&4[&cAntiNabbo&4]&5>&a Non sei piu in combattimento, puoi sloggare.'
+InCombatMessage: '&4[&cAntiNabbo&4]&5>&e Sei stato messo in combattimento per &6<time> &esecondi.'
+NotInCombatMessage: '&4[&cAntiNabbo&4]&5>&aNon risulti in combattimento.'
+RemoveModesMessage: '&4[&cAntiNabbo&4]&5>&e La tua <mode> e stata rimossa.'
+RemoveInvisMessage: '&4[&cAntiNabbo&4]&5>&e La tua invisibilita e stata rimossa!'
+BlockCommandsMessage: '&4[&cAntiNabbo&4]&5>&e Combando non disponibile in combattimento.'
+BlockTeleportationMessage: '&4[&cAntiNabbo&4]&5>&e Non puoi teletrasportarti in combattimento.'
+KillMessage: '&4[&cAntiNabbo&4]&5>&e Sei stato massacrato per aver sloggato!'

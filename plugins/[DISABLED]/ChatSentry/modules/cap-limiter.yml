@@ -1,0 +1,32 @@
+# --------------------------------------------------------------------------------------
+# Intelligent Cap Limiter:
+# Limits the use of excessive capital letters in messages without interference of messages using proper grammar. Can auto-set the message to lowercase or blocks it entirely. Player names are ignored.
+# Bypass permission: "chatsentry.caplimiter.bypass"
+# --------------------------------------------------------------------------------------
+
+# Below is the number of capital letters players will be allowed write in a row
+# Player names will be ignored
+repeated-cap-limit: 8
+
+# Below is the maximum amount of capital letters messages can contain before being blocked by the filter. To avoid problems, be mindful of players writing with proper capitalization in longer messages by not setting this value lower than about 15.
+master-cap-limit: 18
+
+# When set to true, the messages caps will be replaced with lowercase letters and sent. When set to false the detected message will be blocked entirely.
+modify-message: true
+
+# Only applies if modify-message is true. When a message is modified, should the blocked message below be sent as well?
+send-block-message-when-modified: true
+
+# IMPORTANT: The below list will only work if "process-commands" is true in config.yml
+# The below list is which commands the module will apply to. It's recommended to only set these to your private messaging commands.
+# Set the list to "affected-commands: []" to apply the module to ALL commands (highly not recommended!)
+# Make sure to only include base commands; don't add any command arguments. (spaces)
+affected-commands:
+- "/tell"
+- "/t"
+- "/msg"
+- "/w"
+- "/r"
+- "/whisper"
+- "/w"
+- "/pm"

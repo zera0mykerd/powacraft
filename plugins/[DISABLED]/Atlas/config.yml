@@ -1,0 +1,26 @@
+database:
+  mysql:
+    name: Atlas
+    ip: 127.0.0.1
+    port: 3306
+    username: username
+    password: password
+  mongo:
+    enabled: false
+    name: Atlas
+    ip: 127.0.0.1
+    port: 27017
+    username: username
+    password: password
+forge:
+  enabled: false
+  bungee: false
+updater:
+  autoDownload: false
+  notifyOnJoin: true
+metrics: true
+init:
+  reloadDependingPlugins: true
+ticking:
+  runAsync: false
+bungee: true

@@ -1,0 +1,259 @@
+#printing all sent packets by player and their values like integers, items, strings etc..
+debug-mode: false
+#is plugin supposed to check for updates
+check-for-updates: false
+#print info about reaching packet-limit etc. - print everything to log files! if you want to see all info about exceeding packet limit, kicking players etc - turn it on.
+#if you don't want any spam in console about players trying to crash the server, about bots etc. - switch it false.
+print-everything: true
+#if you want plugin to change the current config to old_config.yml and generate new config with new values (if they exist) - change it to true
+replace-to-old: false
+#Sending message about used ram/max ram, and tps to all ops.
+#The message of it is in messages.yml
+memory-info:
+  #Is it enabled?
+  enabled: false
+  #Time in seconds
+  time: 60
+optimize-fps:
+  enabled: true
+  #it will hide falling blocks like sand - it really fixes fps
+  sand: true
+  #it will hide falling blocks like tnt - really good for castle mod, survival
+  tnt: true
+  #it will hide all spawned mobs, not recommended on servers like survival, easyhc etc. - if mobs are able to spawn on you server do not enable it
+  mobs: false
+  #remove firework entities, some of exploits use that to crash players clients
+  firework: true
+redstone:
+  #disabled by default.. some of servers doesn't want it so if you just want to use redstone feature - switch it to true.
+  enabled: false
+  #max powered redstones per chunk
+  limit-per-chunk: 80
+  #max powered redstones per world
+  limit-per-world: 450
+nbthelper:
+  enabled: true
+  block-address-if-invalid: true
+  check-shulker-boxes: true
+  #for italian, deutsch, china etc. servers, for e.g. polish server - the 340 is enough and max limit.
+  page-length-limit: 502
+  #block firework exploits, thats the better way =( just removing the nbt data from firework item instead of checking it
+  #it kicks the player
+  remove-firework-data: true
+anti-uuid-spoof:
+  #change to true if you want to block uuid-spoof exploit
+  enabled: true
+  #if plugin is supposed to run async task in asyncplayerprelogin and then check url data etc
+  runTask: true
+logged-from-another-location:
+  block: false
+#check if InputBuffer data > X - if it is, the player is kicked
+packet-filter:
+  #automatically disabled because of small bugs, we are going to develop this in the future.
+  enabled: true
+#blocks executing commands when player is holding book in main hand (prevents unwanted commands executions by player, giving access to plot, giving op, paying money etc)
+anti-run-commands:
+  #replace it with "/plot" or something if you just want to block /plot commands when holding book
+  #"*" blocks all commands
+  blocked-commands:
+    - "/horizon"
+    - "/hori"
+  #bypassed/whitelisted commands - when you use "*" in blocked commands and "/ah" is in whitelisted-commands players will be able to execute "/ah" command
+  whitelisted-commands:
+    - "/auctionhouse"
+    - "/ah"
+    - "/post"
+    - "/letter"
+  #you only need it enabled when your version is 1.8-1.8.3 or your ALL players have creative gamemode
+  enabled: true
+hacked-items:
+  bypass-worlds:
+    #its just an example - if the world's name is survivalx - plugin will bypass the player actions in these worlds
+    #please use lowercase! e.g. "survival" - not "Survival" or "skyblock" - not "SkyBlock!" it really matters!
+    - "survivalx"
+  #if you are using MyItems plugin or AdvancedEnchantments please disable this option.
+  block: true
+  #block too big enchantments (over-enchanted items) like sharpness, efficiency lvl 9999 (or just more than max_level - >5)
+  #it changes the level of enchantment to max level. for example if sharpness has 9999 level it will be changed to max_level (which is the 5 for e.g sharpness).
+  block-over-enchanted-items: false
+sign-exploit:
+  block: true
+  #player will not be able to place a sign that alraedy contains a nbt data (text) if you let players do that - just disable it.
+  block-already-existing-nbt: false
+  #signs-limit:
+    #enabled: true
+    #can place only one sign between 3 seconds
+    #limit:
+     # seconds: 3
+     # message: "&cYou can place only one sign between 3 seconds!"
+world-edit-exploit:
+  block: true
+block-place-listener: true #if you are running on spigot 1.13 please turn it off it may cause errors in console
+chunk-cleaner: false
+ping:
+  enabled: true
+  limit: 500 #if player's ping is bigger than 500 he will be kicked
+  check-tps-before: true #checking server's tps before kicks player, when server has lag or something like this player will be not kicked
+too-many-items:
+  enabled: true
+  limit: 256 #if there is dropped more than 1000 items on ground they will be removed
+arm-animation:
+  enabled: true
+  timestamp: 650 #in milliseconds (1000 = 1 second in 1.10-1.13 it's automatically disabled because server adds this patch it itself)
+block-payload-book-edit:
+  enabled: true
+  block-fully: false #will block editing/signing book without checking nbt
+  deserialize: false #if you want to make players able to edit and sign book change it to true and change block-fully to false
+window-click:
+  advanced-deserialization: true
+  max-similar-pages: 10
+  #checking and finding similar windowclick packets
+  #when player sends the same windowclick packet 50 times (each space between packets was smaller than 0.5second)
+  #he will be just kicked. useful feature if someone send spam packets
+  check-last-packet: true
+  #limit for the same windowclick packet mentioned upper
+  check-last-packet-limit: 50
+invalid-chars:
+  #block invalid chars (another than english etc. (e.g china chars, larger than 1 bit)
+  enabled: true
+  #is plugin supposed to look for invalid chars in books content
+  filter-books: true
+  #"if there is more than 20 chars"
+  cancel-only-when-count-bigger-than: 20
+  #plugin will skip these chars.. (they are not checked)
+  #add here china chars (if you allow china people) or german if you allow german people
+  #you can remove 'X', it's here just for example
+  #remember to use 'someChar' instead of "someChar" !!
+  skipped:
+  - ''
+payload:
+  register-limit: 30 #limit per 60 seconds, if exceeded, player will be kicked
+packet-limitter:
+  #If you want to disable it - then just increase the limits to something like 9999 (i will add another option to disable it later)
+  #Instead of disabling it i just recommend to improve the limit if you have false detects.
+  ABILITIES: 250
+  ARM_ANIMATION: 80
+  BLOCK_DIG: 120
+  BLOCK_PLACE: 80
+  BLOCK_PLACE_BOOKS: 5
+  ENTITY_ACTION: 60
+  KEEP_ALIVE: 8
+  POSITION: 250
+  SET_CREATIVE_SLOT: 200
+  SET_CREATIVE_SLOT_WRONG: 1
+  TAB_COMPLETE: 50
+  UPDATE_SIGN: 8
+  USE_ENTITY: 80
+  USE_ITEM: 80
+  WINDOW_CLICK: 80
+  WINDOW_CLICK_WRONG: 15
+  TRANSACTION: 45
+  SETTINGS: 70
+  CLOSE_WINDOW: 29
+  RESOURCE_PACK_STATUS: 10
+  BLOCK_PLACE_WRONG: 9
+  RECIPE_DISPLAYED: 120
+  AUTO_RECIPE: 40
+  #MC|ItemName and MC|AdvCdm limit
+  PAYLOAD_ITEM_ADV: 30
+  PAYLOAD_ITEM_ADV_WRONG: 1
+block:
+  #if player has 30 slots in opened inventory and he tries to click at 31 slot - the event is cancelled.
+  too-big-slot: true
+  big-position: true #for creative/vanilla servers
+  fully-book: false #if player clicked in book he will be kicked from the server (without checking nbt) (book may has too big nbt, it is using for lagging servers)
+  hopper-creative-crasher: false
+  buffer-overflow: true
+  #kicks player if try to use wdl or forge
+  wdl: true #world downloader
+  wdl-bypass:
+    ""
+  #disabled by default
+  forge: false #forge mod
+  forge-bypass:
+    ""
+  #labymod
+  lmc: false
+  lmc-bypass:
+    ""
+  #liteloader mod
+  liteloader: false
+  liteloader-bypass:
+    ""
+  proxy: true #if channel contains proxy - server kicks player (proxy is something for lagging and botting servers, and some of them sends pluginmessage with channel 'proxy')
+#anti proxy/vpn - IF YOU ARE USING IT ON BUNGEE AND SPIGOT - PLEASE REMOVE IT ON BUNGEE AND USE ONLY ON SPIGOT!!!
+bad-ip-checkers:
+  ipintel:
+    timeout: 1500
+    enabled: false
+    query: "http://www.shroomery.org/ythan/proxycheck.php?ip={ADDRESS}"
+    result: "Y"
+    must-equal: false
+    limitable: false
+  # message: "You cannot use proxy or vpn!"
+  stopforumspam:
+    timeout: 1500
+    enabled: false
+    query: "http://www.stopforumspam.com/api?ip={ADDRESS}"
+    result: "<appears>yes</appears>"
+    must-equal: false
+    limitable: false
+   # message: "You cannot use proxy or vpn!"
+  ipapi:
+    timeout: 1500
+    #change it to true ONLY if you have configured "allowed-countries" - otherwise all "not polish"players will be disconnected
+    enabled: false
+    limitable: true
+    #limit per one minute - if reached limit - players will be allowed to join without checking if they are using vpn (only for 1 minute)
+    limit: 147
+    #change this to your country..
+    #list of all countries: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+    allowed-countries:
+    - "Italy"
+    - "IT"
+    - "it"
+    #message: "Your country is blocked on this server!"
+antibot:
+  #disable all features without setting everything to false, just one option!
+  #vpn/proxy checking, channel-verification,two-step-verificatin etc. will be set to false automatically!
+  disable-all-features: false
+  #if nickname starts with (e.g) "MCStorm" plugin will disconnect a player
+  check-nicknames:
+    enabled: true
+    blocked:
+      - "mcstorm"
+      - "cproxy"
+      - "satan"
+      - "lucifer"
+      - "astaroth"
+      - "azazel"
+      - "belzebub"
+  #checking nicknames length
+  last-name-length-checker:
+    enabled: true
+    sensibility: 4
+  #if there is more than 3 players with similar name (e.g 1723162yooniks 12732173yooniks etc, or yooniks81273172, yooniks1273127312) next connections will be not able to join.
+  name-similarity-checker:
+    enabled: true
+    start: 0
+    end: 3
+    max-similar-names: 4
+  connection-throttle:
+    enabled: true
+    #15 seconds in milliseconds (15 * 1000)
+    delay: 6000
+  #I recommend to use it on lobby/auth servers, sometimes it has false detects, Personally I would use it on my server, it kicks ALL bots and only sometimes has false detects.
+  #already tested with bots - realy great blocking
+  #if kicking real players very often (or always) please disable it, probably your server uses another payload for getting server version and server is another than 1.8, 1.9, 1.10, 1.12 and 1.13
+  channel-verification:
+    enabled: true
+    #We recommend to keep it false because sometimes it has false detects
+    #you can switch it false if it kicks real players so they will be able to rejoin
+    block: false
+    #block account on 10 minutes if "block" is switched to true
+    block-minutes: 10
+  max-accounts-per-ip:
+     enabled: true
+     amount: 3 #if there is more players than set at the server with the same ip the next connection will be disconnected
+  #if player is newbie he has to join second time on server because he will be kicked with reason "please join again"
+  two-step-verification: false
