@@ -1,0 +1,232 @@
+CocoPops:
+    Item_Information:
+        Item_Name: "&4&lCocoPops"
+        Item_Type: 351~3
+        Item_Lore: "&cUna bomba a grappolo che rilascia|&c10 bombette alla detonazione."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Remove_Unused_Tag: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: grenade
+        Projectile_Subtype: 351~3
+        Projectile_Speed: 12
+        Sounds_Projectile: EAT-2-1-28,EAT-2-1-32,EAT-2-1-36
+        Sounds_Shoot: FIRE_IGNITE-2-0-0
+    Cluster_Bombs:
+        Enable: true
+        Bomblet_Type: 362
+        Delay_Before_Split: 40
+        Number_Of_Splits: 1
+        Number_Of_Bomblets: 10
+        Speed_Of_Bomblets: 8
+        Delay_Before_Detonation: 40
+        Detonation_Delay_Variation: 10
+        Particle_Release: BLOCK_BREAK-127
+        Sounds_Release: BURP-2-1-0
+    Explosions:
+        Enable: true
+        Damage_Multiplier: 25
+        Explosion_No_Grief: true
+        Explosion_Radius: 4
+        Sounds_Explode: ITEM_PICKUP-2-1-0
+    Extras:
+        One_Time_Use: true
+
+Trinket:
+    Item_Information:
+        Item_Name: "&4&lTrinket"
+        Item_Type: 264
+        Item_Lore: "&cTasto-sinistro per impostare il proprietario.|&cEsplode quando:|&c- viene raccolto|&c- sparato da un distributore|&c- una cassa contiene questo oggetto e viene aperta|&c- Posizionato in un item frame nelle vicinanze|&c ...pressure plates ci si cammina sopra.|&c&oI proprietari non possono innescare le proprie trappole."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Explosive_Devices:
+        Enable: true
+        Device_Type: trap
+        Device_Info: true-true-true-false-false
+        Sounds_Deploy: ITEM_PICKUP-2-0-0
+        Message_Trigger_Placer: "&c<victim> ha scatenato la tua trappola esplosiva!"
+        Message_Trigger_Victim: "&cSei saltato in aria a causa di una trappola di <shooter>"
+        Sounds_Trigger: SHEEP_IDLE-2-1-0
+    Explosions:
+        Enable: true
+        Damage_Multiplier: 50
+        Explosion_No_Grief: true
+        Enable_Owner_Immunity: true
+        Explosion_Radius: 5
+        Explosion_Potion_Effect: POISON-100-2,HUNGER-100-2
+        Explosion_Delay: 10
+        Sounds_Explode: WITHER_SHOOT-2-2-0
+
+Putty:
+    Item_Information:
+        Item_Name: "&4&lPutty"
+        Item_Type: 404
+        Item_Lore: "&cEsplosivo remoto.|&cTasto-destro per lanciare.|&cTasto-sinistro per la detonazione."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+    Explosive_Devices:
+        Enable: true
+        Device_Type: itembomb
+        Device_Info: 2,10,159,159~14
+        Sounds_Deploy: SHOOT_ARROW-1-0-0
+        Sounds_Alert_Placer: CLICK-1-1-0
+        Sounds_Trigger: SHEEP_SHEAR-1-2-0
+    Explosions:
+        Enable: true
+        Explosion_No_Grief: true
+        Explosion_Radius: 5
+        Explosion_Delay: 16
+        Sounds_Explode: ZOMBIE_WOOD-2-0-0
+
+C4:
+    Item_Information:
+        Item_Name: "&4&lC4"
+        Item_Type: 69
+        Item_Lore: "&cEsplosivo remoto.|&cTasto-destro per piazzare.|&cTasto-sinistro per la detonazione."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+#    Ammo:
+#        Enable: true
+#        Ammo_Item_ID: 46
+#        Take_Ammo_Per_Shot: true
+    Explosive_Devices:
+        Enable: true
+        Device_Type: remote
+        Device_Info: 2-1A-TheStabbyBunny
+        Sounds_Deploy: CHICKEN_EGG_POP-1-1-0
+        Message_Disarm: "&cHai disarmato un dispositivo esplosivo."
+        Message_Trigger_Placer: "&c<victim> ha disarmatto la tua C4!"
+        Message_Trigger_Victim: "&chai disarmato lo C4 di <shooter>!"
+        Sounds_Alert_Placer: CLICK-1-1-0
+        Sounds_Trigger: SHEEP_SHEAR-1-1-0
+    Explosions:
+        Enable: true
+        Explosion_No_Grief: true
+        Explosion_Radius: 6
+        Explosion_Delay: 16
+        Sounds_Explode: ZOMBIE_WOOD-2-0-0
+#    Extras:
+#        One_Time_Use: true
+
+Airstrike:
+    Item_Information:
+        Item_Name: "&4&lHarrier Strike"
+        Item_Type: 76
+        Item_Lore: "&cChiama un bombardamento aereo|&cnella posizione dove decidi di aprire il fuoco."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Remove_Unused_Tag: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: flare
+        Projectile_Subtype: 76
+        Projectile_Speed: 10
+        Sounds_Shoot: FIRE_IGNITE-2-0-0,FIZZ-2-0-0
+    Airstrikes:
+        Enable: true
+        Flare_Activation_Delay: 60
+        Particle_Call_Airstrike: lightning
+        Message_Call_Airstrike: "&c&lAttenzione correre ai ripari..."
+        Block_Type: 85
+        Area: 4
+        Distance_Between_Bombs: 4
+        Height_Dropped: 90
+        Vertical_Variation: 10
+        Horizontal_Variation: 10
+        Multiple_Strikes:
+            Enable: true
+            Number_Of_Strikes: 3
+            Delay_Between_Strikes: 20
+        Sounds_Airstrike: ENDERMAN_STARE-2-2-0
+    Explosions:
+        Enable: true
+        Explosion_No_Grief: true
+        Explosion_Radius: 4
+        Sounds_Explode: ENDERDRAGON_HIT-2-2-0
+    Extras:
+        One_Time_Use: true
+
+Grenade:
+    Item_Information:
+        Item_Name: "&4&lGranata a frammentazione"
+        Item_Type: 402
+        Item_Lore: "&cEsplode tre secondi dopo il lancio."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Remove_Unused_Tag: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 10
+        Projectile_Amount: 1
+        Projectile_Type: grenade
+        Projectile_Subtype: 46
+        Projectile_Speed: 10
+        Sounds_Shoot: SHOOT_ARROW-2-0-0
+    Explosions:
+        Enable: true
+        Explosion_No_Grief: true
+        Explosion_Radius: 4
+        Explosion_Delay: 60
+    Extras:
+        One_Time_Use: true
+
+Flashbang:
+    Item_Information:
+        Item_Name: "&4&lFlashbang"
+        Item_Type: 351~8
+        Item_Lore: "&cDisorienta il bersaglio al momento della detonazione."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Remove_Unused_Tag: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 10
+        Projectile_Amount: 1
+        Projectile_Type: grenade
+        Projectile_Subtype: 351~8
+        Projectile_Speed: 10
+        Sounds_Shoot: SHOOT_ARROW-2-0-0
+    Explosions:
+        Enable: true
+        Explosion_No_Grief: true
+        Explosion_No_Damage: true
+        Explosion_Radius: 6
+        Explosion_Potion_Effect: BLINDNESS-120-1,SLOW-120-1
+        Explosion_Delay: 20
+        Sounds_Victim: LEVEL_UP-1-0-0
+        Sounds_Explode: ANVIL_LAND-2-1-0
+    Extras:
+        One_Time_Use: true
+
+Toaster:
+    Item_Information:
+        Item_Name: "&4&lToaster"
+        Item_Type: 343
+        Item_Lore: "&cMina antiuomo.|&cScatena un esplosione infuocata quando:|&c- calpestato da mobs o giocatori|&c- colpito con pugni o oggetti|&c- sparato da un proiettile"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Remove_Unused_Tag: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Right_Click_Interactions: true
+    Explosive_Devices:
+        Enable: true
+        Device_Type: landmine
+        Device_Info: 46,MINECART
+        Sounds_Deploy: ORB_PICKUP-2-2-0
+        Message_Trigger_Placer: "&c<victim> ha attivato la tua mina!"
+        Message_Trigger_Victim: "&cHai attivato la mina di <shooter>!"
+        Sounds_Trigger: ITEM_BREAK-2-1-0,ZOMBIE_UNFECT-2-2-0
+    Explosions:
+        Enable: true
+        Ignite_Victims: 120
+        Explosion_No_Grief: true
+        Explosion_Radius: 4
+        Explosion_Delay: 16
+        Sounds_Explode: FIRE-2-0-0,ZOMBIE_METAL-2-0-0
+    Extras:
+        One_Time_Use: true

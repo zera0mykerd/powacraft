@@ -1,0 +1,466 @@
+Crate:
+  CrateType: QuadCrate
+  CrateName: '&b&lCrazy Crate'
+  Preview-Name: '           &3&lCrazy Crate'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 25
+  OpeningBroadCast: true
+  BroadCast: '%Prefix%&6&l%Player% &7sta aprendo la &b&lCrazy Crate&7.'
+  Item: CHEST
+  Glowing: false
+  Name: '&b&lCrazy Crate'
+  Lore:
+  - '&7Questa crate contiene cose folli.'
+  - '&7Tu hai &6%Keys% chiavi &7per aprire questa cassa con.'
+  - '&7&l(&e&l!&7&l) Tasto destro per visualizzare i premi.'
+  Preview:
+    Toggle: true
+    ChestLines: 6
+    Glass:
+      Toggle: true
+      Item: STAINED_GLASS_PANE:15
+  PhysicalKey:
+    Name: '&b&lCrazy Crate &6&lKey'
+    Lore:
+    - '&7Una chiave speciale'
+    - '&7Per una crate speciale.'
+    Item: TRIPWIRE_HOOK
+    Glowing: true
+  Hologram:
+    Toggle: true
+    Height: 1.5
+    Message:
+    - '&b&lCrazy Crate'
+  Prizes:
+    '1':
+      DisplayName: '&3&lCorazza rara'
+      DisplayItem: DIAMOND_CHESTPLATE
+      DisplayAmount: 1
+      Lore:
+      - '&7Vinci una corazza rara.'
+      - '&6&lChance: &c&l40%'
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:4
+      - DURABILITY:3
+      MaxRange: 100
+      Chance: 40
+      Items:
+      - Item:DIAMOND_CHESTPLATE, Amount:1, Name:&3Rare ChestPlate, PROTECTION_ENVIRONMENTAL:5, DURABILITY:3
+    '2':
+      DisplayName: '&b&lCrazy &4&lSword'
+      DisplayItem: GOLD_SWORD
+      DisplayAmount: 1
+      Lore:
+      - '&7Vinci una spada folle.'
+      - '&6&lChance: &c&l35%'
+      DisplayEnchantments:
+      - DAMAGE_ALL:5
+      - FIRE_ASPECT:2
+      MaxRange: 100
+      Chance: 35
+      Items:
+      - Item:GOLD_SWORD, Amount:1, Name:&b&lCrazy &4&lSword, DAMAGE_ALL:5, FIRE_ASPECT:1
+      Messages:
+      - '&7Hai vinto &b&lCrazy &4&lSword&7.'
+    '3':
+      DisplayName: '&e&l$10,000'
+      DisplayItem: DOUBLE_PLANT
+      DisplayAmount: 1
+      Lore:
+      - '&7Fai piovere un sacco di soldi.'
+      - '&6&lChance: &c&l20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Commands:
+      - Eco give %Player% 10000
+      Messages:
+      - '&7Hai appena vinto &a$10,000&7.'
+    '30':
+      DisplayName: '&7&lElmetto di ferro incantato'
+      DisplayItem: 306
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 3
+            DURABILITY: 1
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '31':
+      DisplayName: '&7&lCorazza di ferro incantata'
+      DisplayItem: 307
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 3
+            THORNS: 1
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '32':
+      DisplayName: '&7&lGambali di ferro incantato'
+      DisplayItem: 308
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 3
+            THORNS: 1
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '33':
+      DisplayName: '&7&lStivali di ferro incantato'
+      DisplayItem: 309
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 3
+            DURABILITY: 1
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '34':
+      DisplayName: '&b&lArco leggendario'
+      DisplayItem: 261
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: BOW
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            ARROW_DAMAGE: 3
+            ARROW_KNOCKBACK: 2
+            ARROW_FIRE: 1
+            DURABILITY: 3
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '35':
+      DisplayName: '&7Frecce'
+      DisplayItem: 262
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: ARROW
+        amount: 64
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '36':
+      DisplayName: '&5Ossidiana'
+      DisplayItem: 49
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: OBSIDIAN
+        amount: 32
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '37':
+      DisplayName: '&4TNT'
+      DisplayItem: 46
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: TNT
+        amount: 32
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '38':
+      DisplayName: '&7Libreria'
+      DisplayItem: 47
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: BOOKSHELF
+        amount: 32
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '39':
+      DisplayName: '&bBlocchi di diamante'
+      DisplayItem: 57
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_BLOCK
+        amount: 3
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '40':
+      DisplayName: '&f&lBlocchi di ferro'
+      DisplayItem: 42
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 6
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '41':
+      DisplayName: '&aBlocchi di smeraldo'
+      DisplayItem: 133
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: EMERALD_BLOCK
+        amount: 3
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '42':
+      DisplayName: '&7Blocchi di end'
+      DisplayItem: 121
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: ENDER_STONE
+        amount: 32
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '43':
+      DisplayName: '&4Verruche del nether'
+      DisplayItem: 372
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHER_STALK
+        amount: 64
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '44':
+      DisplayName: '&eVerghe di blaze'
+      DisplayItem: 369
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: BLAZE_ROD
+        amount: 64
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []

@@ -1,0 +1,473 @@
+Crate:
+  CrateType: CSGO
+  CrateName: '&7&lBasic Crate'
+  Preview-Name: '            &8&lBasic Crate'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 21
+  OpeningBroadCast: true
+  BroadCast: '%Prefix%&6&l%Player% &7sta aprendo la &7&lBasic Crate&7.'
+  Item: CHEST
+  Glowing: false
+  Name: '&7&lBasic Crate'
+  Lore:
+  - '&7Questa crate contiene strani oggetti.'
+  - '&7Tu hai &6%Keys% chiavi &7per aprire questa cassa con.'
+  - '&7&l(&e&l!&7&l) Tasto destro per visualizzare i premi.'
+  Preview:
+    Toggle: true
+    ChestLines: 6
+    Glass:
+      Toggle: true
+      Item: STAINED_GLASS_PANE:7
+  PhysicalKey:
+    Name: '&7&lBasic Crate &b&lKey'
+    Lore:
+    - '&7Una chiave speciale'
+    - '&7Per una crate speciale.'
+    Item: TRIPWIRE_HOOK
+    Glowing: false
+  Hologram:
+    Toggle: true
+    Height: 1.5
+    Message:
+    - '&7&lBasic Crate'
+  Prizes:
+    '1':
+      DisplayName: '&7&lBasic Grass'
+      DisplayItem: GRASS
+      DisplayAmount: 1
+      Lore:
+      - '&7Vinci un pochino di erba.'
+      - '&6&lChance: &c&l40%'
+      DisplayEnchantments:
+      - ''
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Items:
+      - Item:GRASS, Amount:32, Name:&7&lBasic Grass
+      Commands:
+      - broadcast &6&l%Player% &7ha vinto la Basic Grass.
+      Messages:
+      - '&7Hai vinto &7&lBasic Grass&7.'
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Messages: []
+        Commands: []
+        Items: []
+    '2':
+      DisplayName: '&b&lElmo economico'
+      DisplayItem: GOLD_HELMET
+      DisplayAmount: 1
+      Lore:
+      - '&7Vinci un elmetto economico.'
+      - '&6&lChance: &c&l60%'
+      MaxRange: 100
+      Chance: 60
+      Items:
+      - Item:GOLDEN_HELMET, Amount:1, Name:&bCheap Helmet, PROTECTION_ENVIRONMENTAL:1, OXYGEN:1
+    '3':
+      DisplayName: '&e&l$1,000'
+      DisplayItem: DOUBLE_PLANT:0
+      DisplayAmount: 1
+      Lore:
+      - '&7Fai piovere soldi.'
+      - '&6&lChance: &c&l20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Commands:
+      - eco give %Player% 1000
+      Messages:
+      - '&7Hai appena vinto &a$1,000&7.'
+      BlackListed-Permissions:
+      - crazycrates.blacklist.basic.3
+      Alternative-Prize:
+        Toggle: true
+        Messages:
+        - '&8[&e&oPowaCrates&8]: &7Hai gia vinto quel premio, quindi goditi alcune
+          pepite di oro.'
+        Commands:
+        - give %player% 371 16
+    '40':
+      DisplayName: '&e&lCorazza dorata'
+      DisplayItem: 315
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLD_LEGGINGS
+      - null
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '30':
+      DisplayName: '&e&lGambali dorati'
+      DisplayItem: 316
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 2
+            DURABILITY: 1
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLD_LEGGINGS
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '35':
+      DisplayName: '&e&lPiedini dorati'
+      DisplayItem: 317
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLD_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 1
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '31':
+      DisplayName: '&e&lSpada dorata'
+      DisplayItem: 283
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 2
+            DURABILITY: 1
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '32':
+      DisplayName: '&e&lPala dorata'
+      DisplayItem: 284
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLD_SPADE
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '33':
+      DisplayName: '&e&lPiccone dorato'
+      DisplayItem: 285
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLD_PICKAXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 5
+            DURABILITY: 3
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '34':
+      DisplayName: '&e&lAscia dorata'
+      DisplayItem: 286
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLD_AXE
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '36':
+      DisplayName: '&4Mela'
+      DisplayItem: 260
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 70
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: APPLE
+        amount: 32
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '37':
+      DisplayName: '&aSmeraldi'
+      DisplayItem: 388
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: EMERALD
+        amount: 8
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '38':
+      DisplayName: '&0Carbone'
+      DisplayItem: 263
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: COAL
+        amount: 64
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '39':
+      DisplayName: '&7Bastoni'
+      DisplayItem: 280
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: STICK
+        amount: 64
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '41':
+      DisplayName: '&2Semini'
+      DisplayItem: 295
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: SEEDS
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '42':
+      DisplayName: '&2Semini di zucca'
+      DisplayItem: 361
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: PUMPKIN_SEEDS
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '43':
+      DisplayName: '&2Fave di cacao'
+      DisplayItem: 351
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: INK_SACK
+        damage: 3
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []
+    '44':
+      DisplayName: '&2Canne da zucchero'
+      DisplayItem: 338
+      DisplayAmount: 1
+      Lore: []
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: SUGAR_CANE
+      Commands: []
+      Messages: []
+      BlackListed-Permissions: []
+      Alternative-Prize:
+        Toggle: false
+        Commands: []
+        Items: []
+        Messages: []

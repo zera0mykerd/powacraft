@@ -1,0 +1,25 @@
+Locations:
+  '1':
+    Crate: Basic
+    World: fazioni
+    X: -384
+    Y: 132
+    Z: -24
+  '2':
+    Crate: Galactic
+    World: fazioni
+    X: -384
+    Y: 132
+    Z: -27
+  '3':
+    Crate: Crazy
+    World: fazioni
+    X: -384
+    Y: 132
+    Z: -30
+  '4':
+    Crate: Classic
+    World: fazioni
+    X: -381
+    Y: 132
+    Z: -27
