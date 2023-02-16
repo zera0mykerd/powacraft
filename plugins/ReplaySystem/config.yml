@@ -1,0 +1,17 @@
+UserID: 0000-0000-0000-0000
+Recorder: true
+ConfigVersion: 215
+Server: YourServer-1
+saveinterval: -1
+recordworld: world
+useNamesInsteadOfUuid: false
+saveinfile: false
+filepath: Replay/
+saveWhenNobodyIsOnline: false
+saveMoreChunks: false
+resetAtTheEnd: false
+useSFTP: false
+snapshotSeconds: 120
+saveReplays: true
+saveFullWorld: false
+StopMysqlWhenUnused: false

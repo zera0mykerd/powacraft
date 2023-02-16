@@ -1,0 +1,38 @@
+no-permissions: '&4Accesso negato al comando'
+ping-command: '&7Il tuo ping risulta essere di: &a&l%ping% &7ms'
+pingother-command: '&7Il ping di &8&o%player% &7risulta essere di: &a&l%ping% &7ms'
+time-to-check: 5
+join-message: ''
+Warns:
+  '2000':
+    Kick: true
+    KickMessage: "\xa7c\xa7l \u26a0 AlertPing \u26a0 %nextline% %nextline% \xa74 \
+      \             Tu hai superato il 2000 di ping, per favore controlla la tua connessione!"
+    InformStaff: true
+    InformMessage: '&eIl giocatore &6%player% &eha superato il 2000 di ping e risulta
+      espulso &7(&c%ping%&7)'
+  '1500':
+    InformStaff: true
+    InformConsole: true
+    InformMessage: '&eIl giocatore &6%player% &eha superato il 1500 di ping e risulta
+      ora a &7(&c%ping%&7)'
+    Message:
+    - '&7&m-------&4&l Attenzione &7&m-------'
+    - '&cIl tuo ping ha superato i &a1500 ms'
+    - '&cPer favore controlla la tua connessione!'
+    - '&7&m-----&e Ping: &a%ping% ms &7&m----'
+  '1000':
+    InformConsole: true
+    InformMessage: '&eIl giocatore &6%player% &eha superato il 1000 di ping e risulta
+      &7(&c%ping%&7)'
+    Message:
+    - '&7&m-------&4&l Attenzione &7&m-------'
+    - '&cIl tuo ping ha superato i &a1000 ms'
+    - '&cPer favore controlla la tua connessione!'
+    - '&7&m-----&e Ping: &a%ping% ms &7&m----'
+  '500':
+    Message:
+    - '&7&m-------&4&l Attenzione &7&m-------'
+    - '&cIl tuo ping ha superato i &a500 ms'
+    - '&cPer favore controlla la tua connessione!'
+    - '&7&m-----&e Ping: &a%ping% ms &7&m----'

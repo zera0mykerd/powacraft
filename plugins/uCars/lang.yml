@@ -1,0 +1,45 @@
+lang:
+  messages:
+    place: '&eHai piazzato una autovettura! Le auto possono essere guidate con comandi
+      simili a quelli di un cavallo. Inoltre per potenziare la tua vettura fare click
+      con il tasto destro tenendo un minerale in mano mentre stai guardando la vettura.'
+    noDrivePerm: Permesso ucars.cars richiesto per guidare una autovettura!
+    noPlacePerm: Permesso %perm% richiesto per piazzare una autovettura!
+    noPlaceHere: '&4Non puoi piazzare una autovettura qui!'
+    hitByCar: Sei stato investito da un autovettura!
+    rightClickWith: 'Fare clic destro con '
+    driveOver: 'Guida oltre '
+    playersOnly: Solo giocatori!
+    reload: File di configurazione ricaricato!
+    noProtocolLib: Ciao, ti serve ProtocolLib (http://dev.bukkit.org/bukkit-plugins/protocollib/)!
+  error:
+    pluginNull: '&4Errore in ucars: Causato dal plugin: plugin = null? Reportalo su
+      bukkitdev subito!'
+  cars:
+    remove: '&e%amount%&a autovetture nel mondo &e%world%&a sono state rimosse!'
+  boosts:
+    already: '&4Sei gia in turbo!'
+    low: Avviato il turbo a livello basso!
+    med: Avviato il turbo a livello medio!
+    high: Avviato il turbo a livello alto!
+  fuel:
+    empty: Non ti rimane carburante!
+    disabled: Carburante non abilitato!
+    unit: litri
+    isItem: '&9[Importante:]&eCarburante abilitato-Quanto a sopra risulta irrilevante!'
+    invalidAmount: Importo non valido!
+    noMoney: Non hai soldi!
+    notEnoughMoney: Tale costo di acquisto %amount% %unit%! Hai solo %balance% %unit%!
+    success: Acquisto compiuto per %quantity% di carburante per %amount% %unit%! Adesso hai %balance% %unit%!
+    sellSuccess: Vendita compiuta per %quantity% di carburante per %amount% %unit%! Adesso hai %balance% %unit%!
+  licenses:
+    next: Adesso fai %command% per continuare!
+    nocheat: Devi ottenere tutte le fasi di ulicense per ottenere una licenza! Devi fare %command%!
+    basics: Un auto e solo un carrello da miniera posto a terra, non un binario. Per posizionare un auto basta guardare e il pavimento mentre si tiene un carrello da miniera e fare clic con il tasto destro!
+    controls: 1) Guarda dove vorresti andare. 2) Usa la la 'w' per andare avanti e 's' per tornare indietro. 3) Usa la 'd' per rallentare/frenare e usa la 'a' per attivare qualsiasi azione assegnata all auto!
+    effects: "La velocit\xc3\_ dell auto puo variare a seconda del blocco su cui e\
+      \ possibile guidare. Questi possono essere boost a breve termine o un blocco\
+      \ speedmod. Usa /ucars per eventuali info sul turbo!"
+    itemBoosts: Fare clic con il tasto destro del mouse su determinati elementi puo dare diversi vantaggi. Usa /ucars per informazioni!
+    success: Congratulazioni, ora puoi guidare!
+    noLicense: Per guidare un auto e necessaria una patente, usa /ulicense per ottenerne una!

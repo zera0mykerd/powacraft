@@ -1,0 +1,119 @@
+version: 4.0
+prefix: "&2&l[&aAntiBot&2&l] &6> &d&o"
+onping: #<-- works only on bungeecord!
+  normal: "&4&l[!] &e&o$1&7/&c&l$2"
+  ready: "&a&l{!} &c&lVERIFICATO"
+commands:
+  perms: "Non hai il permesso per fare questo"
+  cleared: "$1 pulito! "
+  added: "$1 aggiunto in &c$2"
+  removed: "$1 rimosso da &c$2"
+  wrong-args: "Sintassi errata! Usa /uab help"
+  no-blacklist: "&cQuesto ID non risulta associato a nulla"
+  reload: "Tutti i file di configurazione sono stati ricaricati con successo"
+analyzer:
+  increase: "&a↑ &7- %old% &c➜ %new% &7- &c%perc%%"
+  decrease: "&c↓ &7- %old% &c➜ %new% &7- &c%perc%%"
+notifications:
+  action: "&aAlternata &6la &cActionBar"
+  title: "&aAlternata &ela &cTitleBar"
+  bossbar: "&aAlternata &6la &cBossBar"
+#actionbar/title/stats allowed values
+#%bots% - return botpersecond
+#%queue% - return queue
+#%pings% - return pingpersecond
+#%whitelist% - return whitelist size
+#%blacklist% - return blacklist size
+#%type% - return current attacktype
+#%checks% - return checkspersecond
+#%latency% - return server latency
+#%packets% - return packetspersecond
+#%totalpackets% - return totalpackets
+#%totalbots% - return totalbots
+#%totalpings% - return totalpings
+#%prefix% - return prefix
+#%underverification% - returns player under verification
+actionbar:
+  offline: "%prefix%&cJoin&7/&cPing %bots%&7/%pings% &4- &cVerifica %underverification% &4- &cWhitelist %whitelist% » &c&l%type%"
+  antibot: "%prefix%&cBot&7/&cPing %bots%&7/%pings% &4- &cBlacklist&7/&cCoda&7/&cWhitelist %blacklist%&7/%queue%&7/%whitelist% &4- &cVerica %underverification% » &c&l%type%"
+  packets: "%prefix%&cPackets %packets%/sec &4- &cBloccati %totalpackets% &4- &cVerifica %underverification% » &c&l%type%"
+title:
+  title: "&c&l%totalbots% &4&lBots bloccati"
+  subtitle: "&c&l%blacklist% &4&l&nBots blacklistati"
+stats:
+  - "&d&oStatus della sessione:"
+  - "&r"
+  - "&d&oBot Bloccati %totalbots%"
+  - "&d&oTotale Pingati %totalpings%"
+  - "&d&oTotale Pacchetti %totalpackets%"
+  - "&d&oIP Whitelistati %whitelist%"
+  - "&d&oIP Blacklistati %blacklist%"
+  - "&r"
+  - "&d&oLatenza corrente %latency%"
+reason:
+  names: "Troppi nickname son entrati col tuo IP"
+  joins: "Troppi joins col tuo IP"
+  pings: "Troppi ping ricevuti dal tuo IP"
+  strange: "Ti stai comportando come un giocatore strano"
+  vpn: "Stai utilizzando un VPN/PROXY"
+  admin: "Un amministratore ti ha blacklistato"
+  check: "Troppi checks sono falliti"
+help:
+  - "&r"
+  - "&d&o/uab &chelp"
+  - "&d&o/uab &ctoggle actionbar/title/bossbar"
+  - "&d&o/uab &cstats"
+  - "&d&o/uab &cclear blacklist/whitelist"
+  - "&d&o/uab &cwhitelist add/remove <ip>"
+  - "&d&o/uab &cblacklist add/remove <ip>"
+  - "&d&o/uab &cfirewall"
+  - "&d&o/uab &ccheck <id>"
+  - "&d&o/uab &creload"
+  - "&d&o/uab &cdump"
+satellitestats:
+  - "&r"
+  - "&d&oStatus: %status%"
+  - "&d&oRichieste in sospeso: %avg%"
+  - "&d&oRichieste ultimo minuto: %lastmin%"
+  - "&d&oRichieste correnti: %currentreq%"
+  - "&d&oUltime richieste di restart: %lastreboot%"
+  - "&d&oMessaggi: %message%"
+  - "&d&oTempo di responso: %time%ms"
+  - "&r"
+  - "Ci sono &c%currentserver% in &c%maxservers% utenti connessi"
+firewall:
+  - "&d&oFirewall status: %status%"
+  - "&r"
+  - "&d&oIP in coda: %queue%"
+  - "&d&oIP blacklistati: %blacklist%"
+  - "&r"
+  - "&d&oQueste sono le statistiche del firewall UAB che funzioneranno solo se lo hai abilitato nella configurazione"
+  - "&d&oL attacco viene mitigato quando tutti gli IP saranno stati bloccati"
+antibotmode:
+  - "&2&l[&aAntiBot&2&l] &6> &d&oLa protezione antibot risulta attiva, Rimane attivo fino a &c$1%&7 degli IP blacklistati. Blacklist corrente &c$2%."
+first_join:
+  - "&2&l[&aAntiBot&2&l] &6> &d&oStiamo analizzando la tua connessione... ora puoi rientrare!"
+safe_mode:
+  - "&2&l[&aAntiBot&2&l] &6> &d&oImpossibile verificarti in tempo, Il server ha ricevuto un attacco bot e ti ha disconnesso, rientra prossimamente!"
+account-online:
+  - "&2&l[&aAntiBot&2&l] &6> &d&oHai troppi accounts connessi nello stesso momento!"
+ping:
+  - "&2&l[&aAntiBot&2&l] &6> &d&oPinga il server esattamente &c$1&7 volte e rientra."
+timer:
+  - "&2&l[&aAntiBot&2&l] &6> &d&oRientra nel server esattamente in &c$1&7 secondi."
+blacklisted:
+  - "&2&l[&aAntiBot&2&l] &6> &d&oSei stato messo in blacklist dal sistema antibot. | &cMotivo &7» &c$1 | ID &7» &c$2"
+wait:
+  - "&2&l[&aAntiBot&2&l] &6> &d&oStai facendo troppi tentativi! attendi 10 secondi."
+fastjoin-queue:
+  - "&2&l[&aAntiBot&2&l] &6> &d&oSei ora in coda per la verifica! Dovrebbero volerci circa 3/5 secondi"
+
+bossbar_idle_message: "Attendo per l attacco"
+blacklist_info:
+  - "&d&o&lBLACKLIST INFO:"
+  - "&r"
+  - "&d&oMotivo &7» &c$reason"
+  - "&d&oIP &7» &c$ip"
+  - "&d&oNickname &7» &c$nick"
+  - "&d&oID &7» &c$id"
+  - "&r"

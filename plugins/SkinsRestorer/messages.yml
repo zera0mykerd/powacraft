@@ -1,0 +1,67 @@
+PREFIX: '&8&l[&e&l&oPowa&6&l&oSkins&8&l]&0&l&o» '
+HELP_SKIN_CLEAR: Cancella la tua skin.
+HELP_SKIN_CLEAR_OTHER: Cancella la skin di un altro giocatore.
+HELP_SKIN_UPDATE: Aggiorna la tua skin.
+HELP_SKIN_UPDATE_OTHER: Aggiorna la skin di un altro giocatore.
+HELP_SKIN_SET: Imposta la skin.
+HELP_SKIN_SET_OTHER: Imposta la skin ad un altro giocatore.
+HELP_SKIN_SET_OTHER_URL: Imposta la skin da un immagine con url in .png
+HELP_SR_RELOAD: Ricarica i files di configurazione.
+HELP_SR_STATUS: Controlla i servizi API richiesti!
+HELP_SR_DROP: Rimuove i dati della skin di un giocatore.
+HELP_SR_PROPS: Mostra le caratteristiche correnti della skin di un giocatore.
+HELP_SR_APPLY_SKIN: riapplica la skin di un utente.
+HELP_SR_CreateCustom: Crea una skin personalizzata in server-side
+SYNTAX_DEFAULTCOMMAND: ' <skin/url>'
+SYNTAX_SKINSET: ' <skin>'
+SYNTAX_SKINSET_OTHER: ' <target> <skin/url>'
+SYNTAX_SKINURL: ' <SkinUrl> [steve/slim]'
+SYNTAX_SKINUPDATE_OTHER: ' <target>'
+SYNTAX_SKINCLEAR_OTHER: ' <target>'
+Completions_Skin: <Skin>
+Completions_SkinName: <SkinName>
+Completions_SkinUrl: <SkinUrl>
+PLAYER_HAS_NO_PERMISSION_SKIN: '&4Errore&8: &cPermessi insufficienti per impostare questa skin.'
+PLAYER_HAS_NO_PERMISSION_URL: '&4Errore&8: &cPermessi insufficienti per impostare questa skin da un URL.'
+SKIN_DISABLED: '&4Errore&8: &cSkin disabilitata dagli amministratori.'
+SKINURL_DISALLOWED: '&4Errore&8: &cDominio disabilitato dagli amministratori.'
+NOT_PREMIUM: '&4Errore&8: &cGiocatore premium con quel nick risulta inesistente.'
+INVALID_PLAYER: '&4Errore&8: &c%player non risulta un username o URL valido.'
+SKIN_COOLDOWN: '&4Errore&8: &cPuoi cambiare la tua skin di nuovo in &e%s &csecondi.'
+SKIN_CHANGE_SUCCESS: '&aSkin cambiata con successo!'
+SKIN_CLEAR_SUCCESS: '&aSkin cancelata con successo!'
+SKIN_CLEAR_ISSUER: '&aSkin cancellata per %player!'
+MS_UPDATING_SKIN: '&aCaricando la skin, attendere...'
+SUCCESS_CREATE_SKIN: '&aSkin %skin creata con successo!'
+SUCCESS_UPDATING_SKIN: '&aSkin caricata con successo!'
+SUCCESS_UPDATING_SKIN_OTHER: '&aSkin aggiornata per %player.'
+ERROR_UPDATING_SKIN: '&4Errore&8: &cErrore riscontrato durante aggiornamento della skin.'
+ERROR_UPDATING_URL: "&4Errore&8: &cImpossibile aggiornare la skin con un custom URL."
+ERROR_UPDATING_CUSTOMSKIN: '&4Errore&8: &cImpossibile aggiornare delle skin personalizzate.'
+ERROR_INVALID_URLSKIN: "&4Errore&8: &cFormato URL skin invalido."
+ERROR_MS_FULL: '&4MS Error&8: &cNon rispondono le API.'
+ERROR_MS_GENERIC: '&4Errore MS&8: &c%error%'
+GENERIC_ERROR: '&4Errore&8: &cImpossibile ottenere i dati della skin!'
+WAIT_A_MINUTE: '&4Errore&8: &cAttendi qualche minuto per rifare il comando per la skin!'
+ERROR_NO_SKIN: '&4Errore&8: &cQuesto giocatore non ha una skin impostata.'
+SKINSMENU_OPEN: '&aAprendo il menu delle skin...'
+SKINSMENU_TITLE_NEW: '&9&lSkins Menu - Pagina %page'
+SKINSMENU_NEXT_PAGE: '&a&l»&7 Prossima pagina&a&l »'
+SKINSMENU_PREVIOUS_PAGE: '&e&l«&7 Pagina precedente&e&l «'
+SKINSMENU_REMOVE_SKIN: '&c&l[ &7Rimuove skin&c&l ]'
+SKINSMENU_SELECT_SKIN: '&a&oClicca per selezionare la skin!'
+ADMIN_SET_SKIN: '&a&oHai selezionato la skin di &l%player.'
+DATA_DROPPED: '&aDati persi per %playerOrSkin %targets.'
+STATUS_OK: '&aConnessione con le Mojang API stabilita con successo!'
+ALT_API_FAILED: '&4Errore&8: &cDati skin API in overload!'
+MS_API_FAILED: '&4Errore&8: &cMineSkin API in overload!'
+NO_SKIN_DATA: '&4Errore&8: &cImpossibile ottenere dati skin! Forse il giocatore non ha una skin?'
+RELOAD: '&a&nFiles di configurazione ricaricati con successo!'
+OUTDATED: "&4Stai utilizzando una versione obsoleta di SkinsRestorer!\n&cPer favore aggiornala\
+  \ nella ultima versione: \n&ehttps://www.spigotmc.org/resources/skinsrestorer.2124/"
+SR_LINE: '&7&m----------------------------------------'
+HELP_PLAYER: |2-
+    &0&l[&e&l&oPowa&6&l&oSkins&0&l] &7- &f&lv%ver%
+     &a/skin <skinname> &7-&f Cambia la tua skin.
+      &a/skin update &7-&f Aggiorna la tua skin.
+      &a/skin clear &7-&f Cancella la tua skin.

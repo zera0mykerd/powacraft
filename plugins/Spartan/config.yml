@@ -1,0 +1,284 @@
+XRay:
+  name: XRay
+  enabled: false
+  disabled_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+  silent: false
+  silent_worlds: ''
+Exploits:
+  name: Exploits
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+EntityMove:
+  name: EntityMove
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+NoSwing:
+  name: NoSwing
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+IrregularMovements:
+  name: IrregularMovements
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+Clip:
+  name: Clip
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+ImpossibleActions:
+  name: ImpossibleActions
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+ItemDrops:
+  name: ItemDrops
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+AutoRespawn:
+  name: AutoRespawn
+  enabled: false
+  disabled_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+  silent_worlds: ''
+InventoryClicks:
+  name: InventoryClicks
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+Sprint:
+  name: Sprint
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+Jesus:
+  name: Jesus
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+NoSlowdown:
+  name: NoSlowdown
+  enabled: true
+  silent: true
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+Criticals:
+  name: Criticals
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+GhostHand:
+  name: GhostHand
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+BlockReach:
+  name: BlockReach
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+ElytraMove:
+  name: ElytraMove
+  enabled: true
+  silent: true
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+BoatMove:
+  name: BoatMove
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+FastBow:
+  name: FastBow
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+FastClicks:
+  name: FastClicks
+  enabled: true
+  disabled_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+  silent: false
+  silent_worlds: ''
+FastHeal:
+  name: FastHeal
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+Fly:
+  name: Fly
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+ImpossibleInventory:
+  name: ImpossibleInventory
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+HitReach:
+  name: HitReach
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+FastBreak:
+  name: FastBreak
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+Speed:
+  name: Speed
+  enabled: true
+  silent: true
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+FastPlace:
+  name: FastPlace
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+MorePackets:
+  name: MorePackets
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+NoFall:
+  name: NoFall
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+FastEat:
+  name: FastEat
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+Velocity:
+  name: Velocity
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!
+KillAura:
+  name: KillAura
+  enabled: true
+  silent: false
+  disabled_worlds: ''
+  silent_worlds: ''
+  punishments:
+    certain:
+      '1': matrix kick %player% &5&l[&dAntiCheat&5&l] &e> &a&o{detection} rilevata e non ammessa!

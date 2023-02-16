@@ -1,0 +1,362 @@
+groups:
+   Utente:
+       prefix: '&1&l[&2&lUt&7&len&4&lte&1&l]&b&l&o'
+       default: true
+       permissions:
+       - deathmessages.user
+       - factions.kit.rank0
+       - authme.player.*
+       - jobs.command.browse
+       - jobs.command.stats
+       - jobs.command.admin.stats
+       - jobs.command.join
+       - jobs.command.leave
+       - jobs.command.info
+       - essentials.balance
+       - essentials.afk
+       - essentials.helpop
+       - essentials.msg
+       - essentials.suicide
+       - essentials.delhome
+       - essentials.home
+       - essentials.sethome
+       - essentials.tpa
+       - essentials.tpaccept
+       - essentials.tpdeny
+       - essentials.warp.*
+       - essentials.warp.list
+       - essentials.signs.use.*
+       - essentials.build.*
+       - essentials.spawn
+       - essentials.mail
+       - essentials.mail.send
+       - essentials.realname
+       - essentials.kits.tools
+       - essentials.warp.list
+       - essentials.warp
+       - mobmoney.receive
+       - essentials.kit
+       - essentials.kit.Tools
+       - essentials.enderchest
+       - essentials.ignore
+       - essentials.tpahere
+       - essentials.top
+       - essentials.worth
+       - essentials.rules
+       - ChatClear.icc
+       - serversigns.use.*
+       - antivoid.teleport
+       - kingkits.quicksoup
+       - kingkits.kit.sign.use
+       - kingkits.kit.sign.use.*
+       - kingkits.kits.faction
+       - kingkits.kits.skypvp
+       - kingkits.kits.Aggressivo
+       - kingkits.kits.Difesa
+       - kingkits.kits.Barbaro
+       - kingkits.kits.arciere
+       - kingkits.kits.TuttoFare
+       - multiverse.core.spawn.self
+       - kingkits.kits.Riccone
+       - kingkits.kits.combattente
+       - kingkits.kits.Astronauta
+       - kingkits.kits.esploratore
+       - KingKits.Kits.infernale
+       - KingKits.Kits.paradiso
+       - KingKits.Kits.ghost
+       - KingKits.Kits.PowaCraft
+       - KingKits.Kits.misterioso
+       - KingKits.Kits.invincibile
+       - KingKits.Kits.MCSG
+       - KingKits.Kits.Nether
+       - KingKits.Kits.Mistero
+       - essentials.pay
+       - hub.sethub
+       - carz.start
+       - carz.upgrade
+       - carz.place
+       - crackshot.use.all
+       - crackshot.buy.all
+       - crackshot.craft.all
+       - KingKits.Kits.Soldato
+       - chairs.sit
+       - gadgets.*
+       - gadget.*
+       - askyblock.island.*
+       - askyblock.team.create
+       - askyblock.team.kick
+       - askyblock.team.makeleader
+       - askyblock.team.join
+       - askyblock.coop
+       - plotme.use.*
+       - plotme.limit.1
+       options:
+           rank: ' 999 '
+   Helper:
+       prefix: '&a&l[Helper]&2&l'
+       inheritance:
+       - VIP
+       permissions:
+       - coloredsigns.format 
+       - essentials.msg.*
+       - essentials.hat
+       - essentials.afk.auto
+       - essentials.workbench
+       - essentials.firework.*
+       - essentials.msg.*
+       - essentials.god
+       - essentials.fly
+       - essentials.hat
+       - essentials.skull
+       - essentials.repair.*
+       - essentials.heal
+       - essentials.kick
+       - essentials.time.*
+       - essentials.workbench
+       - essentials.tp
+       - essentials.tp.other
+       - essentials.mute
+       - essentials.unban
+       - essentials.ban.notify
+       - essentials.unbanip
+       - essentials.vanish.*
+       - essentials.vanish
+       - essentials.helpop.receive
+       - essentials.chat.ignoreexempt
+       - essentials.whois
+       - essentials.geoip.show
+       - essentials.weather
+       - essentials.geoip.*
+       - essentials.chat.spy
+       - commandspy.filter
+       - coreprotect.inspect
+       - essentials.ext
+       - essentials.fireball
+       - maxbans.mute.*
+       - maxbans.tempmute.*
+       - maxbans.unmute.*
+       - maxbans.unban.*
+       - nocheatplus.command.info
+       - nocheatplus.command.lag
+       - nocheatplus.command.version
+       - nocheatplus.command.exemptions
+       - nocheatplus.command.commands
+       - nocheatplus.command.inspect
+       - maxbans.notify
+       - maxbans.kick.*
+       - maxbans.checkban.self
+       - maxbans.seebroadcast 
+       - maxbans.mute
+       - maxbans.unban
+       - maxbans.kick
+       - maxbans.unmute
+       options:
+           rank: ' 998 '
+   Mod:
+       prefix: '&b&l[Mod]&9&l'
+       inheritance:
+       - Helper
+       permissions:
+       - idd.*
+       - essentials.gamemode
+       - essentials.ban
+       - essentials.tempban
+       - essentials.unlimited.*
+       - essentials.give
+       - essentials.itemspawn.*
+       - essentials.enchantments.*
+       - essentials.feed
+       - essentials.hat
+       - essentials.time.*
+       - essentials.realname
+       - essentials.recipe
+       - essentials.seen
+       - essentials.gc
+       - essentials.invsee.*
+       - essentials.back
+       - essentials.jump
+       - essentials.tphere
+       - essentials.tpdeny
+       - essentials.enchant
+       - essentials.enchantments.*
+       - essentials.exp
+       - essentials.exp.*
+       - essentials.item
+       - essentials.itemspawn.*
+       - essentials.more
+       - essentials.ptime
+       - essentials.ptime.others
+       - essentials.repair
+       - essentials.repair.*
+       - essentials.skull
+       - essentials.unlimited
+       - essentials.unlimited.*
+       - essentials.book
+       - essentials.book.*
+       - essentials.me
+       - essentials.burn
+       - essentials.clearinventory
+       - essentials.clearinventory.*
+       - essentials.jails
+       - essentials.lightning
+       - essentials.lightning.*
+       - essentials.socialspy
+       - essentials.socialspy.*
+       - essentials.spawnmob
+       - essentials.spawnmob.*
+       - essentials.delhome
+       - essentials.delhome.others
+       - essentials.tpo
+       - essentials.tpo.others
+       - essentials.tpohere
+       - essentials.tptoggle
+       - essentials.teleport.*
+       - essentials.vanish.*
+       - essentials.warp.otherplayers
+       - lagg.killmobs
+       - lagg.tpchunk
+       - lagg.clear
+       - lagg.gc
+       - OpenInv.*
+       - essentials.sudo
+       - essentials.getpos.*
+       - essentials.setworth
+       - essentials.essentials.pay.*
+       - essentials.time.*
+       - essentials.time
+       - essentials.skull
+       - essentials.skull.others
+       - essentials.firework
+       - essentials.firework.*
+       - essentials.jails
+       - essentials.ping
+       - maxbans.*
+       options:
+           rank: ' 997 '
+   OWNER:
+       prefix: '&5&l{&4&lSTAFF&5&l}&e&l'
+       permissions:
+       - "*"
+       options:
+           rank: ' 1 '
+   Admin:
+       prefix: '&9&l&o[Admin]&e&l'
+       inheritance:
+       - Mod
+       permissions:
+       - essentials.kick
+       options:
+           rank: ' 996 '
+   Founder:
+       prefix: '&4&l&o[Founder]&c&l'
+       permissions:
+       inheritance:
+       - Admin
+       options:
+           rank: ' 995 '
+   Builder:
+       prefix: '&6&l[Builder]&a&l'
+       inheritance:
+       - Mod
+       permissions:
+       - idd.*
+       - essentials.speed.*
+       - essentials.gamemode
+       - essentials.time.*
+       - essentials.spawnmob.*
+       - essentials.vanish.*
+       - essentials.weather
+       options:
+           rank: ' 994 '
+   VIP:
+       prefix: '&b&l&o[VIP]&9&l&o-&3&l&o'
+       inheritance:
+       - Utente
+       permissions:
+       - essentials.weather
+       - essentials.tp
+       - essentials.fly
+       - essentials.kick
+       - essentials.vanish
+       - essentials.socialspy
+       - essentials.skull
+       - essentials.repair.*
+       - essentials.hat
+       - essentials.whois
+       - essentials.gc
+       - essentials.me
+       - essentials.jump
+       - essentials.back
+       - essentials.nick
+       - coreprotect.inspect
+       - essentials.workbench
+       - essentials.enderchest
+       - playerparticles.*
+       - ParticleMenu.use.*
+       - ParticleMenu.open
+       - essentials.seen
+       - essentials.invsee
+       - essentials.time.*
+       - essentials.burn
+       - sr.*
+       - kingkits.kits.*
+       - plotme.use.*
+       - plotme.limit.5
+       options:
+          rank ' 993 '
+   YOUTUBE:
+       prefix: '&c&l[&4&lYOUTUBER&c&l]&5&l-&e&l'
+       inheritance:
+       - VIP
+       permissions:
+       - essentials.weather
+       - essentials.tp.*
+       - essentials.kill
+       - essentials.ignore
+       - essentials.kick
+       - essentials.mute
+       - essentials.burn
+       - essentials.see
+       - essentials.god
+       - essentials.vanish
+       - essentials.fly
+       - crackshot.give.all
+       - crackshot.list
+       - crackshot.get.all
+       - crackshot.shops.all
+       options:
+           rank: ' 992 '
+users:
+  Zera:
+    group:
+    - OWNER
+  giampa3999:
+    group:
+    - Owner
+  Jax1100:
+    group:
+    - Mod
+  xMrVegas:
+    group:
+    - YOUTUBE
+  DarkPowa69:
+    group:
+    - Owner
+  SurrealPower:
+    group:
+    - YOUTUBE
+  St3pNy:
+    group:
+    - YOUTUBE
+  benny:
+    group:
+    - Admin
+  Dr_Vinz4:
+    group:
+    - Owner
+  TheLordOwnerz:
+    group:
+    - Owner
+  Dr_BRAYMIX:
+    group:
+    - Owner
