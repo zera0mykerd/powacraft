@@ -1,0 +1,2 @@
+/region flag <region> greeting Welcome to <region>
+/region flag <region> farewell Now leaving <region>

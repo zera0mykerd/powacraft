@@ -1,0 +1,364 @@
+#
+# WorldGuard blacklist
+#
+# The blacklist lets you block actions, blocks, and items from being used.
+# You choose a set of "items to affect" and a list of "actions to perform."
+#
+###############################################################################
+#
+# Example to block some ore mining and placement:
+# [coalore,goldore,ironore]
+# on-break=deny,log,kick
+# on-place=deny,tell
+#
+# Events that you can detect:
+# - on-break (when a block of this type is about to be broken)
+# - on-destroy-with (the item/block held by the user while destroying)
+# - on-place (a block is being placed)
+# - on-use (an item like flint and steel or a bucket is being used)
+# - on-interact (when a block in used (doors, chests, etc.))
+# - on-drop (an item is being dropped from the player's inventory)
+# - on-acquire (an item enters a player's inventory via some method)
+# - on-dispense (a dispenser is about to dispense an item)
+#
+# Actions (for events):
+# - deny (deny completely, used blacklist mode)
+# - allow (used in whitelist mode)
+# - notify (notify admins with the 'worldguard.notify' permission)
+# - log (log to console/file/database)
+# - tell (tell a player that that's not allowed)
+# - kick (kick player)
+# - ban (ban player)
+#
+# Options:
+# - ignore-groups (comma-separated list of groups to not affect)
+# - ignore-perms (comma-separated list of permissions to not affect - make up
+#   your very own permissions!)
+# - comment (message for yourself that is printed with 'log' and 'notify')
+# - message (optional message to show the user instead; %s is the item name)
+#
+###############################################################################
+#
+# For more information, see:
+# http://wiki.sk89q.com/wiki/WorldGuard/Blacklist
+#
+###############################################################################
+#
+# Some examples follow.
+# REMEMBER: If a line has # in front, it will be ignored.
+#
+
+# Deny lava buckets
+#[lavabucket]
+#ignore-perms=my.own.madeup.permission
+#ignore-groups=admins,mods
+#on-use=deny,tell
+
+# Deny some ore
+#[coalore,goldore,ironore]
+#ignore-groups=admins,mods
+#on-break=notify,deny,log
+
+# Some funky data value tests
+#[wood:0;>=2]
+#ignore-groups=admins,mods
+#on-break=notify,deny,log
+
+# Deny hopper
+#[hopper]
+#ignore-perms=un.fottuto.hopper
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=deny
+#on-destroy-with=deny
+#on-interact=allow
+#on-drop=deny
+#on-acquire=allow
+#on-dispense=deny
+
+# Deny Enderpearl
+#[ender_pearl]
+#ignore-perms=un.fottuto.enderpearl
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=deny
+#on-destroy-with=deny
+#on-interact=deny
+#on-drop=deny
+#on-acquire=deny
+#on-dispense=deny
+
+# Deny Enderpearl
+#[368]
+#ignore-perms=un.fottuto.enderpearll
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=deny
+#on-destroy-with=deny
+#on-interact=deny
+#on-drop=deny
+#on-acquire=deny
+#on-dispense=deny
+
+# Deny Enderpearl
+#[enderpearl]
+#ignore-perms=un.fottuto.enderpearlll
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=deny
+#on-destroy-with=deny
+#on-interact=deny
+#on-drop=deny
+#on-acquire=deny
+#on-dispense=deny
+
+# Deny fireball
+#[fireball]
+#ignore-perms=un.fottuto.fireball
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=deny
+#on-destroy-with=deny
+#on-interact=deny
+#on-drop=deny
+#on-acquire=deny
+#on-dispense=deny
+
+# Deny sponge
+[sponge]
+ignore-perms=un.fottuto.sponge
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=allow
+on-dispense=deny
+
+# Deny book
+[book]
+ignore-perms=un.fottuto.book
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=allow
+on-drop=deny
+on-acquire=allow
+on-dispense=deny
+
+# Deny book
+[book_and_quill]
+ignore-perms=un.fottuto.bookandquill
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=deny
+on-dispense=deny
+
+# Deny book
+[bookandquill]
+ignore-perms=un.fottuto.bookandquilll
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=deny
+on-dispense=deny
+
+# Deny book
+#[enchanted_book]
+#ignore-perms=un.fottuto.enchantbook
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=deny
+#on-destroy-with=deny
+#on-interact=deny
+#on-drop=deny
+#on-acquire=allow
+#on-dispense=allow
+
+# Deny book
+#[enchantedbook]
+#ignore-perms=un.fottuto.enchantbookk
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=deny
+#on-destroy-with=deny
+#on-interact=deny
+#on-drop=deny
+#on-acquire=allow
+#on-dispense=allow
+
+# Deny boat
+#[boat]
+#ignore-perms=un.fottuto.boat
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=deny
+#on-destroy-with=deny
+#on-interact=deny
+#on-drop=deny
+#on-acquire=deny
+#on-dispense=deny
+
+# Deny anvil
+#[anvil]
+#ignore-perms=un.fottuto.anvil
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=allow
+#on-destroy-with=deny
+#on-interact=allow
+#on-drop=deny
+#on-acquire=deny
+#on-dispense=deny
+
+# Deny carpet
+#[carpet]
+#ignore-perms=un.fottuto.carpet
+#ignore-groups=adminsss
+#on-break=deny
+#on-place=deny
+#on-use=deny
+#on-destroy-with=deny
+#on-interact=deny
+#on-drop=deny
+#on-acquire=deny
+#on-dispense=deny
+
+# Deny Commandblock
+[command_block]
+ignore-perms=un.fottuto.commandblock
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=deny
+on-dispense=deny
+
+# Deny MineCommand
+[422]
+ignore-perms=un.fottuto.minecommand
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=deny
+on-dispense=deny
+
+# Deny Barrier
+[barrier]
+ignore-perms=un.fottuto.barrier
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=deny
+on-dispense=deny
+
+# Deny Firework
+[fireworks]
+ignore-perms=un.fottuto.firework
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=deny
+on-dispense=deny
+
+# Deny Dragonegg
+[dragon_egg]
+ignore-perms=un.fottuto.dragonegg
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=deny
+on-dispense=deny
+
+# Deny Chest
+[chest]
+ignore-perms=una.fottuta.chest
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=allow
+on-destroy-with=deny
+on-interact=allow
+on-drop=deny
+on-acquire=deny
+on-dispense=allow
+
+# Deny cake
+[cake]
+ignore-perms=un.fottuto.cake
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=allow
+on-dispense=deny
+
+# CartblockerCommand
+[command_block_minecart]
+ignore-perms=un.fottuto.cartblock
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=deny
+on-dispense=deny
+
+# CartblockerCommand
+[commandblockminecart]
+ignore-perms=un.fottuto.cartblockk
+ignore-groups=adminsss
+on-break=deny
+on-place=deny
+on-use=deny
+on-destroy-with=deny
+on-interact=deny
+on-drop=deny
+on-acquire=deny
+on-dispense=deny
