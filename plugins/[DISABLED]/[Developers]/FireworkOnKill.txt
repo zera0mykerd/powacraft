@@ -1,0 +1,15 @@
+It would involve the execute command, multiple command blocks, and a scoreboard score.
+
+There's a stat tracked by the scoreboard for kills by that player. You'd reset this to zero, then set up command blocks to scan for players with a score of 1 or higher on it. The command block would execute whatever the "create a firework from scratch" command is at that player and then immediately change their score back to zero. I wouldn't recommend using a repeating command block (20 times a second), instead set up a clock circuit (a on-off-on-off power supply). Maybe once a second or once every 2 seconds would be fine.
+
+To start the scoreboard tracking kills: /scoreboard objectives add kills totalKillCount
+
+To launch a firework if a player has greater than zero on that score: /execute @a[score_kills_min=1] ~ ~ ~ summon fireworks_rocket ~ ~1 ~ {LifeTime:20,FireworksItem:{id:"fireworks",Count:1,tag:{Fireworks:{Explosions:[{Flicker:1,Trail:1,Type:4,Colors:[255,16711680,16776960],FadeColors:[255,16711680,16776960]},{Flicker:0,Trail:0,Type:1,Colors:[16711680,16776960],FadeColors:[255,16711680]}]}}}}
+
+I forget how much of that fireworks command is necessary and how much is optional, also hope it hasn't changed since 1.7...I at least changed the name to 1.11's name. About that: if you're on 1.10 or earlier the firework is instead called FireworksRocketEntity
+
+To reset that player's kill score to zero: /scoreboard players set @a kills 0
+
+So you want command blocks that trigger every second or two with the second and third codes. The first code only needs to be used once in the world when you first set it up.
+
+EDIT: fixed the 401 to "fireworks"

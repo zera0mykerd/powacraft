@@ -1,0 +1,129 @@
+############################################################
+# +-------- Designed and Developed by JackProehl --------+ #
+# |---------- Updated and Managed by iiSnipez -----------| #
+# |---- Consider donating to Jack: JohnProehl@me.com ----| #
+# +-- Consider donating to iiSnipez: paypal.me/Jarod05 --+ #
+############################################################
+
+# Please open a ticket to report all bugs and glitches on BukkitDev.
+
+UpdateCheck: false
+AutoDownload: false
+Metrics: false
+
+# Send a MOTD to players on login
+MOTD: false
+
+# Set Broadcast to true to broadcast when a player CombatLogs.
+Broadcast: false
+
+Tag-Duration: 10
+Block-Teleportation: true
+Block-Enderpearls: false
+Remove-Invis-Potion: true
+
+# Add modes you want removed during Combat under Remove-Modes.
+# Available Modes: fly, disguise.
+Remove-Modes:
+- fly
+- disguise
+- creative
+- god
+- godmode
+
+# Set onKick to true to remove CombatTags when players are kicked.
+# Set onLagout to true to remove CombatTags when players lag out.
+Remove-Tag-On-Kick: true
+Remove-Tag-On-Lagout: true
+
+# To block all commands, add '*' under Commands
+Block-Commands: true
+Commands:
+- f warp
+- ah
+- kit
+- fix hand
+- uc 
+- ec
+- espawn
+- echest
+- eechest
+- ewarp
+- ehome
+- fix all 
+- repair all 
+- repair 
+- home
+- spawn
+- tpa
+- warp
+- pv 1 
+- pv 2
+- warp
+- mvs
+- mvspawn
+- tpa
+- etpa
+- tpaccept
+- warps
+- f home
+- eback
+- ehome
+- ejump
+- etop
+- etpaall
+- etphere
+- etpahere
+- etpao
+- etpo
+- etpohere
+- etppos
+- ewarp
+- eworld
+- etpaccept
+- back
+- home
+- jump
+- top
+- tpa
+- tpaall
+- tphere
+- tpo
+- tpohere
+- tpahere
+- tpapos
+- tppos
+- warp
+- world
+- tpaccept
+- mvspawn
+- mvs
+- hub
+- factions home
+  
+# Kill players when they CombatLog.
+Kill: true
+
+Disabled-Worlds:
+  - world_custom
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Messages                       | #
+# +------------------------------------------------------+ #
+############################################################
+
+# TO DISABLE A MESSAGE, SET IT AS 'false'!
+UpdateCheckMessage: '&0[&bAntiNabbo&0]&c CombatLog Aggiornamento disponibile @ http://bit.ly/combatlog!'
+MOTDMessage: ''
+BroadcastMessage: '&0[&bAntiNabbo&0] &3&o<player>&9 Ha sloggato in combattimento!'
+TaggerMessage: '&0[&bAntiNabbo&0]&9 Hai messo in combattimento &3&o<player>&9. Non sloggare! (per info /tag o /ct)'
+TaggedMessage: '&0[&bAntiNabbo&0] &3&o<player>&9 Ti ha messo in combattimento. Non sloggare! (per info /tag o /ct)'
+UntagMessage: '&0[&bAntiNabbo&0]&9&o Sei uscito dal combattimento.'
+InCombatMessage: '&0[&bAntiNabbo&0]&9 Sei in combattimento per <time> secondi.'
+NotInCombatMessage: '&0[&bAntiNabbo&0]&9 Non sei in combattimento.'
+RemoveModesMessage: '&0[&bAntiNabbo&0]&9 Tutti i vantaggi sono stati rimossi.'
+RemoveInvisMessage: '&0[&bAntiNabbo&0]&9 Gli effetti vantaggiosi sono stati rimossi.'
+BlockCommandsMessage: '&0[&bAntiNabbo&0]&9 Attendi per questo comando mentre sei in combattimento.'
+BlockTeleportationMessage: '&0[&bAntiNabbo&0]&9 Non puoi teletrasportarti in combattimento.'
+KillMessage: '&0[&bAntiNabbo&0]&c Sei stato ucciso per essere sloggato dal server!'
