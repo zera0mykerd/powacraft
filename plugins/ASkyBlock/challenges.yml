@@ -1,0 +1,635 @@
+##########################################################################################
+# Challenges
+# Rewards and required items have to be described using Bukkit Materials
+# and be exactly correct
+# Do not use Type Id's - they will not work
+# Challenges can be one of three types - inventory, island or level.
+# inventory - means the player must have the items on them
+# island - means the items have to be on the island and within 10 blocks of the player
+#          entities are also supported, e.g., COW.
+# level - means the island level has to be equal or over this amount
+# Challenges can be repeatable only if they are inventory challenges
+# permissions can be given as a reward
+#
+# Reward Commands - commands can be run when a challenge is completed and repeated
+# Commands are:
+#    rewardcommands:
+#      - command1
+#      - command2
+#    repeatrewardcommands:
+#      - command1
+#      - command2      
+# The commands are listed and run in order. Do not put a / in front of the command.
+# The token [player] will be replaced with the player's name.
+# Example:
+#    rewardcommands:
+#      - pex promote [player]
+#      - heal [player]
+#      - warp winner_circle [player]
+# If a command fails, it will be noted in the console.
+##########################################################################################
+
+challenges:
+  # Challenge levels - list as many as you like
+  levels: 'Facile Normale Esperto Difficile Impossibile'
+  # The number of undone tasks that can be left on a level before revealing next level
+  waiveramount: 1
+  # Challenge list
+  # Challenge names must be in lowercase.
+  challengeList:
+    glassmaker:
+      friendlyname: 'Glass Maker'
+      description: 'Crea 1 Blocco di Vetro'
+      icon: GLASS
+      level: 'Facile'
+      type: inventory
+      requiredItems: 'GLASS:1'
+      takeItems: true
+      itemReward: 'ICE:1'
+      rewardText: '1 Blocco di Ghiaccio'
+      #rewardcommands:
+      moneyReward: 10
+      expReward: 30
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'ICE:1'
+      repeatRewardText: '1 Blocco di Ghiaccio'
+      repeatMoneyReward: 5
+      repeatExpReward: 10
+      #repeatrewardcommands:
+    breadmaker:
+      friendlyname: 'Bread Maker'
+      description: 'Cuoci 21 Pagnotte di Pane'
+      icon: BREAD
+      level: 'Facile'
+      type: inventory
+      requiredItems: 'BREAD:21'
+      takeItems: true
+      itemReward: 'DIRT:5'
+      rewardText: '5 Blocchi di Terra'
+      moneyReward: 10
+      expReward: 30
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'DIRT:1'
+      repeatRewardText: '1 Blocco di Terra'
+      repeatMoneyReward: 5
+      repeatExpReward: 10
+    dyemaker:
+      friendlyname: 'Dye Maker'
+      description: 'Crafta 32 Colorati Verde Cactus'
+      icon: INK_SACK:2
+      level: 'Facile'
+      type: inventory
+      requiredItems: 'INK_SACK:2:32'
+      takeItems: true
+      itemReward: 'SAPLING:0:2 SAPLING:1:2 SAPLING:2:2 SAPLING:3:2'
+      rewardText: '2 Blocchi di Quercia, 2 Blocchi di Betulla, 2 Blocchi di Legno della Giungla e 2 Alberelli'
+      moneyReward: 10
+      expReward: 30
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'SAPLING:0:1 SAPLING:1:1 SAPLING:2:1 SAPLING:3:1 SAPLING:4:1 SAPLING:5:1'
+      repeatRewardText: '1 Blocco di ogni Albero'
+      repeatMoneyReward: 5
+      repeatExpReward: 10
+    papermaker:
+      friendlyname: 'Paper Maker'
+      description: 'Crea 21 Pagine di Carta'
+      icon: PAPER
+      level: 'Facile'
+      type: inventory
+      requiredItems: 'PAPER:21'
+      takeItems: true
+      itemReward: 'DIRT:5 CLAY:15'
+      rewardText: '5 Blocchi di Terra e 15 di Argilla'
+      moneyReward: 15
+      expReward: 30
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'CLAY:2'
+      repeatRewardText: '2 Blocchi di Argilla'
+      repeatMoneyReward: 5
+      repeatExpReward: 10
+    cobblemaker:
+      friendlyname: 'Cobble Maker'
+      description: 'Crea un generatore di Pietra e distruggi 64 Blocchi.'
+      icon: COBBLESTONE
+      level: 'Facile'
+      type: inventory
+      requiredItems: 'COBBLESTONE:64'
+      takeItems: true
+      itemReward: 'LEATHER:4'
+      permissionReward: ''
+      rewardText: '4 Cuoio'
+      moneyReward: 10
+      expReward: 30
+      repeatable: true
+      repeatItemReward: 'LEATHER:1'
+      repeatRewardText: '1 Cuoio'
+      repeatMoneyReward: 5
+      repeatExpReward: 10
+    seedbank:
+      friendlyname: 'Seedbank'
+      description: 'Raccogli 64 Semi di Melone, 64 Semi di Zucca e 64 Semi di Grano'
+      icon: PUMPKIN_SEEDS
+      level: 'Facile'
+      type: inventory
+      requiredItems: 'MELON_SEEDS:64 PUMPKIN_SEEDS:64 SEEDS:64'
+      takeItems: true
+      itemReward: 'DIRT:5 VINE:20'
+      rewardText: '5 Blocchi di Terra e 20 Rampicanti'
+      moneyReward: 15
+      expReward: 30
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'DIRT:2 VINE:20'
+      repeatRewardText: '2 Blocchi di Terra e 5 Rampicanti'
+      repeatMoneyReward: 5
+      repeatExpReward: 10
+    stewmaker:
+      friendlyname: 'Stew Maker'
+      description: 'Cucina 18 Zuppe di funghi'
+      icon: MUSHROOM_SOUP
+      level: 'Facile'
+      type: inventory
+      requiredItems: 'MUSHROOM_SOUP:18'
+      takeItems: true
+      itemReward: 'MYCEL:2'
+      rewardText: '2 Blocchi di Micelio'
+      moneyReward: 15
+      expReward: 30
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'MYCEL:1'
+      repeatRewardText: '1 Blocco di Micelio'
+      repeatMoneyReward: 5
+      repeatExpReward: 10
+    builder:
+      friendlyname: 'Builder'
+      description: 'Raggiungi il Livello 10 (/island level).'
+      icon: WOOD
+      level: 'Facile'
+      type: level
+      requiredItems: 10
+      takeItems: false
+      itemReward: 'IRON_PICKAXE:1 DIRT:5 SPONGE:1'
+      rewardText: '1 Piccone di Ferro, 5 Blocchi di Terra e 1 Blocco di Spugna'
+      moneyReward: 50
+      expReward: 50
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    grinder:
+      description: 'Uccidi i mostri e raccogli: 64 Carne Marcia, 32 Ossa, 32 Cordicelle, 32 Frecce, 16 Polvere da Sparo e 5 Occhi di Ragno!'
+      icon: BONE
+      level: 'Normale'
+      type: inventory
+      requiredItems: 'ROTTEN_FLESH:64 STRING:32 SULPHUR:16 ARROW:32 BONE:32 SPIDER_EYE:5'
+      takeItems: true
+      itemReward: 'REDSTONE:16 IRON_ORE:5 FLINT:1 POTION:WATER_BREATHING:1 POTION:NIGHT_VISION:1'
+      rewardText: '16 Redstone, 1 Selce, 1 Pozione di Respirazione SubAcquea, 1 Pozione di Visione Notturna e 5 Minerali di Ferro'
+      moneyReward: 75
+      expReward: 75
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'REDSTONE:2 IRON_ORE:1 FLINT:1 POTION:WATER_BREATHING:1'
+      repeatRewardText: '2 Redstone, 1 Selce, 1 Pozione di Respirazione SubAcquea e 1 Minerale di Ferro'
+      repeatMoneyReward: 15
+      repeatExpReward: 15
+    farmer:
+      description: 'Raccogli stack da 64 di grano, zucchero, melone, carote, patate, zucca'
+      icon: WHEAT
+      level: 'Normale'
+      type: inventory
+      requiredItems: 'WHEAT:64 SUGAR:64 MELON:64 CARROT_ITEM:64 POTATO_ITEM:64 PUMPKIN:64'
+      takeItems: true
+      itemReward: 'REDSTONE:16 INK_SACK:3:1 MONSTER_EGG:90:1 MONSTER_EGG:92:1 MONSTER_EGG:93:1'
+      rewardText: '16 redstone dust, 1 cocoa bean, 1 spawn egg(chicken,cow,pig)'
+      moneyReward: 75
+      expReward: 75
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'INK_SACK:3:1 MONSTER_EGG:90:1 MONSTER_EGG:92:1 MONSTER_EGG:93:1'
+      repeatRewardText: '1 cocoa bean, 1 spawn egg(chicken,cow,pig)'
+      repeatMoneyReward: 20
+      repeatExpReward: 20
+    angler:
+      friendlyname: 'Angler'
+      description: 'Cattura e cucina 10 pesci standard (senza salmone)'
+      icon: COOKED_FISH
+      level: 'Normale'
+      type: inventory
+      requiredItems: 'COOKED_FISH:10'
+      takeItems: true
+      itemReward: 'REDSTONE:16 IRON_ORE:5 INK_SACK:5'
+      rewardText: '16 redstone dust, 5 inksacs, 5 iron (ore)'
+      moneyReward: 75
+      expReward: 75
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'REDSTONE:2 IRON_ORE:1 INK_SACK:1'
+      repeatRewardText: '2 redstone dust, 1 inksac, 1 iron (ore)'
+      repeatMoneyReward: 15
+      repeatExpReward: 15
+    treecutter:
+      friendlyname: 'Treecutter'
+      description: 'Crea una fattoria e raccogli 16 tronchi di quercia, betulla, giungla e abete rosso'
+      icon: LOG
+      level: 'Normale'
+      type: inventory
+      requiredItems: 'LOG:0:16 LOG:1:16 LOG:2:16 LOG:3:16'
+      takeItems: true
+      itemReward: 'REDSTONE:16 IRON_ORE:5 MONSTER_EGG:95:1'
+      rewardText: '16 redstone dust, 5 iron (ore), 1 wolf spawn egg'
+      moneyReward: 75
+      expReward: 75
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'REDSTONE:2 IRON_ORE:1'
+      repeatRewardText: '2 redstone dust, 1 iron (ore)'
+      repeatMoneyReward: 15
+      repeatExpReward: 15
+    cookiemaker:
+      friendlyname: 'Cookie Maker'
+      description: 'Prepara 128 biscotti e un secchio di latte'
+      icon: COOKIE
+      level: 'Normale'
+      type: inventory
+      requiredItems: 'MILK_BUCKET:1 COOKIE:128'
+      takeItems: true
+      itemReward: 'REDSTONE:16 IRON_ORE:5'
+      rewardText: '16 redstone dust, 5 iron (ore)'
+      moneyReward: 75
+      expReward: 75
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'REDSTONE:2 IRON_ORE:1'
+      repeatRewardText: '2 redstone dust, 1 iron (ore)'
+      repeatMoneyReward: 15
+      repeatExpReward: 15
+    craftsman:
+      friendlyname: 'Craftsman'
+      description: 'Raggiungi il livello dell isola a 75 (/island level).'
+      icon: IRON_BLOCK
+      level: 'Normale'
+      type: level
+      requiredItems: 75
+      takeItems: false
+      itemReward: 'OBSIDIAN:10'
+      rewardText: '10 obsidian blocks'
+      moneyReward: 50
+      expReward: 50
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    homestead:
+      friendlyname: 'Homestead'
+      description: 'Costruisci una casa che contenga almeno 1 porta di legno, letto, libreria, tavolo da lavoro, forno, finestra a blocchi di vetro e torcia.'
+      icon: BED
+      level: 'Normale'
+      type: island
+      requiredItems: 'BED_BLOCK:1 WORKBENCH:1 GLASS:1 WOODEN_DOOR:1 FURNACE:1 BOOKSHELF:1 TORCH:1'
+      takeItems: false
+      itemReward: 'JUKEBOX:1 RECORD_12:1 LAPIS_BLOCK:10'
+      rewardText: '1 jukebox, 1 music disk, 10 lapis lazuli blocks'
+      moneyReward: 100
+      expReward: 100
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    nether:
+      friendlyname: 'Nether'
+      description: 'Costruisci un portale infernale sulla tua isola e attivalo.'
+      icon: NETHERRACK
+      level: 'Esperto'
+      type: island
+      requiredItems: 'OBSIDIAN:10 PORTAL:1'
+      takeItems: false
+      itemReward: 'DIAMOND_SWORD:1'
+      rewardText: '1 diamond sword'
+      moneyReward: 100
+      expReward: 100
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    enderpearls:
+      friendlyname: 'Enderpearls'
+      description: 'Raccogli 15 enderpearl dagli enderman'
+      icon: ENDER_PEARL
+      level: 'Esperto'
+      type: inventory
+      requiredItems: 'ENDER_PEARL:15'
+      takeItems: true
+      itemReward: 'GOLD_INGOT:5 BLAZE_ROD:1'
+      rewardText: '5 gold ingots and 1 blaze rod'
+      moneyReward: 50
+      expReward: 100
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'GOLD_INGOT:1 BLAZE_ROD:1'
+      repeatRewardText: '1 gold ingot and 1 blaze rod'
+      repeatMoneyReward: 15
+      repeatExpReward: 15
+    slimeballfarmer:
+      friendlyname: 'Slimeball Farmer'
+      description: 'Raccogli 40 palline di slime dagli slime'
+      icon: SLIME_BALL
+      level: 'Esperto'
+      type: inventory
+      requiredItems: 'SLIME_BALL:40'
+      takeItems: true
+      itemReward: 'GOLD_INGOT:5 IRON_ORE:5'
+      rewardText: '5 gold ingots and 5 blocks of iron ore'
+      moneyReward: 50
+      expReward: 100
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'REDSTONE:8'
+      repeatRewardText: '8 redstone dust'
+      repeatMoneyReward: 15
+      repeatExpReward: 15
+    baker:
+      friendlyname: 'baker'
+      description: 'Cuocere 5 torte e 5 torte di zucca'
+      icon: CAKE
+      level: 'Esperto'
+      type: inventory
+      requiredItems: 'CAKE:5 PUMPKIN_PIE:5'
+      takeItems: true
+      itemReward: 'GOLD_INGOT:5 DIAMOND:1'
+      rewardText: '5 gold ingots and 1 diamond'
+      moneyReward: 50
+      expReward: 100
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'IRON_ORE:1'
+      repeatRewardText: '1 iron (ore)'
+      repeatMoneyReward: 15
+      repeatExpReward: 15
+    pioneer:
+      friendlyname: 'Pioneer'
+      description: 'Crea 1 mappa e usala, una bussola, un orologio e colleziona 64 Netherrack, 16 sabbia delle anime e 1 grande lacrima di ghast'
+      icon: MAP
+      level: 'Esperto'
+      type: inventory
+      requiredItems: 'NETHERRACK:64 SOUL_SAND:16 GHAST_TEAR:1 MAP:1 COMPASS:1 WATCH:1'
+      takeItems: true
+      itemReward: 'POWERED_RAIL:32 RAILS:256 DIAMOND:1 MONSTER_EGG:98:1'
+      rewardText: '256 rails, 32 powered rails, 1 ocelot spawn egg, 1 diamond'
+      moneyReward: 100
+      expReward: 100
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'IRON_ORE:1'
+      repeatRewardText: '1 iron (ore)'
+      repeatMoneyReward: 20
+      repeatExpReward: 20
+    mason:
+      friendlyname: 'Mason'
+      description: 'Raggiungi il livello dell isola a 150 (/island level).'
+      icon: GOLD_BLOCK
+      level: 'Esperto'
+      type: level
+      requiredItems: 150
+      takeItems: false
+      itemReward: 'DIAMOND:1 DIRT:20 GOLD_BLOCK:2'
+      rewardText: '1 diamond, 20 dirt, and 2 gold blocks'
+      moneyReward: 150
+      expReward: 150
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    shepherd:
+      friendlyname: 'Shepherd'
+      description: 'Raccogli 5 di ogni colore di lana'
+      icon: WOOL:2
+      level: 'Difficile'
+      type: inventory
+      requiredItems: 'WOOL:0:5 WOOL:1:5 WOOL:2:5 WOOL:3:5 WOOL:4:5 WOOL:5:5 WOOL:6:5 WOOL:7:5 WOOL:8:5 WOOL:9:5 WOOL:10:5 WOOL:11:5 WOOL:12:5 WOOL:13:5 WOOL:14:5 WOOL:15:5' 
+      takeItems: true
+      itemReward: 'DIAMOND:2 RECORD_7:1 RECORD_8:1 RECORD_6:1 MONSTER_EGG:91:1 EMERALD:5'
+      rewardText: '2 diamonds, 5 emeralds, 3 music disks, 1 sheep spawn egg'
+      moneyReward: 200
+      expReward: 200
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'EMERALD:1 MONSTER_EGG:91:1'
+      repeatRewardText: '1 emerald, 1 sheep spawn egg'
+      repeatMoneyReward: 20
+      repeatExpReward: 20
+    alchemist:
+      friendlyname: 'Alchemist'
+      description: 'Prepara 1 pozione di resistenza al fuoco, lentezza, rapidita, guarigione, danno, invisibilita, forza e rigenerazione'
+      icon: BREWING_STAND_ITEM
+      level: 'Difficile'
+      type: inventory
+      requiredItems: 'POTION:8195:1 POTION:8202:1 POTION:8194:1 POTION:8197:1 POTION:8204:1 POTION:8206:1 POTION:8201:1 POTION:8193:1'
+      takeItems: true
+      itemReward: 'ENCHANTMENT_TABLE:1'
+      rewardText: 'Enchantment Table'
+      moneyReward: 200
+      expReward: 200
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'DIAMOND:1'
+      repeatRewardText: '1 diamond'
+      repeatMoneyReward: 20
+      repeatExpReward: 20
+    dj:
+      friendlyname: 'DJ'
+      description: 'Crea un jukebox e colleziona tutti i dischi musicali'
+      icon: RECORD_5
+      level: 'Difficile'
+      type: inventory
+      requiredItems: 'GOLD_RECORD:1 GREEN_RECORD:1 RECORD_3:1 RECORD_4:1 RECORD_5:1 RECORD_6:1 RECORD_7:1 RECORD_8:1 RECORD_9:1 RECORD_10:1 RECORD_11:1 RECORD_12:1 JUKEBOX:1' 
+      takeItems: true
+      itemReward: 'DIAMOND:3 EMERALD:10 GOLD_INGOT:5'
+      rewardText: '3 diamonds, 10 emeralds and 5 gold ingots'
+      moneyReward: 200
+      expReward: 200
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'DIAMOND:1 EMERALD:5 GOLD_INGOT:2'
+      repeatRewardText: '1 diamond, 5 emeralds and 2 gold bars'
+      repeatMoneyReward: 20
+      repeatExpReward: 20
+    gemcollector:
+      friendlyname: 'Gem Collector'
+      description: 'Colleziona 50 smeraldi'
+      icon: EMERALD
+      level: 'Difficile'
+      type: inventory
+      requiredItems: 'EMERALD:50' 
+      takeItems: true
+      itemReward: 'DIAMOND:10'
+      rewardText: '10 diamonds'
+      moneyReward: 200
+      expReward: 200
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'GOLD_INGOT:2'
+      repeatRewardText: '2 gold ingots'
+      repeatMoneyReward: 20
+      repeatExpReward: 20
+    culinaryartist:
+      friendlyname: 'Culinary Artist'
+      description: 'Raccogli 1 di ogni tipo di cibo commestibile cotto o prodotto (nessun cibo crudo, carne di zombie o mele super dorate)'
+      icon: GOLDEN_APPLE
+      level: 'Difficile'
+      type: inventory
+      requiredItems: 'BAKED_POTATO:1 BREAD:1 CAKE:1 COOKED_CHICKEN:1 COOKED_FISH:1 GRILLED_PORK:1 COOKIE:1 GOLDEN_APPLE:0:1 GOLDEN_CARROT:1 MUSHROOM_SOUP:1 PUMPKIN_PIE:1 COOKED_BEEF:1' 
+      takeItems: true
+      itemReward: 'GOLD_BLOCK:2 GREEN_RECORD:1 RECORD_3:1 RECORD_5:1 MONSTER_EGG:96:1 EMERALD:5'
+      rewardText: '2 gold blocks, 3 music discs, 1 mooshroom spawn egg, and 5 emeralds'
+      moneyReward: 200
+      expReward: 200
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'GOLD_INGOT:10 MONSTER_EGG:96:1 EMERALD:1'
+      repeatRewardText: '10 gold ingots, 1 mooshroom spawn egg, 1 emerald'
+      repeatMoneyReward: 20
+      repeatExpReward: 20
+    beaconator:
+      friendlyname: 'Beaconator'
+      description: 'Costruisci un faro e fallo brillare!'
+      icon: BEACON
+      level: 'Difficile'
+      type: island
+      requiredItems: 'BEACON:1'
+      takeItems: false
+      itemReward: 'SMOOTH_BRICK:20 SMOOTH_BRICK:1:20 SMOOTH_BRICK:2:20 SMOOTH_BRICK:3:20'
+      rewardText: '20 blocks of every kind of stone brick'
+      moneyReward: 300
+      expReward: 300
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    ittakesavillage:
+      friendlyname: 'It Takes A Village'
+      description: 'Tieni una riunione di villaggio con 10 abitanti del villaggio!'
+      icon: STONE
+      level: 'Difficile'
+      type: island
+      requiredItems: 'VILLAGER:10'
+      takeItems: false
+      itemReward: 'HOPPER:4'
+      rewardText: '4 hoppers'
+      moneyReward: 300
+      expReward: 300
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    myprecious:
+      friendlyname: 'My Precious'
+      description: 'Costruisci un golem di ferro'
+      icon: NAME_TAG
+      level: 'Difficile'
+      type: island
+      requiredItems: 'IRON_GOLEM:1'
+      takeItems: false
+      itemReward: 'NAME_TAG:1 ANVIL:1 CAULDRON:1 IRON_BLOCK:2'
+      rewardText: 'A name tag, an anvil, a cauldron and 2 iron blocks'
+      moneyReward: 300
+      expReward: 300
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    snowplay:
+      friendlyname: 'Snow Play!'
+      description: 'Costruisci un golem di neve'
+      icon: SNOW_BALL
+      level: 'Difficile'
+      type: island
+      requiredItems: 'SNOWMAN:1'
+      takeItems: false
+      itemReward: 'DIAMOND_SPADE:1'
+      rewardText: 'A diamond spade - get shoveling!'
+      moneyReward: 300
+      expReward: 300
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    itsaparty:
+      friendlyname: "It's a party"
+      description: 'Fai una festa e Invita 4 amici.'
+      icon: PUMPKIN_PIE
+      level: 'Difficile'
+      type: island
+      requiredItems: 'PLAYER:5'
+      takeItems: false
+      itemReward: 'EMERALD:6 PUMPKIN_PIE:6'
+      rewardText: '6 Emeralds, 6 pumpkin pies'
+      moneyReward: 200
+      expReward: 200
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    itsamonsterparty:
+      friendlyname: "It's a Monster Party"
+      description: 'Organizza una festa. Tutti i mostri sono invitati! Avvicinati allo Scheletro, allo Zombi, al Ragno, al Creeper e all Enderman allo stesso tempo.'
+      icon: SKULL_ITEM
+      level: 'Difficile'
+      type: island
+      requiredItems: 'SKELETON:1 ZOMBIE:1 SPIDER:1 CREEPER:1 ENDERMAN:1'
+      takeItems: false
+      itemReward: 'SKULL_ITEM:0:2 SKULL_ITEM:2:2 SKULL_ITEM:3:2'
+      rewardText: 'Skulls!'
+      moneyReward: 200
+      expReward: 400
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    acidduke:
+      friendlyname: 'Arch Duke'
+      description: 'Raggiungi un livello dell isola di 1000'
+      icon: DIAMOND_BLOCK
+      level: 'Impossibile'
+      type: level
+      requiredItems: 1000
+      takeItems: false
+      itemReward: 'DIAMOND:1'
+      rewardText: '1 diamond'
+      moneyReward: 250
+      expReward: 250
+      permissionReward: ''
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+
+

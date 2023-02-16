@@ -1,0 +1,9 @@
+# This plugin uses Regex for checking messages.
+expressions:
+  # IPs and Websites
+  - ([\d]{1,3}[., ]{1,}){3,}([\d]{1,3})
+  - ([ &.,]|^)([\w]{5,})([., ]){1,}(com|org|net|biz|info|name|mobi|kz|tk|server.pro|serv.nu)([ &.,]|$)
+  # Swearing (English)
+  - hazecraft
+  # Miscelaneous
+  - (LiquidBounce)([ ])(Hacked)([ ])(Client)([ ])(by)([ ])(CCBlueX)

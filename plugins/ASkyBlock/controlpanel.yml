@@ -1,0 +1,53 @@
+# Control panel file
+# For colors in panel name use &. Note client must restart if changes made as it caches inventory.
+# [island] refers to the island command, e.g., /island
+# material format is MATERIAL:DURABILITY where DURABILITY is optional
+
+default:
+  panelname: '&1SkyBlock di PowaCraft'
+  buttons:
+    0:
+      material: GRASS
+      description: Vai alla tua Isola!
+      command: '[island] go'
+      nextsection: ''
+    1:
+      material: LAVA_BUCKET
+      description: Apri lo Shop!
+      command: '[island] ms'
+      nextsection: ''
+    2:
+      material: SKULL_ITEM
+      description: Visualizza il tuo Team!
+      command: '[island] team'
+      nextsection:
+    3:
+      material: BED
+      description: Setta la tua casa qui
+      command: '[island] sethome'
+      nextsection:
+    4:
+      material: ACACIA_STAIRS
+      description: Livello Isola
+      command: '[island] level'
+      nextsection:
+    5:
+      material: BOOK
+      description: Visualizza le migliori 10 Isole
+      command: '[island] top'
+      nextsection:
+    6:
+      material: SIGN
+      description: Visualizza i Warp disponibili
+      command: '[island] warps'
+      nextsection:
+    7:
+      material: BEDROCK
+      description: Vai allo Spawn
+      command: '[island] spawn'
+      nextsection:
+    8:
+      material: SAPLING
+      description: Cambia Bioma
+      command: '[island] biomes'
+      nextsection: ''

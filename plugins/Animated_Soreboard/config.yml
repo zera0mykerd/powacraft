@@ -1,0 +1,178 @@
+
+#####################################################################################################
+# +-----------------------------------------------------------------------------------------------+ #
+# |                                                                                               | #
+# |                                   How to paint and place vars                                 | #
+# |                                                                                               | #
+# |https://dev.bukkit.org/projects/animated-scoreboard/pages/guide/how-to-paint-and-replaced-vars | #
+# |                                                                                               | #
+# +-----------------------------------------------------------------------------------------------+ #
+#####################################################################################################
+
+
+
+#####################################################################################################
+# +-----------------------------------------------------------------------------------------------+ #
+# |                                                                                               | #
+# |                                          Setup Guide                                          | #
+# |                     For how to Animate the Title see the Online Web-Guide                     | #
+# |    https://dev.bukkit.org/projects/animated-scoreboard/pages/guide/how-to-animate-the-title   | #
+# |                                                                                               | #
+# +-----------------------------------------------------------------------------------------------+ #
+#####################################################################################################
+Title:
+  - '&ePowaCraft;25'
+  - '&6PowaCraft;5'
+  - '&ePowaCraft;5'
+  - '&6PowaCraft;5'
+  - '&ePowaCraft;5'
+  - '&6PowaCraft;5'
+  - '&ePowaCraft;5'
+  - '&6PowaCraft;5'
+  - '&ePowaCraft;5'
+  - '&6PowaCraft;5'
+  - '&ePowaCraft;5'
+  - '&6PowaCraft;5'
+  - '&6PowaCraf&f_;2'
+  - '&6PowaC&f_;2'
+  - '&6Powa&f_;2'
+  - '&6Pow&f_;2'
+  - '&6Po&f_;2'
+  - '&6P&f_;2'
+  - '&f_;5'
+  - '&r;10'
+  - '&f_;5'
+  - '&r;10'
+  - '&f_;5'
+  - '&6P&f_;2'
+  - '&6Po&f_;2'
+  - '&6Pow&f_;2'
+  - '&6PowaC&f_;2'
+  - '&6PowaCr&f_;2'
+  - '&6PowaCra&f_;2'
+  - '&6PowaCraf;10'
+  - '&eP&6owaCraft;3'
+  - '&ePo&6waCraft;3'
+  - '&ePow&6aCraft;3'
+  - '&ePowa&6craft;3'
+  - '&ePowaC&6raft;3'
+  - '&ePowaCr&6aft;3'
+  - '&ePowaCraft;5'
+  - '&ePowaCraf&6T;3'
+  - '&ePowaCra&6ft;3'
+  - '&ePowaCr&6aft;3'
+  - '&ePow&6aCraft;3'
+  - '&ePo&6waCraft;3'
+  - '&eP&6owaCraft;3'
+  - '&6PowaCraft;5'
+  - '&eP&6owaCraft;3'
+  - '&ePo&6waCraft;3'
+  - '&ePow&6aCraft;3'
+  - '&ePowa&6Craft;3'
+  - '&ePowaCr&6aft;3'
+  - '&ePowaCraf&6t;3'
+  - '&ePowaCraft;5'
+  - '&ePowaCraf&6t;3'
+  - '&ePowaCra&6ft;3'
+  - '&ePowaCr&6aft;3'
+  - '&ePow&6aCraft;3'
+  - '&ePo&6waCraft;3'
+  - '&eP&6owaCraft;3'
+  - '&6PowaCraft;25'
+  - '&6P&eow&6a&eCr&6a&ef&6t;5'
+  - '&eP&6ow&ea&6Cr&ea&6f&et;5'
+  - '&6P&eow&6a&eCr&6a&ef&6t;5'
+  - '&eP&6ow&ea&6Cr&ea&6f&et;5'
+  - '&6P&eow&6a&eCr&6a&ef&6t;5'
+  - '&eP&6ow&ea&6Cr&ea&6f&et;5'
+  - '&6P&eow&6a&eCr&6a&ef&6t;5'
+  - '&eP&6ow&ea&6Cr&ea&6f&et;5'
+  - '&6P&eow&6a&eCr&6a&ef&6t;5'
+  - '&eP&6ow&ea&6Cr&ea&6f&et;5'
+  - '&6P&eow&6a&eCr&6a&ef&6t;5'
+  - '&eP&6ow&ea&6Cr&ea&6f&et;5'
+  - '&6PowaCraft;25'
+  - '&ePow&6aCraft;5'
+  - '&6Pow&eaCraft;5'
+  - '&ePow&6aCraft;5'
+  - '&6Pow&eaCraft;5'
+  - '&ePow&6aCraft;5'
+  - '&6Pow&eaCraft;5'
+  - '&ePow&6aCraft;5'
+  - '&6Pow&eaCraft;5'
+  - '&ePow&6aCraft;5'
+  - '&6Pow&eaCraft;5'
+  - '&ePow&6aCraft;5'
+  - '&6Pow&eaCraft;5'
+  - '&6PowaCraft;5'
+
+Pages:
+  amount: 4
+  1:
+    showTime: 1001
+    lines:
+      - ''
+      - '&a&lBenvenuto:'
+      - '&2%player%'
+      - ''
+      - '&a&lIl tuo guadagno:'
+      - '&2%money%'
+      - ''
+      - '&5Per avere le particelle:'
+      - '&d/pp list'
+      - ''
+      - '&5Per le statistiche:'
+      - '&d/stats'
+      - ''
+      - '&b&l&n(powacraft IP)'
+  2:
+    showTime: 1002
+    lines:
+      - ''
+      - '&a&lOra sei in:'
+      - '&2%world%'
+      - ''
+      - '&5Per reportare un giocatore:'
+      - '&d/report (giocatore) (motivo)'
+      - ''
+      - '&5Per visionare le regole:'
+      - '&d/regole | /rules'
+      - ''
+      - '&5Per gonfiare un palloncino:'
+      - '&d/balloon (colore)'
+      - ''
+      - '&b&l&n(powacraft IP)'
+  3:
+    showTime: 1003
+    lines:
+      - ''
+      - '&a&lPersone Online:'
+      - '&f&l%now%&r&2/%max%'
+      - ''
+      - '&5Se ti sei buggato:'
+      - '&d/fix'
+      - ''
+      - '&5Per controllare il tuo ping:'
+      - '&d/ping'
+      - ''
+      - '&5Per adottare un &nPet&5:'
+      - '&d/mypet'
+      - ''
+      - '&b&l&n(powacraft IP)'
+  4:
+    showTime: 1004
+    lines:
+      - ''
+      - '&a&lRango:'
+      - '&f&l%rank%'
+      - ''
+      - '&5Per commerciare:'
+      - '&d/trade (nome)'
+      - ''
+      - '&5Per cambiare skin:'
+      - '&d/skin (nomeskin)'
+      - ''
+      - '&5Per un controllo latenza:'
+      - '&d/mklag'
+      - ''
+      - '&b&l&n(powacraft IP)'

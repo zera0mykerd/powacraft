@@ -1,0 +1,18 @@
+prefix: '&3&l[&9&lPowaBalloons&3&l] '
+command:
+  help:
+    available: '&f&lPalloncini disponibili'
+    your: '&f&lI tuoi palloncini'
+    message: '&7&oProva /balloon [colore in inglese] per gonfiare palloncino. Invece /balloon off per scoppiarlo.'
+  gui: '&7&oProva /balloon gui per avere la interfaccia grafica.'
+players-only: Hey, non sei un giocatore, se lo fa la console dopo vola il computer...
+balloon:
+  activate: '&a&oOra hai un bellissimo palloncino.'
+  deactivate: '&c&oHai scoppiato il tuo palloncino... :c'
+  no-balloon: '&cNon hai un palloncino!'
+  no-permission: '&4Non hai il permesso per avere questo palloncino!'
+  not-enough-space: '&cNon puoi gonfiare questo palloncino in questo punto!'
+  in-vehicle: '&cNon puoi gonfiare un palloncino in auto, secondo il codice della strada rischi di fare un incidente!'
+gui:
+  title: '&f&lPossiedi %amount% Palloncini'
+  clearBalloon: '&7&lScoppia palloncino'

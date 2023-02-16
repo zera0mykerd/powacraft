@@ -1,0 +1,140 @@
+options:
+  auto-update: false
+  teleport-when-further-then: 12
+  update-delay: 3
+  disable-balloon-in-vehicles: true
+gui:
+  lore:
+  - ''
+  - '&7&l<&a&l Clicca per gonfiare &7&l>'
+particles:
+  enabled: false
+  delay-in-seconds: 1
+balloons:
+  BLUE:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Default
+      particle: DRIP_WATER
+    name: '&9Blu &o(Blue)'
+  RED:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Default
+      particle: DRIP_LAVA
+    name: '&cRosso &o(Red)'
+  YELLOW:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Default
+      particle: FLAME
+    name: '&eGiallo &o(Yellow)'
+  GREEN:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Default
+      particle: SLIME
+    name: '&2Verde &o(Green)'
+  LIME:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Default
+      particle: SPLASH
+    name: '&aVerdignolo &o(Lime)'
+  AQUA:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Default
+      particle: CLOUD
+    name: '&bAquamarina &o(Aqua)'
+  PINK:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Default
+      particle: BUBBLE
+    name: '&dRosa &o(Pink)'
+  PURPLE:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Default
+      particle: SPELL
+    name: '&5Viola &o(Purple)'
+  ORANGE:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Default
+      particle: FLAME
+    name: '&6Arancione &o(Orange)'
+  MELON:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Special
+      particle: RED_DUST
+    name: '&aMelone'
+  PUMPKIN:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Special
+      particle: NOTE
+    name: '&6Zucca'
+  HAY:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Special
+      particle: ENCHANTMENT_TABLE
+    name: '&eFieno'
+  GOLD:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Special
+      particle: SNOWBALL_POOF
+    name: '&6Oro'
+  DIAMOND:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Special
+      particle: HEART
+    name: '&bDiamante'
+  EMERALD:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Special
+      particle: WITCH_MAGIC
+    name: '&aSmeraldo'
+  TNT:
+    enable: true
+    particles:
+      enabled: false
+      required-permission: BalloonFiesta.particle.Special
+      particle: LARGE_EXPLODE
+    name: '&4T&rN&4T'
+  me:
+    mrCookieSlime:
+      BalloonFiesta:
+        main$2@257e1b56:
+          particles:
+            enabled: false
+            required-permission: BalloonFiesta.particle.me.mrCookieSlime.BalloonFiesta.main$2@257e1b56
+            particle: ENCHANTMENT_TABLE
+  BLUE:
+    enable: true
+    particles:
+      enabled: true
+      required-permission: BalloonFiesta.particle.BalloonFiesta v1.2.2
+      particle: ENCHANTMENT_TABLE
+    name: '&9Blue'

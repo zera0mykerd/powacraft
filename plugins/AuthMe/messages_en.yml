@@ -1,0 +1,67 @@
+unknown_user: '&4&lUtente non presente nel database'
+unsafe_spawn: "&4&lLa locazione di prima \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 stata\
+  \ cancellata!!!"
+not_logged_in: '&cNot logged in!'
+reg_voluntarily: '&f&lYou can register your nickname with the command "/register password
+  ConfirmPassword"'
+usage_log: '&c&lLoggati con: /login password'
+wrong_pwd: '&c&lPassword Errata'
+unregistered: '&a&lRegistrato con successo!'
+reg_disabled: '&c&lRegistrazione disabilitata'
+valid_session: '&a&lSessione di login recuperata!!!'
+login: '&a&lLoggato con successo!'
+vb_nonActiv: "&f&lIl tuo account non \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 stato\
+  \ attivato con e-mail"
+user_regged: "&a&lUsername gi\xc3\u0192\xc6\u2019\xc3\u201a\xc2\_ registrato"
+usage_reg: '&c&lRegistrati con: /register password ConfirmPassword'
+max_reg: '&4&lHai raggiunto il limite di reggistrazioni!!!'
+no_perm: '&4&lNessun Permesso'
+error: "&4&lUn errore \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 stato trovato per favore\
+  \ contatta Zera su skype: anonymous-023"
+login_msg: '&c&lPer favore loggati con "/login password"'
+reg_msg: '&c&lPer favore registrati con "/register password ConfirmPassword"'
+reg_email_msg: '&c&lPer favore regisrati con "/register <email> <confirmEmail>"'
+usage_unreg: '&c&lUsa: /unregister password'
+pwd_changed: '&a&lPassword cambiata con successo!'
+user_unknown: '&c&lUsername non registrato'
+password_error: '&c&lLe Password Non corrispondono'
+invalid_session: '&f&lSessione non corrisponde.'
+reg_only: '&f&lRegistered players only! Please visit http://example.com to register'
+logged_in: "&a&lTi sei gi\xc3\u0192\xc6\u2019\xc3\u201a\xc2\_ loggato LOL!"
+logout: '&a&lLogout eseguito con successo'
+same_nick: "&4&lQuesto nick sta gi\xc3\u0192\xc6\u2019\xc3\u201a\xc2\_ giocando"
+registered: '&a&lRegistrato con successo!'
+pass_len: '&c&lPassword troppo lunga'
+reload: '&a&lConfiguration and database ricaricati'
+timeout: '&4&lCi hai messo troppo tempo a loggare'
+usage_changepassword: '&c&lUsa: /changepassword oldPassword newPassword'
+name_len: '&4&lIl tuo nickname contiene caratteri troppo lunghi'
+regex: '&4&lIl tuo nickname contiene caratteri inlegali. Allowed chars: REG_EX'
+add_email: '&cPlease add your email with : /email add yourEmail confirmEmail'
+bad_database_email: '[AuthMe] This /email command only available with MySQL and SQLite,
+  contact an admin'
+recovery_email: '&c&lPer favore usa /email recovery <yourEmail>'
+usage_captcha: '&c&lYou need to type a captcha, please type: /captcha <theCaptcha>'
+wrong_captcha: '&c&lWrong Captcha, please use : /captcha THE_CAPTCHA'
+valid_captcha: '&c&lYour captcha is valid!'
+kick_forvip: '&c&lA VIP Players are only able to join the server when full!'
+kick_fullserver: "&c&lIl server \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 pieno per favore\
+  \ rejoina pi\xc3\u0192\xc6\u2019\xc3\u201a\xc2\xb9 tardi"
+usage_email_add: '&f&lUsage: /email add <email> <confirmEmail> '
+usage_email_change: '&f&lUsage: /email change <oldEmail> <newEmail> '
+usage_email_recovery: '&f&lUsage: /email recovery <Email>'
+new_email_invalid: '[AuthMe] New email invalid!'
+old_email_invalid: '[AuthMe] Old email invalid!'
+email_invalid: '[AuthMe] Invalid email'
+email_added: '[AuthMe] Email Added!'
+email_confirm: '[AuthMe] Confirm your email!'
+email_changed: '[AuthMe] Email cambiata!'
+email_send: '[AuthMe] Recovery email sent!'
+email_exists: "[AuthMe] Questa \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8-mail gi\xc3\u0192\
+  \xc6\u2019\xc3\u201a\xc2\_ esiste nel nostro database. You can change it using the\
+  \ command below"
+country_banned: "Il tuo paese \xc3\u0192\xc6\u2019\xc3\u201a\xc2\xa8 bannato su questo\
+  \ server"
+antibot_auto_enabled: '[AuthMe] AntiBotMod automaticamente consentito a causa del
+  numero di connessioni!'
+antibot_auto_disabled: '[AuthMe] AntiBotMod automaticamente disattivato dopo %m minutes'

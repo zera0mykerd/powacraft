@@ -1,0 +1,11 @@
+
+
+
+&8&l---------------------------------------
+&7  Per ragioni di sicurezza non comunicare mai la tua  
+&7  password a nessuno, inoltre evita di usare         
+&7  password troppo semplici o usate in altri server 
+&7  Nota: lo staff non ti chiederà mai la password.   
+&8&l---------------------------------------
+
+

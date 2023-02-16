@@ -1,0 +1,12 @@
+Spout GUI enabled: true
+LoginScreen:
+  enabled: true
+  exit button: Esci
+  exit message: A dopo!
+  login button: Accedi
+  title: LOGIN
+  text:
+  - Sample text
+  - Change this at spout.yml
+  - '--- AuthMe Reloaded by ---'
+  - Xephi59

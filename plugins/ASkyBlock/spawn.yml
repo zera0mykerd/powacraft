@@ -1,0 +1,18 @@
+# This file controls what is an is not allowed at spawn
+spawn:
+  # Range that spawn occupies
+  range: 50
+  # Protection options
+  allowdooruse: true
+  allowleverbuttonuse: true
+  allowchestaccess: true
+  allowfurnaceuse: true
+  allowredstone: true
+  allowmusic: true
+  allowcrafting: true
+  allowbrewing: true
+  allowgateuse: true
+  allowmobspawn: true
+  allowspawnnoacidwater: true
+  allowenchanting: true
+  allowanviluse: true

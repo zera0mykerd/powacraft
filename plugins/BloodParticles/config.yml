@@ -1,0 +1,43 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                    BLOOD PARTICLE                    | #
+# |               Author: TheReaperNationYT              | #
+# +------------------------------------------------------+ #
+############################################################
+# -Insert the ID of the BLOCK you desire.
+# -Put the Number 0 if you do not want any Particles for the chosen Mob/Entity!
+# -With that Being said, If you want to disable Blood Particles just put 0's on every mob!
+
+# ID Help: http://minecraft-ids.grahamedgecombe.com/
+Mobs:
+  Human: 0
+  Blaze: 51
+  Enderman: 90
+  Squid: 8
+  Zombie: 133
+  Slime: 165
+  Spider: 30
+  Golem: 155
+  Cow: 100
+  Bat: 173
+  Chicken: 35
+  Ocelot: 41
+  Horse: 153
+  Sheep: 35
+  Pig: 159
+  Villager: 73
+  Wolf: 155
+  Creeper: 46
+  Ghast: 155
+  MagmaCube: 10
+  Skeleton: 173
+  Silverfish: 1
+  Witch: 112
+  EnderDragon: 7
+  Wither: 7
+  Endermite: 49
+  Guardian: 8
+  Rabbit: 87
+
+# NOTE: Check for Updates occasionally @ » http://dev.bukkit.org/bukkit-plugins/blood-particles/
+# If you are Having any issues report it to me Immediately!
