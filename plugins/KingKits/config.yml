@@ -1,0 +1,56 @@
+# KingKits Configuration
+Op bypass: true
+PvP Worlds:
+- sky-pvp
+- kitpvp
+- arena-pvp
+- 1vs1
+- FlagWars
+- ShotGun
+Multiple world inventories plugin: Multiverse-Inventories
+Enable kits command: true
+Enable create kits command: false
+Enable delete kits command: false
+Enable rename kits command: false
+Enable refill command: false
+Kit sign: '[kit]'
+Kit list sign: '[KList]'
+Kit sign valid: '&4&l(&c&lKit&4&l)'
+Kit sign invalid: '&0&l[&4&lError&0&l]'
+Kit list sign valid: '[&1KList&0]'
+Kit cooldown enabled: false
+List kits on join: false
+Use permissions on join: true
+Use permissions for kit list: true
+Kit list mode: Text
+Sort kits alphabetically: true
+Remove items on leave: false
+Drop items on death: false
+Drop items: true
+Drop animations:
+- 281
+Allow picking up items: true
+Clear inventories on reload: true
+One kit per life: false
+Check for updates: false
+Automatically update: false
+Enable score: false
+Score chat prefix: '&6[&a<score>&6]'
+Score per kill: 2
+Max score: 2147483647
+Remove potion effects on leave: true
+Set compass target to nearest player: true
+Quick soup: true
+Requires kit to use refill: true
+Command to run when changing kits: ''
+Disable block placing and breaking: false
+Disable death messages: false
+Lock hunger level: false
+Custom message: '&aHai scelto il kit &2&l<kit>'
+Disable gamemode while using a kit: false
+Enable killstreaks: true
+Disable item breaking: false
+Kit menu on join: false
+Clear items on kit creation: true
+Kit particle effects: true
+Show kit preview: false

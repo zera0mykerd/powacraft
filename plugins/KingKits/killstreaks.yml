@@ -1,0 +1,46 @@
+# KingKits Killstreak Configuration
+First run: false
+Killstreak 5:
+- broadcast &c<player> &aha una killstreak di 5 kills!
+- msg <player> Ben fatto soldato!
+Killstreak 10:
+- broadcast &c<player> &aha una killstreak di 10 kills!
+- msg <player> Ben fatto soldato!
+Killstreak 15:
+- broadcast &c<player> &aha una killstreak di 15 kills!
+- msg <player> Stai andando bene!
+Killstreak 20:
+- broadcast &c<player> &aha una killstreak di 20 kills!
+- msg <player> Continua cosi!
+- eco give <player> 100
+Killstreak 30:
+- broadcast &c<player> &aha una killstreak di 30 kills!
+- msg <player> Sei diventato un pro!
+- eco give <player> 150
+Killstreak 50:
+- broadcast &c<player> &aha una killstreak di 50 kills!
+- msg <player> Sei diventato una leggenda!
+- eco give <player> 300
+Killstreak 100:
+- broadcast &c<player> &aha una killstreak di 100 kills!
+- msg <player> Sei diventato un DIO!
+- eco give <player> 600
+Killstreak 200:
+- broadcast &c<player> &aha una killstreak di 200 kills!
+- msg <player> Sei diventato un DIO!
+- eco give <player> 1200
+Killstreak 300:
+- broadcast &c<player> &aha una killstreak di 300 kills!
+- msg <player> Sei diventato un DIO!
+- eco give <player> 1800
+Killstreak 500:
+- broadcast &c<player> &aha una killstreak di 500 kills!
+- msg <player> Sembri un hacker!
+- eco give <player> 3600
+Killstreak 1000:
+- broadcast &c<player> &aha una killstreak di 1000 kills!
+- msg <player> Ma cosa hai fatto passare a questi poveri giocatori?
+- eco give <player> 5000
+Killstreak 9001:
+- broadcast &c<player> &aha una killstreak di oltre 9000!
+- msg <player> WTF!

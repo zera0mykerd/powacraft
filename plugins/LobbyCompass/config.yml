@@ -1,0 +1,106 @@
+# #############################################
+# # - LobbyCompass Updated By FrostedGC & Goldentoenail - #
+# #############################################
+# # Option 'executedByPlayer' means:
+# #    > true = Command is executed as the player typed it
+# #    > false = Command is executed by console (%n% is player name)
+# # There can be only at most 6 lines in one inventory!
+# # If get-compass-slot is -1 it will add the compass in a free slot
+# # LobbyCompass handles inventories starting at 0-8 not 1-9!
+# # ############################################
+
+compass-name: '&aTasto destro per le modalita'
+compass-item: COMPASS
+compass-inventory-name: '&4&lPowa&c&lCraft &e&lModalita'
+get-compass-on-join: false
+get-compass-slot: 4
+get-compass-worlds:
+- spawn
+only-allow-command-lc_get-in-worlds: true
+can-drop-compass: false
+inventory-lines-amount: 1
+sound-effect: true
+options:
+- faction
+- vanilla
+- skypvp
+- skyblock
+- kitpvp
+- flagpvp
+- creative
+- cod
+- prison
+data:
+  faction:
+    name: '&c&lFazioni'
+    lore:
+    - '&7Clicca qui per andare al fazioni'
+    item: DIAMOND_CHESTPLATE
+    cmd: warp faction
+    executedByPlayer: true
+    position-in-inventory: 0
+  vanilla:
+    name: '&e&lVanilla'
+    lore:
+    - '&7Clicca qui per andare al vanilla'
+    item: MILK_BUCKET
+    cmd: warp vanilla
+    executedByPlayer: true
+    position-in-inventory: 1
+  skypvp:
+    name: '&3&lSky-PvP'
+    lore:
+    - '&7Clicca qui per andare allo skypvp'
+    item: FEATHER
+    cmd: warp skypvp
+    executedByPlayer: true
+    position-in-inventory: 2
+  skyblock:
+    name: '&6&lSkyBlock'
+    lore:
+    - '&7Clicca qui per andare allo skyblock'
+    - '&8&oFare prima /island'
+    item: GRASS
+    cmd: is go
+    executedByPlayer: true
+    position-in-inventory: 3
+  kitpvp:
+    name: '&a&lKitPvP'
+    lore:
+    - '&7Clicca qui per andare al kitpvp'
+    item: IRON_SWORD
+    cmd: warp kitpvp
+    executedByPlayer: true
+    position-in-inventory: 4
+  flagpvp:
+    name: '&2&lFlagPvP'
+    lore:
+    - '&7Clicca qui per andare al flagpvp'
+    item: DIAMOND_SWORD
+    cmd: warp FlagPvP
+    executedByPlayer: true
+    position-in-inventory: 5
+  creative:
+    name: '&9&lCreative'
+    lore:
+    - '&7Clicca qui per andare al creative'
+    item: BEACON
+    cmd: warp creative
+    executedByPlayer: true
+    position-in-inventory: 6
+  cod:
+    name: '&4&lCall Of Duty'
+    lore:
+    - '&7Clicca qui per andare al call of duty'
+    item: REDSTONE_BLOCK
+    cmd: warp gun
+    executedByPlayer: true
+    position-in-inventory: 7
+  prison:
+    name: '&1&lPrison'
+    lore:
+    - '&7Clicca qui per andare al Prison'
+    item: STONE_PICKAXE
+    cmd: warp prison
+    executedByPlayer: true
+    position-in-inventory: 8
