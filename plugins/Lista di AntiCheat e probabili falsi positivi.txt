@@ -1,0 +1,173 @@
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+--------------
+| Anticheats |
+--------------
+
+
+//0) [Vulnerabilità minore] {PhoenixAntiCheat} Cacciato per hit impossibili o buggate.
+
+//0) [Vulnerabilità critica] {JI-Anticheat/AAC} Le versioni 4 di AAC e il noto JI-Anticheat causano crash al server (hack che contribuisce allo sfruttamento di questi tipi di Exploits: Ancient).
+
+//0) [Vulnerabilità minore] {PhantomAnticheat} Di recente il phantom anticheat o PAC non sembra reggere alla combo degli anticheats e dall'ultimo aggiornamento di Spartan ha dato problemi seri al check della speed e anche altri checks.
+
+//0) [Vulnerabilità minore] {VerusAnticheat/VAC (Ban/kick only)} Non compatibile con i sistemi anticheats di powacraft e con i plugins custom a client modification.
+
+//0) [Inutile] {AntiCheatReloaded} Versione tarocca di AntiCheat che è facile da bypassare, contiene solo i check di base e fa molti falsi positivi.
+
+//0) [Inutile] {Xeda} Oltre che ad essere bypassabile blocca i checks troppo semplici, anche se fa meno falsi positivi.
+
+//0) [Inutile] {Reflex} Blocca solo i moduli combat e la killaura, cosa che altri anticheats rilevano con facilità.
+
+//0) [Iperbuggato] {Intave} Un anticheat skiddato da AAC che fa esattamente le stesse funzioni di AAC, utile solo nel modulo combat, il resto non è buono. Inoltre è estremamente buggato, il peggior anticheat scam esistente.
+
+//0) [Iperbuggato] {Horizon[NoCommandHidden]} Oltre a non avere un sistema per bloccare il comando di horizon era estremamente buggato, causava problemi di ogni tipo, faceva conflitto con tantissimi anticheats e tantissimi falsi positivi, poteva solo camuffare il livello di energia del giocatore.
+
+//0) [ConsoleSpam] {BasicAnticheat/BAC} (Bloccava finalmente l'anticactus, tuttavia altissima probabilità di falsi positivi. Possibili conflitti per flight e speed. Inoltre ha un problema che spamma errori in console, fa falsi positivi per l'anticactus e soprattutto è stato trovato un valido sostituto)
+
+//0) [CrashExploit_Vulnerable] {AACAdditionPro} (Estensione di AAC per bloccare altri moduli hacks. Purtroppo di recente è noto per aver causato vari crash al server)
+
+1) {[CrashExploit_Vulnerable | Modded]NoCheatPlus (cncp + NCPDragDown disabled)} Probabilità di falsi positivi: 5% (Il più famoso e usato da sempre ora con la nuova versione moddata renderà il bypass dei moduli conosciuti impossibili)
+
+2) {[CrashExploit_Vulnerable] AAC/AdvancedAnticheat[CommandHidden]} Probabilità di falsi positivi: 20% (Anticheat avanzato tra i più usati)
+
+3) {Matrix} (Aggiornamenti frequenti) Probabilità di falsi positivi: 40% [Speed buggata] (Attenzione aggiornamenti frequenti)
+
+4) {Spartan} Probabilità di falsi positivi: 40% (Speed terrain buggata, ma di poco; ora anche Jesus buggata con ultima versione)
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________
+
+|--------------|
+| AntiExploits |
+|--------------|
+
+
+//0) [Vulnerabilità critica] {BookPacketExploitFix} Rimosso perché quando il client inviava un'enorme quantità di pacchetti e qualche sistema di anticheat procedeva col kick il server andava in crash.
+
+//0) [Incompleto] {NoUnicode} Non blocca tutti i caratteri unicode e di conseguenza permette gli insulti in altre lingue.
+
+//0) [Inutile] {Antijigsaw} Completamente inutile e spamma solo in console, a quanto pare sembra blocchi i pacchetti per opparsi dai plugins rattati, ma comunque rimosso per inaffidabilità.
+
+//0) [Inutile] {CustomPayloadFixer} (protezione contro payload custom ora disabilitato dato che è facilmente bypassabile)
+
+//0) [Inutile] {UUIDGuardian} (inutile dato che bypassabile)
+
+//0) [Inutile] {UUIDSpooffix} (inutile dato che bypassabile)
+
+//0) [Bug] {Illegalstack} (oltre che essere inutile causa anche problemi con il nether)
+
+//0) [Inutile] {ItemRestrict} (inutile dato che c'è già worldguard)
+
+//0) [Inutile] {ServerSecurity} (blocca ogni tipo di tentativo di opparsi da parte dei giocatori, ma ora sostituito da NoCheatPlus)
+
+//0) [Optional] {Spark} (Il miglior plugin in circolazione per l'analisi dei problemi di lag del server)
+
+//0) [Optional] {LagMonitor} (Ti dà la possibilità di monitorare le prestazioni del tuo server, ed eventualmente anche i potenziali crash exploit usati)
+
+//0) [Obsoleto] {Itemfixer} (protezione contro oggetti hackerati, non più aggiornato e compatibile dalle ultime build di ProtocolLib ed esposto a nuovi exploits)
+
+
+1) {Casualprotector} (protezione totale contro ogni tipo di payloads sospetti // Aggiornamento: Con l'ultima versione si ha un sacco di fix e tante altre novità, occorre resettare il config)
+
+2) {ExploitFixer // req = [HamsterAPI]} (protezione totale contro ogni tipo di sfruttamento exploits // Aggiornamento: Con gli ultimi aggiornamenti del plugin pare che gli instant crasher e altri tipi di exploit sono stati fixati totalmente e ciò rende il plugin il migliore per quanto riguarda la fix per ogni tipo di craasher exploit)
+
+3) {eZProtector} (aggiunge altri livelli di protezione e un sistema di notifiche agli admin per giocatori che fanno comandi sospetti)
+
+4) {SpigotGuard} (In breve: è un plug-in AntiCrash e AntiExploit basato su pacchetti, molto leggero per il tuo server spigot che blocca tutti i crash dei clients)
+
+5) {LPX_Mortal} (Il miglior anticrasher in circolazione creato dagli italiani, blocca tutti i tipi di exploits, e persino i netty crasher)
+
+6) {ChatSentinel} (Il miglior rapporto tra sicurezza nella chat, stabilità e rapidità)
+
+/// AGGIORNAMENTI ALLO STATO DISATTIVATI QUI \\\
+
+7) [CriticalExploit] {Log4jExploitFix} (Nuovo exploit in circolazione considerato il più pericoloso di tutto il videogioco, permette anche di prendere il controllo dell'intero computer. Essenziale una fix completa!)
+
+_________________________________________________________________________________________
+
+|----------|
+| AntiBots |
+|----------|
+
+
+//0) [Conflitto] {AuthMe(BooleanMode)} Sistema predefinito contro i bots e il login multiplo dei bot e controllo degli ip e controllo delle nazioni consentite, disabilitato a causa che bloccava tutti i giocatori e anche quelli che non sono dei Bots.
+
+//0) [Inutile] {PacketLimiter} Completamente inutile e inaffidabile dato il ritardo di azione del plugin.
+
+//0) [Bungee-Side] {2LSAntibot} Il miglior antibot leggerissimo, gratis e semplice in circolazione, purtroppo non è per spigot.
+
+
+1) {AntiBotDeluxe} (Migliore risorsa contro attacchi bot e vpn di qualunque tipo)
+
+2) {BotSentry} (Sistema valido contro molti tipi di attacchi AntiBot, ma non valido contro un delay alto della DeathBot)
+
+3) {ConsoleSpamFix} (Sistema definitivo per bloccare i noiosi spam di errori nei plugins come Multiverse-Inventories e altri exploits di spam in console da parte degli utenti)
+
+4) {SuperAntiWDL} (Client checker per impedire ad alcuni client modificati non permessi di accedere al server)
+
+5) {LagAssist} (Creato per impedire improvvisi colpi di lag del server e ha anche una funzione anticrash)
+
+6) {ClearLag} (Ora anche usato per limitare spawns dei mob e abuso di macchinari per far laggare il server e dotato anche di una apposita funzione di emergenza in caso di sovraccarico)
+
+7) {Viaversion} (Imposta il limite per i giocatori di pacchetti inviati al secondo in modo da limitare danni dei crasher o di qualche client hack)
+
+8) {UltimateAntibot} (A quel che sembra è il migliore oltre ad essere open source, dispone di qualsiasi tipo di protezione base, per una suit gratuita non si fa mancare nulla, viene attivato nei periodi di emergenza)
+
+/// AGGIORNAMENTI ALLO STATO DISATTIVATI QUI \\\
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+*Nota* Possibile bug di IllegalStack che teletrasporta sotto il nether anche nel mondo SkyBlock.
+*Nota* Se si va verso le staccionate o le muraglie si buggano gli AntiCheats.
+*Nota* Di recente Spartan anticheat è stato aggiornato e craccato.
+*Nota* AAC dopo i bugs causati dalle nuove versioni non verrà mai più aggiornato.
+*Nota* Sembra che il progetto NoCheatPlus sia stato abbandonato.
+*Nota* Abilitato con successo uCars e non fa conflitto con nessun AntiCheat (fixato togliendo il check al modulo "Vehicles" di NoCheatPlus).
+*Nota* Rinominato manualmente Matrix AntiCheat per non poterlo sempre sostituire con nomi diversi e ricancellare il file.
+*Nota* Consiglio di fare attenzione al check della phase nel Matrix Anticheat.
+*Nota* Per avere kit fusi basta semplicemente avviare uno scambio con tasto destro e shift, oppure tramite un client hack che permette di avere la MoreInventory o Inventory+, una volta attivata basta mettere gli oggetti negli spazi a 4 dell'inventario e non muoversi con la camera e prendere il kit con il tasto destro (bisogna avere già la camera puntata sul cartello).
+*SPECIAL* Pare che creando una combo con un MotionAC ed un PacketAC si crei una perfetta sintonia per contrastare i disabler del PacketAC rendendo questa combo quasi impossibile da bypassare! 
+*WARN* Possibile crash a causa del conflitto tra Spartan anticheat e AAC anticheat, se succede usare le versioni precedenti nella cartella DISABLED assieme agli appositi Config.
+*WARN* La licensa di spartan anticheat può causare problemi, e per tanto si consiglia di rimanere in una versione stabile e che non si connette ad internet.
+*WARN* Molti anticheats a causa di incompatibilità o altri problemi vari non sono più aggiornabili ad eccezione di pochi (Matrix).
+*WARN* Trovato un exploit nell'hack "Jigsaw" che riuscirebbe a far crashare il server (fixato).
+*WARN* Se quando fai un comando trovi la scritta "Comando sconosciuto." vai nel config di NoCheatPlus e metti i comandi da console a: false.
+*WARN* Con la nuova versione del Matrix anticheat 5.2.0 il kick avviene tramite il disconnect di tipo packets e quindi non mostrerà più la chat dell'anticheat.
+*WARN* Trovata vulnerabilità nei plugins AAC e NoCheatPlus moddato che permette di far crashare il server tramite il flycrasher.
+*WARN* Tutti i plugins anticheat quì presenti non bloccano totalmente la speed con il suo semi-modulo "Strafe", altri se bloccano si rischia di aprire le porte al crash exploit.
+*WARN* La NoFall e la Phase sono moduli che fanno molto conflitto con gli anticheat, quindi risultano ora modificati e sostituiti con il danno istantaneo.
+*ERROR* Sembra che se si modifica il knockback principale del server gli anticheat si buggano!
+*CRITICAL* Trovata vulnerabilità critica nel plugin: "FastAsynchWorldedit" che permette di far crashare il server, per fixare: "𝖲𝖾 𝗇𝗈𝗇 𝗏𝗈𝗅𝖾𝗍𝖾 𝗂𝗇𝗌𝗍𝖺𝗅𝗅𝖺𝗋𝖾 𝗊𝗎𝖾𝗌𝗍𝗈 𝗉𝗅𝗎𝗀𝗂𝗇 𝗈 𝗋𝗂𝗆𝗎𝗈𝗏𝖾𝗋𝖾 𝖥𝖠𝖶𝖤 𝗉𝗈𝗍𝖾𝗍𝖾 𝖻𝗅𝗈𝖼𝖼𝖺𝗋𝖾 𝗂𝗅 𝗉𝖾𝗋𝗆𝖾𝗌𝗌𝗈:  𝘸𝘰𝘳𝘭𝘥𝘦𝘥𝘪𝘵.𝘣𝘳𝘶𝘴𝘩.𝘵𝘢𝘳𝘨𝘦𝘵𝘰𝘧𝘧𝘴𝘦𝘵"
+*CRITICAL* È stato abilitato il modulo per non far buggare i chunk nella "1.8" nel plugin: "SolidFix", potrebbe causare gravi problemi di prestazioni, occorre la massima discrezione.
+
+!!! *SPECIAL WARN* !!!
+
+Sarebbe possibile mandare off il server con dei pacchetti PositionSpoof, o comunque sfruttando la falla o errori di calcolo dell'anticheat (Vedere directory "plugins/ServerCrashHackExploit").
+Come usare questo metodo? Basta semplicemente attivare l'AntiCheatSmasher o il ServerCrasher che comunque agisce sugli anticheats.
+
+Attenzione: Nuovo exploit crasher trovato per AAC5 nella "Rise" hacked client.
+
+- Aggiornato AAC alla versione "AAC4" Antecedente della versione "AAC3".
+
+!!! *DEBUG* !!!
+
+I log completi in console sono filtrati dal plugin: "ConsoleSpamFix".
+Per avere un'output completo bisogna disattivarlo!
+
+
+!!! *FIX* !!!
+
+Risolto exploit più grave riscontrato nel server: "Move/FlyCrasher" grazie ad un fork di PaperSpigot (FlamePaper) che regola il calcolo della CPU degli anticheat e limita i pacchetti in ricezione e invio per utente.
+Risolto exploit gravissimo [OnKickEvent] che faceva crashare il server ogni volta che un anticheat buggato kickava un Utente mentre quest'ultimo inviava una quantità enorme di pacchetti!
+
+
+[Aggiornamento: Individuato il plugin che fa crashare il server con questo Exploit, si tratta di "AACAdditionPro + AAC" {Optional} Matrix | Xeda | Horizon | NoCheatPlus]
+[Aggiornamento: Per AACAdditionPro basta disabilitare i seguenti checks: "PacketAnalysis" "KeepAlive" "Fastswitch (Questo fa solo laggare)"]
+[Aggiornamento: Per AAC basta disabilitare i seguenti checks: "Speed" "Fly" "Move"]
+[Aggiornamento: Per Matrix basta disabilitare i seguenti checks: "BadPackets"]
+[Aggiornamento: Per Spartan basta disabilitare i seguenti checks: "Exploits -> check_undetected_movement"]
+[Aggiornamento: Per Xeda basta disabilitare i seguenti checks: "Exploit" "Crash"]
+[Aggiornamento: Per Horizon basta disabilitare i seguenti checks: "badpackets"]
+[Aggiornamento: Per NoCheatPlus basta disabilitare i seguenti checks: "packetfrequency" "flyingfrequency"]

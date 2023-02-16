@@ -1,0 +1,3 @@
+Essentials: Quando si fanno vari comandi.
+MinigamesParty: Alcuni comandi vengono rappresentati in inglese.
+FactionsUUID: Alcune parti non si possono tradurre.
