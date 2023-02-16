@@ -1,0 +1,96 @@
+
+
+
+
+
+&4&lGiocando accetti il nostro regolamento all'interno del server!
+
+
+
+
+
+
+
+&6&lL’utente è tenuto a visionare periodicamente questo regolamento per eventuali aggiornamenti dello stesso, i quali possono avvenire senza preavviso.
+
+
+
+
+
+
+
+
+&6&lLa mancata comprensione e visione del regolamento non comporta la giustificazione da parte dell’utente alla mancata osservanza delle regole in esso contenute.
+
+
+
+
+
+
+
+&e&lNota: &oOgni volta che si esce gli inventari vengono resettati, quindi è necessario nelle varie modalità possedere delle chest, delle enderchest e altri storage per evitare la perdita dei dati!
+
+
+
+
+
+
+
+
+&c&lMotivo: &oLo scopo è quello di rendere la modalità di gioco estremamente difficile e quindi non OP per un conflitto equo tra i giocatori.
+
+
+
+
+
+
+
+
+
+&4&l 1: &cNon è tollerato l'utilizzo di un linguaggio volgare, bestemmie/blasfemie nei confronti di qualsiasi religione o insulti rivolti agli utenti o allo staff con qualunque mezzo.
+
+&4&l 2: &cÈ vietato fare spam di qualunque genere (inclusi canali YouTube), specialmente di altri server, ripetere lo stesso messaggio più volte (flood), oppure scrivere messaggi senza un senso logico.
+
+&4&l 3: &cÈ vietato impersonare lo staff o altri giocatori, creando prefissi ingannevoli o nomi molto simili al fine di essere scambiati per qualcun'altro.
+
+&4&l 4: &cI messaggi che esortano l'utilizzo di cheats o sistemi atti a danneggiare il server e i suoi utenti non saranno tollerati.
+
+&4&l 5: &cÈ proibito rubare account altrui e impersonare membri dello staff o altri utenti. Per sicurezza, non comunicare mai la password a nessuno, inoltre evita password troppo semplici o utilizzate su altri server. Ogni account è sotto la responsabilità del rispettivo utilizzatore.
+
+&4&l 6: &cNon è consentito lo sfruttamento di bug presenti nel gioco o nei plugin.
+
+&4&l 7: &cÈ vietato alimentare flame (dibattiti ostili) all'interno del server.
+
+&4&l 8: &cNon abusare delle segnalazioni, oppure non fare segnalazioni falsificate.
+
+&4&l 9: &cDurante un controllo hack vengono richiesti alcuni dati particolari per l'accesso remoto, l'utente in questione è obbligato a fornire questi ultimi. Il controllo potrà essere richiesto in qualsiasi momento senza dare un effettivo preavviso e non potrà essere evitato in quanto, di fronte ad un eventuale rifiuto o resistenza da parte dell'utente, esso verrà sanzionato.
+
+&4&l 10: &cIl regolamento può subire variazioni/cambiamenti, oppure aggiornamenti improvvisi, è meglio leggerlo ogni tanto.
+
+&4&l 11: &cLo staff ha sempre l'ultima parola e spetta ad esso prendere i dovuti provvedimenti.
+
+&4&l 12: &cAssolutamente proibito l'utilizzo di Hacks/mods o qualunque mezzo per avvantaggiarsi all'interno del gioco (l'utilizzo di tali mezzi comporta una pena molto severa a chi viola tale regola).
+
+&4&l 13: &cNon sono tollerati il bullismo, il razzismo e la discriminazione in tutte le loro forme.
+
+&4&l 14: &cComportamenti omertosi o tentativi di protezione di altri utenti (nel momento in cui commettono delle infrazioni al regolamento) verranno puniti severamente.
+
+&4&l 15: &cAssolutamente vietato l'abuso del comando &n/fix, &r&cqualora il comando in questione verrà usato a scopi di vantaggio o per sfruttamento bug verranno presi i dovuti provvedimenti.
+
+&4&l 16: &cL'utente all'interno del server è pregato di non abusare del CAPS (scrivere più parole o interi messaggi tutti in maiuscolo).
+
+&4&l 17: &cNon saranno assolutamente tollerati comportamenti nocivi verso giocatori, gruppi di giocatori o il server stesso es: tentativi di grief del server, hacking di account, console spamming, attacchi Bot o DDoS.
+
+&4&l 18: &cLa lingua ufficiale del server è l'italiano, e viene richiesto a tutti gli utenti di utilizzare un linguaggio comprensibile ai giocatori, evitando dialetti o lingue straniere (inoltre lo staff ha fatto un lavoro molto faticoso nel tradurre i plugins).
+
+&4&l 19: &cSe si trova un bug/glitch o plugin non tradotto si è pregati di segnalarlo ad uno staffer competente.
+
+&4&l 20: &cSe un utente dovesse darti fastidio con qualunque mezzo tramite la chat esiste il comando /ignore.
+
+&4&l 21: &cÈ consentito registrare durante un controllo hack (anche per segnalare un'eventuale incompetenza da parte dello staffer).
+
+&4&l 22: &cCreazioni ed utilizzi di prove contraffatte non sono tollerati e verranno severamente sanzionati.
+
+&4&l 23: &cNon è consentita la condivisione dell'account (Account Sharing), ogni utente (anche parenti) devono possedere un proprio nickname.
+
+&4&l 24: &cChiunque usufruisca di un bug per trarne benefici in gioco verrà sanzionato a discrezione della gravità di quest'ultimo.
