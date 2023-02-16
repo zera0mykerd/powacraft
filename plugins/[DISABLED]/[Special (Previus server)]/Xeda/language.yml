@@ -1,0 +1,24 @@
+colours:
+  alerts:
+    primary: '&7'
+    secondary: '&c'
+    tertiary: '&b'
+  commands:
+    primary: "&b"
+    secondary: "&7"
+    tertiary: "&f"
+
+messages:
+  prefix: "&5&l[&dAntiCheat&5&l] &e> &a&o"
+  alerts:
+    enabled: "%prefix% &7Avvisi &aabilitati."
+    disabled: "%prefix% &7Avvisi &cdisabilitati."
+  violations:
+    reset: "%prefix% &7Violazioni resettate con successo."
+  reload: "%prefix% &bConfig ricaricato."
+  garbage-collector: "%prefix% &bIl garbage-collector ha finito."
+  cancelled-autoban: "%prefix% &bAuto-ban per %player% rimosso."
+  no-permission: "%prefix% &bAccesso negato al comando."
+  missing-argument-player: "%prefix% &bDevi specificare un giocatore."
+  players-only: "%prefix% &bTale comando puo essere utilizzato solo dai giocatori."
+  player-not-found: "%prefix% &bGiocatore non trovato."

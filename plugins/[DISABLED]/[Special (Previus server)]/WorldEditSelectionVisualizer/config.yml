@@ -1,0 +1,24 @@
+lang:
+  visualizerEnabled: La tua visualizzazione risulta abilitata.
+  visualizerDisabled: La tua visualizzazione risulta disabilitata.
+  playersOnly: Solo un giocatore puo attivare il suo visualizzatore.
+  selectionSizeOf: 'Il visualizzatore funziona solo con selezioni fino a una dimensione
+    di '
+  blocks: ' blocchi'
+  configReloaded: La configurazione per il visualizzatore risulta stata ricaricata dal disco.
+useProtocolLib: false
+particleDistance: 16
+maxSize: 29999999
+checkForAxe: false
+selectionItem: WOOD_AXE
+particleEffect: reddust
+horizontalLinesForCuboid: true
+horizontalLinesForPolygon: true
+horizontalLinesForCylinder: true
+horizontalLinesForEllipsoid: true
+gapBetweenPoints: 0.5
+verticalGap: 1
+updateSelectionInterval: 20
+updateParticlesInterval: 5
+players:
+  71d6c242-d0b0-30b9-9635-bce9cb6764aa: false

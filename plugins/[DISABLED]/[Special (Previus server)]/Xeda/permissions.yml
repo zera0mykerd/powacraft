@@ -1,0 +1,11 @@
+commands:
+  gui: "xeda.command.gui"
+  help: "xeda.command.help"
+  reload: "xeda.command.reload"
+  lag: "xeda.command.lag"
+  clean: "xeda.command.clean"
+  alerts: "xeda.command.alerts"
+  cancel-autobans: "xeda.command.cancel"
+
+bypasses:
+  checks: "xeda.bypass.checks"

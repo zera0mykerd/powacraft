@@ -1,0 +1,221 @@
+settings:
+  bans:
+    command: matrix kick %player% &5&l[&dAnticheat&5&l] &e>&a Stai usando troppi cheats
+    broadcast: false
+    broadcast-message: '&5&l[&dAnticheat&5&l] &e> &c%player% &arimosso dal network
+      per cheating.'
+  alerts:
+    auto-enable: false
+  violations:
+    reset-time: 60
+    reset-automatically: false
+    send-to-console: false
+    broadcast-reset: false
+  gui:
+    checkered: true
+  latency:
+    ping: 300
+    tps: 17
+  modes:
+    SoTW: false
+checks:
+  AscensionA:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 4
+  AscensionB:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  AutoClickerA:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 5
+  AutoClickerB:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 5
+  BlockInteract:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 6
+  Clip:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 8
+  Crash:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 0
+  Criticals:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 4
+  Exploit:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 1
+  FastLadder:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 7
+  FlyA:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  FlyB:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  HitBoxes:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  Jesus:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  KillAuraA:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 7
+  KillAuraB:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 150
+  KillAuraC:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 11
+  KillAuraD:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 5
+  KillAuraE:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 7
+  KillAuraF:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 7
+  KillAuraG:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 5
+  MorePackets:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  NoFall:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 9
+  NormalMovements:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 7
+  NoSlowdown:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  Phase:
+    enabled: false
+    bannable: false
+    banTimer: false
+    maxViolations: 14
+  ReachA:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 9
+  ReachB:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 7
+  ReachC:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  Regen:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 12
+  Sneak:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  Speed:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 3
+  SpeedB:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 15
+  SpeedR:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 3
+  Spider:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  Step:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 7
+  TimerA:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  TimerB:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 9
+  Twitch:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 5
+  Vape:
+    enabled: true
+    bannable: true
+    banTimer: false
+    maxViolations: 1

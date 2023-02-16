@@ -1,0 +1,3 @@
+regions: [spawn, warzone, test, safe, super-safe, nofall, nopvp, no-pvp, npvp]
+chunk-check: true
+deny-message: "&4&lNon puoi claimare questa zona."

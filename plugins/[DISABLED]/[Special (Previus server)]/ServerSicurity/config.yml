@@ -1,0 +1,59 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                CONFIGURATION FILES                   | #
+# |                DEVELOPED BY @ACCO                    | #
+# +------------------------------------------------------+ #
+############################################################
+
+# If you want to use special characters in this document, such as accented letters, you MUST save the file as UTF-8, not ANSI.
+# If you receive an error on loading this plugin, ensure that:
+#   - No tabs are present: YAML only allows spaces
+#   - Indents are correct: YAML hierarchy is based entirely on indentation
+#   - You have "escaped" all apostrophes in your text: If you want to write "don't", for example, write "don''t" instead (note the doubled apostrophe)
+
+# If you have problems join the Support Discord: https://discord.gg/3hJs2RQ
+
+# Build 1.0
+
+############################################################
+# +------------------------------------------------------+ #
+# |                 Ops Whitelist                        | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Here is a list of player that are permitted to have op, the plugin will check every time all user that have op, if they aren't on this list they will immediately get banned.
+# Set "enable: true" if you want to active this protection.
+OpsWhitelist:
+    enable: true
+    Ops:
+      - ZERA
+    BanReason: '&c&lSei molto maleducato ad opparti lo sai?'
+
+############################################################
+# +------------------------------------------------------+ #
+# |                 Advanced Protection                  | #
+# +------------------------------------------------------+ #
+############################################################
+
+# This is an advanced protection mode, it will deop and remove any permissions that could be dangerous, if your account get stealed.
+# The plugin will remove the op and the * and set the owners of the server every time they join and quit to the default group.
+# If you are the really owner of the server you have to type /security and it will generate a random key in console.
+# You have to copy that key, and do /security key <key> . The plugin will give you back all the permissions and also the op.
+# You also need a permissions to do /security the permission is "security.main", so what I recommend is create a group whit only this permissions.
+AdvancedProtection:
+    # Set this "true" if you want active this protection.
+    enable: true
+    # You have to set only one to true! If you are using PermissionsEx set like this: "PermissionsEx: true".
+    # If you are using a permissions plugin manager that not appear on this list, let me know on the discord server.
+    PermissionsEx: true
+    zPermissions: true
+    GroupManager: true
+    LuckPerms: true
+    # Here you have to set in which group the server owner account, will be set on Join. Remember this group need to has this permission "security.main".
+    GroupUnAuthed: 'OwnerUnAuthed'
+    # Here you have to set in which group the server owner account, will be set after the authentication with the key generated in console.
+    GroupOnAuth: 'Owner'
+    # The plugin will active the advanced protection for all the player listed below. 
+    Owner: 
+   
+   

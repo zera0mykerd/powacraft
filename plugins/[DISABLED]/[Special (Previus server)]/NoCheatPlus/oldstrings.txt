@@ -1,0 +1,91 @@
+strings:
+  attackfrequency1: ncp delay conditionalcommands:ccmd [player] unless -ping->161|-tps-<18.5 do ncp log stream notify [player] forse usa AutoClicker (Fast Clicking) ([violations]VL)
+  attackfrequency2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] forse usa AutoClicker (Fast Clicking) ([violations]VL)
+  attackfrequency3: '[player] forse usa AutoClicker (Fast Clicking) ([violations]VL)'
+  autosign: '[player] ha fallito AutosSign ([tags]) ([violations]VL)'
+  ban: ncp kick [player]
+  ban-ip: ncp kick [ip]
+  bedleave: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] ha fallito BedFucker ([violations]VL)
+  blockdirectionbreak: ncp delay conditionalcommands:ccmd [player] unless -ping->161|-tps-<18.0 do ncp log stream notify [player] ha fallito (Block-related) Direzione (Nuker) ([violations]VL)
+  blockdirectionplace: ncp delay conditionalcommands:ccmd [player] unless -ping->161|-tps-<18.0 do ncp log stream notify [player] ha fallito (Block-related) Direzione (Schematica Mod?) ([violations]VL)
+  blockreach: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] ha fallito (Block-related) Reach ([violations]VL)
+  blockspeed: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] ha fallito (Block-interact) Speed (Nuker/FastPlace) ([violations]VL)
+  clickpattern1: ncp delay conditionalcommands:ccmd [player] unless -ping->161|-tps-<18.5 do ncp log stream notify [player] sta cliccando a blocchi (AutoClicker&7/&aAimBot) ([violations]VL)
+  clickpattern2: '[player] ha fallito ClickPattern ([violations]VL)'
+  clickpattern3: '[player] non sta cliccando normalmente (AutoClicker) ([violations]VL) ([violations]VL)'
+  fastbow: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify [player] ha fallito FastBow ([violations]VL)
+  fastbreak1: 'ncp delay conditionalcommands:ccmd [player] unless -ping->161|-tps-<18.5 do ncp log stream notify [player] ha fallito SpeedMine (Block: [blocktype]) ([violations]VL)'
+  fastbreak2: 'ncp delay conditionalcommands:ccmd [player] unless -ping->281|-tps-<18.5 do ncp log stream notify [player] ha fallito SpeedMine (Block: [blocktype]) ([violations]VL)'
+  fastbreak3: '[player] ha fallito SpeedMine (Block: [blocktype]) ([violations]VL)'
+  fastclick1: '[player] ha fallito AutoSteal da una chest ([violations]VL)'
+  fastclick2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] ha fallito AutoSteal da una chest ([violations]VL) (Kicked)
+  fastconsume: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] ha fallito FastEat ([food]) ([violations]VL)
+  fastheal1: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify [player] ha fallito FastHeal ([violations]VL)
+  fastheal2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] ha fallito FastHeal ([violations]VL)
+  fastplace1: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] ha fallito FastPlace ([violations]VL)
+  fastplace2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] ha fallito FastPlace ([violations]VL)
+  fastplace3: '[player] ha fallito FastPlace ([violations]VL)'
+  flyingfrequency: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] Sta inviando pacchetti di movimento (Speed) ([violations]VL)
+  gutenberg: '[player] ha creato un libro con troppe pagine! (Gutenberg) ([violations]VL)'
+  instantnuker: '[player] ha fallito (Instant) Nuker ([violations]VL)'
+  inventorymove: ncp delay conditionalcommands:ccmd [player] unless -ping->201|-tps-<18.0 do ncp log stream notify [player] ha fallito InventoryMove ([tags]) ([violations]VL)
+  fightangle1: '[player] sembra usare AimBot (Angle) ([tags]) ([violations]VL)'
+  fightangle2: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] Forse usa la AimBot (Angle)([tags]) ([violations]VL)
+  fightangle3: '[player] sembra usare la AimBot (Angle) ([tags]) ([violations]VL)'
+  fightdirection1: '[player] sembra usare AimBot (Direction) ([violations]VL)'
+  fightdirection2: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] sembra usare AimBot (Direction) ([violations]VL)
+  fightdirection3: '[player] sembra usare AimBot (Direction) ([violations]VL)'
+  fightreach1: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify [player] ha fallito (Combat) Reach ([violations]VL)
+  fightreach2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] ha fallito (Combat) Reach ([violations]VL)
+  fightreach3: '[player] ha fallito (Combat) Reach ([violations]VL)'
+  fightspeed1: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify [player] ha fallito (Combat) Speed  (13+ CPS) ([violations]VL)
+  fightspeed2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] ha fallito (Combat) Speed (13+ CPS) ([violations]VL)
+  fightspeed3: '[player] ha fallito (Combat) Speed (13+ CPS) ([violations]VL)'
+  fightsync1: '[player] sembra usare AimBot (FightSync) ([violations]VL)'
+  fightsync2: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] sembra usare AimBot (FightSync) ([violations]VL)
+  fightsync3: '[player] sembra usare AimBot (FightSync) ([violations]VL)'
+  improbable1: '[player] sembra usare AimBot (Improbable) ([violations]VL)'
+  improbable2: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] sembra usare AimBot (Improbable) ([violations]VL)
+  improbable3: '[player] sembra usare AimBot (Improbable) ([violations]VL)'
+  instanteat: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] ha fallito InstantEat ([violations]VL)
+  javaerror: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp kick [player] Internal Exception; io.netty.handler.timeout.ReadTimeoutException
+  keepalive: '[player] ha fallito sending Keep-alive packets([violations]VL)'
+  kickbedleave: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§oTrova prima un letto!
+  kickcaptcha: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§oInserisci il captcha!
+  kickchat1: ncp tempkick [player] 5 Non puoi spammare!
+  kickchat5: ncp tempkick [player] 5 Non dovevi spammare!
+  kickchatfast: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§oNon devi spammare in chat!
+  kickchatnormal: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§oTroppi messaggi, vai piano a scrivere.
+  kickcommands: ncp tempkick [player] 1 Non puoi spammare i comandi!
+  kickdrop: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§oDroppando oggetti troppo rapidamente.
+  kickinvaliddata: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§oDati invalidi.
+  kickpacketfrequency: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§oTroppi pacchetti al secondo.
+  kickselfhit: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§oHai provato ad autocolpirti!
+  morepackets1: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify [player] sta inviando troppi pacchetti (Timer&7/&6Blink) ([violations]VL)
+  morepackets2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] sta inviando troppi pacchetti (Timer/Blink) ([violations]VL)
+  nofall: '[player] ha fallito NoFall ([violations]VL)'
+  notifyfly1: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0|-time_online-<40 do ncp log stream notify [player] si sta muovendo in maniera anomala (SurvivalFly) ([violations]VL)
+  notifyfly2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] sospetto per Fly o simili ([tags]) ([violations]VL)
+  notifyfly3: '[player] sta provando a volare ([tags]) ([violations]VL)'
+  notifyflyspeed1: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify [player] movimenti troppo rapidi (ExtraElytra) ([violations]VL)
+  notifyflyspeed2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] movimenti troppo rapidi (ExtraElytra) ([tags])([violations]VL)
+  notifyflyspeed3: '[player] movimenti troppo rapidi (ExtraElytra) ([tags]) ([violations]VL)'
+  noswing: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify [player] ha fallito NoSwing ([violations]VL)
+  phase1: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5|-time_online-<30 do ncp log stream notify [player] ha fallito Phase ([violations]VL)
+  phase2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] ha fallito Phase ([violations]VL)
+  phase3: '[player] ha fallito Phase ([violations]VL)'
+  pitchpattern1: '[player] forse usa AimBot (PitchPattern) ([violations]VL)'
+  pitchpattern2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] forse usa AimBot (PitchPattern) ([violations]VL)
+  projectilespeed: '[player] sta frecciando troppo rapidamente ([violations]VL)'
+  scaffold1: ncp delay conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify [player] ha fallito Scaffold ([violations]VL)
+  scaffold2: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.5 do ncp log stream notify [player] ha fallito Scaffold ([violations]VL)
+  scaffold3: '[player] ha fallito Scaffold ([violations]VL)'
+  selfhit: '[player] ha fallito SelfHit ([violations]VL)'
+  vehicleenvelope: '[player] ha fallito (Vehicle Movement) Speed  ([tags]) ([violations]VL)'
+  wrongturn: ncp delay conditionalcommands:ccmd [player] unless -ping->291|-tps-<18.0 do ncp log stream notify [player] ha fallito WrongTurn (Experimental) ([violations]VL)
+  kick: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§o
+  kickalive: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§o Troppi pacchetti invia il tuo client.
+  kickbspeed: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§o Interagisci troppo veloce!
+  kickfly: kill [player]
+  kickfrequency: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§o Frequenza troppo veloce!
+  kickgod: ncp kick [player] §5§l[§dAntiCheat§5§l] §e> §a§o God mode? Non puoi usarla!

@@ -1,0 +1,570 @@
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+#
+# Reflex: Advanced Hacker Rekker (~DarksideCode & sinnlosername)
+# The configuration file
+#
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+#
+# If you are getting false positives, please make sure
+# that the players who getting them aren't really hackers.
+#
+# If you are 100% sure that some checks have false positives,
+# please contact MeGysssTaa on SpigotMC (PM) with the video
+# proof of false positive and the proof that the player who
+# getting it is completely legit.
+#
+# If you have any questions about configuration,
+# please ask those on SpigotMC (PM). Thanks for downloading.
+#
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+# Main Reflex settings
+global:
+
+  # Strict mode of maths checks (Direction, Reach, Secret, etc.)
+  # Decreasing level makes calculations more fast and accurate
+  # It's recommended to keep this default
+  strict_mode: 1
+
+  # Improbable checks won't start if player won't do more than this amount of moves
+  # Increase this value if you have false positives with Improbable checks (SmoothAim, etc.)
+  required_moves: 45
+
+  # Should Reflex kick everyone from server when using /reflexreload
+  # This may help avoid issues related to multiple Forcefield
+  # checking entities per player
+  kick_on_reload: true
+
+  # If set to true, Reflex will throw some TNTs out of hacker's
+  # ass when he gets kicked using /matrix kick %player% epic <...>
+  use_tnt: false
+
+  # The CommandSender instance Reflex should use while acting commands
+  # from violation maps in checks. 0 = default Bukkit sender, 1 = custom Reflex sender
+  # Enable this if you are having problems/errors with executing commands
+  commandsender: 1
+
+  # Auto-Updater settings
+  updater:
+
+    # Should Reflex check for updates every 15 minutes automatically
+    # If set to false, Reflex will check for updates only on enable
+    # WARNING: this can LAG your server if it has a slow Internet connection or a lot of players online
+    enabled: false
+
+    # Should Reflex disable itself if updater found a new version
+    # WARNING: not recommended if your server has a big / average online
+    # because you may be not online when plugin will be ready to update,
+    # but your server will miss anticheat protection. Use on your own risk
+    force_disable: false
+
+  # Ban waves settings
+  ban_waves:
+
+    # Enable or disable ban waves
+    # Ban waves is a system which bans all players who were kicked for hacking too many times before
+    enabled: false
+
+    # Delay between banwaves (in minutes)
+    delay: 30
+
+    # Ban waves bans only players, who's GVL (global violation level) hit this value
+    # GVL adds using command /reflexaddgvl (player_name) (amount)
+    threshold: 8
+
+    # Should Reflex affect offline players (control their's GVL, ban them in ban waves, etc)
+    # WARNING: requires an SSD and an overpowered server (with a lot of free memory)
+    # because it will go through all the server files every minute and do some weird calculations
+    process_offline_players: false
+
+    # Message which will sent to all players when a ban wave was happened
+    # %BannedPlayers% means amount of players who were banned in this wave
+    # Reflex won't show this message if there are no players banned
+    message: '&5&l[&dAntiCheat&5&l] &e>&a %BannedPlayers% &c kickato per &fhacking&r&c.'
+
+    # Command which will be dispatched as a ban command
+    command: 'matrix kick %Player% &5&l[&dAntiCheat&5&l] &e>&a Hacking non permesso'
+
+    # Should Reflex reset GVL of everyone who wasn't banned in ban wave after it happened
+    reset_gvl: false
+
+# FrontEntity check settings
+frontentity:
+
+  # Enable or disable FrontEntity check
+  enabled: false
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 235
+
+  # If set to true, then all the front entities will have
+  # random names and UUIDs. This will prevent most of nametag
+  # plugins from creating a nametag over invisible entity
+  # to make it ghost for players, don't use if you have no
+  # compatibility issues with nametag plugins
+  nametags_compatibility: false
+
+  # If players are too close to each other, the check will be cancelled
+  min_cancel_distance: 1.21
+
+  # If players are too far away from each other, the check will be cancelled
+  max_cancel_distance: 8.06
+
+  # Prevent FrontEntities from moving/teleporting and make them
+  # re-spawn if they are no longer in the line of sight
+  # Could slow the detection down a bit. Don't enable if you
+  # don't have any "could not find valid metadata" issues
+  no_movements: false
+
+  # The check will be cancelled if there are too
+  # many entities around the player
+  entities_to_cancel:
+
+    # In normal mode (with enabled movements)
+    normal: 4
+
+    # In no_movements mode ('no_movements: true' over here)
+    no_movements: 3
+
+  # Minimal difference between attacker and his target
+  # to begin check. If the distance is less than this value,
+  # the check will be cancelled
+  min_diff: '2.1337D'
+
+  # Distance between player and front entity
+  distance: '1.514358F'
+
+  # When player will do more than this amount of hits (attacks), the FrontEntity check will begin
+  hits_to_check: 5
+
+  # If player will do more than this amount of hits even if it isn't possible,
+  # the check will add him VL (violation level). Should be your 'hits_to_check' number + 1
+  required_unsafe_hits: 6
+
+  # Should Reflex cancel hits which cannot happen normally
+  cancel_suspicious_combat: true
+
+  # Should Reflex damage player's main target if he will hit FrontEntity
+  # This will help keep Reflex ghost in combat as no legit hits will be cancelled
+  simulate_damage: true
+
+  # Commands
+  violation_map:
+    3:
+    - reflexaddgvl %Player% 1
+    - matrix notify %Player% combattimento strano (&fALTO&a&o)
+    - matrix kick %Player% stai combattendo in modo strano
+
+# KillauraCombined check settings
+killauracombined:
+
+  # Enable or disable combat.KillauraCombined check
+  enabled: false
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 230
+
+  # Maximal allowed TDelay in attacks
+  t_delay: 4600
+
+  # For how long will KillauraCombined thread be alive
+  # after checking (this will affect on kick delay)
+  keep_thread_alive_ticks: 140
+
+  # SQDistance of the Aimbot check
+  distance_sq: 95
+
+  # Chance of hacking on Armswing check required to add VL (in %)
+  # Set to 100 to disable the Armswing component
+  armswing_chance: 70
+
+  # Chance of hacking on Aimbot check required to add VL (in %)
+  # Set to 100 to disable the Aimbot component
+  aimbot_chance: 95
+
+  # Chance of hacking on Accuracy check required to add VL (in %)
+  # Set to 100 to disable the Accuracy component
+  accuracy_chance: 90
+
+  # Chance of hacking on Angle check required to add VL (in %)
+  # Set to 100 to disable the Angle component
+  angle_chance: 45
+
+  # Chance of hacking on Killaura check required to add VL (in %)
+  # Set to 100 to disable the Killaura component
+  # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  # @ CAUTION: EXPERIMENTAL/BETA CHECK!
+  # @ THIS LABEL MEANS THAT THERE IS COMPLETELY
+  # @ NO WARRANITY THAT THIS FEATURE WILL WORK
+  # @ CORRECTLY AT ALL. IN CASE OF FALSE
+  # @ POSITIVES ON KILLAURACOMBINED, DISABLE THIS FIRST
+  # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  killaura_chance: 60
+
+  # Required angle rate to attack
+  required_rate: 0.42
+
+  # Maximal angle rate allowed before attacking
+  suspicious_rate: 0.68
+
+  # Player's VL will be increased if his
+  # move angle before attack seems impossible
+  impossible_angle_increase: 2
+
+  # Angle check length (or time in rotations)
+  angle_length: 165
+
+  # If player's angle ratio goes over this value, he will be kicked
+  angle_ratio: 61
+
+  # Player's VL will be increased with this value when he aim non-legitimately
+  strange_aim_level_increase: 4
+
+  # Player's VL will be decreased with this value when he aim legitimately
+  legit_aim_level_decrease: 2
+
+  # If player's VL on aiming reaches this value, the commands
+  # below (from violation map) are going to be dispatched
+  strange_aiming_threshold: 19
+
+  # Player's VL will be increased with this value when he hit non-legitimately
+  strange_hit_level_increase: 50
+
+  # Player's VL will be decreased with this value when he hit legitimately
+  legit_hit_level_decrease: 25
+
+  # If player's VL on hitting reaches this value, the commands
+  # below (from violation map) are going to be dispatched
+  strange_hitting_threshold: 285
+
+  # Player's VL will be increased with this value his yaw rate is too strange
+  strange_yawRate_level_increase: 21
+
+  # Player's VL will be decreased with this value if his yaw rate looks legit
+  legit_yawRate_level_decrease: 17
+
+  # If player's VL on yaw rating reaches this value, the commands
+  # below (from violation map) are going to be dispatched
+  strange_yawRating_threshold: 86
+
+  # Player's VL will be increased with this value his last fight was too strange
+  strange_fight_level_increase: 5
+
+  # Player's VL will be decreased with this value if his last fight looks legit
+  legit_fight_level_decrease: 2
+
+  # If player's VL on fighting reaches this value, the commands
+  # below (from violation map) are going to be dispatched
+  strange_fighting_threshold: 8
+
+  # Yaw rate required to check the player
+  # Important thing to fix false positives when
+  # not rotating or doing it not quick enough
+  yaw_rate_to_check: 2.51
+
+  # If player's yaw rate goes below this value,
+  # the attack will be flagged as suspicious
+  min_yaw_rate: 4.38
+
+  # Maximal allowed head rotation speed (nps)
+  rotation_speed: '36000.0F'
+
+  # Commands
+  violation_map:
+    12:
+    - matrix notify %Player% combattimento strano (&fALTO&a&o)
+    16:
+    - reflexaddgvl %Player% 1
+    - matrix kick %Player% stai combattendo in modo strano
+
+# Direction check settings
+direction:
+
+  # Enable or disable combat.Direction check
+  enabled: true
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 1000
+
+  # Should Reflex cancel hits which cannot happen normally
+  cancel_suspicious_combat: false
+
+  # Commands
+  violation_map:
+    100000:
+    - reflexaddgvl %Player% 1
+    - matrix notify %Player% sta combattendo in modo strano (&fBASSISSIMO&a&o)
+    - matrix kick %Player% combattimento strano rilevato
+
+# Fightspeed check settings
+fightspeed:
+
+  # Enable or disable combat.Fightspeed check
+  enabled: true
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 215
+
+  # Minimal delay (ms) before player
+  # will be allowed to attack again
+  min_delay: 60
+
+  # Commands
+  violation_map:
+    4:
+    - reflexaddgvl %Player% 1
+    - matrix notify %Player% sta combattendo in modo strano (&fALTO&a&o)
+    - matrix kick %Player% stai combattendo in modo strano
+
+# Reach check settings
+reach:
+
+  # Enable or disable combat.Reach check
+  enabled: true
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 260
+
+  # Should Reflex cancel hits which cannot happen normally
+  cancel_suspicious_combat: true
+
+  # Maximal allowed interact distance (not blocks)
+  max_diff: '5.60D'
+
+  # Commands
+  violation_map:
+    4:
+    - reflexaddgvl %Player% 1
+    - matrix notify %Player% sta combattendo in modo strano (&fMEDIO&a&o)
+    - matrix kick %Player% combattimento strano rilevato
+
+# FastSwitch check settings
+fastswitch:
+
+  # Enable or disable combat.FastSwitch check
+  enabled: true
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 240
+
+  # Minimal delay (ms) which player have to
+  # wait before switching his target
+  min_delay: 40
+
+  # Commands
+  violation_map:
+    5:
+    - reflexaddgvl %Player% 1
+    - matrix notify %Player% sta combattendo in modo strano (&fALTO&a&o)
+    - matrix kick %Player% combattimento strano rilevato
+
+# Secret check settings
+secret:
+
+  # Enable or disable Secret check
+  enabled: true
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 250
+
+  # Commands
+  violation_map:
+    6:
+    - reflexaddgvl %Player% 1
+    - matrix notify %Player% combattimento strano (&fMEDIO&a&o)
+    - matrix kick %Player% sta combattendo in modo strano
+
+# Forcefield check settings
+npc:
+
+  # Enable or disable combat.Forcefield check
+  enabled: false
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 265
+
+  # Should NPC move away from player's line of sight if he damaged it
+  move_on_damage: true
+
+  # Distance between player and NPC
+  distance: '4.0F'
+
+  # Should NPC become for some time if player hits someone
+  visible: true
+
+  # For how long time (ms) will NPC stay visible (if it's enabled over here)
+  # after player hit an entity. 1 second contains 1000 milliseconds
+  visible_timeout: 2750
+
+  # Should Reflex make client believe that NPC is not flying
+  # and moving legitimately. Could prevent some bypasses
+  fake_on_ground: true
+
+  # Make NPCs wear realistic player names and UUIDs
+  # Disable this if you have issues with floating
+  # nametags (nametag plugins incompatibility fix)
+  real_player_copies: true
+
+  # Should NPCs  move (fly, walk, fall down, swing arms, rotate head)
+  movements: true
+
+  # If player will damage this amount of NPCs, Reflex will dispatch commands on him
+  threshold: 7
+
+  # Should Reflex kill player if he hit more than *VL* NPCs
+  kill: false
+
+  # NPC check has no commands list. It can only kill / kick player. Here are kick settings
+  kick:
+
+    # Should Reflex kick player if he hit more than *VL* NPCs
+    enabled: false
+
+    # Kick message
+    message: '&5&l[&dAntiCheat&5&l] &e>&a Combat hack non permessa'
+
+  # GVL increment settings
+  gvl_increment:
+
+    # Should Reflex increase player's GVL if he will be detected for Forcefield
+    enabled: true
+
+    # Amount of GVL which will be added to suspected player
+    amount: 1
+
+# Improbable check components settings
+improbable:
+
+  # SmoothAim check settings
+  smoothaim:
+
+    # Enable or disable comat.Improbable.SmoothAim check
+    enabled: true
+
+    # Player won't be kicked if his ping is higher than this value (milliseconds)
+    lag_ping: 300
+
+    # Commands
+    violation_map:
+      6:
+      - reflexaddgvl %Player% 1
+      - matrix notify %Player% combattimento strano (&fBASSO&a&o)
+      - matrix kick %Player% stai combattendo in modo strano
+
+  # StaticAngle check settings
+  static_angle:
+
+    # Enable or disable comat.Improbable.StaticAngle check
+    enabled: true
+
+    # Player won't be kicked if his ping is higher than this value (milliseconds)
+    lag_ping: 280
+
+    # Commands
+    violation_map:
+      5:
+      - reflexaddgvl %Player% 1
+      - matrix notify %Player% combattimento strano (&fBASSO&a&o)
+      - matrix kick %Player% stai combattendo in modo strano
+
+  # MouseParalysis check settings
+  mouse_paralysis:
+
+    # Enable or disable comat.Improbable.MouseParalysis check
+    enabled: true
+
+    # Player won't be kicked if his ping is higher than this value (milliseconds)
+    lag_ping: 240
+
+    # Commands
+    violation_map:
+      4:
+      - reflexaddgvl %Player% 1
+      - matrix notify %Player% combattimento strano (&fBASSO&a&o)
+      - matrix kick %Player% stai combattendo in modo strano
+
+# Velocity check settings
+velocity:
+
+  # Enable or disable combat.BadVelocity check
+  enabled: true
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 210
+
+  # Player's VL will be multiplied by this value if he will fail VerticalVelocity check
+  vertical_multiplier: 20
+
+  # If the difference between player's previous and actual velocities
+  # is higher or less than this value, player's VL will be increased
+  expected_diff: 5
+
+  # Commands
+  violation_map:
+    50:
+    - matrix notify %Player% sta usando AntiKnockback (&fALTO&a&o)
+    70:
+    - reflexaddgvl %Player% 1
+    - matrix kick %Player% non prendi il contraccolpo
+
+# Criticals check settings
+# WARNING: CRITICALS ADDS VIOLATION TO KILLAURACOMBINED CHECK.
+# THIS MEANS IF PLAYER FAILES CRITICALS CHECK HE WILL BE KICKED
+# FOR KILLAURA BY THE KILLAURACOMBINED CHECK
+criticals:
+
+  # Enable or disable certain Criticals checks
+  enabled:
+
+    # Enable or disable combat.PacketCriticals check
+    packets: true
+
+    # Enable or disable moving.GroundSpoof check
+    groundspoof: true
+
+  # Player won't be kicked if his ping is higher than this value (milliseconds)
+  lag_ping: 230
+
+  # Should Reflex cancel false critical hits
+  cancel_suspicious_combat: true
+
+  # Commands
+  violation_map:
+    6:
+    - null
+
+# Messages strings
+lang:
+
+  # If player tries to perform a Reflex command, but he has no the correct permission
+  # for it, he will receive this message
+  no_permission: '&5&l[&dAntiCheat&5&l] &e>&a Permessi insufficienti'
+
+  # This message is sent when Reflex is looking for updates
+  searching_update: '&5&l[&dAntiCheat&5&l] &e>&a Cercando nuovi update...'
+
+  # This message is sent when Reflex found a new version
+  update_avialable: '&5&l[&dAntiCheat&5&l] &e>&a &f%NewVersion%&r&c fuori (usando &f%InstalledVersion%&r&a&o). Please update as soon as possible'
+
+  # This message is sent when Reflex didn't find any updates
+  no_updates_found: '&5&l[&dAntiCheat&5&l] &e>&a Reflex risulta aggiornato'
+
+  # This message is sent when player tried to perform a command which is console only
+  console_only: '&5&l[&dAntiCheat&5&l] &e>&a Comando non permesso dai players'
+
+  # /matrix notify notificatins format. %Message% is a message, %Sender% is a nickname of
+  # player who sent command. If command was dispatched as console, %Sender%
+  # will be replaced with CONSOLE
+  notification_format: '&5&l[&dAntiCheat&5&l] &e>&a &7%Sender%:&c %Message%'
+
+  # Format of Invalid syntax message (%s is the command syntax itself)
+  syntax_format: "§cSintassi errata! Usa » %s"
+
+  # Player will receive this message if he will dispatch /reflexrunbanwave command
+  running_ban_wave: '&5&l[&dAntiCheat&5&l] &e>&a Esecuzione forzata del banwave..'
+
+  # This message is sent to all online players when someone gets kicked via /matrix kick
+  kick_broadcast: '%Player% kickato per hacking'
+
+  # Prefix which will be displayed when player gets kicked via /matrix kick
+  prefix: '&5&l[&dAntiCheat&5&l] &e>&a '
