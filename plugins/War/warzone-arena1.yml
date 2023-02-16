@@ -1,0 +1,66 @@
+set:
+  warzone:
+    arena1:
+      info:
+        authors:
+        - ZERA
+        teleport:
+          x: 241455
+          y: 103
+          z: 23246
+          yaw: 90
+        world: FlagWars
+        lobby:
+          orientation: south
+          world: FlagWars
+          materials:
+            floor:
+              ==: org.bukkit.inventory.ItemStack
+              type: GLASS
+            outline:
+              ==: org.bukkit.inventory.ItemStack
+              type: WOOD
+            gate:
+              ==: org.bukkit.inventory.ItemStack
+              type: OBSIDIAN
+            light:
+              ==: org.bukkit.inventory.ItemStack
+              type: GLOWSTONE
+        materials:
+          main:
+            ==: org.bukkit.inventory.ItemStack
+            type: OBSIDIAN
+          stand:
+            ==: org.bukkit.inventory.ItemStack
+            type: FENCE
+          light:
+            ==: org.bukkit.inventory.ItemStack
+            type: GLOWSTONE
+  team:
+    names:
+    - red
+    - blue
+    red:
+      info:
+        spawns:
+        - x: 241384
+          y: 75
+          z: 23357
+          yaw: 91
+        flag:
+          x: 241373
+          y: 75
+          z: 23346
+          yaw: 180
+    blue:
+      info:
+        spawns:
+        - x: 241360
+          y: 75
+          z: 23139
+          yaw: 269
+        flag:
+          x: 241371
+          y: 75
+          z: 23150
+          yaw: 1
