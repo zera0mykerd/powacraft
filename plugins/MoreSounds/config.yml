@@ -1,0 +1,13 @@
+# For further instruction,
+# see dev.bukkit.org/server-mods/more-sounds
+#                                             .
+sounds:
+  join: note-pling
+  leave: note-bass
+  chat: item-pickup
+  command: item-pickup
+  hit: hurt-flesh
+  hit-sword: zombie-metal
+  teleport: portal-travel
+update-notifications: false
+teleport-particles: true

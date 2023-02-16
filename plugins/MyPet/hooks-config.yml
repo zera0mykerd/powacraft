@@ -1,0 +1,25 @@
+# #######################################################################
+#                This is the hook configuration of MyPet                #
+#                  You can find more info on the wiki:                  #
+#   https://wiki.mypet-plugin.de/setup/configurations/hooks-config.yml  #
+# #######################################################################
+
+Vault:
+  Economy: true
+  Enabled: true
+CombatLogX:
+  MyPet:
+    Hooks:
+      CombatLogX:
+        Ignore-Plugin-Settings: false
+  Enabled: true
+Factions:
+  Enabled: true
+NoCheatPlus:
+  Enabled: true
+PlaceholderAPI:
+  Enabled: true
+ProtocolLib:
+  Enabled: true
+WorldGuard:
+  Enabled: true

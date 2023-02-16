@@ -1,0 +1,16 @@
+# DataBase
+host: 127.0.0.1
+port: 3306
+database: dbName
+user: root
+password: password
+
+Scoreboard:
+  Enabled: true
+  DisplayName: '&c&lStats'
+  KillsName: '&f- &e&lKills'
+  DeathsName: '&f- &c&lDeaths'
+  KillStreakName: '&f- &b&lKillStreak'
+  BlocksPlaced: '&f- &9&lBlocks Placed'
+  BlocksBroken: '&f- &a&lBlocks Broken'
+  Stats-Line: '&8> &f'

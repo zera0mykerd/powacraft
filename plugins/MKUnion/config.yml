@@ -1,0 +1,22 @@
+# 
+# Configuration regarding logging of malicious messages
+# Malicious messages will not be logged using log4j. They are
+# written without any further processing to a separate log-file
+Config:
+  CC:
+    message: ''
+  ICC:
+    message: ''
+  permissions:
+    message: §8§oAccesso negato al comando!
+logging:
+  enabled: false
+  logFilter: true
+  messageReceive: true
+  messageSend: true
+duration: 10
+message: '&3&l(&0&l!&3&l) &1&oAttendi &b&l%time% &1&osecondi...'
+MkConfig: true
+playersCannotBuild: []
+playersCannotPlace: []
+playersCannotBreak: []

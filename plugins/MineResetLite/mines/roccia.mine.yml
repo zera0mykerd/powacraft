@@ -1,0 +1,23 @@
+mine:
+  ==: com.koletar.jj.mineresetlite.Mine
+  resetDelay: 5
+  surface: ''
+  maxZ: 62
+  maxY: 80
+  maxX: 73
+  ignoreLadders: false
+  fillMode: false
+  world: prison
+  minY: 61
+  resetWarnings: []
+  minX: 53
+  composition:
+    '1:0': 0.5
+    '3:0': 0.5
+  name: roccia
+  resetClock: 3
+  minZ: 34
+  isSilent: false
+  tpY: -1
+  tpX: 0
+  tpZ: 0

@@ -1,0 +1,36 @@
+Players:
+  1de0cf95-fbd4-33aa-9c34-857b83e333b2:
+    Name: ZERA
+    Prefix: '&4&l{Founder} &c&l&o'
+    Suffix: ''
+    SortPriority: -1
+  ef55d9fc-8566-330f-958e-d5636705dcc4:
+    Name: panda4k
+    Prefix: '&6&l[Admin] &e&l'
+    Suffix: ''
+    SortPriority: -1
+  a1a681b8-edf6-35e0-b298-932796cebc18:
+    Name: _panda4k_
+    Prefix: '&6&l[Admin] &e&l'
+    Suffix: ''
+    SortPriority: -1
+  dc4b1eb4-6441-309b-8259-489fa662290b:
+    Name: Hibernatix
+    Prefix: '&3&l[Mod] &b&l'
+    Suffix: ''
+    SortPriority: -1
+  1824838a-b16d-3a7a-9729-a8225f88dd72:
+    Name: zera_mykerd
+    Prefix: '&4&l{Founder} &c&l&o'
+    Suffix: ''
+    SortPriority: -1
+  d512c84a-5699-4f4c-8186-b4d5982063ab:
+    Name: Cyberkeele62
+    Prefix: '&2&l[Helper] &a&l'
+    Suffix: ''
+    SortPriority: -1
+  02033d21-67ef-3239-b8a4-7558dd40fbc5:
+    Name: DerekLopez
+    Prefix: '&2&l[Help] &a&l'
+    Suffix: ''
+    SortPriority: -1

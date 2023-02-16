@@ -1,0 +1,26 @@
+Groups:
+  Admin:
+    Permission: nte.founder
+    Prefix: '&4&l{Founder} &c&l'
+    Suffix: ''
+    SortPriority: 1
+  Admin:
+    Permission: nte.admin
+    Prefix: '&6&l[Admin] &e&l'
+    Suffix: ''
+    SortPriority: 2
+  Moderator:
+    Permission: nte.moderator
+    Prefix: '&3&l[Mod] &b&l'
+    Suffix: ''
+    SortPriority: 3
+  Helper:
+    Permission: nte.helper
+    Prefix: '&2&l[Helper] &a&l'
+    Suffix: ''
+    SortPriority: 4
+  Utente:
+    Permission: nte.utente
+    Prefix: '&8(Utente) &7&o'
+    Suffix: '&7'
+    SortPriority: -1

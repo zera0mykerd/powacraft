@@ -1,0 +1,23 @@
+mine:
+  ==: com.koletar.jj.mineresetlite.Mine
+  resetDelay: 5
+  surface: ''
+  maxZ: -36
+  maxY: 80
+  maxX: -53
+  ignoreLadders: false
+  fillMode: false
+  world: prison
+  minY: 33
+  resetWarnings: []
+  minX: -73
+  composition:
+    '16:0': 0.1
+    '13:0': 0.9
+  name: carbone
+  resetClock: 3
+  minZ: -64
+  isSilent: false
+  tpY: -1
+  tpX: 0
+  tpZ: 0
