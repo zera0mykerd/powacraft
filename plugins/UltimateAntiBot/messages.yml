@@ -1,4 +1,4 @@
-version: 4.0
+version: 4.3
 prefix: "&2&l[&aAntiBot&2&l] &6> &d&o"
 onping: #<-- works only on bungeecord!
   normal: "&4&l[!] &e&o$1&7/&c&l$2"
@@ -10,14 +10,16 @@ commands:
   removed: "$1 rimosso da &c$2"
   wrong-args: "Sintassi errata! Usa /uab help"
   no-blacklist: "&cQuesto ID non risulta associato a nulla"
+  invalid-log-value: "&cQuesto valore non sembra associato a un log!"
   reload: "Tutti i file di configurazione sono stati ricaricati con successo"
 analyzer:
-  increase: "&a↑ &7- %old% &c➜ %new% &7- &c%perc%%"
-  decrease: "&c↓ &7- %old% &c➜ %new% &7- &c%perc%%"
+  increase: "&a↑ &7- &f%old% &c➜ &f%new% &7- &c%perc%%"
+  decrease: "&c↓ &7- &f%old% &c➜ &f%new% &7- &c%perc%%"
 notifications:
   action: "&aAlternata &6la &cActionBar"
   title: "&aAlternata &ela &cTitleBar"
   bossbar: "&aAlternata &6la &cBossBar"
+#(!) PLACEHOLDERS (!)
 #actionbar/title/stats allowed values
 #%bots% - return botpersecond
 #%queue% - return queue
@@ -59,28 +61,30 @@ reason:
   admin: "Un amministratore ti ha blacklistato"
   check: "Troppi checks sono falliti"
 help:
-  - "&r"
-  - "&d&o/uab &chelp"
-  - "&d&o/uab &ctoggle actionbar/title/bossbar"
-  - "&d&o/uab &cstats"
-  - "&d&o/uab &cclear blacklist/whitelist"
-  - "&d&o/uab &cwhitelist add/remove <ip>"
-  - "&d&o/uab &cblacklist add/remove <ip>"
-  - "&d&o/uab &cfirewall"
-  - "&d&o/uab &ccheck <id>"
-  - "&d&o/uab &creload"
-  - "&d&o/uab &cdump"
-satellitestats:
-  - "&r"
-  - "&d&oStatus: %status%"
-  - "&d&oRichieste in sospeso: %avg%"
-  - "&d&oRichieste ultimo minuto: %lastmin%"
-  - "&d&oRichieste correnti: %currentreq%"
-  - "&d&oUltime richieste di restart: %lastreboot%"
-  - "&d&oMessaggi: %message%"
-  - "&d&oTempo di responso: %time%ms"
-  - "&r"
-  - "Ci sono &c%currentserver% in &c%maxservers% utenti connessi"
+  - ""
+  - "&c/uab &4help &7- &fVedi il messaggio di aiuto"
+  - "&c/uab &4toggle &factionbar/title/bossbar &7- &fAbilita le notifiche"
+  - "&c/uab &4stats &7- &fControlla le statistiche antibot"
+  - "&c/uab &4clear &fblacklist/whitelist &7- &fCancella la blacklist o la whitelist"
+  - "&c/uab &4whitelist &fadd/remove &f<ip> &7- &fGestiste la whitelist"
+  - "&c/uab &4blacklist &fadd/remove &f<ip>&7- &fGestisce la blacklist"
+  - "&c/uab logs list <quantita> &7- &fControlla le informazioni di attacco"
+  - "&c/uab logs last <ID> &7- &fControlla gli ultimi in <quantita> di attacchi"
+  - "&c/uab cache status/clear &7- &fGestisce la cache UAB"
+  - "&c/uab &4firewall &7- &fControlla le informazioni sul firewall"
+  - "&c/uab &4check &f<ID> &7- &fControlla i giocatori blacklistati"
+  - "&c/uab &4reload &7- &fRicarica il file di configurazione"
+  - "&c/uab &4dump &7- &fUtilizza le info e le estrae per il supporto!"
+attack-log:
+  - "&cID attacco &4> &f%id%"
+  - "&cData attacco &4> &f%attack%"
+  - "&cIPs in blacklist &4> &f%blacklist%"
+  - "&cBots respinti &4> &f%bots%"
+  - "&cPings bloccati &4> &f%pings%"
+  - "&cPacchetti filtrati &4> &f%packets%"
+  - "&cCPS di frequenza &4> &f%avg%"
+  - "&cPotenza attacco &4> &f%power%"
+  - "&cDurata attacco &4> &f%duration%"
 firewall:
   - "&d&oFirewall status: %status%"
   - "&r"
@@ -108,7 +112,7 @@ wait:
 fastjoin-queue:
   - "&2&l[&aAntiBot&2&l] &6> &d&oSei ora in coda per la verifica! Dovrebbero volerci circa 3/5 secondi"
 
-bossbar_idle_message: "Attendo per l attacco"
+bossbar_idle_message: "Occhio che stanno attaccando!"
 blacklist_info:
   - "&d&o&lBLACKLIST INFO:"
   - "&r"

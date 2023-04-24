@@ -10,10 +10,11 @@ commands:
   removed: "$1 rimosso da &c$2"
   wrong-args: "Sintassi errata! Usa /uab help"
   no-blacklist: "&cQuesto ID non risulta associato a nulla"
+  invalid-log-value: "&cQuesto valore non sembra associato a un log!"
   reload: "Tutti i file di configurazione sono stati ricaricati con successo"
 analyzer:
-  increase: "&a↑ &7- %old% &c➜ %new% &7- &c%perc%%"
-  decrease: "&c↓ &7- %old% &c➜ %new% &7- &c%perc%%"
+  increase: "&a↑ &7- &f%old% &c➜ %new% &7- &c%perc%%"
+  decrease: "&c↓ &7- &f%old% &c➜ %new% &7- &c%perc%%"
 notifications:
   action: "&aAlternata &6la &cActionBar"
   title: "&aAlternata &ela &cTitleBar"
