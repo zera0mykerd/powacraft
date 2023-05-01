@@ -40,7 +40,8 @@ suppress-conversion-warnings: false
 # What is the maximum per second a client can send (Use %pps to display their pps)
 # Use -1 to disable.
 max-pps: 150
-max-pps-kick-msg: '&4&lHai inviato -> &c&l&o%pps &4&l<- pacchetti al secondo su un massimo di &c&l&o150&4&l!'
+max-pps-kick-msg: '&4&lHai inviato -> &c&l&o%pps &4&l<- pacchetti al secondo su un
+  massimo di &c&l&o150&4&l!'
 #
 # We can also kick them if over a period they send over a threshold a certain amount of times.
 #
@@ -52,7 +53,8 @@ tracking-warning-pps: 120
 # How many warnings over the interval can we have
 # This can never be higher than "tracking-period"
 tracking-max-warnings: 4
-tracking-max-kick-msg: '&4&oHai inviato -> &c%pps &4&o<- pacchetti a intermittenza su un massimo di &c120&4&o!'
+tracking-max-kick-msg: '&4&oHai inviato -> &c%pps &4&o<- pacchetti a intermittenza
+  su un massimo di &c120&4&o!'
 #
 #----------------------------------------------------------#
 #                 MULTIPLE VERSIONS OPTIONS                #
@@ -124,7 +126,7 @@ cache-1_17-light: true
 chat-types-1_19:
   chat.type.text: <%s> %s
   chat.type.announcement: '[%s] %s'
-  commands.message.display.incoming: '%s ti ha sussurrato: %s'
+  commands.message.display.incoming: '%s whispers to you: %s'
   chat.type.team.text: '%s <%s> %s'
   chat.type.emote: '* %s %s'
 #
